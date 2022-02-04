@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_264:-To check whether able to enter Total paid amount in Cheque mode after switching from Efectivo mode</description>
+   <name>TC_ID_264</name>
+   <tag></tag>
+   <comment>Verify the error message</comment>
+   <testCaseGuid>9bc19e02-8c38-4976-b803-f469e31c0e0d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check once scheme is applied whether scheme buy and get sku's displaying on Invoice summary screen</description>
+   <name>TC_117</name>
+   <tag></tag>
+   <comment>Scheme buy sku should be displayed on invoice summary screen
+Scheme get sku should be displayed on invoice summary screen</comment>
+   <testCaseGuid>2affc30e-590e-40c9-a1dc-12eccf7db831</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_366:-To check collection popup details do not get reset and remain on same collection pop up when user click on cancel button in alert pop up</description>
+   <name>TC_ID_366</name>
+   <tag></tag>
+   <comment>summary screen should be displayed
+Collection popup details should not get reset</comment>
+   <testCaseGuid>794fe9ae-8ff1-4156-9f0f-41d8a9582a61</testCaseGuid>
+</TestCaseEntity>

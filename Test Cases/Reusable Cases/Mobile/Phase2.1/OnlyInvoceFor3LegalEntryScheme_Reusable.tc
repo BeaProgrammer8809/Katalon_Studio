@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OnlyInvoceFor3LegalEntryScheme_Reusable</name>
+   <tag></tag>
+   <comment>Verifyong the scheme product</comment>
+   <testCaseGuid>34fbf6d5-303b-4f80-9900-3f0972f9189c</testCaseGuid>
+</TestCaseEntity>

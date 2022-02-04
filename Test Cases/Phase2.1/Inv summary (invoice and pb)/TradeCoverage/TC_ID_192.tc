@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_192
+
+To check the Comp Disc amount inside the info popup while taking invoice &amp; Product Buying (Non-Salable)) for the sku's that is having IVA tax, Item discount and category discount.</description>
+   <name>TC_ID_192</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>57b8814a-2f6c-442f-9f57-f1af7cf56c44</testCaseGuid>
+</TestCaseEntity>

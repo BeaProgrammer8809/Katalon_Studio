@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_101-->  To check the Total paid field in Efectivo mode after changing the defaultly filled paid amount
+
+TC_ID_102--> To check whether able to submit Collection with Total paid field as empty</description>
+   <name>TC_ID_101_102</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3c2c6cf8-4254-4771-a8c3-e47042f60f6e</testCaseGuid>
+</TestCaseEntity>

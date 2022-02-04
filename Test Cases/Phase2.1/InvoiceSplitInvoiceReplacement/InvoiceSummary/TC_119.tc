@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_119 -  To check while doing invoice for no group sku's and replacement,product buying for different split group sku's hat is having IEPS tax and Item discount,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC_119</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd555624-d2f3-47cc-a17d-0cfb49e06b3f</testCaseGuid>
+</TestCaseEntity>

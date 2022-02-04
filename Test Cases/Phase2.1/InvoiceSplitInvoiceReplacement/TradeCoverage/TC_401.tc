@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_401 : To verify Invoice with pesito collection can be done for the retailer with RFC format as “XXXYYMMDDaa&amp;”</description>
+   <name>TC_401</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e2298f66-0343-4643-a0dd-892612665b27</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_338 - To check whether able to Submit the invoice amount without entering Reference no
+TC_ID_339 - To check whether able to Submit the invoice amount with max digit in Reference no
+</description>
+   <name>TC_ID_338_339</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>df82fd5f-567b-43c7-a901-c52b10410f80</testCaseGuid>
+</TestCaseEntity>

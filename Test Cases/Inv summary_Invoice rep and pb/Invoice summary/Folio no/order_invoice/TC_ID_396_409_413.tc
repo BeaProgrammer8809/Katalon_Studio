@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_409--> To verify “Folio No” &amp; “Folio ProdBuy” field is accepting other Special Characters excepts “_” and “-” Special Characters.(Test Data: @ and ,)
+
+TC_ID_413_396--> To verify the “Folio No” &amp; “Folio ProdBuy” field accepts the Empty space as input.</description>
+   <name>TC_ID_396_409_413</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>257ef5d2-8359-4604-8e8a-4ea31a8d2131</testCaseGuid>
+</TestCaseEntity>

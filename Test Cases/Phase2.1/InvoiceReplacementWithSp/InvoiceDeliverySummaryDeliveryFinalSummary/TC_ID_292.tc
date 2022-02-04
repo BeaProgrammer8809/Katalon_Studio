@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_292:-To check the Select Bank field</description>
+   <name>TC_ID_292</name>
+   <tag></tag>
+   <comment>Select bank was a mandatory field</comment>
+   <testCaseGuid>1ad1fc10-fb88-48ef-8ae6-1c58789d1555</testCaseGuid>
+</TestCaseEntity>

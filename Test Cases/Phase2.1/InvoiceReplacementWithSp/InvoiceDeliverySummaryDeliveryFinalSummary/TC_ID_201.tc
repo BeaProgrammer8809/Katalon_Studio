@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_201
+To check the generated Sku's Qty value when Entity of Invoice Split is Bimbo and Invoice &amp; Replacement are taken for Group SKU belongs to Bimbo, Barcel and Ricolino company- Credit Retailer</description>
+   <name>TC_ID_201</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd015aeb-4c9e-43fe-815e-ff02c9ade2c4</testCaseGuid>
+</TestCaseEntity>

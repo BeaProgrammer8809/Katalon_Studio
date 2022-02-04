@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC96 : To check the Value and total qty field calculation while taking replacement against each sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
+   <name>TC96</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e41be022-ef6d-47fe-a69f-696a2afbb1e3</testCaseGuid>
+</TestCaseEntity>

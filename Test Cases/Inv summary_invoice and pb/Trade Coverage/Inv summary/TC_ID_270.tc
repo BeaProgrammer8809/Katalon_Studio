@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_270 - To check whether the entered pieces(Salable) are persisting in Product Buying screen while navigating back from summary screen</description>
+   <name>TC_ID_270</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>36ece6e0-8816-4ad6-a047-88e4a815110a</testCaseGuid>
+</TestCaseEntity>

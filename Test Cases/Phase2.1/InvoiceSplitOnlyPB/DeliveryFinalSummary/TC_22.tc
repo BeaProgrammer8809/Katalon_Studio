@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_22 : Verify the Element present under DeliveryFinalSummary Screen
+1. A Grid Having 4 fields- i. Invoice Name ii. Lines iii. Sku'S Qty and iv. Amount,V.Folio number
+2. Edit Icon on the top right corner
+3. A print Icon
+4. Back button Error ->
+5. Create final Invoice Button</description>
+   <name>TC_22</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1dc32ba1-ef40-4c38-8149-084d621a69ad</testCaseGuid>
+</TestCaseEntity>

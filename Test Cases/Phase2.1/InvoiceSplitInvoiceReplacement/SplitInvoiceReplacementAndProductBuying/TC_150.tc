@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether invoice status is not playing in print screen while doing only product buying for Ecommercio customer</description>
+   <name>TC_150</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae22bc30-fe0f-45e3-8e2c-f5d3e917cccc</testCaseGuid>
+</TestCaseEntity>

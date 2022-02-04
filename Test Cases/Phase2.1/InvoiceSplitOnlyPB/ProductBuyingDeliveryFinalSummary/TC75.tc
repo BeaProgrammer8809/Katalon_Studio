@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC75:-Check whether Do you want to print invoicing without preticket popup is displaying when preticket is already print</description>
+   <name>TC75</name>
+   <tag></tag>
+   <comment>Vertify Do you want to print invoicing without preticket popup should not displayed</comment>
+   <testCaseGuid>7857de6e-ab1d-466c-b4d8-5eee8eacea0a</testCaseGuid>
+</TestCaseEntity>

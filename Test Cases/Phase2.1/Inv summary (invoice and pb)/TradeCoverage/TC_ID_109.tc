@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_109:-To check the Value field calculation while taking invoice &amp; PB (Both Salable &amp; Non-salable) against each sku's that is having IVA tax and category discount.</description>
+   <name>TC_ID_109</name>
+   <tag></tag>
+   <comment>Verifying the total price
+Product Buying should not be considered for the Gross/Total calculation.
+Verifying the Value amount</comment>
+   <testCaseGuid>42f63c7c-90ef-4a55-aa20-21d7af189242</testCaseGuid>
+</TestCaseEntity>

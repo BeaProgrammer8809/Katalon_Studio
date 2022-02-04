@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_012-->  Check whether the SIH quantity is displaying correctly for an sku in Order and invoice screen</description>
+   <name>TC_012</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fbf99d91-576e-461d-9f5a-cc68b72e33fb</testCaseGuid>
+</TestCaseEntity>

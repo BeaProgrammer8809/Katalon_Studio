@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC418: To check whether able to enter Total paid amount in only Cheque mode</description>
+   <name>TC418</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>54371953-6727-4c27-bbbf-0482e1eb8899</testCaseGuid>
+</TestCaseEntity>

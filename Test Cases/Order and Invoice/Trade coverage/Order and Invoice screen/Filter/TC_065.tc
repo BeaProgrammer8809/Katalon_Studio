@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_065--> Check whether able to select multiple segment in Segmento level</description>
+   <name>TC_065</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>30d4d585-5e30-4dbb-9a9a-216d6a3fa02d</testCaseGuid>
+</TestCaseEntity>

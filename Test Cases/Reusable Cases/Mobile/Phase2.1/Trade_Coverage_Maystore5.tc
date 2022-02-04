@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>NormalCashSplitmodeEnabled</description>
+   <name>Trade_Coverage_Maystore5</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce6657ef-2ecb-4e92-9796-d4c1f354e825</testCaseGuid>
+</TestCaseEntity>

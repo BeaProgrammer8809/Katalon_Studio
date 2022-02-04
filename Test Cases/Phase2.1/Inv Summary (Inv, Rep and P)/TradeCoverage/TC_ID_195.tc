@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_195:-To check whether able to submit full invoice amount in only Efectivo mode</description>
+   <name>TC_ID_195</name>
+   <tag></tag>
+   <comment>Verifying Invoice Amount equals with provided amount in effectivo</comment>
+   <testCaseGuid>f57db550-cd3f-4e5b-bfce-7eceeaf2110f</testCaseGuid>
+</TestCaseEntity>

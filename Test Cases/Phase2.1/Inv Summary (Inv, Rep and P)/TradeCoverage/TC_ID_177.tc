@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_177 : To check without entering folio number user is not able to submit  invoice</description>
+   <name>TC_ID_177</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e327b85a-7e7e-4c33-82ab-8087ec75f987</testCaseGuid>
+</TestCaseEntity>

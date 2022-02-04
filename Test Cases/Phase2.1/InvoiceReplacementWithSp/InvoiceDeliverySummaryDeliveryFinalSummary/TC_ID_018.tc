@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_018 - Check whether for particular SKU which is belongs to Bimbo Company, delivery final summary screen is coming- Only Replacement is taken</description>
+   <name>TC_ID_018</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>328b9f3f-a3e4-483d-8674-3686f4c2c06b</testCaseGuid>
+</TestCaseEntity>

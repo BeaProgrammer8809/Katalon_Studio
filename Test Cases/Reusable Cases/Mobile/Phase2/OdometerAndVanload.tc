@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>this test case is for odometer reading and vanload acceptance</description>
+   <name>OdometerAndVanload</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>36958489-0f51-4dee-bfb8-b5d1d47ef149</testCaseGuid>
+</TestCaseEntity>

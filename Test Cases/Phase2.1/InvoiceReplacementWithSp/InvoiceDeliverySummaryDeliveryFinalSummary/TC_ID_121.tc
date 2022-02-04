@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_121 - Check whether the same Stock Delivered Qty against SKUs and record count are appearing in the Delivery Split Summary screen Grid  as it was available in the Delivery Summary Screen</description>
+   <name>TC_ID_121</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cc863123-85c2-4c99-a5fa-4935eedd86e0</testCaseGuid>
+</TestCaseEntity>

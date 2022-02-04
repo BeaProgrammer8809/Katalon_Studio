@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_065 - To check folio number length is up to 15 digits
+TC_066 - To check folio number text field is not accepting the less than 6 digits
+TC_067 - To check Validation msg is coming like 'Folio number should be at least 6 characters
+TC_068 - To check user is allowed to put folio number in decimal and in alphanumeric and space</description>
+   <name>TC_065_066_067_068</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>de36e6c7-9ba7-4a7d-aaa9-c9d91e8eefca</testCaseGuid>
+</TestCaseEntity>

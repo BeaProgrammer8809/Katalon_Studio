@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC67 : To check the total price calculation while taking product buying and replacement for the sku's that is having only tax IVA but not having any discounts</description>
+   <name>TC67</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>22800420-3b52-4f00-92f9-a8ee22890e61</testCaseGuid>
+</TestCaseEntity>

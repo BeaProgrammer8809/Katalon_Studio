@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_161 : To check User is not allowed to use pesito amount more than invoice amount</description>
+   <name>TC_ID_161</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3a31f4eb-c4ba-4415-b61b-f9358f8f57ca</testCaseGuid>
+</TestCaseEntity>

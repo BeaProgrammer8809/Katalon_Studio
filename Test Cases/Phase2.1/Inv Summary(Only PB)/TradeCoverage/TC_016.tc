@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_016 - Check whether Amount Split Up popup gets closed when tap on (X) Icon</description>
+   <name>TC_016</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>28aee156-7a18-4625-b90c-e693bc61657f</testCaseGuid>
+</TestCaseEntity>

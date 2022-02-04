@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_015 - Check the fields available in the Amount Split up popup</description>
+   <name>TC_015</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8f5c608-3814-41cd-a0ba-9cc5f528f979</testCaseGuid>
+</TestCaseEntity>

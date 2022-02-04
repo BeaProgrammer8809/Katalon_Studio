@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_498:- To verify “Reference number” field is accepting input in Spanish with data-length is more than 30 [Collection Before Invoice]</description>
+   <name>TC_498</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f58e48f1-efe7-488f-ab7d-744a983a1aaf</testCaseGuid>
+</TestCaseEntity>

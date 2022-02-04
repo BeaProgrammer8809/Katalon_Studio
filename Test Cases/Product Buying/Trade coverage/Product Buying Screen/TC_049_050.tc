@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_049 - Verify the behaviour of &quot;Clear&quot; Button when filters is not selected
+
+TC_050 - Verify the behaviour of &quot;Apply&quot; Button when filters is not selected</description>
+   <name>TC_049_050</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>6dbc0973-39b3-481d-bcd8-6830e1959547</testCaseGuid>
+</TestCaseEntity>

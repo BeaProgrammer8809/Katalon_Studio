@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC76 : To check the total price calculation while taking product buying and replacement for the sku's that is having IVA, IEPS taxes with Category discount and Detail IEPS flag is enabled for the store</description>
+   <name>TC76</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d339b274-76e1-41a5-a628-a2f75aaed9e2</testCaseGuid>
+</TestCaseEntity>

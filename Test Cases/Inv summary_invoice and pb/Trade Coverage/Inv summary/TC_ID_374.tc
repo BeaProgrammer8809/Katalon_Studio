@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_374 - To check folio number length is up to 15 digits</description>
+   <name>TC_ID_374</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>0ee5b90c-3f8e-4e1d-9356-bdbdb6743044</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_265 - To check the total qty count while taking invoice for one sku and Product Buying (Salable/non salable) for another sku</description>
+   <name>TC_ID_265</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>3e4c6a1d-9495-4436-b87d-7b61ef8b792d</testCaseGuid>
+</TestCaseEntity>

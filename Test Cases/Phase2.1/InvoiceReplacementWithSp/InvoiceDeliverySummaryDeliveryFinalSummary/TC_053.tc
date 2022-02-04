@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_053:Check whether the entered qty in order and invoice screen into Pieces field against SKUs are tallying in the delivery summary screen and Stock delivered of Delivery summary screen are matching with Pieces of Order and Invoice screen.</description>
+   <name>TC_053</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe9f7874-5f12-4337-a218-e3d114b60190</testCaseGuid>
+</TestCaseEntity>

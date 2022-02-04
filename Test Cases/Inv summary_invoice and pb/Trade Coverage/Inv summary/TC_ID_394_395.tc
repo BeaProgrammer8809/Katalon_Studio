@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_281 - To check the Inv Amt displayed in the Efectivo mode
+TC_ID_282 - To check the Min. Amt displayed in the Efectivo mode
+TC_ID_283 - To check the Balance amount displayed in the Efectivo mode without changing the defaultly filled paid amount
+TC_ID_284 - To check the Total paid displayed in Efectivo mode without changing the defaultly filled paid amount</description>
+   <name>TC_ID_394_395</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>ffb92247-54ca-4169-8e4e-adcfcd8260f3</testCaseGuid>
+</TestCaseEntity>

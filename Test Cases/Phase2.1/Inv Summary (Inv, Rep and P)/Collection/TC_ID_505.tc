@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_505:-To verify whether able to edit and collect the amount in RTGS.[Collection Before Invoice]</description>
+   <name>TC_ID_505</name>
+   <tag></tag>
+   <comment>User Should able to edit the “RTGS Amount” after submit.</comment>
+   <testCaseGuid>24f3b675-1803-4a6b-82a6-16cb332ab120</testCaseGuid>
+</TestCaseEntity>

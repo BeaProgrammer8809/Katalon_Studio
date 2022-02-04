@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_210
+To check the generated Sku's Qty value when Entity of Invoice Split is Bimbo and Invoice &amp; Replacement are taken for Ungrouped SKU belongs to Bimbo</description>
+   <name>TC_ID_210</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc9a678b-8bb5-4762-84f3-34ed8ad37e19</testCaseGuid>
+</TestCaseEntity>

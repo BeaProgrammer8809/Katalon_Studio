@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC181
+
+To check the Comp Disc amount inside the info popup while taking replacement for the sku's that is having IEPS tax, Item discount and category discount.</description>
+   <name>TC181</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>626cdfae-6682-4b84-9a2b-d215e81f4a3b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_550: To verify Invoice can be done with Scheme for the retailer with RFC format as “XXXXYYMMDDaa&amp;”</description>
+   <name>TC_ID_550</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a133ef17-abc3-46df-a4d7-0b5f65f961df</testCaseGuid>
+</TestCaseEntity>

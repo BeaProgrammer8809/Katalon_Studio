@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_025:- Check whether for particular retailer delivery final summary screen is coming for which different channel is mapped- Replacement+Product Buying both have taken</description>
+   <name>TC_025</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>faa9f140-16b5-4e45-b873-fe38833f3ccd</testCaseGuid>
+</TestCaseEntity>

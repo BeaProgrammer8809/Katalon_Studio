@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether able to select Bank from dropdown</description>
+   <name>TC422</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>95271e57-f237-4aa5-9d95-02a2e35ed17d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Total price displayed when scheme buy and get sku is added in split group or no group</description>
+   <name>TC_299</name>
+   <tag></tag>
+   <comment>Total should be calculated and displayed as (SRP*Stock delivered)
+Scheme get sku should not included in total price</comment>
+   <testCaseGuid>21a57852-23cc-43e9-b12b-f87db2c18b34</testCaseGuid>
+</TestCaseEntity>

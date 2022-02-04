@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_141 : To check whether able to select branch from dropdown
+
+TC_ID_142 : To check whether able to enter number in Reference no field</description>
+   <name>TC_ID_141,TC_ID_142</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>78d804f8-4bf0-4c3e-b2f3-99e4294b88b6</testCaseGuid>
+</TestCaseEntity>

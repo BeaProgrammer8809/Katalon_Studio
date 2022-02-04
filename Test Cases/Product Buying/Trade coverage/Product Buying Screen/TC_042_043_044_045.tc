@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_042 - Selected marca values should get deselected on clicking the clear button
+TC_043 - Selected category values should get deselected on clicking the clear button
+TC_044 - Selected segment values should get deselected on clicking the clear button
+TC_045 -Selected line values should get deselected on clicking the clear button</description>
+   <name>TC_042_043_044_045</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>c01cfbb3-e0ae-4347-8745-09df12927b12</testCaseGuid>
+</TestCaseEntity>

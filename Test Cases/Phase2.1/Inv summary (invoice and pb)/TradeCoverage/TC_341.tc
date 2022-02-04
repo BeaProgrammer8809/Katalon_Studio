@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_341:- To check whether Collection icon is displayed after submitting the Invoice amount in Transferencia electronicas mode</description>
+   <name>TC_341</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c3b46996-85f2-4391-b9a4-f5c15e6c2b07</testCaseGuid>
+</TestCaseEntity>

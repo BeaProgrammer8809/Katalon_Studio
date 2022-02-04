@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_027: To Check  Total Price  Calculation against each sku having only tax  IEPS but not having any discounts while taking Invoice &amp; PB - Both Salable &amp; Non-Salable
+
+</description>
+   <name>TC_ID_027</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9ffb2e4b-da80-4add-ba50-07e739c12a0f</testCaseGuid>
+</TestCaseEntity>

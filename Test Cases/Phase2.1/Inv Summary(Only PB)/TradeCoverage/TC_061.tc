@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_061:-To check IF product buying has done for bimbo sku then header is coming as bimbo sa de c.v above folio text field</description>
+   <name>TC_061</name>
+   <tag></tag>
+   <comment>Verifying the Popup
+Verifying bimbo sa de c.v</comment>
+   <testCaseGuid>74727b24-178e-4dc3-a786-44379e5e9cf8</testCaseGuid>
+</TestCaseEntity>

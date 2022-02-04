@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_257 - To check whether able to submit full invoice amount in only Efectivo mode</description>
+   <name>TC_ID_257</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c368eba8-9f8e-41f0-959b-8d0dd2930bc3</testCaseGuid>
+</TestCaseEntity>

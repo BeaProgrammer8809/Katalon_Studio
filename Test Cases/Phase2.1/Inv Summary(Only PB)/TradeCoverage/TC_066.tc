@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_066:-To check folio number text field is not accepting the less than 6 digits</description>
+   <name>TC_066</name>
+   <tag></tag>
+   <comment>Verifying the Popup
+Folio number text field should  not  less than 6 digit
+Verifying the ToastMsg
+Folio number text field should  not accept less than 6 digit</comment>
+   <testCaseGuid>e9ed62b5-9421-401c-a86d-e8bbfe6d5ff6</testCaseGuid>
+</TestCaseEntity>

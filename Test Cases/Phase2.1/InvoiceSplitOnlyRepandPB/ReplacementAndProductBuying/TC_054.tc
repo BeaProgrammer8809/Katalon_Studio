@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_054 - To check the generated Lines Value when Entity of Invoice Split is Bimbo and Replacement &amp; Product Buying- saleable &amp;  Non-saleable Both  Type is taken for Group SKU belongs to Bimbo, Barcel and Ricolino company-</description>
+   <name>TC_054</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6f3aed5-3e25-44e9-a827-1ea35025bb15</testCaseGuid>
+</TestCaseEntity>

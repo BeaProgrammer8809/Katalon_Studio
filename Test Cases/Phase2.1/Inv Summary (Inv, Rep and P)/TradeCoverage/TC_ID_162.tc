@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_162 : To check User is not allowed to use pesito more than pesito available</description>
+   <name>TC_ID_162</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bcd82024-f1cc-4040-b79c-0567130369b2</testCaseGuid>
+</TestCaseEntity>

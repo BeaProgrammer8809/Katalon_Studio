@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC319
+To check while doing replacement for the sku's that is having IEPS tax, Item discount and category discount. and Detail IEPS is enable for the store,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC319</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7fc6c94a-c813-4c40-ae36-214808770b34</testCaseGuid>
+</TestCaseEntity>

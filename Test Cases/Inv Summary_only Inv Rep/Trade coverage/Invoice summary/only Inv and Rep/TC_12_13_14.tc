@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_12--> To check whether the Piece qty against each SKU is displaying correctly with respect to the Order and Invoice screen
+
+TC_13--> To check whether the Actual return qty against each SKU is displaying correctly with respect to the Order and Invoice screen
+
+TC_14--> To check whether the U.Price against each SKU is displaying correctly with respect to the Order and Invoice screen</description>
+   <name>TC_12_13_14</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2fd7621-a325-4ff7-8feb-785e47d6439f</testCaseGuid>
+</TestCaseEntity>

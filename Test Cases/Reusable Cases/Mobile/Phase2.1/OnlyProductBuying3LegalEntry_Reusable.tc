@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>OnlyProductBuying3LegalEntry_Reusable</name>
+   <tag></tag>
+   <comment>Provide product Buying quantity</comment>
+   <testCaseGuid>2173e514-1cca-4545-b4f5-a0a74f17f9c2</testCaseGuid>
+</TestCaseEntity>

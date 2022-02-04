@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_378 - To check if user is able to pay full amount in cash mode by selecting effectivo checkbox
+TC_ID_379 - To check user can not able to pay invoice amount partial in through quick cash collection (effectivo checkbox)</description>
+   <name>TC_ID_378_379</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>73912825-1c2a-442e-b941-94eb974890a8</testCaseGuid>
+</TestCaseEntity>

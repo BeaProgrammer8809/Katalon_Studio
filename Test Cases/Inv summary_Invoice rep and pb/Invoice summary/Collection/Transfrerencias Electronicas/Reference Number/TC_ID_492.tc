@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_492--> To verify “Reference number” field is accepting the Alphanumeric characters.[Collection Before Invoice]</description>
+   <name>TC_ID_492</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>211f8e4e-dfa5-4d1e-8147-fbd7046b7d12</testCaseGuid>
+   <variable>
+      <defaultValue>'ATTest_173628'</defaultValue>
+      <description></description>
+      <id>eb43a61f-73cc-4809-b1c8-da32c1487378</id>
+      <masked>false</masked>
+      <name>RefNo</name>
+   </variable>
+</TestCaseEntity>

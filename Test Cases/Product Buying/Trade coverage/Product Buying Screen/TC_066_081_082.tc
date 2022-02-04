@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_066 - Check whether user is allowed to edit Total Piece value against product detail
+TC_081 - Check whether after pressing Done button it's redirecting to product buying screen
+TC_082 - To check the Total qty field calculation if piece qty is entered for an sku against Salable</description>
+   <name>TC_066_081_082</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>6628a070-0ffa-4427-a6aa-38ca4cc83ca0</testCaseGuid>
+</TestCaseEntity>

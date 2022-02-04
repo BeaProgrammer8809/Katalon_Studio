@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_026: Check whether Unload menu is available in the Menu Screen</description>
+   <name>TC_026</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c6062fa5-b62f-4c0d-a3bb-a8515f2075f0</testCaseGuid>
+</TestCaseEntity>

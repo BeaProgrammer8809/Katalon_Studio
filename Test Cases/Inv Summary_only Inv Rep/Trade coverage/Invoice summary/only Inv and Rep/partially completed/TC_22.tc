@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_16--> Check whether Sales return qty against each sku is updating in Summary screen while taking replacement only</description>
+   <name>TC_22</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a94ca790-b43f-47a7-92aa-eb93d4a322eb</testCaseGuid>
+</TestCaseEntity>

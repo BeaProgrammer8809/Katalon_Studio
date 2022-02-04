@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_87:- Check whether Folio No. is mandatory for all the rows available in the Delivery final summary screen</description>
+   <name>TC_87</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>002216d2-963e-4e4c-bc91-41422a34a4c8</testCaseGuid>
+</TestCaseEntity>

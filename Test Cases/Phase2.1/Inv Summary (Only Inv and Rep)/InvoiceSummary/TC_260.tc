@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_260: To check the total qty count while taking invoice for one sku and replacement for another sku</description>
+   <name>TC_260</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd285eb3-07f5-47b8-bb58-b34742551dc1</testCaseGuid>
+</TestCaseEntity>

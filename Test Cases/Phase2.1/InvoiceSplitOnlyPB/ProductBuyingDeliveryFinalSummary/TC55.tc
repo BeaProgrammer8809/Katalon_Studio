@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC55:To check the split name , while taking only Product Buying for Non-Group SKUs(SKUs not mapped under Invoice Split) from Barcel Company</description>
+   <name>TC55</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3a78c99f-034a-4cdc-9a9c-f8f007b7d8fb</testCaseGuid>
+</TestCaseEntity>

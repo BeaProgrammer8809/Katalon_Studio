@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC40 - To check the total price calculation while taking replacement for the sku's that is having only discount (Category discount) but not having any taxes
+TC80 - To check the total price calculation while taking product buying and replacement for the sku's that is having only discount (Category discount) but not having any taxes
+TC195 - To check the deductions (Comp Disc and Dist disc) amount inside the info popup while taking product buying for the sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
+   <name>TC40_80_195</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>b5dac313-12b6-4e85-a20f-b9ba0bcddab6</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_293 - To check whether Collection icon is displayed after submitting the Invoice amount in Efectivo mode
+
+Print Preview and Edit icon should be hidden after submitting invoice amount in Efectivo mode</description>
+   <name>TC_293</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04b4f2c5-f014-414c-9a96-8d06a622af1a</testCaseGuid>
+</TestCaseEntity>

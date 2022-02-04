@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_299 - Amount exceeds the balance and please check error message should be displayed and it should not allow to enter the amount because the inv amount is already entered in Efectivo mode
+</description>
+   <name>TC_ID_299</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>eceb9c62-4ccc-40bb-960f-5550792645b9</testCaseGuid>
+</TestCaseEntity>

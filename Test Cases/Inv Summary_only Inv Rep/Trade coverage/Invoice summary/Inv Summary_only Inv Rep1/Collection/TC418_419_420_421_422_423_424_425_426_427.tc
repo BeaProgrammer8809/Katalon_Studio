@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC418--> To check whether able to enter Total paid amount in only Cheque mode
+
+TC449--> To check the Select Bank field
+
+TC420--> To check whether able to select Bank from dropdown
+
+TC421--> To check the Select Branch field
+
+TC422--> To check whether able to select branch from dropdown
+
+TC423--> To check the Select Cheque Type dropdown
+
+TC424->  To check the Select Cheque Type dropdown options
+
+TC425--> To check whether able to enter number in Cheque no field
+
+TC426--> To check whether able to enter decimals in Cheque no field
+
+TC427--> To check the default date selected in Cheque mode
+
+</description>
+   <name>TC418_419_420_421_422_423_424_425_426_427</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b34239bd-9334-4cdd-9987-9ff2d522375d</testCaseGuid>
+</TestCaseEntity>

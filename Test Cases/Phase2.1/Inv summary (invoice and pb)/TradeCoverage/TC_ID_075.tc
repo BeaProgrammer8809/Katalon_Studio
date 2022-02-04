@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_075 : To check the Value field calculation while taking invoice &amp; PB (Salable) against each sku's that is having only tax IVA but not having any discounts
+</description>
+   <name>TC_ID_075</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aecfd0d8-269b-40cd-a549-aa03f73c4dad</testCaseGuid>
+</TestCaseEntity>

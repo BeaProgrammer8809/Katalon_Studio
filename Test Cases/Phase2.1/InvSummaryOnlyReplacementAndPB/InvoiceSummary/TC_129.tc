@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Value and Total qtyfield calculation, while taking replacement and product buying against each sku's that is not having any discounts and taxes</description>
+   <name>TC_129</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6b912c51-ae0b-43da-93b7-34c284089187</testCaseGuid>
+</TestCaseEntity>

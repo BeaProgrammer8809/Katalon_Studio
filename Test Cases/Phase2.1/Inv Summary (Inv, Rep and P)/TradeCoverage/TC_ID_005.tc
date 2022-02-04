@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_005 : Check the default display of the Summary screen for Cash retailer for multi org route</description>
+   <name>TC_ID_005</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d02d995a-9c2b-4e49-a9ce-8bbf9bff3daf</testCaseGuid>
+</TestCaseEntity>

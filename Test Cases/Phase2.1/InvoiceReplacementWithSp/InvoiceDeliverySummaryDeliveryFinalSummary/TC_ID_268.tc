@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_268:-To check the Select Branch field</description>
+   <name>TC_ID_268</name>
+   <tag></tag>
+   <comment>Select Branch was a mandatory field</comment>
+   <testCaseGuid>60a96912-5b0e-42f9-9790-d4e5fde1116c</testCaseGuid>
+</TestCaseEntity>

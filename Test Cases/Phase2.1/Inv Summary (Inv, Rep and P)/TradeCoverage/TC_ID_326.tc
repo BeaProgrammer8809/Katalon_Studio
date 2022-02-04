@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_326 - To check once Detail IEPS option is selected(No).,While do invoice in delivery management screen IEPS tax amount is added in line item total price of the sku</description>
+   <name>TC_ID_326</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f60742ad-6ca8-4052-aa37-efae5ca0b80e</testCaseGuid>
+</TestCaseEntity>

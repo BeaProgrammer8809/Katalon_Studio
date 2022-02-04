@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_275 - To check whether Collection icon is present for Credit retailer
+
+Collection icon should not be displayed in Invoice summary screen for Credit type retailers</description>
+   <name>TC_275</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>08e21927-5f6b-46d2-b757-980a598fd135</testCaseGuid>
+</TestCaseEntity>

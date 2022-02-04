@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_502:- To verify whether able to change the given “RTGS ref no” after submitting.[Collection Before Invoice]</description>
+   <name>TC_502</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6ea98d8-ec49-4dcb-a28f-dc8b6fce5dce</testCaseGuid>
+</TestCaseEntity>

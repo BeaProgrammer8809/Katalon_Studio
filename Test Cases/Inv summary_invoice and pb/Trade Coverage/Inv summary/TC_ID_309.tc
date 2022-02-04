@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_309 - To check the default date selected in Cheque mode</description>
+   <name>TC_ID_309</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>2c37fc7e-e241-4f60-a4c3-1498dcc9677a</testCaseGuid>
+</TestCaseEntity>

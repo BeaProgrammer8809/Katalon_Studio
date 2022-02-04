@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_296:-To check whether able to enter number in Reference no field</description>
+   <name>TC_ID_296</name>
+   <tag></tag>
+   <comment>Number should be allowed to enter inside the Reference No field</comment>
+   <testCaseGuid>7be9f133-8f36-423a-9404-4545a493f15b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC595 : To verify “Pesito Commission $3 should pay in Efectivo.” Toast message is display where Route is non-mulit org and Sku have split.</description>
+   <name>TC595</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e2df84b3-3169-45ea-b994-70273292f895</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_022--> Check whether able to enter the piece qty greater than the Van SIH qty of the SKU
+
+TC_023--> Check whether able to enter the piece qty greater than the Van SIH qty of the SKU
+
+TC_024--> Check whether sum of piece and replacement qty entered against an sku can be greater than the van SIH qty</description>
+   <name>TC_022_023_024</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a874759f-966a-440a-8f3d-96faec5818de</testCaseGuid>
+</TestCaseEntity>

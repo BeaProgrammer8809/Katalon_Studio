@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_113
+To check the Lines qty displayed after entering partial stock delivered qty in Extra invoice for recolino's sku that are not in invoice split group</description>
+   <name>TC_113</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8004f525-dc53-4e79-b710-f69be9b19781</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_118 - To check Product filter is getting reset when back button is clicked from Product buying screen
+TC_119 - To check sku short description is displaying in search box when user select any sku in product buying screen</description>
+   <name>TC_118_119</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>3db774af-58d5-47af-bbd8-e7d7a399b456</testCaseGuid>
+</TestCaseEntity>

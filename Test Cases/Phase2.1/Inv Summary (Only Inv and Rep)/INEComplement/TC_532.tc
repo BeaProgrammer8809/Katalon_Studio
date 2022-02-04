@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_532: To check while doing invoice for the sku when INE complement flag is enabled for the retailer whether UUID is generated</description>
+   <name>TC_532</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8f55f995-4215-4a07-8397-6329f21e6854</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_068-->  Check whether the selected sku's brand(marca) is getting unselected by tapping on it again</description>
+   <name>TC_068</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c927a9ec-d9d8-4a8f-b104-b719517c1091</testCaseGuid>
+</TestCaseEntity>

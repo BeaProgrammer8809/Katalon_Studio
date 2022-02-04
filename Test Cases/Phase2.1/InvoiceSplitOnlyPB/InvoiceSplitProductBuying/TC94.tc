@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC94:To check  while doing product buying for same split group sku's that is having IEPS tax, category discount and detail IEPS flag is enabled ,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC94</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e00118d9-1aa8-4b5c-a6ad-8883ca7b5f94</testCaseGuid>
+</TestCaseEntity>

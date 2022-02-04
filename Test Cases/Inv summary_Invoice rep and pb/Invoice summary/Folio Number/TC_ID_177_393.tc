@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_177--> To check without entering folio number user is not able to submit invoice
+
+TC_ID_393--> To verify “Folio No” &amp; “Folio ProdBuy” can be empty.</description>
+   <name>TC_ID_177_393</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0d8ca8e-26fc-4b40-92f6-e8dd3c3094ca</testCaseGuid>
+</TestCaseEntity>

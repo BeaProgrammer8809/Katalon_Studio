@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC394 - To check while doing invoice and replacement for different sku ,whether the collection icon is displaying only for invoice</description>
+   <name>TC394</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b95c646c-d454-40ee-82f2-33be04aebf63</testCaseGuid>
+</TestCaseEntity>

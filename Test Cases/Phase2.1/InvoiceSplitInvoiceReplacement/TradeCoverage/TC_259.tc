@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_259 - To verify “Folio No” given only for Product buying split is accepting and generating the invoice</description>
+   <name>TC_259</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>28425366-23f9-4800-9d74-2e01976eef32</testCaseGuid>
+</TestCaseEntity>

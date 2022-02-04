@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_083 - To check the Total qty field calculation if piece qty is entered for an sku against Non-Salable</description>
+   <name>TC_083</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>2282339b-b840-4757-9237-f2ddd75411e8</testCaseGuid>
+</TestCaseEntity>

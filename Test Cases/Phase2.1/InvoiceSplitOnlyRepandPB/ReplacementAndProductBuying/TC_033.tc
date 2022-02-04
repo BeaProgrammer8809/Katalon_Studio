@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_033 - Check Whether without doing collection able to proceed to next screen Delivery Summary from the summary Screen-Replacement+Product Buying both have taken- Non-Group SKU</description>
+   <name>TC_033</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9f9e109e-f26b-486b-ac52-f0ea6c2206ad</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_104 : To check User is able to split the invoice qty in extra invoice based on the stock delivered qty</description>
+   <name>TC_ID_104</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>58b71517-4d48-43d0-897e-e0f3ca99e72b</testCaseGuid>
+</TestCaseEntity>

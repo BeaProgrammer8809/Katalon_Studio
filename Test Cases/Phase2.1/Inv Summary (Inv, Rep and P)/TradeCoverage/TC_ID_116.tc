@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_116 : To check the Select Cheque Type dropdown</description>
+   <name>TC_ID_116</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>965a5b2d-749e-4192-a394-fdbea51456dc</testCaseGuid>
+</TestCaseEntity>

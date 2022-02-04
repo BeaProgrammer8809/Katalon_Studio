@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_077--> To check whether after selecting any sku's Marca->Categoria then the Segmento filter menu is displaying the sku's segment that is present under the selected sku's Marca->Categoria only</description>
+   <name>TC_076</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9f18ed11-177f-42b4-932b-a215da95c3b6</testCaseGuid>
+</TestCaseEntity>

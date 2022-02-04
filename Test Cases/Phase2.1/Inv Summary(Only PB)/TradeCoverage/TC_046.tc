@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_046:- Check whether more than Total piece is allowed to enter in the POPUP</description>
+   <name>TC_046</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c95725fd-11a0-4024-8c2e-0701a21f04cb</testCaseGuid>
+</TestCaseEntity>

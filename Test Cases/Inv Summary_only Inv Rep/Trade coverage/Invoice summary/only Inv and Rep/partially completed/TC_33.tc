@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_33-->To check the total price calculation while taking replacement for the sku's that is having only tax IEPS but not having any discounts</description>
+   <name>TC_33</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abb67ad7-d2b0-4ef8-aaf3-bfadf65109aa</testCaseGuid>
+</TestCaseEntity>

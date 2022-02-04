@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_265: To check the legal entity displayed in multi org collection,while doing only invoice for Bimbo products</description>
+   <name>TC_265</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>716c6b33-8819-471c-be9c-6114bd8614ae</testCaseGuid>
+</TestCaseEntity>

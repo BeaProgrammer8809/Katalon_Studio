@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC09:Check whether for credit retailer delivery final summary screen is coming  for which different channel is mapped
+</description>
+   <name>TC09</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>532113c5-9e47-45fe-a970-24897d097069</testCaseGuid>
+</TestCaseEntity>

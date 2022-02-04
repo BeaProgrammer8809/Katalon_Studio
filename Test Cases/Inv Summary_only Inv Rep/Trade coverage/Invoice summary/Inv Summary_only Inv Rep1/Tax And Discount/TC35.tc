@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC35-->  To check the total price calculation while taking replacement for the sku's that is having IEPS tax and category discount.</description>
+   <name>TC35</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe9fa463-b692-4d1b-a0fe-ce6cfb080414</testCaseGuid>
+</TestCaseEntity>

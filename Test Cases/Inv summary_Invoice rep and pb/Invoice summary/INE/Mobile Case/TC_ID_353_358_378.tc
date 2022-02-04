@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_353-->  To check whether the &quot;Ambito&quot; field is present in &quot;Invoice summary&quot; screen for stores with &quot;INE Enabled&quot; as false
+
+TC_ID_358-->To check whether the &quot;Claveentidad&quot; field is present in the &quot;Invoice summary&quot; screen for stores with &quot;INE Enabled&quot; as false
+
+TC_ID_378-->To check whether ambito and clave entidad fields are made as mandatory or not for transaction inside the cash retailer without INE Enabled
+</description>
+   <name>TC_ID_353_358_378</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f171e96d-b646-4983-966b-1609b19f3ed7</testCaseGuid>
+</TestCaseEntity>

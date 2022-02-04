@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_008 : To Check whether Delivery Split Summary screen is loading without inputting anything in the Invoice Count field available in  Delivery Summary Screen and when tap on Create Ticket Invoice</description>
+   <name>TC_008</name>
+   <tag></tag>
+   <comment>Barcle
+###############
+Ricolino</comment>
+   <testCaseGuid>5ac71349-0042-4b05-b0df-625006ad9e9d</testCaseGuid>
+</TestCaseEntity>

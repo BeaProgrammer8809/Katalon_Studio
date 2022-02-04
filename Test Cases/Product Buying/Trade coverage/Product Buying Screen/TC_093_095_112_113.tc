@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_093 - Check the Value field calculation when Salable and Non-Salable qty is entered against an sku
+TC_095 - Check whether &quot;Lines&quot; are calculating basis on each entry against Skus in the Popup
+TC_112 - Check whether Value field in Product buying screen is Without tax
+TC_113 - Check whether Value field in Product buying screen is Without tax</description>
+   <name>TC_093_095_112_113</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>65c000ec-825d-47e5-93cf-2e4ee0bb3c73</testCaseGuid>
+</TestCaseEntity>

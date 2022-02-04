@@ -1,0 +1,32 @@
+
+
+//Getting elements from Product Buy Filter
+
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
+import io.appium.java_client.MobileDriver as MobileDriver
+import io.appium.java_client.MobileElement as MobileElement
+
+
+MobileDriver<MobileElement> driver = MobileDriverFactory.getDriver()
+
+List<MobileElement> categoryMob = new ArrayList()
+
+catagoryEle = driver.findElementsByXPath("//*[@resource-id='com.ivy.bimbomx.mexico.view:id/grid_item_text']")
+
+List<MobileElement> KpiValue = new ArrayList()
+
+for (MobileElement ele : catagoryEle) {
+	newval = ele.getText()
+
+	categoryMob.add(newval)
+}
+
+println(categoryMob)
+
+categoryMob.remove(0)
+categoryMob.remove(0)
+categoryMob.remove(0)
+categoryMob.remove(0)
+
+println(categoryMob)
+/////////////////////////////////////////////////////////////////////////

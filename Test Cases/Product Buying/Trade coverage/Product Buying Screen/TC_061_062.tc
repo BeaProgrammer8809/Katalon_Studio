@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_061 - Check whether Mobile keyboard is getting loaded when user tap into search field
+TC_062 - Check whether user is allowed to search products by inputting relevant characters of product name in the search field
+
+</description>
+   <name>TC_061_062</name>
+   <tag>UI</tag>
+   <comment></comment>
+   <testCaseGuid>2c4a6d68-72c4-452a-89d9-7897b0772263</testCaseGuid>
+</TestCaseEntity>

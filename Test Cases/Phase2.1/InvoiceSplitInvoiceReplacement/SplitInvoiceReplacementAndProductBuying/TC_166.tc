@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_166
+To check Legal entity is coming correctly &amp; based on the split entity in cash collection screen</description>
+   <name>TC_166</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5629b6ef-ac53-4ea3-a71d-a66cdbbcac72</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_425 - To verify given folio number for the Credit retailer is accepted in summary screen</description>
+   <name>TC_ID_425</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d6f4cc83-204f-4831-9339-21c1aa567523</testCaseGuid>
+</TestCaseEntity>

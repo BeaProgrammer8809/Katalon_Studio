@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_165:-To check the Comp Disc amount inside the info popup while taking invoice for the sku's that is having IEPS tax, Item discount and category discount.</description>
+   <name>TC_165</name>
+   <tag></tag>
+   <comment>verifying screen title
+verifying the Comp Disc
+verifying  (-) sign indicated before the amount
+Calculation
+verifying the Comp Disc
+Tax Calculation
+verifying  TAX </comment>
+   <testCaseGuid>f5fda402-3dae-4d6c-b6ff-5c3c585d2911</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_007 : To check the SKU name displayed in Summary screen
+
+TC_ID_008 : To check whether the Piece qty against each SKU is displaying correctly with respect to the Order and Invoice screen
+
+TC_ID_009 : To check whether the Actual return qty against each SKU is displaying correctly with respect to the Order and Invoice screen 
+
+TC_ID_010 : To check whether the U.Price against each SKU is displaying correctly with respect to the Order and Invoice screen 
+
+TC_ID_011 : Check whether Sales return qty against each sku is updating in Summary screen with respect to the Product buying screen
+
+TC_ID_012 : To check the total price calculation, while taking invoice, replacement and Product buying for the sku's that is not having any discounts and taxes</description>
+   <name>TC_ID_007,TC_ID_008,TC_ID_009,TC_ID_010,TC_ID_011,TC_ID_012</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2c1685e-65cf-4459-8f19-1f330a77d202</testCaseGuid>
+</TestCaseEntity>

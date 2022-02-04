@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_009 : To check delivery final summary screen is coming when invoice has taken for baecel company sku</description>
+   <name>TC_ID_009</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb0f1341-85d5-48c2-83eb-a444012580a0</testCaseGuid>
+</TestCaseEntity>

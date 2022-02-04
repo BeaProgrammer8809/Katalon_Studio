@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_481:- To check whether able to collect the invoice amount in pesito and cash mode</description>
+   <name>TC_481</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>127944bc-26b2-46bb-bd8f-d5357adf3ff2</testCaseGuid>
+</TestCaseEntity>

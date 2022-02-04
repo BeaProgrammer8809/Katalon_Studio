@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_169 : Collection details should get reset and summary screen should be displayed when user click on &quot;yes&quot; button in alert pop up</description>
+   <name>TC_ID_169</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c423c5de-17bb-48a6-bcd8-80f04b0e0ce7</testCaseGuid>
+</TestCaseEntity>

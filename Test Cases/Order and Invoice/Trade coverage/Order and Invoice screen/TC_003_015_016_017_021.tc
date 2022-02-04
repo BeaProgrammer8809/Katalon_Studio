@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_003--> Check the default display of the Order and Invoice screen
+
+1. Screen title should be Order and Invoice 
+2. Grid with following columns SIH(name), SIH(qty), SO, Pieces, Returns, SRP, Total should be displayed 
+3. Value, Total Qty and Next button should be present at the bottom
+4. Special filter, Normal filter and search icon should be displayed at the top of the screen with back button.
+
+TC_015--> Check whether keypad is displaying while tapping on piece field
+
+TC_016--> Check whether able to enter only piece qty for an sku
+
+TC_017--> Check whether piece field is updated with entered qty while clicking cancel in keypad
+
+TC_021--> Check whether able to enter both piece and replacement (returns) qty for an sku(Enter some qty in Piece and Returns (say: 10, 5) and verify it is entered)</description>
+   <name>TC_003_015_016_017_021</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5d5575a1-9ee5-4183-92a2-a10f599aa4ee</testCaseGuid>
+</TestCaseEntity>

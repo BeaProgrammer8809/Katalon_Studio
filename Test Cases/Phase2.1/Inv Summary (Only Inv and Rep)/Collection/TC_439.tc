@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_439:- To check the display of Transferencias Electronicas mode in Collections popup</description>
+   <name>TC_439</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e107bbf1-a895-4dc4-84bf-cc4af2eff2ae</testCaseGuid>
+</TestCaseEntity>

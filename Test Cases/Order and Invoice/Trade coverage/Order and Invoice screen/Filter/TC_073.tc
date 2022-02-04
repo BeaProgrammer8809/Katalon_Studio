@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_073-->  Check whether the SKU's under the corresponding Categoria only displayed on applying the filter by sku's category(Categoria) level</description>
+   <name>TC_073</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e242ad22-e9b6-4e8c-beec-0d4878e29d2e</testCaseGuid>
+</TestCaseEntity>

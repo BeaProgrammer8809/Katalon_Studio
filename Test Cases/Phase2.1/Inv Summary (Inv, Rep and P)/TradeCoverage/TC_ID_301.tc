@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_301 : To check once Detail IEPS option is selected (Yes) and IEPS 8% tax is mapped ,if do replacement and product buying whether tax amount is aplplied correctly in invoice and Tax amount is displayed in IEPS tax section
+
+</description>
+   <name>TC_ID_301</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7f250c11-e8db-434f-90f7-69dbd0b318f8</testCaseGuid>
+</TestCaseEntity>

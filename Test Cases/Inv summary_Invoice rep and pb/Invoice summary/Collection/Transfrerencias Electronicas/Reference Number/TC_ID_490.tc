@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_490-->  To verify “Reference number” field is accepting only alphabetic characters[Collection Before Invoice]
+</description>
+   <name>TC_ID_490</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>09bd83b9-b577-45af-98ed-3b621bf3be61</testCaseGuid>
+   <variable>
+      <defaultValue>'Reference Number'</defaultValue>
+      <description></description>
+      <id>70536147-4fea-471f-9ae9-3c12545a2f34</id>
+      <masked>false</masked>
+      <name>RefNo</name>
+   </variable>
+</TestCaseEntity>

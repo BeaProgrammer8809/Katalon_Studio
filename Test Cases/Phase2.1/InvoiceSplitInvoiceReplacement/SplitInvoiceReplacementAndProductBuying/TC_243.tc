@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_243 - To check whether able to collect the invoice amount in RTGS for non-multi org route when invoice,replacement and product buying for bimbo,barcel or ricolino sku that are not in nvoice spit group</description>
+   <name>TC_243</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cf77d699-3fe6-494c-801c-6e250e1903e8</testCaseGuid>
+</TestCaseEntity>

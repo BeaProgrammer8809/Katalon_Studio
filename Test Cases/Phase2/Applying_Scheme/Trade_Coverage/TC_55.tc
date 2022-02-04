@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check when seller backward from applying scheme screen to product buying screen,again if navigate to applying scheme screen, whether scheme is applying</description>
+   <name>TC_55</name>
+   <tag></tag>
+   <comment>Screen title verified
+scheme name verified</comment>
+   <testCaseGuid>79b34e76-cac1-469e-b310-c692dc33ff23</testCaseGuid>
+</TestCaseEntity>

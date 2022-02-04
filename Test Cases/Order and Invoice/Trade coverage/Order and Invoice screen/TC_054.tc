@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_054--> To check special filters is getting reset in order and invoice screen when user click on back button in product buying screen</description>
+   <name>TC_054</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bfd75511-0cd0-4606-b06c-2f5493d35cf6</testCaseGuid>
+</TestCaseEntity>

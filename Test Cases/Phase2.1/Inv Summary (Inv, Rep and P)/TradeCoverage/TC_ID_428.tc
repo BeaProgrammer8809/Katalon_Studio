@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_428 - To verify when given folio number for the Ekomercio retailer is accepts when there is no internet connection</description>
+   <name>TC_ID_428</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c10658b5-df09-43da-85f3-5579b661399e</testCaseGuid>
+</TestCaseEntity>

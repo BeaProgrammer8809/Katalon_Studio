@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_430 - To verify given folio number for the Interfractura retailer is accepted and invoice is generated</description>
+   <name>TC_ID_430</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2e18b94a-ecdb-486e-8e1b-ff8c58d746be</testCaseGuid>
+</TestCaseEntity>

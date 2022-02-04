@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_494--> To verify “Reference number” can be empty[Collection Before Invoice]
+
+TC_ID_501--> To verify whether able to upload RTGS image.[Collection Before Invoice]</description>
+   <name>TC_ID_494_501</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>07dd8879-45db-43d0-9184-2ef44f7749f8</testCaseGuid>
+</TestCaseEntity>

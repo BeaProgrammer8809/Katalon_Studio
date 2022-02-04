@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_228 - To check the Select Branch field</description>
+   <name>TC_228</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>76a5634a-b544-4977-9e98-82dfeae69406</testCaseGuid>
+</TestCaseEntity>

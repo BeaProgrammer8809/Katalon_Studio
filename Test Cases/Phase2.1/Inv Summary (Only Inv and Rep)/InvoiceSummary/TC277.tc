@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_277:
+
+To check the legal entity for multi org,while doing invoice and replacement for Bimbo produtcts</description>
+   <name>TC277</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af03d5f5-d63d-43b5-b030-a666c57e5eff</testCaseGuid>
+</TestCaseEntity>

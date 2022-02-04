@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_029--> To check the Value field calculation if invoice is done for multiple sku( If in this list screen SKU1 and SKU2 are there the total value for
+SKU1=200,
+SKU2=100 then Value should be (200 + 100) = 300)</description>
+   <name>TC_029</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>63fb5665-aad9-410d-ac16-2f3101ba2d56</testCaseGuid>
+</TestCaseEntity>

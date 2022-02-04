@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_033 - Check whether SIH against SKUs are displaying correctly</description>
+   <name>TC_033</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3bbfa24-debb-4ce2-ae16-f04c81fedf0a</testCaseGuid>
+</TestCaseEntity>

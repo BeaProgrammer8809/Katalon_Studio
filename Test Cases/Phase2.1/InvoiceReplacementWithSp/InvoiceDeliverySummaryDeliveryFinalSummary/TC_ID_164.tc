@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_164 - To check the count of SKUs against which qty is entered in ExtraInv-6 field are showing in Delivery Final Summary screen under Lines column against ExtraInvoice-6</description>
+   <name>TC_ID_164</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c178b005-8f72-4b6e-901a-0e2ab60ab1b3</testCaseGuid>
+</TestCaseEntity>

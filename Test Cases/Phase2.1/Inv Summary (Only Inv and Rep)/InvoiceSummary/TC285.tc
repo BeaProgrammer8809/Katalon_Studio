@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_285:
+
+To check when folio number flag is not enabled for the store if doing replacement for bimbo/barcel/ricolino products ,whether folio number text filed is not displayed for multi org route</description>
+   <name>TC285</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0d189e51-1875-4219-ba79-a2749dd663c1</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_280:-To check whether able to Submit the invoice amount without entering Cheque no</description>
+   <name>TC_ID_280</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6a6e0002-d684-48ac-beb9-11912639e38b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_420:- To check the Inv Amt displayed in the Transferencias Electronicas mode</description>
+   <name>TC_420</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b5fd7b55-385b-47c6-a59c-e17801eafe78</testCaseGuid>
+</TestCaseEntity>

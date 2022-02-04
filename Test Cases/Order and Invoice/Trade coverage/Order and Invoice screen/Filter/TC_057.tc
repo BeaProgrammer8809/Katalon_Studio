@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_057--> Check whether only the category of the seller sku's are displayed on tapping at Category level in normal filter</description>
+   <name>TC_057</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9c2072d8-34f2-4d73-bc43-caa0d1272c73</testCaseGuid>
+</TestCaseEntity>

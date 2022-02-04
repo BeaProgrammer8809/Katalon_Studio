@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_183 : To check the generated Invoice name when Entity of Invoice Split is Bimbo and Invoice &amp; Replacement are taken for Group SKU belongs to Bimbo</description>
+   <name>TC_ID_183</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c65a8e23-6f32-4f37-bad6-3e8d8764f9f3</testCaseGuid>
+</TestCaseEntity>

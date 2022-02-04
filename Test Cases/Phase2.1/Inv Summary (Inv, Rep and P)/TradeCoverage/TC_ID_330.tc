@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_330 - To check once Detail IEPS option is selected (Yes),while enter product buying qty in product buying screen,whether IEPS tax amount is not added in line item total price of the sku</description>
+   <name>TC_ID_330</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f3a02b81-c4fa-4914-9c55-3ad1180ea284</testCaseGuid>
+</TestCaseEntity>

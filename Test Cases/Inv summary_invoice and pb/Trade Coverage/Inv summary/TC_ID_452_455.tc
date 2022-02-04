@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_452 - To check user is not able to submit the collection without collecting Commission amount
+TC_ID_455 - To check Validation message is coming like please enter pesito commission when commission amount has not collected</description>
+   <name>TC_ID_452_455</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>e8192f0e-3c24-41eb-9d38-1e9bb8865046</testCaseGuid>
+</TestCaseEntity>

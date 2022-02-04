@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_384--> To verify “Folio No” field present in the Enter the Folio number pop-up.
+
+TC_ID_385-->To verify “Folio ProdBuy” field present in the Enter the Folio number pop-up.</description>
+   <name>TC_ID_384_385</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>79b71de0-4480-45dc-8fcf-66b4aa0fdc49</testCaseGuid>
+</TestCaseEntity>

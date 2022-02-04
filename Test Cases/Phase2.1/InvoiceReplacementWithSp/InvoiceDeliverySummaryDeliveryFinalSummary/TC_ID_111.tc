@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_111 - To check whether screen is going back to Delivery Summary screen when tap on back Icon- only Invoice has taken</description>
+   <name>TC_ID_111</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>95c9c3e3-ed56-4f2c-84bf-fa5f1d8e1fb7</testCaseGuid>
+</TestCaseEntity>

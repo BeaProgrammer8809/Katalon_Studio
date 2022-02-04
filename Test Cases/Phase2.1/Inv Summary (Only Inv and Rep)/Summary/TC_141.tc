@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_141:To check the Order Value amount inside the info popup while taking replacement for the sku's that is having IVA, IEPS taxes and Item, category discount.</description>
+   <name>TC_141</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>39f81c5f-ca14-4829-a873-d600d28951d9</testCaseGuid>
+</TestCaseEntity>

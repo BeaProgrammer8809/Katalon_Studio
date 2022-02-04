@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_038 - Check whether Extra Invoice can be generated when Replacement+Product Buying both have taken- NonGroup SKU</description>
+   <name>TC_038</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba0e83ba-4250-4194-ad66-19cd758b0f1d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_280 - To check whether able to edit the &quot;Credit note&quot; mode amount 
+
+1. By Default whole amount of PB should be displayed in credit note collection mode
+2. Credit note collection amount should not be edited as it is given from the seller to the retailer.</description>
+   <name>TC_280</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e084adec-df66-4dcf-99a6-66fd421682ed</testCaseGuid>
+</TestCaseEntity>

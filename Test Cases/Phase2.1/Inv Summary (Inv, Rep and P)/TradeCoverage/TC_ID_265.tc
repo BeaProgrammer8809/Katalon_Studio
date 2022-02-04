@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_265:-To check when invoice ,replacement and PB has done for  barcel sku then invoice amount is coming under bimbo legal entity</description>
+   <name>TC_ID_265</name>
+   <tag></tag>
+   <comment> invoice amount should come  under bimbo legal entity</comment>
+   <testCaseGuid>f52d4b9c-96bb-4ccd-bcb2-fcee43780736</testCaseGuid>
+</TestCaseEntity>

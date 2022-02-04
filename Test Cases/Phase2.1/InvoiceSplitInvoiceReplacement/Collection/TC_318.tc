@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_318:-To verify “Reference number” field is accepting only alphabetic characters[Collection Before Invoice]</description>
+   <name>TC_318</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ebf7255a-8877-484a-9bfb-5e8e7b7e78d8</testCaseGuid>
+</TestCaseEntity>

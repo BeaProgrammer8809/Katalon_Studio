@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_070 - Check whether user is allowed to see drop down values in the Select reason drop down
+TC_071 - Verify drop down values- 1. Non- Salable 2. Salable
+TC_072 - Check whether the values are allowed to select in drop down when user tap on 'Non-Salable
+TC_073 - Check whether the values are allowed to select in drop down when user tap on 'Salable</description>
+   <name>TC_070_71_072_073</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>fc5d7fe0-0fe7-4d58-8547-2c4f4af44f3f</testCaseGuid>
+</TestCaseEntity>

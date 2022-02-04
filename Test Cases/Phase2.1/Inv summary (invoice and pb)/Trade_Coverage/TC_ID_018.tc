@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_018 : Check whether Actual return qty against each sku is updating in Summary screen while taking Invoice &amp; PB as Both salable &amp; non-Salable</description>
+   <name>TC_ID_018</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b5e9915-95f9-4e51-874b-f68de824b182</testCaseGuid>
+</TestCaseEntity>

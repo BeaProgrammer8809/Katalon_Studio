@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_137 : To check whether able to enter Total paid amount in only Transferencias Electronicas mode
+
+TC_ID_138 : Select Bank should be dropdown and It should be mandatory field
+
+TC_ID_139 : To check whether able to select Bank from dropdown</description>
+   <name>TC_ID_137,TC_ID_138,TC_ID_139,TC_ID_140</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6c8618d5-2d71-4b28-947f-1a2723eb8d74</testCaseGuid>
+</TestCaseEntity>

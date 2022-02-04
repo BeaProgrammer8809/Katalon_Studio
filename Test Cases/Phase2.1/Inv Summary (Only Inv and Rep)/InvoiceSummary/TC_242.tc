@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_242 - To check the Total amount inside the info popup while taking invoice and replacement for the sku's that is having only tax  IEPS but not having any discounts</description>
+   <name>TC_242</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fa5e55c8-f3c1-495a-b4e7-fe32fb9d10f3</testCaseGuid>
+</TestCaseEntity>

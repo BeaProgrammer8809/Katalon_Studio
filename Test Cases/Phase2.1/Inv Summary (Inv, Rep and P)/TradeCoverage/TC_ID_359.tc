@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_359
+To check the &quot;Claveentidad&quot; field</description>
+   <name>TC_ID_359</name>
+   <tag></tag>
+   <comment>&quot;Claveentidad&quot; field should be a dropdown field</comment>
+   <testCaseGuid>0a0438fd-1c2c-4e2f-81db-8993bf7faac1</testCaseGuid>
+</TestCaseEntity>

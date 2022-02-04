@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_035: Verify the Element present under Delivery  Summary Screen
+1. A Grid Having 4 fields- i. Product Name ii. Stock Delivered iii. SRP and iv. Total
+2. Edit Icon on the top right corner
+3. Back button Arrow -> on the top Left corner
+4. Total Qty
+5. Invoice Count
+5. Create Ticket Invoice Button Delivery Summary->Delivery final summary screen Should come for particular SKU which is belongs to Ricolino Company</description>
+   <name>TC_ID_035</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9b6e1f6c-608f-42cb-8176-c9739f4de9f3</testCaseGuid>
+</TestCaseEntity>

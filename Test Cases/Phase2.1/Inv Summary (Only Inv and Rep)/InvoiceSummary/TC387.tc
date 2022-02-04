@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC387 - To check whether onsite invoice is getting failure for Interfactura/Ekomercio customer if sku HSN code is invalid while doing invoice and replacement for different sku</description>
+   <name>TC387</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>062aeb2f-7899-471a-a3ce-371b5345a3c1</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_271:-To check Pesito credit amount in payment method if invoice and replacement and PB has taken for bimbo barcel and reclino company</description>
+   <name>TC_ID_271</name>
+   <tag></tag>
+   <comment>Check for Bimbo product
+Check for Barcel product
+Check for Recolino product</comment>
+   <testCaseGuid>764db45b-3dc5-469b-af21-426371c3322d</testCaseGuid>
+</TestCaseEntity>

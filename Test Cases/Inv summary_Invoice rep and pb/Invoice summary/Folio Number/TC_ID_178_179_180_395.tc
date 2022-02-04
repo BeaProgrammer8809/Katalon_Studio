@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_178--> To check folio number length is up to 15 digits.
+
+TC_ID_179--> To check folio number text field is not accepting the less than 6 digits.
+
+TC_ID_180--> To check Validation msg is coming like 'Folio number should be at least 6 characters.
+
+TC_ID_395--> To verify “Folio No” &amp; “Folio ProdBuy” field is accepting less than 6 characters.</description>
+   <name>TC_ID_178_179_180_395</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2eed1581-043a-49fa-8866-c8dcf02b55db</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_063 - To check IF product buying has done for reclino sku then header is coming as Producto Riclino sa PI de c.v above folio text field
+TC_063 - To check IF product buying has done for reclino sku then header is coming as bimbo sa de c.v above folio text field</description>
+   <name>TC_063_071</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>de5dc260-088a-4af7-8482-d343a405c5a4</testCaseGuid>
+</TestCaseEntity>

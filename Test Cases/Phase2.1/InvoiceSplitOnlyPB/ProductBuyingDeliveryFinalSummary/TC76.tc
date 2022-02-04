@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC76:-Check while click edit butotn in delivery final summary ,whether screen is navigating to product buying screen</description>
+   <name>TC76</name>
+   <tag></tag>
+   <comment>1.Screen should be navigated to product buying screen
+2.Product buying qty should be updated</comment>
+   <testCaseGuid>b174d3ee-46a6-414d-99d9-719143c8cae5</testCaseGuid>
+</TestCaseEntity>

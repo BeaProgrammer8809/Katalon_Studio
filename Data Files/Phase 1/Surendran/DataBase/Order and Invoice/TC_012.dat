@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>Check whether the SIH quantity is displaying correctly for an sku in Order and invoice screen</description>
+   <name>TC_012</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>f0ba89c3-c98c-4f75-b93a-4a1a1ed8489c</dataFileGUID>
+   <dataSourceUrl>DDF/Phase 1/Surendran/DB/Order &amp; Invoice/Order &amp; Invoice.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>true</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>TC_012</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

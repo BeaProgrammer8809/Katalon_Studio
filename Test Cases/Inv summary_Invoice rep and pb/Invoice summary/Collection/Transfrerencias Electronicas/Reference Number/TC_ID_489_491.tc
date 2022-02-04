@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_489--> To verify &quot;Reference Number&quot; field is present under the &quot;Transfrerencias Electronicas&quot; option.[Collection Before Invoice]
+
+TC_ID_491--> To verify “Reference number” field is accepting only numeric characters[Collection Before Invoice]
+</description>
+   <name>TC_ID_489_491</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>3310bd2e-96ef-4a1e-9453-1b813d3968c5</testCaseGuid>
+   <variable>
+      <defaultValue>'1234578'</defaultValue>
+      <description></description>
+      <id>11808764-f927-432c-a699-f477dda68c4b</id>
+      <masked>false</masked>
+      <name>RefNo</name>
+   </variable>
+   <variable>
+      <defaultValue>'1234567890123456789012345678901'</defaultValue>
+      <description></description>
+      <id>6fa44d36-396f-4fb7-bec9-f40a57f152db</id>
+      <masked>false</masked>
+      <name>refNumber1</name>
+   </variable>
+</TestCaseEntity>

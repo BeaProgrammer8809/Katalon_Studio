@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC399 - To check user is able to collect full invoice amount in cash mode using payment option</description>
+   <name>TC399</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f22ca17d-46e4-4292-a5f3-16e035b62935</testCaseGuid>
+</TestCaseEntity>

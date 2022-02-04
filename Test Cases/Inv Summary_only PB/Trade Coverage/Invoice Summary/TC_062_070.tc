@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_062 - To check IF product buying has done for barcel sku then header is coming as barcel sa de c.v above folio text field
+TC_070 - To check IF product buying has done for barcel sku then header is coming as bimbo sa de c.v above folio text field</description>
+   <name>TC_062_070</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>5d115424-69d0-47a3-b412-a1f7761bd977</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_459 - To check collection popup details do not get reset and remain on same collection pop up when user click on cancel button in alert pop up</description>
+   <name>TC_ID_459</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>e44a087b-e3e3-4001-9023-0df1f3dea90b</testCaseGuid>
+</TestCaseEntity>

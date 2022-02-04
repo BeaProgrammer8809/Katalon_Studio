@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_023 : To check the total price calculation while taking invoice, replacement and Product buying for the sku's that is having IVA, IEPS taxes and  Category discount.</description>
+   <name>TC_ID_023</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cf96dd71-50d3-4c3e-92d6-2f744a6d2f4a</testCaseGuid>
+</TestCaseEntity>

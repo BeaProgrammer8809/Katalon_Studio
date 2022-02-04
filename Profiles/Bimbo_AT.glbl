@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>Bimbo_AT</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestData('Login Credentials/Mobile/Login Info').getValue(4, 3)</initValue>
+      <name>apk_File</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Don't Pass the Value</description>
+      <initValue>''</initValue>
+      <name>userName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Don't Pass the Value</description>
+      <initValue>''</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>IvyNavigation</description>
+      <initValue>''</initValue>
+      <name>SAttributetext</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>IvyNavigation</description>
+      <initValue>''</initValue>
+      <name>SAttributetitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>mAttributetext</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>mAttributetitle</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Order and Invoice Normal Filter Screen</description>
+      <initValue>''</initValue>
+      <name>filterDataName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Web Price Group-->SKU Price List(Company,Category,brand,Segment,Line)</description>
+      <initValue>''</initValue>
+      <name>selectData</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Order And Invoice</description>
+      <initValue>''</initValue>
+      <name>KeyValue</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>bankInfo</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'.\\Drivers\\chromedriver_win32\\chromedriver.exe'</initValue>
+      <name>chromedriverpath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Trade Coverage</description>
+      <initValue>''</initValue>
+      <name>RetailerName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Delivery Final Summary-> INE Complement</description>
+      <initValue>''</initValue>
+      <name>inecomplement</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Summary Screen</description>
+      <initValue>''</initValue>
+      <name>totalPrice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>&quot;Don't pass the value&quot;</description>
+      <initValue>''</initValue>
+      <name>Buysku</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>&quot;Don't pass the value&quot;</description>
+      <initValue>''</initValue>
+      <name>Getsku</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>&quot;Don't pass any value&quot;</description>
+      <initValue>''</initValue>
+      <name>BankName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>&quot;Don't pass any value&quot;</description>
+      <initValue>''</initValue>
+      <name>BranchName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Don't pass any value</description>
+      <initValue>''</initValue>
+      <name>Getsku1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>Number</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Don't pass any value</description>
+      <initValue>''</initValue>
+      <name>Date</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Don't pass any value</description>
+      <initValue>''</initValue>
+      <name>SchemeName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Don't pass any value</description>
+      <initValue>''</initValue>
+      <name>SchemeBuySkuName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Don't pass any value</description>
+      <initValue>''</initValue>
+      <name>SchemeGetSkuName1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Don't pass any value</description>
+      <initValue>''</initValue>
+      <name>ProductName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Dont pass any value</description>
+      <initValue>''</initValue>
+      <name>index</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'com.ivy.bimbomx.mexico.view.uat'</initValue>
+      <name>Package</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>DropdownName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>DropdownOption</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>index2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>Folio</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

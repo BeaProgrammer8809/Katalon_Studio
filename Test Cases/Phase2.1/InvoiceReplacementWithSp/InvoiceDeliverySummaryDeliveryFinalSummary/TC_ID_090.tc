@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_090 : &quot;To verify invoice split number generation when data created as
+SplitA – SKU1
+SplitB– SKU2 
+SplitC– SKU3 
+
+Invoice taken for SKU1 and SKU2&quot;</description>
+   <name>TC_ID_090</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0c790634-1324-4fb0-ac9a-52da6373f283</testCaseGuid>
+</TestCaseEntity>

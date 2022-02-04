@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether Collection icon is displayed after submitting the Invoice amount in Transferencia electronicas mode when scheme is applied</description>
+   <name>TC_269</name>
+   <tag></tag>
+   <comment>Scheme get sku should be free , so it should not considered in inoivce amount
+Collection icon should be hidden after submitting the invoice amount in any collection modes</comment>
+   <testCaseGuid>27412e43-4357-4aa5-8138-ce9d846f2a31</testCaseGuid>
+</TestCaseEntity>

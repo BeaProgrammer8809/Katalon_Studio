@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_070--> Check whether the selected sku's segment(segmento) is getting unselected by tapping on it again</description>
+   <name>TC_070</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>43046559-c25e-41be-8c26-20fe1cc39afc</testCaseGuid>
+</TestCaseEntity>

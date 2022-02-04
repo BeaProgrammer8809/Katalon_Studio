@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_72:-To check the generated Sku's Qty value  Value when Entity of Invoice Split is Bimbo and Replacement &amp; Product Buying- Saleable/ Non-saleable Both Type is taken for Group SKU belongs to Barcel company-</description>
+   <name>TC_72</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2d95b9d-e875-4aa3-870c-371233a9ef5e</testCaseGuid>
+</TestCaseEntity>

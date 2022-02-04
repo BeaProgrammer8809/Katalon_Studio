@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enter the Invoice,Replacement,Product buying quantity</description>
+   <name>Invoice_Replacement_Productbuying_Qty</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>65e9de3b-1388-448a-b0ff-8e5166cd93f5</testCaseGuid>
+</TestCaseEntity>

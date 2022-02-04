@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC382 : To check whether Collection icon is displaying for Cash retailer while doing only replacment for ricolino sku</description>
+   <name>TC382</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>74c90c8c-6a01-4216-8269-516fbcc4b477</testCaseGuid>
+</TestCaseEntity>

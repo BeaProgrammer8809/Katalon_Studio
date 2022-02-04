@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_363
+To check whether alert message is displayed while trying to proceed the invoice transaction without selecting the &quot;Claveentidad&quot; field for &quot;INE Enabled&quot; store</description>
+   <name>TC_ID_363</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>819721d8-8d76-406f-933d-a2f99839feb7</testCaseGuid>
+</TestCaseEntity>

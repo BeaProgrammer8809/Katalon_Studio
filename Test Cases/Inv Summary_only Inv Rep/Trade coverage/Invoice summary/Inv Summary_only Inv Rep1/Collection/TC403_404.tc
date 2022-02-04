@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC403--> To check the Total paid displayed in Efectivo mode without changing the defaultly filled paid amount
+
+TC404-->  To check the Total paid field in Efectivo mode without changing the defaultly filled paid amount</description>
+   <name>TC403_404</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>030c2ee5-0dcc-4bd1-a70a-da3f52d1fbe1</testCaseGuid>
+</TestCaseEntity>

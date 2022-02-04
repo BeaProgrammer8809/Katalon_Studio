@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_019: Check whether the value against Inv amt, Min Amt, Balance, Total Paid is 0(Zero) in collection popup</description>
+   <name>TC_019</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c0415215-56e0-4c62-821b-527283ec107c</testCaseGuid>
+</TestCaseEntity>

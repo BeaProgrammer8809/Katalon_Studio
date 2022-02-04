@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_131 - To Check when invoice is taken for Bimbo, barcel and Ricolino company's SKU but invoice count is entered as 1. in this case whether for other company's SKU are allowed to enter against Extrainv1</description>
+   <name>TC_ID_131</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ea998228-7dee-429e-b966-56e8f281dd7d</testCaseGuid>
+</TestCaseEntity>

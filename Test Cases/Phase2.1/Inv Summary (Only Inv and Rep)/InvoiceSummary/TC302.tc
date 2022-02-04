@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC302:To check while doing invoice for the sku's that is having only tax IVA but not having any discounts and detail IEPS flag is enabled,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC302</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7949508-7617-4cee-a5c1-c545ed71e735</testCaseGuid>
+</TestCaseEntity>

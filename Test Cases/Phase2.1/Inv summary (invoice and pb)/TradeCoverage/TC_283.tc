@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_283: To check the Balance amount displayed in the Efectivo mode without changing the defaultly filled paid amount</description>
+   <name>TC_283</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0458df0c-de25-476c-a942-03eff1c3cd39</testCaseGuid>
+</TestCaseEntity>

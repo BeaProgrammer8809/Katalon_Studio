@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_084 : To check the total Value calculation while taking replacement for the sku's that is having IVA, IEPS taxes and  Category discount.</description>
+   <name>TC_ID_084</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f94a552b-da63-4562-af65-ff18f1317949</testCaseGuid>
+</TestCaseEntity>

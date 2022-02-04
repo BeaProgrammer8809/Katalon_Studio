@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_292:
+
+To check when folio number flag is not enabled for the store if doing replacement,whether invoice is generated for non-multi org route</description>
+   <name>TC292</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>40b3f2e1-dcc1-43a4-b53e-e29e0b0f6305</testCaseGuid>
+</TestCaseEntity>

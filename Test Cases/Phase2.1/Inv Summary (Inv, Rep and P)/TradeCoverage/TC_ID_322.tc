@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_322 - To check once Detail IEPS option is selected (No) and IEPS 8% tax, item level and confidential discount is mapped ,While do invoice/product buying whether tax and discount is applied correctly</description>
+   <name>TC_ID_322</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>66a66587-0cad-4dfd-9c6b-a87c6b6b6a9b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_03--> Check whether able to navigate to Invoice summary screen after doing Invoice or replacement only</description>
+   <name>TC_03</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a70f6318-d319-4d8a-bf55-a8548b383206</testCaseGuid>
+</TestCaseEntity>

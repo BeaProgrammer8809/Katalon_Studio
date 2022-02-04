@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_226:To check the Balance displayed in the Transferencias Electronicas mode after switching from Efectivo mode</description>
+   <name>TC_226</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f22a0028-2a9f-4fc0-b64d-de5f455b6d2e</testCaseGuid>
+</TestCaseEntity>

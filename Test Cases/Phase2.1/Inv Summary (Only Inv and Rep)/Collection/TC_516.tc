@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_516:-To check whether collection icon is not displaying while doing replacement for non-multi org</description>
+   <name>TC_516</name>
+   <tag></tag>
+   <comment>Verifying the title of the screen
+Verifying the Colelction icon should not be displayed</comment>
+   <testCaseGuid>fb3742b0-5fcb-4be4-8ffb-1140a48c664b</testCaseGuid>
+</TestCaseEntity>

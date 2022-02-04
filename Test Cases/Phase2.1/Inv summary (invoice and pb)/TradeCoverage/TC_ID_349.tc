@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_349:-To check Folio text field is not coming store is not having folio enbaled</description>
+   <name>TC_ID_349</name>
+   <tag></tag>
+   <comment>Verifying the Pop up should not come with folio no</comment>
+   <testCaseGuid>c088fc72-3536-44bc-9db9-5069e10335e4</testCaseGuid>
+</TestCaseEntity>

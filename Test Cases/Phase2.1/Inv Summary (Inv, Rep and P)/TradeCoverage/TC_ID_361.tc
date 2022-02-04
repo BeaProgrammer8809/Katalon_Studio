@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_361
+To check whether able to select the desired options from the &quot;Claveentidad&quot; dropdown</description>
+   <name>TC_ID_361</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b5393c19-fbbc-4379-9c00-7a14eb5cf2a1</testCaseGuid>
+</TestCaseEntity>

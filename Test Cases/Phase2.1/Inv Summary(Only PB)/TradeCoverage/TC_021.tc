@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_021: Check whether invoice is not generated when tap on Cancel Button</description>
+   <name>TC_021</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d941879d-6059-47f6-8e92-81e493dd395c</testCaseGuid>
+</TestCaseEntity>

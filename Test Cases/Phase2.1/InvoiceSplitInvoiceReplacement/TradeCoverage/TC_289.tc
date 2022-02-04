@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_289:To verify given folio number for the Credit retailer is accepted and generated the invoice</description>
+   <name>TC_289</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b51f348f-3601-4948-a8f3-425305f78e9f</testCaseGuid>
+</TestCaseEntity>

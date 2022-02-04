@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_411--> To verify should “Folio No” &amp; “Folio ProdBuy” field is accepting more than 15 characters.</description>
+   <name>TC_ID_411</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e98878c2-c88b-4a5b-bf2f-f0440d25e6ab</testCaseGuid>
+   <variable>
+      <defaultValue>'1234567890123456'</defaultValue>
+      <description></description>
+      <id>892a394d-278f-4516-beae-f96d7d05bc82</id>
+      <masked>false</masked>
+      <name>folioNo</name>
+   </variable>
+</TestCaseEntity>

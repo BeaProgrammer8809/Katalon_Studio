@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC96: To check the Value field calculation while taking invoice and replacement against each sku's that is having only tax IEPS but not having any discounts</description>
+   <name>TC105</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6b1cdfae-a689-437c-8636-f41e188cce7e</testCaseGuid>
+</TestCaseEntity>

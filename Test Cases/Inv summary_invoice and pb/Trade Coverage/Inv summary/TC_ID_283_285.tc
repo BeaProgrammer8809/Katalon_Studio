@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_283 - To check the Balance amount displayed in the Efectivo mode without changing the defaultly filled paid amount
+TC_ID_285 - To check the Total paid field in Efectivo mode without changing the defaultly filled paid amount
+</description>
+   <name>TC_ID_283_285</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>00141f33-ee55-43c7-b501-47da2ed78441</testCaseGuid>
+</TestCaseEntity>

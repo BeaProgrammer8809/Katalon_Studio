@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_093 :  	To check the invoice name generation when Entity of Invoice Split is Bimbo and Invoice is taken for Ungrouped SKU belongs to Bimbo, Barcel and Ricolino</description>
+   <name>TC_ID_093</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7a8d6043-9ca3-48eb-9129-fca79ea6de2a</testCaseGuid>
+</TestCaseEntity>

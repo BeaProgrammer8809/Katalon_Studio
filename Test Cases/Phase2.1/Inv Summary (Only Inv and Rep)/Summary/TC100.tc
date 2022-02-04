@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC100: To check the Value field calculation while taking invoice and replacement against each sku's that is having only tax IVA but not having any discounts</description>
+   <name>TC100</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>481ea6c4-223c-4858-8092-5999904f25be</testCaseGuid>
+</TestCaseEntity>

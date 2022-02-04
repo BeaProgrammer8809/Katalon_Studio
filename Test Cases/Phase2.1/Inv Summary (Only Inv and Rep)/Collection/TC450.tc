@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC450 - To check whether able to enter number in Reference no field</description>
+   <name>TC450</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>29ca96f3-2f03-4dfe-a888-c5baa4f271ce</testCaseGuid>
+</TestCaseEntity>

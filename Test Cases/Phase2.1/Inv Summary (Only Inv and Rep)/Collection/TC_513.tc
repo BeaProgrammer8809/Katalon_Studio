@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_513:-To check the entity name and folio type displayed inside folio no pop up if invoice and replacement is taken for barcel sku</description>
+   <name>TC_513</name>
+   <tag></tag>
+   <comment>Verifying the Legal Entity name
+ Folio no field should be displayed</comment>
+   <testCaseGuid>29a98ff7-c254-470f-883b-567ef41bbf02</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_405-->To verify “Folio No” &amp; “Folio ProdBuy” field is accepting the Alphanumeric characters.
+
+TC_ID_406-->To verify “Folio No” &amp; “Folio ProdBuy” field is accepting the “-” Special Characters.
+
+TC_ID_407-->To verify “Folio No” &amp; “Folio ProdBuy” field is accepting the “_” Special Characters.
+
+TC_ID_408-->To verify “Folio No” &amp; “Folio ProdBuy” field is accepting the “_” and “-” Special Characters.</description>
+   <name>TC_ID_405_406_407_408</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe27fe2f-7d53-440e-b117-7e2adc281739</testCaseGuid>
+</TestCaseEntity>

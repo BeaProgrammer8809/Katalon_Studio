@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC397 - To check if user is able to pay full amount in cash mode by selecting Effective option</description>
+   <name>TC397</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>777501e8-9f9d-43b5-8b70-fe013bb94cdd</testCaseGuid>
+</TestCaseEntity>

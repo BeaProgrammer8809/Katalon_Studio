@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enter the odometer reading and start the journey</description>
+   <name>OdometerReading</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f551ec57-ad2d-441c-b99a-0e32b369bd75</testCaseGuid>
+</TestCaseEntity>

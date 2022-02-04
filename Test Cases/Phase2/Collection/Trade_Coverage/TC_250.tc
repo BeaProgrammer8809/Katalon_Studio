@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Min. Amt displayed in the Transferencias Electronicas mode when scheme is applied</description>
+   <name>TC_250</name>
+   <tag></tag>
+   <comment>Only Scheme buy sku should be consider in invoice amount ,scheme get sku should not consider</comment>
+   <testCaseGuid>82b35161-41d3-49db-b472-81db05d89f88</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_287 - To check whether able to Submit with Total paid amount greater than invoice amount
+TC_ID_290 - To check whether able to clear the entered amount using &lt; backspace key in keypad
+TC_ID_291 - To check whether able to submit Collection with Total paid field as empty</description>
+   <name>TC_ID_287_290_291</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>07cd820f-778d-4a19-a879-b5dfb409beda</testCaseGuid>
+</TestCaseEntity>

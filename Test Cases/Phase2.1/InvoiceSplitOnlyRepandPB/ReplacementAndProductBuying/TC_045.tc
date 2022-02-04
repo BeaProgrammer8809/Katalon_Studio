@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_045
+To check the invoice name generation when Entity of Invoice Split is Bimbo and Replacement &amp; Product Buying has taken as  saleable &amp;  Non-saleable Both Type  for Non-Group SKU belongs to Bimbo, Barcel and Ricolino company-</description>
+   <name>TC_045</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>776d7732-209e-4f0f-8dca-3623d9696d26</testCaseGuid>
+</TestCaseEntity>

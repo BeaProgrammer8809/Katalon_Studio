@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC03:To check wheher product buying is not applicable for Wild card retailer</description>
+   <name>TC03</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>744c8d1c-579d-4168-81a8-91c312710423</testCaseGuid>
+</TestCaseEntity>

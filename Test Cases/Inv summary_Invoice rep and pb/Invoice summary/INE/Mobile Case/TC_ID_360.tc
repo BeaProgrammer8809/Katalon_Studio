@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_360-->  To check the options available in the &quot;Claveentidad&quot; dropdown list</description>
+   <name>TC_ID_360</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>27266a87-2ad0-4915-acd9-0d0b2d51531c</testCaseGuid>
+</TestCaseEntity>

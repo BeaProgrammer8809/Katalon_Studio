@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_387 - To check whether able to Submit with Total paid amount greater than invoice amount
+TC_ID_390 - To check whether able to submit Collection with Total paid field as empty
+TC_ID_391 - To check whether able to submit full invoice amount in only Efectivo mode
+TC_ID_392 - To check whether Collection icon is displayed after submitting the Invoice amount in Efectivo mode</description>
+   <name>TC_ID_387_390_391_392</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>8c0106d3-cedb-4bd4-bc72-5d16cbee5062</testCaseGuid>
+</TestCaseEntity>

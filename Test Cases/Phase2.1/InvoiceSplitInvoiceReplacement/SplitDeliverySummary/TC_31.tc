@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_31 : To check the Amount displayed for each sku's after taking invoice, replacement and pb for group sku's</description>
+   <name>TC_31</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a76a0353-f043-440e-9588-0960fd20618e</testCaseGuid>
+</TestCaseEntity>

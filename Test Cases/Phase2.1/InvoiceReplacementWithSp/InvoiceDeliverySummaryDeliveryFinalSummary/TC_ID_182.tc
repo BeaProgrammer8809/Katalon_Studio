@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_182 : To check the generated Invoice name when Entity of Invoice Split is Bimbo and Invoice &amp; Replacement are taken for Both Group &amp; Ungrouped SKU belongs to Bimbo, Barcel and Ricolino company- Cash Retailer</description>
+   <name>TC_ID_182</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>018a3182-8848-4779-978b-7ebbbd9973f1</testCaseGuid>
+</TestCaseEntity>

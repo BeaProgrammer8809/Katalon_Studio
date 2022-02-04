@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_306 : To check whether Collection icon is getting hide after submitting the Invoice amount in Transferencia electronicas mode</description>
+   <name>TC_ID_306</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da8ba29e-5509-4612-bb76-09f604630767</testCaseGuid>
+</TestCaseEntity>

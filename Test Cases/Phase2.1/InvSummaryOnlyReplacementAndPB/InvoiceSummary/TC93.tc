@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC93 : To check the Value and total qty field calculation while taking replacement against each sku's that is having IVA, IEPS taxes and Item, category discount.</description>
+   <name>TC93</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04d92329-b028-46f3-8500-8bb23050002a</testCaseGuid>
+</TestCaseEntity>

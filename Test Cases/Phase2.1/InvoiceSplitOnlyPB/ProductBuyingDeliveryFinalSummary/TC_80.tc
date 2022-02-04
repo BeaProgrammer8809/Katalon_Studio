@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_80:- Check whether Folio No. field accepting user inputs</description>
+   <name>TC_80</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9605fde-844e-4fe0-8a73-59b3d817af00</testCaseGuid>
+</TestCaseEntity>

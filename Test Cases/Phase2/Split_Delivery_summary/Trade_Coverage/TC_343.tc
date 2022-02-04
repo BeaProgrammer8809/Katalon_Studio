@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Stock delivered displayed when scheme is applied and scheme buy and get sku is not in split group(Considering : only one invoice split group is available)</description>
+   <name>TC_343</name>
+   <tag></tag>
+   <comment>Scheme get qty should not consider in stock delivered qty
+Stock delivered qty should display only the invoice qty taken against each sku's in order and invoice screen</comment>
+   <testCaseGuid>a1098cda-c590-4047-adb7-d1386d4d2d2e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Total amount inside the info popup while taking product buying for the sku's that is having only IEPS tax and Item discount.</description>
+   <name>TC234</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>70d6cd37-4354-4a2c-bc8b-e7b76200fea5</testCaseGuid>
+</TestCaseEntity>

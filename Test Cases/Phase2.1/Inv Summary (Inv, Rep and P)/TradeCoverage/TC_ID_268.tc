@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_268:-To check when invoice ,replacement and PB has done for  bimbo sku then invoice amount is coming under Bimbo legal entity</description>
+   <name>TC_ID_268</name>
+   <tag></tag>
+   <comment> invoice amount should Visible</comment>
+   <testCaseGuid>fc47b7f4-9949-4425-9c78-e81aa3fc1423</testCaseGuid>
+</TestCaseEntity>

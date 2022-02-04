@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_188
+
+To check the Comp Disc amount inside the info popup while taking invoice &amp; Product Buying (Non-Salable)) for the sku's that is having IEPS tax, Item discount and category discount.</description>
+   <name>TC_ID_188</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>905fac7b-9ff7-488a-a1ae-de5b46fd02e4</testCaseGuid>
+</TestCaseEntity>

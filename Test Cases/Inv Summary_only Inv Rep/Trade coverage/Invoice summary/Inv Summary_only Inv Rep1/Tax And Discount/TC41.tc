@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the total price calculation while taking replacement for the sku's that is having both IVA and IEPS taxes but not having any discounts</description>
+   <name>TC41</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3679c441-6f9d-45b1-9b63-8e02dca7dc27</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_058:To check the total Value calculation while taking invoice for the sku's that is having only tax  IEPS but not having any discounts.</description>
+   <name>TC_058</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9a6936a-cbcb-4089-a80a-3564f1e80e60</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_086 : To check the generated Amount value Value when Entity of Invoice Split is Bimbo and Replacement &amp; Product Buying- saleable &amp;  Non-saleable Both Type is taken for Group SKU belongs to Ricolino company-</description>
+   <name>TC_086</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb2519e3-67d2-443c-bd7b-9bf32595ac92</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_020 - Check whether a popup Do you want to save with OK &amp; Cancel is displaying when tap on Invoice Button
+TC_021 - Check whether invoice is not generated when tap on Cancel Button
+TC_022 - Check whether invoice is generated when user tap on Ok Button</description>
+   <name>TC_020_021_022</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>e6992df4-3132-4a1f-9824-75c607319bac</testCaseGuid>
+</TestCaseEntity>

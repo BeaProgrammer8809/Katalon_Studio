@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC99 :To check the Value  and total qty field calculation while taking product buying against each sku's that is having only IEPS tax and Item discount.</description>
+   <name>TC99</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f167dc18-966b-4cf9-a1f2-e70d55b3af15</testCaseGuid>
+</TestCaseEntity>

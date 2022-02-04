@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_024 - To check the total price calculation while taking product buying for the sku's that is having IEPS tax and category discount.
+
+TC_ID_100 - To check the Value field and total qtycalculation while taking product buying against each sku's that is having only IEPS tax and category discount.
+
+TC_ID_151 - To check the Order Value amount inside the info popup while taking product buying for the sku's that is having only IEPS tax and category discount.
+
+TC_ID_183-To check the deductions (Comp Disc and Dist disc) amount inside the info popup while taking product buying for the sku's that is having only IEPS tax and category discount.
+
+TC_ID_235 - To check the Total amount inside the info popup while taking product buying for the sku's that is having only IEPS tax and category discount.</description>
+   <name>TC24_100_151_183_235</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>b7cda29a-e7a3-4ca9-94d3-a08023fc6311</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC89:To check while doing product buying for different split group sku's that is having only IPES tax but not having disocunt and Detail IEPS flag is enabled for the store,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC89</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>709a7cae-8aa8-4aac-9306-cd5e0dd15bdd</testCaseGuid>
+</TestCaseEntity>

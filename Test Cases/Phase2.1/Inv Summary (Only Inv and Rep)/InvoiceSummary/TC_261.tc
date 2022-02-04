@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_261 - To check the behaviour of Edit icon
+
+Application should display the Ordered screen and list the sku's for which invoice or replacement is taken previously should display</description>
+   <name>TC_261</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ee023d22-3305-4db6-a338-2a1dd1c0e912</testCaseGuid>
+</TestCaseEntity>

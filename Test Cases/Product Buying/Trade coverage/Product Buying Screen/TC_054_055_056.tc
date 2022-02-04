@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_054 - Check whether the search field is getting enabled to search when user tap on search icon
+TC_055 - Check whether the search field is getting Disabled when user tap on 'X' icon
+TC_056 - Check whether Hamburger menu is getting enabled when user tap on Search Icon</description>
+   <name>TC_054_055_056</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>9fe0f616-60a9-431a-aa81-ec8fc521c48d</testCaseGuid>
+</TestCaseEntity>

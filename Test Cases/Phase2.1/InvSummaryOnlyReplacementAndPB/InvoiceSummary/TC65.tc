@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC65 :To check the total price calculation while taking product buying and replacement for the sku's that is having IEPS tax, Item discount and category discount.</description>
+   <name>TC65</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3fecaa6f-e265-4b64-8cfa-36d47ee686c9</testCaseGuid>
+</TestCaseEntity>

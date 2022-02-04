@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_342 - To check once Detail IEPS option is selected (No)) and IEPS 8% tax is mapped ,While do invoice ,replacement and product buying whether tax amount is not displayed in IEPS tax section and tax amount is added in Retailer price(E-commercio)</description>
+   <name>TC_ID_342</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9e60bda7-75e9-4cab-9845-50d4427f5528</testCaseGuid>
+</TestCaseEntity>

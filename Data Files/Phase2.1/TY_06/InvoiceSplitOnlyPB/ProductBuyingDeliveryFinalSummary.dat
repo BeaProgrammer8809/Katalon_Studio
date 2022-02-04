@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description></description>
+   <name>ProductBuyingDeliveryFinalSummary</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>53f79fa4-ff3d-488e-ac7c-b137038f6bda</dataFileGUID>
+   <dataSourceUrl>C:\Users\User\Pictures\Bimbo\Bimbo Mobile\DDF\Phase2.1\TY_06\InvoiceSplitOnlyPB\ProductBuyingDeliveryFinalSummary.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>false</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Sheet1</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

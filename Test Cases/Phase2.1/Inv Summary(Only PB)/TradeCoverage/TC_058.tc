@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_058:-Check whether Total Pieces of an SKU can be divided and taken as both Damaged and  Cold Stock</description>
+   <name>TC_058</name>
+   <tag></tag>
+   <comment>Screen should redirect to Unload screen means it was accepted 
+Verifying the Option as Damaged
+Verifying the Option as Damaged</comment>
+   <testCaseGuid>df447702-1f07-490b-a197-5fa0987272a0</testCaseGuid>
+</TestCaseEntity>

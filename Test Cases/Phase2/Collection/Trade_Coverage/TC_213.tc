@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Min. Amt displayed in the Efectivo mode when scheme is applied</description>
+   <name>TC_213</name>
+   <tag></tag>
+   <comment>verifying the net amount value and Min amount value
+Scheme get sku should be free , so it should not considered in inoivce amount</comment>
+   <testCaseGuid>fe6e5193-2023-4892-a30c-53db83887802</testCaseGuid>
+</TestCaseEntity>

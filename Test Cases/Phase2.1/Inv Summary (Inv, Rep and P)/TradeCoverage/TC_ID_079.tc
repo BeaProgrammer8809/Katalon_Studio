@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_079 :To check the Total amount inside the info popup while taking invoice for the sku's that is having only IEPS tax and category discount.</description>
+   <name>TC_ID_079</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fcd93dd6-c54d-4db8-aeea-e0f03ed8089e</testCaseGuid>
+</TestCaseEntity>

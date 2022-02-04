@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_100:-To check the Value field calculation while taking invoice &amp; PB (Non-salable) against each sku's that is having only discount (Category discount) but not having any taxes</description>
+   <name>TC_ID_100</name>
+   <tag></tag>
+   <comment>Verifying the total price
+Product Buying should not be considered for the Gross/Total calculation.
+Verifying the Value amount</comment>
+   <testCaseGuid>3d497560-4c14-44a0-9fa0-93ff2e1fcf6f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_375 - To check whether ambito and clave entidad fields are made as mandatory or not for transaction inside the cash retailer with INE Enabled</description>
+   <name>TC_ID_375</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>078d0694-e5ca-480d-be79-87385abf940d</testCaseGuid>
+</TestCaseEntity>

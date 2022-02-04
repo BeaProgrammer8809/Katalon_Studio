@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_011:Check whether after taking only invoice and replacement against each sku then it is displaying in Summary screen</description>
+   <name>TC_011</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e52af0c3-4093-473f-8adc-8eca77c58795</testCaseGuid>
+</TestCaseEntity>

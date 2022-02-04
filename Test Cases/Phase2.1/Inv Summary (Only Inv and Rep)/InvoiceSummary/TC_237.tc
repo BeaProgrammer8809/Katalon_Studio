@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_237 - To check the Total amount inside the info popup while taking replacement for the sku's that is having IVA, IEPS taxes and Item, category discount.
+As only replacement is taken against each sku's so the Total price, Value and Total amount should be displayed as 0</description>
+   <name>TC_237</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cbe42cfb-7aaa-48bb-9b24-d4d2e8582eb1</testCaseGuid>
+</TestCaseEntity>

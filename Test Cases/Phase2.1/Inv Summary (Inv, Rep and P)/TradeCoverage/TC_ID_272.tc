@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_272:-To check User is able to collected the invoice amount buy using pesito and Cheque</description>
+   <name>TC_ID_272</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f280a9b0-a62f-4fa2-8e51-6c523ebdeb72</testCaseGuid>
+</TestCaseEntity>

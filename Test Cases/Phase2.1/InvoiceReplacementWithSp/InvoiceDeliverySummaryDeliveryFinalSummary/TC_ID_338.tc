@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_338
+To check user is allowed to put folio number in decimal and in alphanumeric and space for credit store</description>
+   <name>TC_ID_338</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dffc7e20-1f3c-4c5f-bd24-2569d45ccd6a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_284:-To check whether Collection icon is displayed after submitting the Invoice amount in Cheque mode</description>
+   <name>TC_ID_284</name>
+   <tag></tag>
+   <comment>Collection Popup should be hidden</comment>
+   <testCaseGuid>39d81afd-8b2e-4195-8fb7-62597e4fbd70</testCaseGuid>
+</TestCaseEntity>

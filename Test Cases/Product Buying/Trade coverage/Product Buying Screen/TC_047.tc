@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_047 - Check whether selected MARCA, CATEGORIA and SEGMENTO value is getting deselected when user taps on clear Button</description>
+   <name>TC_047</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>62616c93-da7a-4e1a-bd39-98c779d5b957</testCaseGuid>
+</TestCaseEntity>

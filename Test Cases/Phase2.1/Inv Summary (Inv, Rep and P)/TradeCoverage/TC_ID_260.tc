@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_260:-To check alert pop is coming like &quot; Do you want to delete payment transaction ?&quot; with ok and cancel button when back button is click on collection screen</description>
+   <name>TC_ID_260</name>
+   <tag></tag>
+   <comment>Alert pop should come like &quot; Do you want to delete payment transaction ?&quot;
+Verification of Cancel Button
+Verification of Yes button</comment>
+   <testCaseGuid>dc936f98-61e9-4bbc-b6ba-6963aa458740</testCaseGuid>
+</TestCaseEntity>

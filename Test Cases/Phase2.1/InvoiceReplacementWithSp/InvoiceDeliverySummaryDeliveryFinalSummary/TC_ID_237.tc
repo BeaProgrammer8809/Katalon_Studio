@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_237 - To check For every split or default invoice Amount which needs to pay is displaying in delivery Final summary screen</description>
+   <name>TC_ID_237</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a3473b6f-d8ed-43ee-a4e9-65fce7a476f7</testCaseGuid>
+</TestCaseEntity>

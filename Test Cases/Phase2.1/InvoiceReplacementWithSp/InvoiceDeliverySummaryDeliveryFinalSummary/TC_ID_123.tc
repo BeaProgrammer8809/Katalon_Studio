@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_123 - Check whether More than Stock Delivered Qty is allowed to be splitted and distributed among Extra Invoices</description>
+   <name>TC_ID_123</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>20d162c4-395d-4a1c-a265-53d5c4128920</testCaseGuid>
+</TestCaseEntity>

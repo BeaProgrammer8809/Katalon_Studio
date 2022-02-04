@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>INE Config Enable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba925620-14a2-4667-b1cc-9159b704fee5</testCaseGuid>
+   <variable>
+      <defaultValue>'G02'</defaultValue>
+      <description></description>
+      <id>815a1285-80a7-4c04-976a-6e78420a2080</id>
+      <masked>false</masked>
+      <name>CFDI</name>
+   </variable>
+</TestCaseEntity>

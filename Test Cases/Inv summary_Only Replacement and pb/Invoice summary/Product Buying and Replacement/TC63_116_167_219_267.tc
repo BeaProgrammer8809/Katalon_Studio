@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC63 - To check the total price calculation while taking product buying and replacement for the sku's that is having IEPS tax and category discount.
+
+TC116 - To check the Value field and total qtycalculation while taking replacement and product buying against each sku's that is having only IEPS tax and category discount.
+
+TC167 - To check the Order Value amount inside the info popup while taking replacement and product buying for the sku's that is having only IEPS tax and category discount.
+
+TC219 -To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement and product buying for the sku's that is having only IEPS tax and category discount.
+
+TC267 - To check the Total amount inside the info popup while taking replacement and product buying for the sku's that is having only IEPS tax and category discount.</description>
+   <name>TC63_116_167_219_267</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>d615425e-b43c-4e62-809a-42387dce2771</testCaseGuid>
+</TestCaseEntity>

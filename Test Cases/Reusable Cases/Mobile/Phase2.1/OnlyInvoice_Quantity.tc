@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enter the invoice quantity and return quantity in order and invoice screen</description>
+   <name>OnlyInvoice_Quantity</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0cdbed0-264c-4871-94f2-6a8868004f0b</testCaseGuid>
+</TestCaseEntity>

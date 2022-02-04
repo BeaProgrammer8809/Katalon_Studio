@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_058--> Check whether only the Segmento of the seller sku's are displayed on tapping at Segmento level in normal filter</description>
+   <name>TC_058</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e202f2f7-713d-4abe-9ceb-fb2f658af7cf</testCaseGuid>
+</TestCaseEntity>

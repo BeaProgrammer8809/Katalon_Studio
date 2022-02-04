@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_290 - To check whether able to clear the entered amount using &lt; backspace key in keypad
+
+User should be able to delete the entered amount in Total paid field using backspace in keypad</description>
+   <name>TC_290</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cc957b56-3cdd-4b75-b991-9b4dde1b8cd7</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_443 - To verify user can able to do other type of collections without granting pesito.</description>
+   <name>TC_ID_443</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ed2075b5-50c8-4309-8089-29aa16a40b6e</testCaseGuid>
+</TestCaseEntity>

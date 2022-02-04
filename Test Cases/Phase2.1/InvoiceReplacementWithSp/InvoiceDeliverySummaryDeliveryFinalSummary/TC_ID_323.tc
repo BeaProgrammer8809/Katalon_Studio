@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_323 : To check transaction details get reset and navigate to summary screen when user click on ok button in alert pop up</description>
+   <name>TC_ID_323</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e5624b97-4d9d-4c4d-9dee-319d49a9ac72</testCaseGuid>
+</TestCaseEntity>

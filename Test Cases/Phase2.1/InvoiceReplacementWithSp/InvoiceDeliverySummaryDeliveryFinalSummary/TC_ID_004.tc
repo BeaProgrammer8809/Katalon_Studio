@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_004 : Check whether for particular retailer delivery final summary screen is coming for which different channel is mapped- Only Invoice is taken</description>
+   <name>TC_ID_004</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e88d2134-963a-424a-8343-0be8dae7fa33</testCaseGuid>
+</TestCaseEntity>

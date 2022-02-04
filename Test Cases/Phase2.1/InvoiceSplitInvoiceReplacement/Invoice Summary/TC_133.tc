@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_133 - To check while doing invoice for split group sku's and replacement , product buying for no group sku's that is having IVA tax, Item discount and category discount,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC_133</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1b3983f9-416b-42d2-a4e0-71f2b4fe5cd0</testCaseGuid>
+</TestCaseEntity>

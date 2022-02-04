@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_030 : To check the Value field calculation while taking invoice, replacement and product buying  against each sku's that is having only IEPS tax and Item discount.</description>
+   <name>TC_ID_030</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab4d0959-b79e-4d3d-9023-537acf1d8b73</testCaseGuid>
+</TestCaseEntity>

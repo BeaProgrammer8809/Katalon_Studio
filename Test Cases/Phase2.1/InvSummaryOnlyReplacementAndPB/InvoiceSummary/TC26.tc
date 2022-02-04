@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_26 - To check the total price calculation while taking product buying qty for the sku's that is having IEPS tax, Item discount and category discount.</description>
+   <name>TC26</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d0d61b9c-18ba-4a8d-b9aa-01b948a4b96a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_446 - To verify Pesito commission ‘3’ is showing in Cheque mode while user is granting Pesito</description>
+   <name>TC_ID_446</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ac0b4363-694d-48b2-a848-2dd12b0758fd</testCaseGuid>
+</TestCaseEntity>

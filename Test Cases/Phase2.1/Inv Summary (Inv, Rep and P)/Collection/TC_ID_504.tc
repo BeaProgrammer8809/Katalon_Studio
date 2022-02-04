@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_504:-To verify all the fields under “RTGS” should be mandatory.[Collection Before Invoice]</description>
+   <name>TC_ID_504</name>
+   <tag></tag>
+   <comment>Verifying the Alert Msg</comment>
+   <testCaseGuid>7715a7a8-a95c-4e5a-a0ec-b114480c99a3</testCaseGuid>
+</TestCaseEntity>

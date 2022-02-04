@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Order Value amount inside the info popup while taking replacement for the sku's that is not having any discounts and taxes</description>
+   <name>TC132</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6b804d85-28ba-4865-9a91-300a938ad1f6</testCaseGuid>
+</TestCaseEntity>

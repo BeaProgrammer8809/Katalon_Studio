@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_331 - To check whether able to enter number in Reference no field
+TC_ID_332 - To check whether able to enter decimals in Reference no field
+</description>
+   <name>TC_ID_331_332</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>ca56a6c2-4324-432d-a1ab-6d514a344afc</testCaseGuid>
+</TestCaseEntity>

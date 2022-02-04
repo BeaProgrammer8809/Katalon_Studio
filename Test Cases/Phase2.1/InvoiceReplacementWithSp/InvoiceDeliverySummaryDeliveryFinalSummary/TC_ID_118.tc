@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_118 - Check whether based upon input value 1-6 in the invoice count field, same number of field/columns are getting created in the grid available in the Delivery Split Summary- Input Value 5</description>
+   <name>TC_ID_118</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c8255da4-11e9-4e7b-8c6e-a5682a51398d</testCaseGuid>
+</TestCaseEntity>

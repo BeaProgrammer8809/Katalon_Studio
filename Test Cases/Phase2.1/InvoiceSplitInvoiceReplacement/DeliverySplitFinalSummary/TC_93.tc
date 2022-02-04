@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_93 - To check the split name after entering partial stock delivered qty in extra invoice for bimbo sku's that are in invoice split group</description>
+   <name>TC_93</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>477c98b4-83e1-4bc6-ae20-2b96febc7cdf</testCaseGuid>
+</TestCaseEntity>

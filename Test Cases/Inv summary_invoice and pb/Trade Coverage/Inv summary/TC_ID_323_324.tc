@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_323 - To check the Balance displayed in the Transferencias Electronicas mode after switching from Efectivo mode
+TC_ID_324 - To check the Total paid displayed in the Transferencias Electronicas mode after switching from Efectivo mode</description>
+   <name>TC_ID_323_324</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>167bc900-f511-4d22-86d2-e8c061156b6a</testCaseGuid>
+</TestCaseEntity>

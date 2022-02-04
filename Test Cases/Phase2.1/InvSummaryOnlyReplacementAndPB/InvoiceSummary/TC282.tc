@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_282 : - To check the total qty count while taking replacement for one sku and product buying for another sku
+
+</description>
+   <name>TC282</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>756d31b7-8309-4326-b104-f94945e304cf</testCaseGuid>
+</TestCaseEntity>

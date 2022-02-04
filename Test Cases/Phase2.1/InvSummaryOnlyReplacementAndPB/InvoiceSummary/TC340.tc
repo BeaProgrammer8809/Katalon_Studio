@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC340 - To check while doing product buying and replacement for different sku's that is having IEPS tax with category discount and Detail IEPS flag is enabled for the store,whether the oniste invoice is getting success and UUID is generated</description>
+   <name>TC340</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e2d6ae74-0a4e-42a0-b90c-89927963f519</testCaseGuid>
+</TestCaseEntity>

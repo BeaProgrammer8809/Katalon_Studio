@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_350:- To verify Pesito commission ‘3’ is automatically showing in RTGS collection type while user select Pesito mode and granting pesito.</description>
+   <name>TC_350</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d15a3ce2-69bd-4038-bc26-906da3fe641a</testCaseGuid>
+</TestCaseEntity>

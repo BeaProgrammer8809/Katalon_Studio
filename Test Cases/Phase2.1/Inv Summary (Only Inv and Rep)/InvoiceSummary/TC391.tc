@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC391 - To check while doing invoice for bimbo/barcel/ricolino sku,whether collection icon is displaying as legal entity wise</description>
+   <name>TC391</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0d5da261-55ee-4fa6-bd5b-b85981c9295c</testCaseGuid>
+</TestCaseEntity>

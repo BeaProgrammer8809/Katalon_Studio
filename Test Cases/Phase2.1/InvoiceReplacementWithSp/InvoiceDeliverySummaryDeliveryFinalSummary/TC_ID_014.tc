@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_014 - Check whether for particular retailer delivery final summary screen is coming for which different channel is mapped- Only Replacement is taken</description>
+   <name>TC_ID_014</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b10cd3c9-7ea1-4999-856c-a6327d07f779</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_041: To check whether screen is going back to Order and Invoice screen when tap on Edit Icon- Invoice and Replacement both has taken</description>
+   <name>TC_ID_041</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90e7cc25-fbbf-4892-86ef-a9fb89575cd6</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC529-->  To check while enable INE complement flag for the retailer,whether INE_ClaveEntidad and INE_Ambito field is enabled in invoice summary screen
+
+To check whether below items are displaying in INE_Ambito field
+1.Local
+2.Federal</description>
+   <name>TC529_531</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1d283ff-6b85-4f54-919e-b235cc9b20af</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_081 : To check the generated Amount value when Entity of Invoice Split is Bimbo and Replacement &amp; Product Buying- saleable Type is taken for Non-Group SKU belongs to Bimbo, Barcel and Ricolino company-</description>
+   <name>TC_078</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>038e3fc5-47e7-444d-b8f9-c493aa032d6f</testCaseGuid>
+</TestCaseEntity>

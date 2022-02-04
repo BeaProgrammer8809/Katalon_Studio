@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC10 - Check whether after taking only replacement against each sku then it is displaying in Summary screen</description>
+   <name>TC10</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>07cdc7cb-ac18-4ff2-aab2-f0f371242fa8</testCaseGuid>
+</TestCaseEntity>

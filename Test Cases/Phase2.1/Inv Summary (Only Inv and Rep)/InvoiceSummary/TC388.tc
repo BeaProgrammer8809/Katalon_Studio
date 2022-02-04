@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC388 - To check whether Collection icon is displaying for Cash retailer while doing only replacement for barcel sku</description>
+   <name>TC388</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d636b44d-d85f-4902-b9ac-b7503e8c5c35</testCaseGuid>
+</TestCaseEntity>

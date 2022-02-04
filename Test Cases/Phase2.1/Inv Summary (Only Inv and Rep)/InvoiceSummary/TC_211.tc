@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_211: To check the Total amount inside the info popup while taking invoice for the sku's that is having only IEPS tax and Item discount.</description>
+   <name>TC_211</name>
+   <tag></tag>
+   <comment>verifying CompDisc_Value
+verifying OrderValue_Value</comment>
+   <testCaseGuid>a8620449-4c4e-4f45-a17d-f4ad9b2a7097</testCaseGuid>
+</TestCaseEntity>

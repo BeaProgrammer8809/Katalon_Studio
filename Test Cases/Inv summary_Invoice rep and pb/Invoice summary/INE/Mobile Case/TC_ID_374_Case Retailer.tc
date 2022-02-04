@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_374--> To check whether ambito and claveentidad field is displayed for &quot;cash retailer&quot; with &quot;INE Enabled&quot; as false</description>
+   <name>TC_ID_374_Case Retailer</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b6eacdb6-6c9f-43ab-942f-42b2978f69c9</testCaseGuid>
+</TestCaseEntity>

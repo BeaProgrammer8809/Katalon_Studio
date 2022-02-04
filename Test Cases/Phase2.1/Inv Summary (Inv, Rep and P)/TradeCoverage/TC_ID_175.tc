@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_175 : To check Payment checkbox and Efectivo checkbox against each legal entity invoice after clicking the invoice button</description>
+   <name>TC_ID_175</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2ed409f8-52cb-4abc-a028-f81923d9b5b7</testCaseGuid>
+</TestCaseEntity>

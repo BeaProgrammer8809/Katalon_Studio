@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_042:- Check whether product names are displaying correctly</description>
+   <name>TC_042</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>02d9144e-d8ad-4ba2-b960-22c45226a015</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_160
+To check whether onsite invoice is getting failure for Interfactura/Ecommercio customer when sku HSN code is invalid if doing invoice and replacement for same split group sku and product buying for different split group sku</description>
+   <name>TC_160</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a10ca139-9b21-43b4-8058-e510f2e904d0</testCaseGuid>
+</TestCaseEntity>

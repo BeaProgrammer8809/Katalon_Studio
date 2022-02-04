@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_273:
+
+To check the legal entity for multi org,while doing only replacement for Barcel products</description>
+   <name>TC273</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2b165049-d15b-44ca-8e28-977080d37cba</testCaseGuid>
+</TestCaseEntity>

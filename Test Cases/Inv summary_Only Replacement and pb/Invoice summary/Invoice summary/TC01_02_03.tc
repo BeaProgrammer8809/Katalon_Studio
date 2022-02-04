@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC01 - To check whether able to navigate to order and invoice screen
+TC02 - To check whether able to navigate to product buying screen without doing replacement in order and invoice screen
+TC03 - To check whether able to navigate to Invoice summary screen without doing invoice, Replacement and product buying for any sku</description>
+   <name>TC01_02_03</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>15338f29-7660-4f81-a877-cc2b97a5b2d4</testCaseGuid>
+</TestCaseEntity>

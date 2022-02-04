@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_229:To check whether able to enter Total paid amount in only Transferencias Electronicas mode</description>
+   <name>TC_229</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>297b46e3-8c88-4af1-b54e-efdb00826692</testCaseGuid>
+</TestCaseEntity>

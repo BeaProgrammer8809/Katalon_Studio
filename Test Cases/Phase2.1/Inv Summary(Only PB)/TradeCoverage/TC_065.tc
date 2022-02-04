@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_065:To check folio number length is up to 15 digits</description>
+   <name>TC_065</name>
+   <tag></tag>
+   <comment>Verifying the Popup</comment>
+   <testCaseGuid>c1582c6e-62c2-43ff-b7d6-5269075da69b</testCaseGuid>
+</TestCaseEntity>

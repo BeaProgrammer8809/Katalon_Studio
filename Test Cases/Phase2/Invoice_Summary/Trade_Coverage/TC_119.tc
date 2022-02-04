@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether scheme get displaying with scheme get qty(pieces) on invoice summary screen</description>
+   <name>TC_119</name>
+   <tag></tag>
+   <comment>verifying scheme get quantity
+verifying the scheme getsku</comment>
+   <testCaseGuid>260d3fae-f908-4f76-bdae-e4b8e202b293</testCaseGuid>
+</TestCaseEntity>

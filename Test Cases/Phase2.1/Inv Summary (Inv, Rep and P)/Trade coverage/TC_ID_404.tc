@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_404 - To verify “Folio No” &amp; “Folio ProdBuy” field is accepting only numeric characters.</description>
+   <name>TC_ID_404</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06c42beb-eac6-4e8d-b655-4e6f985fd60f</testCaseGuid>
+</TestCaseEntity>

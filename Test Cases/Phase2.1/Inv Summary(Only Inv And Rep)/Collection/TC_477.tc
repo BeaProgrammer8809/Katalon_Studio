@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_477:- To check user is able to use full invoice amount in pesito credit against an invoice</description>
+   <name>TC_477</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3a71104-b47c-47b5-a6ab-8d10caf7dfff</testCaseGuid>
+</TestCaseEntity>

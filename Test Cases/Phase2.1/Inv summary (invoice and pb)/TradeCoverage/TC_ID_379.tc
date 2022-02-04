@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_379 - To check user can not  able to pay invoice amount partial in through quick cash collection (effectivo checkbox)</description>
+   <name>TC_ID_379</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>183b9dd7-e23f-41d2-a0e7-eaa5dfc35419</testCaseGuid>
+</TestCaseEntity>

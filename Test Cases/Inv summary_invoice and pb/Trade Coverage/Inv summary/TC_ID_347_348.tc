@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_347 - To check whether able to generate invoice after collecting the cash for cash retailer
+TC_ID_348 - To check whether pre-ticket icon is present for Cash retailer</description>
+   <name>TC_ID_347_348</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>6d62ed25-f887-4ad7-9600-0969312659c5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_432 - To verify given folio number in the &quot;Enter the Folio number pop-up&quot;  is accepted and generated the invoice</description>
+   <name>TC_ID_432</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3ea71eed-fc7b-4ba5-96b6-050e9326be11</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_027:Check whether for WildCard type retailer, delivery final summary screen is coming-  Replacement has  taken</description>
+   <name>TC_ID_027</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ebd9fe5-d1f2-483a-9a18-ac7864bbe01e</testCaseGuid>
+</TestCaseEntity>

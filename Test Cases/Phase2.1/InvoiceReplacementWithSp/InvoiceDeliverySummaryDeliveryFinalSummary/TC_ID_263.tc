@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_263:-To check the Total paid displayed in the Cheque mode after switching from Efectivo mode</description>
+   <name>TC_ID_263</name>
+   <tag></tag>
+   <comment>Total paid as Inv amount
+Total paid should display the aggregated amount that is going to pay across all modes
+inv amount is prefilled in Efectivo mode</comment>
+   <testCaseGuid>75735079-c1de-4509-ab36-b4bdb43334fc</testCaseGuid>
+</TestCaseEntity>

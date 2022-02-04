@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_063 - Check whether user is allowed to search products by inputting relevant Characters of Barcode in the search field</description>
+   <name>TC_063</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>e398ffd2-85ba-4a25-a776-1f5a21874f76</testCaseGuid>
+</TestCaseEntity>

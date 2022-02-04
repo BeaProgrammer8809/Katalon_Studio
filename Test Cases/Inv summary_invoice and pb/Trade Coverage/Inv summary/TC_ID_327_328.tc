@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_327 - Select Bank should be dropdown and It should be mandatory field
+TC_ID_328 - To check whether able to select Bank from dropdown</description>
+   <name>TC_ID_327_328</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>e9dcaf48-d9ca-4e36-a923-2d190fbf372c</testCaseGuid>
+</TestCaseEntity>

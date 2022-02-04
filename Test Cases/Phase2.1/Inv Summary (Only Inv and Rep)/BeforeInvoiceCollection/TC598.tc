@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC598 :To verify by default total Invoice amount is showing in effectivo mode in collection pop-up</description>
+   <name>TC598</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e8ae9c77-5607-46d0-bc66-45ddf2f90019</testCaseGuid>
+</TestCaseEntity>

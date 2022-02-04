@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_042 : To check the Value field calculation while taking invoice, replacement and product buying  against each sku's that is having only discount (Category discount) but not having any taxes</description>
+   <name>TC_ID_042</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>05e4b9fb-6b61-41ad-9506-88a40aa10e3c</testCaseGuid>
+</TestCaseEntity>

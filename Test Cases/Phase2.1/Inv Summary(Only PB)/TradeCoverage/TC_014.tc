@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_014 - Check whether a popup is displaying when tap on (i) Icon</description>
+   <name>TC_014</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c24c8fd4-d334-405b-b355-292ba7c2becf</testCaseGuid>
+</TestCaseEntity>

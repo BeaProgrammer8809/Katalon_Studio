@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_403 - To verify “Folio No” &amp; “Folio ProdBuy” field is accepting only alphabetic characters.</description>
+   <name>TC_ID_403</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c6cc81cb-609b-4b4d-b3ab-c526bdc07d30</testCaseGuid>
+</TestCaseEntity>

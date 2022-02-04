@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC398 - To check user can able to pay invoice amount partial in through quick cash collection through Effectivo option</description>
+   <name>TC398</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51bde33f-b863-4d6f-a2d7-5cf4276030d3</testCaseGuid>
+</TestCaseEntity>

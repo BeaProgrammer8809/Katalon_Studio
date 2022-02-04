@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_318 - To check once Detail IEPS option is selected (NO) and IEPS 8% tax and catagory level discount is mapped ,While do invoice whether tax and discount is applied correctly</description>
+   <name>TC_ID_318</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6872c3fe-bedc-4839-9e3c-44c6d3caddaf</testCaseGuid>
+</TestCaseEntity>

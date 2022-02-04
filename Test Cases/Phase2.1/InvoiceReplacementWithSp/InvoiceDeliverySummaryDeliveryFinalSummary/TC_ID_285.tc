@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_285:-To check the display of Transferencias Electronicas mode in Collections popup</description>
+   <name>TC_ID_285</name>
+   <tag></tag>
+   <comment>1. Title should be shown as Collection
+2. Inv Amt, Min Amt details should be displayed.
+Balance: X of XXX amount should display
+verification of Total paid Amount
+6. Select Bank, Select Branch, drop down should be displayed.
+7. Reference number, Date, upload image should be present with submit button.
+Keypad should be displayed</comment>
+   <testCaseGuid>cdba622f-0570-43ad-a5c3-d05b7eab4eab</testCaseGuid>
+</TestCaseEntity>

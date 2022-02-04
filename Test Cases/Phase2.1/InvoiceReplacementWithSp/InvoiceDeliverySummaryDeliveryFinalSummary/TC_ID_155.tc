@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_155 - To check whether ExtraInvoice- 4 is displaying in default final summary screen when invoice count entered is less than 7 and qty entered against ExtraInv4- In Case of Group SKU</description>
+   <name>TC_ID_155</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c703c97d-f625-4433-bd4a-2e3d6e841808</testCaseGuid>
+</TestCaseEntity>

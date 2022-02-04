@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_130 : To check whether Preticket icon is displayed after submitting the Invoice amount in Cheque mode</description>
+   <name>TC_ID_130</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>815b03e0-a6bf-4dd1-9659-2081c42110b7</testCaseGuid>
+</TestCaseEntity>

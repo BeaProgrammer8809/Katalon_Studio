@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_231 - To check whether replacement Amount (SRP*QTY line level) are getting added and displayed in the delivery final summary screen when only replacement for Group SKU is taken and along with other group SKUs for them both invoice and replacement both have taken.</description>
+   <name>TC_ID_231</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e148c242-4e9c-4c98-9812-251a50026b95</testCaseGuid>
+</TestCaseEntity>

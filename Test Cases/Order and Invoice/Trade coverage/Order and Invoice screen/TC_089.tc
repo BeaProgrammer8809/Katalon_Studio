@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_089--> To check whether able to proceed with Next button after entering invoice and replacement for each SKU</description>
+   <name>TC_089</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>018a9dce-b348-45f7-b680-b8c1fd43522d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_597
+To verify Invoice,PB and Replacement can be done for the retailer name having special char “Ñ”</description>
+   <name>TC_ID_597</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af49af31-2c0c-429e-9469-b6b854d814d2</testCaseGuid>
+</TestCaseEntity>

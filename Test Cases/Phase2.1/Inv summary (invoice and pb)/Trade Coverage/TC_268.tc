@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_268 - Check whether able to change the entered piece qty in Order and Invoice screen after navigating back from summary screen
+
+Should allow to modify the Qty</description>
+   <name>TC_268</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d5b4de8f-914f-4008-88f0-72b7dee994bb</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_551 - To verify user can able to edit the auto populated ‘3’ commission amount in Efectivo type.
+
+1.User should able to edit the auto populated ‘3’ commission amount in Efectivo type.</description>
+   <name>TC_551</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa36cd51-ed99-45c1-9f74-5b6be7964015</testCaseGuid>
+</TestCaseEntity>

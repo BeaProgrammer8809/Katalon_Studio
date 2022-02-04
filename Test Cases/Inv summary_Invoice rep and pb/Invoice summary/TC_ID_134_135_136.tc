@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_134-->To check the Balance displayed in the Transferencias Electronicas mode after switching from Efectivo mode
+
+TC_ID_135-->To check the Total paid displayed in the Transferencias Electronicas mode after switching from Efectivo mode
+
+TC_ID_136--> To check whether able to enter Total paid amount in Transferencias Electronicas mode after switching from Efectivo mode
+
+ </description>
+   <name>TC_ID_134_135_136</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e78b942a-b4a7-4148-91d7-be0bd49df88a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_063:-To check IF product buying has done for reclino sku then header is coming as Producto Riclino sa PI de c.v above folio text field</description>
+   <name>TC_063</name>
+   <tag></tag>
+   <comment>Verifying the Popup
+Verifying Producto reclino sa PI  de c.v</comment>
+   <testCaseGuid>299642a0-0582-44f9-9875-0b223ae37e0c</testCaseGuid>
+</TestCaseEntity>

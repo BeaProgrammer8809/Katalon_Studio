@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_087 : To check the Value field calculation while taking invoice &amp; PB (Non-salable) against each sku's that is having only tax  IEPS but not having any discounts
+</description>
+   <name>TC_ID_087</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6b5d3106-1a85-4fdb-8a3e-ca31fbd90e3c</testCaseGuid>
+</TestCaseEntity>

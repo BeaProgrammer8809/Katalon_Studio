@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_425 - To check whether able to enter Total paid amount in only Transferencias Electronicas mode</description>
+   <name>TC_ID_425</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>159df2bb-3db4-4522-95d2-c80e66554dae</testCaseGuid>
+</TestCaseEntity>

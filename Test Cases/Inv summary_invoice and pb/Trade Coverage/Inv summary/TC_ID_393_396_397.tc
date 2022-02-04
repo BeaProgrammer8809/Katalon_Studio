@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_393 - To check the display of Cheque mode in Collections
+TC_ID_396 - To check the Balance displayed in the Cheque mode after switching from Efectivo mode
+TC_ID_397 - To check the Total paid displayed in the Cheque mode after switching from Efectivo mode</description>
+   <name>TC_ID_393_396_397</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>62045a04-fd16-4045-9b16-7a2befafaca8</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_253:-To check User is not allowed to use pesito amount more than invoice amount</description>
+   <name>TC_ID_253_254</name>
+   <tag></tag>
+   <comment>TC_ID_253:-Verify Provided Amount more than Invoice Amount
+TC_ID_254:-Verify Provided Amount more than Pesito Available
+User should not able to use Amount more than Inv Amt and Pesito credit amt</comment>
+   <testCaseGuid>23865503-8410-4e87-b2e0-9de0b45ceb9d</testCaseGuid>
+</TestCaseEntity>

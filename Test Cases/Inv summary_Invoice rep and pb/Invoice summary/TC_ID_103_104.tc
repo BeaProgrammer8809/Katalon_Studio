@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_104--> To check whether Collection icon is displayed after submitting the Invoice amount in Efectivo mode</description>
+   <name>TC_ID_103_104</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efb65b70-f5cd-4fb9-933e-789c1351e5ce</testCaseGuid>
+</TestCaseEntity>

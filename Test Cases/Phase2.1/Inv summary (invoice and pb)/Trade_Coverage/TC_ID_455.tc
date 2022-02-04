@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_455 : To check Validation message is coming like please enter pesito commission when commission amount has not collected</description>
+   <name>TC_ID_455</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>143d829d-d3db-4da9-a55e-2cd77b6c903b</testCaseGuid>
+</TestCaseEntity>

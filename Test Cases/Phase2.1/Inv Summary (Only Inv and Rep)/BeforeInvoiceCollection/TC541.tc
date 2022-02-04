@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC541:To verify Pesito option enable in collection pop-up in invoice summary screen.</description>
+   <name>TC541</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2aafe627-0481-4321-9ccb-4a9fbfb0c8c7</testCaseGuid>
+</TestCaseEntity>

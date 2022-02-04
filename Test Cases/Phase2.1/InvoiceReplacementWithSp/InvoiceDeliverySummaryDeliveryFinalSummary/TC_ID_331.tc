@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_331
+To check Validation msg is coming like 'Folio number should be at least 6 characters</description>
+   <name>TC_ID_331</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0768e9d7-1647-429b-8415-1204c6147b75</testCaseGuid>
+</TestCaseEntity>

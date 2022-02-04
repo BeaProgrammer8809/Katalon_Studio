@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_007 - Check whether after taking both invoice and Product Buying as &quot;Salable&quot; against each sku then it is displaying in Summary screen
+TC_ID_010 - To check whether the Pieces and Sales return qty against each SKU is displaying correctly when Invoice and Product Buying taken as Salable 
+TC_ID_013 - To check whether the U.Price against each SKU is displaying correctly with respect to the Order and Invoice &amp; PB screen while doing invoice &amp; PB ( Salable) Qty
+TC_ID_016 - Check whether Actual return qty against each sku is updating in Summary screen while taking Invoice &amp; PB as Salable qty
+TC_ID_019 - Check whether Pieces qty against each sku is updating with Zero value for which Product Buying (salable) transaction is made and actual Invoice qty showing against each SKU in Piece for which invoice is made</description>
+   <name>TC_ID_007_010_013_016_019</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>89098de6-b1c9-433a-8a65-3e9454adad4a</testCaseGuid>
+</TestCaseEntity>

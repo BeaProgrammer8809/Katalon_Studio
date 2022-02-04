@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_04--> Check whether able to navigate to Invoice summary screen after doing product buying only
+
+TC_05--> Check the default display of the invoice Summary screen for Cash retailer</description>
+   <name>TC_04_05</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b638933e-f36f-4dc0-8d05-63c3ab4fed4e</testCaseGuid>
+</TestCaseEntity>

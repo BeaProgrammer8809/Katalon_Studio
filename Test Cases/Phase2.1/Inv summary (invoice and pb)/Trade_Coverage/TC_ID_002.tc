@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_002 : Check whether able to navigate to Invoice summary screen without doing order and Invoice, and product buying for any sku</description>
+   <name>TC_ID_002</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e8da852e-2c37-4fec-a9f0-529093667ab8</testCaseGuid>
+</TestCaseEntity>

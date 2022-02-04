@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_463
+To verify “Pesito commission : 0 of 0” label is present in the Cheque collection type under collection pop-up.</description>
+   <name>TC_ID_463</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>53970878-0a4a-489e-9489-9e9349b57105</testCaseGuid>
+</TestCaseEntity>

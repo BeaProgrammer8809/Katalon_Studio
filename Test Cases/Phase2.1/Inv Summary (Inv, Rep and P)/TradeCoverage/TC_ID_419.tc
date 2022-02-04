@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_419:-To verify given “Folio No” &amp; “Folio ProdBuy” accepted and generating invoices</description>
+   <name>TC_ID_419</name>
+   <tag></tag>
+   <comment>Reference number field is accepting only alphabetic characters
+Folio no and folio Prod buy should accept &quot;-&quot; &amp; &quot;_&quot; 
+Verify given “Folio No” &amp; “Folio ProdBuy” input should present in the Print Preview screen</comment>
+   <testCaseGuid>6e5f969a-338c-418e-b120-a1a6586584e7</testCaseGuid>
+</TestCaseEntity>

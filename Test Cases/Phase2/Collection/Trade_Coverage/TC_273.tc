@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether able to Submit the invoice amount in Efectivo and RTGS when scheme is applied</description>
+   <name>TC_273</name>
+   <tag></tag>
+   <comment>Scheme get sku should be free , so it should not considered in inoivce amount
+User should be able to submit the invoice amount in Efectivo and RTGS mode</comment>
+   <testCaseGuid>8a9c55c4-d469-4e7b-8449-e12e8c522785</testCaseGuid>
+</TestCaseEntity>

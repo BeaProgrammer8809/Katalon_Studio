@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC387:- To check whether collection is displaying for cash and credit retailer doing replacement for barcel sku and product buying for Ricolino sku</description>
+   <name>TC387</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf1119aa-7203-40d2-af39-8895c1e1e9ad</testCaseGuid>
+</TestCaseEntity>

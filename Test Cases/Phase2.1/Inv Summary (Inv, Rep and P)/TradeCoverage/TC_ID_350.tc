@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_350 - To check once Detail IEPS option is selected (No),while enter invoice qty in order &amp; invoice screen,whether IEPS tax is not added in retailer price</description>
+   <name>TC_ID_350</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf687e05-6528-4d43-bc9a-c97bb605b2b9</testCaseGuid>
+</TestCaseEntity>

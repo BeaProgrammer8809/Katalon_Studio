@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_098 - Check whether Inactive SKUs are showing in the Product Buying Screen</description>
+   <name>TC_098</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>dc543b95-e4f8-4336-8275-bc90bb93f9f7</testCaseGuid>
+</TestCaseEntity>

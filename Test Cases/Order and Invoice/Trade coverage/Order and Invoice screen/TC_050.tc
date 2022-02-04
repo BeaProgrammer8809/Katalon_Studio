@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_050--> To check whether able to navigate to Product buying screen after applying the Ordered in special filter</description>
+   <name>TC_050</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c6ed6aab-2cca-4a3d-9a5c-a14d23c40209</testCaseGuid>
+</TestCaseEntity>

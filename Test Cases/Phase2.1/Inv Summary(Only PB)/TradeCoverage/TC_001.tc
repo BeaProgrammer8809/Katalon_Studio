@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_001
+
+Check whether when user inputs product buying qty and tap Next button, it's redirecting to Summary screen</description>
+   <name>TC_001</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ed641aa6-70fa-4646-9f7d-f400121df183</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_090:-To check the Value field calculation while taking invoice &amp; PB (Non-salable) against each sku's that is having IEPS tax, Item discount and category discount.</description>
+   <name>TC_ID_090</name>
+   <tag></tag>
+   <comment>Verifying the total price
+Product Buying should not be considered for the Gross/Total calculation.
+Verifying the Value amount</comment>
+   <testCaseGuid>cda46a19-587d-4451-a5bd-c6bd4df3142b</testCaseGuid>
+</TestCaseEntity>

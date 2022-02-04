@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC88:To check while doing product buying for same split group sku's that is having only tax  IEPS but not having any discounts,whether the invoice is getting success and UUID is generated</description>
+   <name>TC88</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>92c7cb4d-11dd-413f-b86f-5b93e3c5f36b</testCaseGuid>
+</TestCaseEntity>

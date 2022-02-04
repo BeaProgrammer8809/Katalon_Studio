@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_011 - Check whether for particular SKU which is belongs to Ricolino Company, delivery final summary screen is coming- Only Invoice is taken</description>
+   <name>TC_ID_011</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fca23e9a-8f2e-443c-b4ed-5d48fd11bf56</testCaseGuid>
+</TestCaseEntity>

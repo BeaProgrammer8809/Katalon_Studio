@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_012:Check whether after taking replacement and product buying for same sku then it is displaying in Summary screen</description>
+   <name>TC_012</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b2d15587-2157-4df1-bcd6-475b684cda60</testCaseGuid>
+</TestCaseEntity>

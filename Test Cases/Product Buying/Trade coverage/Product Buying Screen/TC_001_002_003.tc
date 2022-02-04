@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_001-Check Whether Product Buying Screen is opening`
+TC_002-Verify the Element present under Product Buying Screen
+TC_003-Check whether filter screen is opening when user tap filter icon
+</description>
+   <name>TC_001_002_003</name>
+   <tag>UI,Functional</tag>
+   <comment></comment>
+   <testCaseGuid>8ead4c24-dd19-4c98-b1b6-6a4114b5a8f6</testCaseGuid>
+</TestCaseEntity>

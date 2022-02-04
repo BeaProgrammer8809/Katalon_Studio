@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_562: To verify only Product Buying can be done for the retailer with RFC format as “XXXXYYMMDDaa&amp;”</description>
+   <name>TC_ID_562</name>
+   <tag></tag>
+   <comment>xoxoxoxoxxoxo</comment>
+   <testCaseGuid>bbad5861-6199-4bfa-811a-a47532c0301c</testCaseGuid>
+</TestCaseEntity>

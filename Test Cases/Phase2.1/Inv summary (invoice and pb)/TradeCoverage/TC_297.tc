@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_297: To check the Balance displayed in the Cheque mode after switching from Efectivo mode</description>
+   <name>TC_297</name>
+   <tag></tag>
+   <comment>Efectivo Mode Bal</comment>
+   <testCaseGuid>9ca97bdd-c664-41d5-a7e7-ee37a8637ef6</testCaseGuid>
+</TestCaseEntity>

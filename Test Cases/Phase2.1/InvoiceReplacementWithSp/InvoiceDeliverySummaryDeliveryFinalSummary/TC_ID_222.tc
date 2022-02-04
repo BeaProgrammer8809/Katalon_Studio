@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_222 - To check the generated Amount value when Entity of Invoice Split is Bimbo and Invoice &amp; Replacement are taken for Ungrouped SKU belongs to Bimbo</description>
+   <name>TC_ID_222</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>64d65142-5eeb-434a-99f3-df40631ebc9b</testCaseGuid>
+</TestCaseEntity>

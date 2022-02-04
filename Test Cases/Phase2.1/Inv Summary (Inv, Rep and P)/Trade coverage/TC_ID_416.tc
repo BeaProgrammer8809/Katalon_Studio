@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_416 - To verify Given inputs in “Folio ProdBuy” fields for all 3 legal entities are accepting in summary screen</description>
+   <name>TC_ID_416</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f897d1ca-7058-4104-ac83-9f8e9707e12c</testCaseGuid>
+</TestCaseEntity>

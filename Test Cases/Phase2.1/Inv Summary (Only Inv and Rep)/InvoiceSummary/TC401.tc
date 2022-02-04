@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC401 - To check the Min. Amt displayed in the Efectivo mode</description>
+   <name>TC401</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>35a063b0-d700-4dc0-898e-18f1621ffaf9</testCaseGuid>
+</TestCaseEntity>

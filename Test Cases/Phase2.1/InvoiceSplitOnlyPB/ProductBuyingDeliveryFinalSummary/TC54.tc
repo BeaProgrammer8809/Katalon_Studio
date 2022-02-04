@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC54:To check the split name, while taking only Product Buying for Non-Group SKUs(SKUs not mapped under Invoice Split) from Bimbo Company</description>
+   <name>TC54</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3d84e8f9-12ec-4dd4-8102-4cf6e0d3da5f</testCaseGuid>
+</TestCaseEntity>

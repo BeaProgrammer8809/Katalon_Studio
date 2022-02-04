@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_018: Check whether the fields available in the Amount split up have value 0 against each field if only product buying is done for an SKU</description>
+   <name>TC_018</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6eec629d-1065-4a2a-b514-9919db77b9ba</testCaseGuid>
+</TestCaseEntity>

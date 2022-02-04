@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_167 : To check Validation message is not  coming  when commission amount has not collected</description>
+   <name>TC_ID_167</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d0aa8972-ce71-4157-8d78-e578aca9624e</testCaseGuid>
+</TestCaseEntity>

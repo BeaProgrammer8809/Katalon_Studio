@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_169
+To check Extra invoice amount is getting collected based on legal entity wise</description>
+   <name>TC_169</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11baed4a-a5ab-4326-93d1-14b01d693c92</testCaseGuid>
+</TestCaseEntity>

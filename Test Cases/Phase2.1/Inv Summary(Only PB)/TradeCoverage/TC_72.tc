@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_72:- To check If we do product buying of bimbo ,barcel,and reclino sku then all sku is coming under bimbo legal entity only</description>
+   <name>TC_72</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4747dbb-a4c8-41a5-b166-4cc7593e13ce</testCaseGuid>
+</TestCaseEntity>

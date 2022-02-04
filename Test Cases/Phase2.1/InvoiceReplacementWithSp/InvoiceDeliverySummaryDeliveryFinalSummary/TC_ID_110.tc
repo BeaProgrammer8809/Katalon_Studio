@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_110 : To check whether screen is going back to Delivery Summary screen when tap on Edit Icon- Only Replacement is taken</description>
+   <name>TC_ID_110</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb63dbea-7837-4fa0-ae70-48d7f84a9337</testCaseGuid>
+</TestCaseEntity>

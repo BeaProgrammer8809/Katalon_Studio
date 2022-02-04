@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC46:To check the split name, when sku's added in bimbo ,barcel and ricolino legal entity split group if doing product buying for bimbo,barcel and ricolino group sku's</description>
+   <name>TC46</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dda49290-f42b-4aab-b39d-3d94cefcc97b</testCaseGuid>
+</TestCaseEntity>

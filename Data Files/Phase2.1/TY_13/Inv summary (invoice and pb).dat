@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataFileEntity>
+   <description>Data Used For Inv summary (invoice and pb)(sheet 6) allocated testcases</description>
+   <name>Inv summary (invoice and pb)</name>
+   <tag></tag>
+   <containsHeaders>true</containsHeaders>
+   <csvSeperator></csvSeperator>
+   <dataFileGUID>7ca22c8e-3413-458f-a510-2c483ab1fce6</dataFileGUID>
+   <dataSourceUrl>DDF/Phase2.1/TY_13/TY_13.xlsx</dataSourceUrl>
+   <driver>ExcelFile</driver>
+   <isInternalPath>true</isInternalPath>
+   <query></query>
+   <secureUserAccount>false</secureUserAccount>
+   <sheetName>Inv summary (invoice and pb)</sheetName>
+   <usingGlobalDBSetting>false</usingGlobalDBSetting>
+</DataFileEntity>

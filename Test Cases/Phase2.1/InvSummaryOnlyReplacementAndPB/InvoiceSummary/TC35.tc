@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC35:-To check the total price calculation while taking product buying for the sku's that is having IVA, IEPS taxes and  Category discount.</description>
+   <name>TC35</name>
+   <tag></tag>
+   <comment>Verifying the total price
+Product Buying should not be considered for the Gross/Total calculation.
+Total price should not consider the tax amount</comment>
+   <testCaseGuid>2ffa6ed3-9844-4442-a3a2-9162830fae91</testCaseGuid>
+</TestCaseEntity>

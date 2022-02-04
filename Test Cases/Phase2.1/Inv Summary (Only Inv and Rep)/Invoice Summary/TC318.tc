@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC318:-To check while doing replacement for the sku's that is having only discount (Category discount) but not having any taxes,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC318</name>
+   <tag></tag>
+   <comment>Verifyed the status and UUID generated 
+Verifying status as success</comment>
+   <testCaseGuid>a3c3d22a-13d4-4a55-9e88-d6fadefe2919</testCaseGuid>
+</TestCaseEntity>

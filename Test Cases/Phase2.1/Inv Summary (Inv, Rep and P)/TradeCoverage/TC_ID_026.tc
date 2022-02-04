@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_026 : To check the total price calculation while taking invoice, replacement and Product buying for the sku's that is having only discount (Category discount) but not having any taxes</description>
+   <name>TC_ID_026</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e77eecd4-59b6-441e-8de3-665cd70dee2e</testCaseGuid>
+</TestCaseEntity>

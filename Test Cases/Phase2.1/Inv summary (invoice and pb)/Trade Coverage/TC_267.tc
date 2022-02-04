@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_267 - To check whether the entered piece are persisting in Order and Invoice screen while navigating back from summary screen
+
+Entered Piece quantity should be persisted in Order and Invoice screen while navigating back from summary screen</description>
+   <name>TC_267</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>92d1ecf0-45de-417a-ab38-c05018b040ad</testCaseGuid>
+</TestCaseEntity>

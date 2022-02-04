@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_423:-To verify given folio number for the Ekomercio retailer is accepted in summary screen and got success response</description>
+   <name>TC_ID_423</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1e74e23-b751-445a-a235-a89066a946cf</testCaseGuid>
+</TestCaseEntity>

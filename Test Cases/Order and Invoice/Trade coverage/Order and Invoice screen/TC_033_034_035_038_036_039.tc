@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_033--> To check the search functionality
+(1. Seller should be able to search an SKU in Order and Invoice screen
+2. Keypad should be displayed
+3. After entering the sku name, then only the searched sku should be listed.)
+
+TC_034--> To check whether after clearing the search box then all the sku's are displayed
+
+TC_035--> To check whether able to enter invoice qty in searched sku and navigate to Product buying screen
+
+TC_038--> To check whether entered invoice qty is persisted for an sku while navigating backward from Product buying screen
+
+TC_036--> To check whether able to enter replacement qty in searched sku and navigate to Product buying screen(Application should allow to enter replacement qty in searched sku and it should be navigated to Product buying screen)
+
+TC_039--> To check whether entered replacement qty is persisted for an sku while navigating backward from Product buying screen</description>
+   <name>TC_033_034_035_038_036_039</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7eb4be7a-a883-4249-a6ac-da5556b08f04</testCaseGuid>
+   <variable>
+      <defaultValue>'002_SD_MUMB_PRO'</defaultValue>
+      <description></description>
+      <id>ed49c209-bc9f-44ae-8037-a13ab6a39b4d</id>
+      <masked>false</masked>
+      <name>searchProductName</name>
+   </variable>
+</TestCaseEntity>

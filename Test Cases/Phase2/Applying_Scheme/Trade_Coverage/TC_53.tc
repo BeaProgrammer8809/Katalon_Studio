@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether able to skip the scheme</description>
+   <name>TC_53</name>
+   <tag></tag>
+   <comment>1.Screen should not be navigated to promotion slab screen
+ 2.Seller should not able to view the applied scheme</comment>
+   <testCaseGuid>27329a27-756a-48b4-963c-0f706208cf37</testCaseGuid>
+</TestCaseEntity>

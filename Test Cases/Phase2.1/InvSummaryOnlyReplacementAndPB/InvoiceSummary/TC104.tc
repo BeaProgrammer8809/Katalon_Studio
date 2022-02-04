@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC104 : To check the Value and  total qtyfield calculation while taking product buying against each sku's that is having IVA tax and category discount.</description>
+   <name>TC104</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3f5b7fa-ba3e-4944-af39-ad6c75f4fd2b</testCaseGuid>
+</TestCaseEntity>

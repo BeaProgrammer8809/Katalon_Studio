@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_18 : Check whether for particular SKU which is belongs to Ricolino Company, delivery final summary screen is coming for credit retailer</description>
+   <name>TC_18</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>38ab5195-7c06-4705-abf7-91c6d647d7ed</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Tc_496:-To check Pesito Credit available is coming based on the route retailer credit amount set in master</description>
+   <name>TC_496</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad899007-f9a7-4af3-87ba-856a75c918b9</testCaseGuid>
+</TestCaseEntity>

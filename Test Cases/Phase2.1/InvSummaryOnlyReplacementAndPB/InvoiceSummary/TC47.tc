@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC47 - To check the total price calculation while taking replacement for the sku's that is having IVA tax and Item discount.</description>
+   <name>TC47</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>684bed94-ad38-4edd-8e09-be0ac8e14ba1</testCaseGuid>
+</TestCaseEntity>

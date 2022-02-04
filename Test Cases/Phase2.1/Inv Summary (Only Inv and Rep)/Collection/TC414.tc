@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC414: To check the Min. Amt displayed in the Cheques mode</description>
+   <name>TC414</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fab2949d-2c3d-4f23-b7b4-95fb8174536c</testCaseGuid>
+</TestCaseEntity>

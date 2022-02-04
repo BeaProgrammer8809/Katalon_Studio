@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_158:- To check the Order Value amount inside the info popup while taking invoice and replacement for the sku's that is having only discount (Item discount) but not having any taxes</description>
+   <name>TC_158</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a4c552b-d6b1-4f52-9b6b-195246ff7b6c</testCaseGuid>
+</TestCaseEntity>

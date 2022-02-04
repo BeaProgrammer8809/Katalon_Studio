@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC04 - To check whether able to navigate to Invoice summary screen by doing only replacement and without product buying</description>
+   <name>TC04</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6cf1d761-2ace-4674-974c-88b192caed4e</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_067 - Verify the display of &quot;Return&quot; popup
+TC_068 - Verify tap action on screen header in the popup screen
+TC_069 - Verify tap action on screen name(Return) in the popup screen
+TC_074 - Check whether mobile keyboard is getting loaded when user tap into Pieces field</description>
+   <name>TC_067_068_069_074</name>
+   <tag>UI</tag>
+   <comment></comment>
+   <testCaseGuid>6d0bedcb-703a-46f4-856c-952127f60aa5</testCaseGuid>
+</TestCaseEntity>

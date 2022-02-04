@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_307 : To check whether able to Submit the invoice amount with past RTGS date
+</description>
+   <name>TC_ID_307</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>49cb01df-a8a7-4eb3-a564-6c0d974b2790</testCaseGuid>
+</TestCaseEntity>

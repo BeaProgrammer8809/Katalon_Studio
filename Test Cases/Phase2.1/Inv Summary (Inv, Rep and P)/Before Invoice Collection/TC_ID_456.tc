@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_456 - To verify “Pesito Commission $3 should pay in Efectivo” Toast message is enable if user pay partial invoice amount in Pesito collection and remaining invoice amount in Electronic Transfer mode. After that visiting Efectivo collection screen and clear commission amount ‘3’ and click on Submit button.</description>
+   <name>TC_ID_456</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f4497981-74cd-415a-8a5e-3cac43f7250b</testCaseGuid>
+</TestCaseEntity>

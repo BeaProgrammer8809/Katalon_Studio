@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_334 - To check once Detail IEPS option is  selected(Yes) for the retailer,while do wrapper promotion ,in print preview screen whether IEPS tax amount is not added in retailer price and IEPS tax percentage is displaying print preview screenu</description>
+   <name>TC_ID_334</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e216a09d-8a9d-417c-b1bf-ff4d9502405d</testCaseGuid>
+</TestCaseEntity>

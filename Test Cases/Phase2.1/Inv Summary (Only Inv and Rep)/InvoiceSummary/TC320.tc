@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC320:-To check while doing replacement for the sku's that is having IEPS tax and category discount,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC320</name>
+   <tag></tag>
+   <comment>Verifyed the status and UUID generated </comment>
+   <testCaseGuid>e8041ef9-e9ba-4e32-95a2-f73a794c7e00</testCaseGuid>
+</TestCaseEntity>

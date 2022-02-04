@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_106--> To check the Inv Amt displayed in the Cheques mode
+
+TC_ID_107--> To check the Min. Amt displayed in the Cheques mode</description>
+   <name>TC_ID_106_107</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5f560450-d0c0-4819-837a-c4eb637a7235</testCaseGuid>
+</TestCaseEntity>

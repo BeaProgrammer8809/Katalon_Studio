@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_029:- Check whether for particular SKU which is belongs to Ricolino Company, delivery final summary screen is coming- Replacement+Product Buying both have taken- Group SKU</description>
+   <name>TC_029</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>db883605-5ff1-4a3f-8045-a7ea869b6e03</testCaseGuid>
+</TestCaseEntity>

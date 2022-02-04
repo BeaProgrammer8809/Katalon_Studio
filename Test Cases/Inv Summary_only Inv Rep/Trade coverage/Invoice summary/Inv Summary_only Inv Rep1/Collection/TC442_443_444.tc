@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Balance displayed in the Transferencias Electronicas mode after switching from Efectivo mode
+
+To check the Total paid displayed in the Transferencias Electronicas mode after switching from Efectivo mode
+
+To check whether able to enter Total paid amount in Transferencias Electronicas mode after switching from Efectivo mode</description>
+   <name>TC442_443_444</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce200950-7bd6-470e-b776-e94fd55846a7</testCaseGuid>
+</TestCaseEntity>

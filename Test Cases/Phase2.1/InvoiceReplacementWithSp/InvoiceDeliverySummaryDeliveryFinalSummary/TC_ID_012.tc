@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_012 - Check whether delivery final summary screen is coming when invoice split is defined but not mapped to the channel- Only Replacement is taken</description>
+   <name>TC_ID_012</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06851698-e374-4b5c-bddc-761a7a7006b4</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_388--> To verify “Folio No” &amp; “Folio ProdBuy” field is accepting the Alphanumeric characters.(Test_01-num)</description>
+   <name>TC_ID_388</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab95a2ef-b0fe-4d03-925e-00dcbc883e27</testCaseGuid>
+</TestCaseEntity>

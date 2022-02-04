@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_516:-To verify whether able to apply amount in cheque and RTGS mode with Reference no.[Collection Before Invoice]</description>
+   <name>TC_516</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f14703f4-fd68-4c91-9af1-399de678ef0f</testCaseGuid>
+</TestCaseEntity>

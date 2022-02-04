@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_100 : Check whether key is getting inserted in Invoice count field when tap on any key 0-9</description>
+   <name>TC_ID_100</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c03ed140-15da-4ccf-be70-1f78b62a37aa</testCaseGuid>
+</TestCaseEntity>

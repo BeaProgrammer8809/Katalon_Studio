@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_299 : To check once Detail IEPS option is selected (Yes) and IEPS 8% tax is mapped ,if do product buying whether tax amount is applied correctly in invoice and Tax amount is displayed in IEPS tax section
+</description>
+   <name>TC_ID_299</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77203041-493a-4e4e-a811-1357c1d9ce81</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC05 - Check whether able to navigate to Invoice summary screen while doing product buying and replacement for sku
+TC06 - Check the default display of the Summary screen for Cash retailer</description>
+   <name>TC05_06</name>
+   <tag>Functional </tag>
+   <comment></comment>
+   <testCaseGuid>8c7f0055-6284-44a5-85c8-e9c8b35f26e6</testCaseGuid>
+</TestCaseEntity>

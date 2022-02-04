@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_352:- To check while doing product buying and replacement for same sku's that is having both IVA and IEPS taxes but not having any discounts and Detail IEPS flag is enabled for the store,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC_352</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3afd8e81-e799-4b2e-8849-838a9516b1f9</testCaseGuid>
+</TestCaseEntity>

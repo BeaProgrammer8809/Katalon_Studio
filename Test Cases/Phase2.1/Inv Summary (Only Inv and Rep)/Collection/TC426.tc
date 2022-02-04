@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC426:To check whether able to enter decimals in Cheque no field</description>
+   <name>TC426</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4c16374e-9885-4268-bb60-5154b9e4fd39</testCaseGuid>
+</TestCaseEntity>

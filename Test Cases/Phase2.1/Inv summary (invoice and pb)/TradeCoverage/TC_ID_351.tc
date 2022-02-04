@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_351:-To check the entity name and folio type displayed inside Folio no popup if invoice and Product Buying is taken against Bimbo sku's</description>
+   <name>TC_ID_351</name>
+   <tag></tag>
+   <comment>verify the folio no popup
+Filio type verification</comment>
+   <testCaseGuid>02428254-e837-4710-b6d3-ba48463b53a9</testCaseGuid>
+</TestCaseEntity>

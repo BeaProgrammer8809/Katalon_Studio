@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_603
+To verify “Folio No” &amp; “Folio ProdBuy” can be empty.</description>
+   <name>TC_ID_603</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>82edf23f-4fcb-4078-a381-16ea369bb295</testCaseGuid>
+</TestCaseEntity>

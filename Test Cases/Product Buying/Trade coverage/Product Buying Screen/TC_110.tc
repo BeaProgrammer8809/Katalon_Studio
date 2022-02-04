@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_110 - Check whether SRP value is showing only 2 digit after the decimal</description>
+   <name>TC_110</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>3c99f7ed-d7a3-4c4c-a9f9-71a5f59d5496</testCaseGuid>
+</TestCaseEntity>

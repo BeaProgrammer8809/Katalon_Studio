@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_008 : Check whether after taking both invoice and Product Buying as Non-Salable against each sku then it is displaying in Summary screen</description>
+   <name>TC_ID_008</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e90fa737-9722-4a92-ad5d-5a05a25fbc26</testCaseGuid>
+</TestCaseEntity>

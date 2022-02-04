@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_412--> To verify should “Folio No” &amp; “Folio ProdBuy” field is accepting less than 6 characters.</description>
+   <name>TC_ID_412</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0ea3684c-eb5f-46c4-91ef-271f860f5676</testCaseGuid>
+   <variable>
+      <defaultValue>'12345'</defaultValue>
+      <description></description>
+      <id>89ab1d13-7a7d-402f-b52a-6ed7f2d048ac</id>
+      <masked>false</masked>
+      <name>folioNo</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_053 - Check whether Search Field is available in the Product Buying Screen
+TC_057 - Check whether a new popup gets open when user tap on Hamburger menu Icon
+TC_058 - Verify that selection of Product Name or Barcode is present in the hamburger pop up
+TC_060- Check whether user is allowed to toggle between Product name and Barcode</description>
+   <name>TC_053_057_058_060</name>
+   <tag>UI</tag>
+   <comment></comment>
+   <testCaseGuid>402ee475-60e6-46cd-84aa-f6be16c9739a</testCaseGuid>
+</TestCaseEntity>

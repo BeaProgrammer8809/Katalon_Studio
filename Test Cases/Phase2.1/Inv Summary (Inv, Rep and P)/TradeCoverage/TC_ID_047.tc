@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_047 : To check the Order Value amount inside the info popup while taking invoice, replacement and product buying for the sku's that is having only IEPS tax and category discount.</description>
+   <name>TC_ID_047</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>29f04a0d-f36b-4ecf-a498-f7d259bb08b1</testCaseGuid>
+</TestCaseEntity>

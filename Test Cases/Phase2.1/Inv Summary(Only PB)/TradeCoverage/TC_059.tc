@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_059:-Check whether collection mode-Pesito credit is not enabled when only product buying is done</description>
+   <name>TC_059</name>
+   <tag></tag>
+   <comment>Verifying the collection icon was not visible</comment>
+   <testCaseGuid>f2abfe66-49a2-473c-ba24-9768b9f36af0</testCaseGuid>
+</TestCaseEntity>

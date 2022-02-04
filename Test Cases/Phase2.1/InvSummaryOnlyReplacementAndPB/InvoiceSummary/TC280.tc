@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_280 : - To check the total qty count while taking only replacement against each sku's</description>
+   <name>TC280</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f52251b0-dc9b-472b-b430-85e7d83d3066</testCaseGuid>
+</TestCaseEntity>

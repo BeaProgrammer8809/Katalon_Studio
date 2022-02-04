@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_079 - Check whether Salable and Non-salable qty is allowed to enter against an SKU
+TC_080 - Check whether Reason field is mandatory</description>
+   <name>TC_079_080</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>36afb1dd-2c0c-4b5b-8b5e-57263bc047b1</testCaseGuid>
+</TestCaseEntity>

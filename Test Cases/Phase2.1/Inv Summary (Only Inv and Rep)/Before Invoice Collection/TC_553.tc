@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_553 - To verify “Please Pay Total Balance Amount $.” Toast message is enable if user pay partial invoice amount in Pesito collection and visiting Efectivo collection screen and not pay remaining invoice amount in any mode of collection and click on submit button.
+
+“Please Pay Total Balance Amount $X.” Toast message should enable if user pay partial invoice amount in Pesito collection and visiting Efectivo collection screen and not pay remaining invoice amount in any mode of collection and click on submit button.</description>
+   <name>TC_553</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a40a00f1-4f6c-4865-a646-e926db0c2998</testCaseGuid>
+</TestCaseEntity>

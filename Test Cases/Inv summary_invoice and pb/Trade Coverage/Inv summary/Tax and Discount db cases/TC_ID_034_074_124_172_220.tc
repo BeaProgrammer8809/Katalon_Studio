@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_034 - To Check Total Price Calculation against each sku having only tax IEPS and both Item and Category level discounts while taking Invoice &amp; PB - Only Salable
+
+TC_ID_074- To check the Value field calculation while taking invoice &amp; PB (Salable) against each sku's that is having IEPS tax, Item discount and category discount.
+
+TC_ID_124 - To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Salable) for the sku's that is having IEPS tax, Item discount and category discount.
+
+TC_ID_172 - To check the Comp Disc amount inside the info popup while taking invoice &amp; Product Buying (salable) for the sku's that is having IEPS tax, Item discount and category discount.
+
+TC_ID_220 - To check the Total amount inside the info popup while taking invoice and Product Buying (Salable/non salable) for the sku's that is having IEPS tax, Item discount and category discount.</description>
+   <name>TC_ID_034_074_124_172_220</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>cf88b626-08d4-4214-93b9-d9dde8ce38cc</testCaseGuid>
+</TestCaseEntity>

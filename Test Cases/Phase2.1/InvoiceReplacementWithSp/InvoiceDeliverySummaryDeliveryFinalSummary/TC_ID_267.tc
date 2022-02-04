@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_267:-To check whether able to select Bank from dropdown</description>
+   <name>TC_ID_267</name>
+   <tag></tag>
+   <comment>Select bank was a mandatory field
+User should be able to select any bank from Select Bank dropdown menu</comment>
+   <testCaseGuid>cb49beda-f698-4bb3-9b73-751eef335d59</testCaseGuid>
+</TestCaseEntity>

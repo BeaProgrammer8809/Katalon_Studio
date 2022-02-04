@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_032--> To check the Total qty field calculation if both piece qty and return qty is entered for multiple sku</description>
+   <name>TC_032</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>348d8453-edc6-49ce-abea-52086e13b746</testCaseGuid>
+</TestCaseEntity>

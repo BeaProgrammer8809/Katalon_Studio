@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_044--> To check the functionality of purchased special filter
+
+TC_052--> To check whether able to navigate to Product buying screen after applying the Purchased in special filter
+
+TC_045--> To check whether able to view all the sku's after applying the Purchased special filter</description>
+   <name>TC_044_052_045</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>779c2a5e-27b8-4ff9-8ef7-fd002bb14e55</testCaseGuid>
+</TestCaseEntity>

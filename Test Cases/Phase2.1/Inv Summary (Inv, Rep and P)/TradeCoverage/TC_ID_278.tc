@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_278 : To check once Detail IEPS option is selected(No) but tax group is mapped for the retailer while do only replacement ,whether invoice is generated correctly 
+
+</description>
+   <name>TC_ID_278</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0dcd8774-65fd-48cc-8974-a087a6e12058</testCaseGuid>
+</TestCaseEntity>

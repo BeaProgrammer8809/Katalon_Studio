@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC453 - To check the default date selected in Transferencias Electronicas mode</description>
+   <name>TC453</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2e3ca1b-ced7-4ab9-a0ce-45fcac34e0b2</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_247
+To check whether able to Submit the invoice amount in Cheque and RTGS</description>
+   <name>TC_ID_247</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4032a45-5c2d-4e9a-ac77-c06c7b8c96ee</testCaseGuid>
+</TestCaseEntity>

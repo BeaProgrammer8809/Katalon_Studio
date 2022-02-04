@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC599 :To verify “Please Pay Total Balance Amount $.” Toast message is enable if user pay partial invoice amount in Pesito collection and provide those commission amount ‘3’ with partial invoice amount in effectivo mode and remainaing amount in cheque or RTGS.</description>
+   <name>TC599</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d481ac65-8550-4165-a85b-ec050bae1ea0</testCaseGuid>
+</TestCaseEntity>

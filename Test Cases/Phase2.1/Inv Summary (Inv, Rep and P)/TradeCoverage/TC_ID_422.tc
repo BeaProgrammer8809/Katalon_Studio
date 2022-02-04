@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_422:-To verify given folio number for the Ekomercio retailer is accepts in summary screen and got success response</description>
+   <name>TC_ID_422</name>
+   <tag></tag>
+   <comment>Verifyed the status and UUID generated 
+Verify UUID no present in the Print Preview screen</comment>
+   <testCaseGuid>2af047bc-cb0f-4675-905b-9d6e9fc5dba1</testCaseGuid>
+</TestCaseEntity>

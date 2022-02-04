@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_001 : Check whether trade coverage menu is displaying in home screen</description>
+   <name>TC_ID_001</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>791733c6-47b5-427b-a89e-f746c4b4d36c</testCaseGuid>
+</TestCaseEntity>

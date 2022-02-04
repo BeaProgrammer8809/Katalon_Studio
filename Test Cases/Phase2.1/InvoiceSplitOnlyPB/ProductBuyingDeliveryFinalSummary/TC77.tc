@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC77:-Check whether Folio No. field is showing in Delivery final summary screen when Mandatory Folio No./Folio Obligatorio is checked in retailer master</description>
+   <name>TC77</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bcd9c663-814b-479c-a11f-5900ed53faae</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_102 - To check the sku qty displayed after entering partial stock delivered qty in Extra invoice for recolino's sku that are in invoice split group</description>
+   <name>TC_102</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a5f79711-36da-4824-98fb-033ea055fa94</testCaseGuid>
+</TestCaseEntity>

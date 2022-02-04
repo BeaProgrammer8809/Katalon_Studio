@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_365:- To verify “Pesito commission : 3 of 3” label is present in the Electronic Transfer collection type under collection pop-up.</description>
+   <name>TC_365</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>34badbac-9480-471c-92c1-5ad6552a33c9</testCaseGuid>
+</TestCaseEntity>

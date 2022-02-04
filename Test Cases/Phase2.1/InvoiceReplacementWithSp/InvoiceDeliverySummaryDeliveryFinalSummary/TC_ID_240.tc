@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_240 - To check the generated extra   Invoice is also coming with collection and effectivo with checkbox for no Group SKU</description>
+   <name>TC_ID_240</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c4bc2aeb-cb41-4b61-835f-345dd1b933e4</testCaseGuid>
+</TestCaseEntity>

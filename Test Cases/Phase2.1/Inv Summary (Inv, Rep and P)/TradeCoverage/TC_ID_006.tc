@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_006 : Check the default display of the Summary screen for Credit retailer</description>
+   <name>TC_ID_006</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d94da717-285e-4786-aa8d-cd47e42d89b7</testCaseGuid>
+</TestCaseEntity>

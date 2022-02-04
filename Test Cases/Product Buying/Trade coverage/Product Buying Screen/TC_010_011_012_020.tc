@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_010 - Verify Product Hierarchy level LINEA in the filter screen
+TC_011 - Verify tap action on LINEA product hierarchy
+TC_012 - Check Whether Apply Button is available in the bottom of the filter screen.
+TC_020- Check whether User is allowed to select multiple LINEA/LINE in the filter</description>
+   <name>TC_010_011_012_020</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>2af5f151-2620-492a-a81b-5bb7a2b26a1a</testCaseGuid>
+</TestCaseEntity>

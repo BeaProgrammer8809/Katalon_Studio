@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_57 : To check whether only invoiced sku's displaying in delivery split summary screen while taking invoice, replacement and pb against each barcel sku's that are not in invoice split group (Considering only one invoice split group is available)</description>
+   <name>TC_57</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b240bb3f-5d4a-468f-9b13-0c65aeeb21a9</testCaseGuid>
+</TestCaseEntity>

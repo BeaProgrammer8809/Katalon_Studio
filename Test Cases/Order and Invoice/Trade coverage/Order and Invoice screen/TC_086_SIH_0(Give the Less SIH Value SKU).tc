@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_086--> To check whether the sku is displaying in Order and Invoice screen if there is no stock in Van i.e.(SIH=0)</description>
+   <name>TC_086_SIH_0(Give the Less SIH Value SKU)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0025d59-fe07-4df7-a533-ffab9bb1d595</testCaseGuid>
+</TestCaseEntity>

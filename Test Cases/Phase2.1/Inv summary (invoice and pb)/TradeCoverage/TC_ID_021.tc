@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_021: Check whether Pieces qty against each sku is updating with Zero value for which Product Buying- Salable &amp; Nonsalable transaction is made and actual Invoice qty showing against each SKU in Piece for which invoice is made 
+</description>
+   <name>TC_ID_021</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5105124c-b1b8-4222-91ce-8ee2d36ae382</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_074-->  Check whether the SKU's under the corresponding Segmento only displayed on applying the filter by sku's segment(segmento) level</description>
+   <name>TC_074</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c79fc014-edf1-4524-a8ec-eec31290b6b9</testCaseGuid>
+</TestCaseEntity>

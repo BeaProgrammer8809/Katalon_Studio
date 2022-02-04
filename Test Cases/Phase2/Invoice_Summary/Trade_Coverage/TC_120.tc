@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether sku order qty displaying in pieces on invoice summary screen</description>
+   <name>TC_120</name>
+   <tag></tag>
+   <comment>Sku order qty should be displayed in pieces</comment>
+   <testCaseGuid>55082a67-0802-4f00-b1fd-2b9b1c77b4bd</testCaseGuid>
+</TestCaseEntity>

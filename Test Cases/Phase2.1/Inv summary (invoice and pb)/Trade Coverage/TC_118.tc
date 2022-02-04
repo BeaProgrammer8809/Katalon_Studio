@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_118 - To check whether (i) icon is displaying for Value field
+
+The (i) icon should be displayed for Value field</description>
+   <name>TC_118</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0c024ee8-4544-4e2c-9174-5bc36f1ada62</testCaseGuid>
+</TestCaseEntity>

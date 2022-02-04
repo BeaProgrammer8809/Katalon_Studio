@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_200
+To check the generated Lines Value when Entity of Invoice Split is Bimbo and Invoice &amp; Replacement are taken for Ungrouped SKU belongs to Ricolino</description>
+   <name>TC_ID_200</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0ed17b13-4b47-4b42-be13-6bd9f7f2174d</testCaseGuid>
+</TestCaseEntity>

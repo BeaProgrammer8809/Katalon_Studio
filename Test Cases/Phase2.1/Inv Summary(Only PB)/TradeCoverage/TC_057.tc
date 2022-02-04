@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_057:-Check whether Total Pieces of an SKU can be taken as Cold Stock</description>
+   <name>TC_057</name>
+   <tag></tag>
+   <comment>Screen should redirect to Unload screen means it was accepted 
+Verifying the Type as Cold Stock</comment>
+   <testCaseGuid>e3f49c42-fbbe-4cca-8120-275af3d3ae42</testCaseGuid>
+</TestCaseEntity>

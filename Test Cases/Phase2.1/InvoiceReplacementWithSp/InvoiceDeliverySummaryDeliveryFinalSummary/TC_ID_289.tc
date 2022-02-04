@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_289:-To check the Total paid displayed in the Transferencias Electronicas mode after switching from Efectivo mode</description>
+   <name>TC_ID_289</name>
+   <tag></tag>
+   <comment>Total paid as Inv amount
+Total paid should display the aggregated amount that is going to pay across all modes
+inv amount is prefilled in Efectivo mode</comment>
+   <testCaseGuid>45ef1939-da07-4ecd-940c-fcf5afa9a1bc</testCaseGuid>
+</TestCaseEntity>

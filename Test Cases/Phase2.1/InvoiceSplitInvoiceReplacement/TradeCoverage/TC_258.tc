@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_258 - To verify “Folio No” given only for invoice or replacement split is accepting and invoice is generated</description>
+   <name>TC_258</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>35152b97-6a3d-466f-8fe5-e9e0a570b2b5</testCaseGuid>
+</TestCaseEntity>

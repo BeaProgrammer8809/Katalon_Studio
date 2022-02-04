@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_039:- Check whether inputted qty in OP is getting reduced from the SIH after save</description>
+   <name>TC_039</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b574c807-6228-4bf8-99d6-c1a32c0299be</testCaseGuid>
+</TestCaseEntity>

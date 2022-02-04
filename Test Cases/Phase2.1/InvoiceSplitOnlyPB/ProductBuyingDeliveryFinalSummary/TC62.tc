@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC62 - To check the Sku's Qty field calculation logic in Delivery Final Summaryscreen while doing product buying for group or no group sku's</description>
+   <name>TC62</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a8b5aba0-54c3-4490-ba60-9a6b87e2c11c</testCaseGuid>
+</TestCaseEntity>

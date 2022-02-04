@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_286 - To check whether able to Submit with Total paid amount lesser than invoice amount
+TC_ID_288 - To check the Balance amount displayed in the Efectivo mode after changing the defaultly filled paid amount
+TC_ID_289 - The Modified amount in Total paid field should be displayed across Total paid label</description>
+   <name>TC_ID_286_288_289</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>a0d695e2-c1cb-4683-8dd6-74650ce67116</testCaseGuid>
+</TestCaseEntity>

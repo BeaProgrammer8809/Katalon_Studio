@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC393 - To check while doing invoice and replacement same sku ,whether the collection icon is displaying as legal entity wise</description>
+   <name>TC393</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a8fcb68d-d08d-4679-8e86-78c42d34766f</testCaseGuid>
+</TestCaseEntity>

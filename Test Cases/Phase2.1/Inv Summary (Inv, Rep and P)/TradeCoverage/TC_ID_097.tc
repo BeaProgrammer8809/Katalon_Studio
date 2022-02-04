@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_097 : Total Paid field should be automatically filled with the invoice amount (value) displayed in Summary screen</description>
+   <name>TC_ID_097</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>deb8da63-1eb3-4bef-82a3-e91b99f57560</testCaseGuid>
+</TestCaseEntity>

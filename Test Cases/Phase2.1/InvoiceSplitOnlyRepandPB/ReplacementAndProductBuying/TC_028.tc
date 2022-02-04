@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_028:- Check whether for particular SKU which is belongs to Barcel Company, delivery final summary screen is coming- Replacement+Product Buying both have taken- Group SKU</description>
+   <name>TC_028</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1afc416d-c0e4-41d1-92c6-f6c06acb5b22</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_228:- To check the Total amount inside the info popup while taking invoice and Product Buying (Salable/non salable) for the sku's that is having IVA, IEPS taxes and Item, category discount.</description>
+   <name>TC_228</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9e98473e-6946-4d17-8a17-1c39c1f92f20</testCaseGuid>
+</TestCaseEntity>

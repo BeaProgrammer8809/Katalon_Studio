@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_263 - To check the Total amount inside the info popup while taking invoice and Product Buying (Salable &amp; Non-Salable) for the sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
+   <name>TC_ID_263</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c908a6db-658d-4c63-8764-08a3e8bd0c36</testCaseGuid>
+</TestCaseEntity>

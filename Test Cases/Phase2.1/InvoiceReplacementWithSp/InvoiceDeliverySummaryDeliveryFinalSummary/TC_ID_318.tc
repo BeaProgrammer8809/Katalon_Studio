@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_318 : To check Commission amount is coming based on the web configuration for the visit</description>
+   <name>TC_ID_318</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb98211d-7629-4694-ad04-457268f2e342</testCaseGuid>
+</TestCaseEntity>

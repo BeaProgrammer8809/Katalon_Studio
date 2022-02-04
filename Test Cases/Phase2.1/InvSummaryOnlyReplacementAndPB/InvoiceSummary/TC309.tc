@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC309
+To check while doing product buying for the sku's that is having IVA, IEPS taxes and  Category discoun,whether the onsite invoice is getting success and UUID is generated.</description>
+   <name>TC309</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6a240ee-23ac-4ea7-9c50-cebdbac51fcc</testCaseGuid>
+</TestCaseEntity>

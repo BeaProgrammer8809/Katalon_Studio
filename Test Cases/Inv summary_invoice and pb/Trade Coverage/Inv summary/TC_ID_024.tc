@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_024 - To Check Total Price Calculation against each sku is updating in Summary screen while taking Invoice &amp; PB with salable &amp; non-Salable qty</description>
+   <name>TC_ID_024</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>aa94c50c-466f-4051-bb46-f3577e3b3488</testCaseGuid>
+</TestCaseEntity>

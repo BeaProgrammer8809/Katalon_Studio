@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_35:To check printer icon in the preticket print preview</description>
+   <name>TC_35</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>32793742-1c28-4410-80d4-d19a06af636b</testCaseGuid>
+</TestCaseEntity>

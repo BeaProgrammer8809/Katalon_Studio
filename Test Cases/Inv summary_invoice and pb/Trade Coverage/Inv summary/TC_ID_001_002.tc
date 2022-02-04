@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_001 - Check whether trade coverage menu is displaying in home screen
+TC_ID_002 - Check whether able to navigate to Invoice summary screen without doing Order and Invoice and Product buying for any sku</description>
+   <name>TC_ID_001_002</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>6ca9c81f-6525-4198-a402-490972c4f486</testCaseGuid>
+</TestCaseEntity>

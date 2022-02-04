@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC313:-To check while doing invoice for the sku's that is having IVA, IEPS taxes and  Category discount,whether the onsite invoice is getting success and UUID is generated.</description>
+   <name>TC313</name>
+   <tag></tag>
+   <comment>Verifyed the status and UUID generated 
+Verifying status as success</comment>
+   <testCaseGuid>7cdd9465-5938-41cc-8a4f-441bad9b03b0</testCaseGuid>
+</TestCaseEntity>

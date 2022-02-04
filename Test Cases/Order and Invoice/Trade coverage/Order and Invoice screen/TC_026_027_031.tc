@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_026--> Check whether the Total value against each sku is displaying correctly if only returns qty is entered
+
+TC_027--> Check whether the Total value against each sku is displaying correctly if both piece and returns qty is entered(Total = (Piece * SRP) 
+ Ex: If piece=5, returns =2 and SRP=100
+ then Total = (5*100)=500)
+
+TC_031--> To check the Total qty field calculation if returns qty is entered for an single sku(Total qty should be 0 since replacement qty will not be considered in &quot;Total qty&quot; calculation)</description>
+   <name>TC_026_027_031</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>acf584e3-8e9a-4083-b233-9027fff3458b</testCaseGuid>
+</TestCaseEntity>

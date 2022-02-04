@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_021: Check whether delivery final summary screen is not coming when invoice split is not defined and mapped to the channel- Invoice + Replacement both have taken</description>
+   <name>TC_ID_021</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>250528fb-36e8-4073-b64a-829cc0c88224</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_159 :To check the count of SKUs against which qty is entered in ExtraInv1 field are showing in Delivery Final Summary screen under Lines column against ExtraInvoices</description>
+   <name>TC_ID_159</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae879013-0e0b-4b7d-a9b8-1a162e4860c3</testCaseGuid>
+</TestCaseEntity>

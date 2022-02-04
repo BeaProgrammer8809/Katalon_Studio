@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC77: To check the total price calculation while taking product buying and replacement for the sku's that is having IVA, IEPS taxes and Item, category discount.</description>
+   <name>TC77</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ee8b4de0-19ed-4a24-b95b-8757e5641a63</testCaseGuid>
+</TestCaseEntity>

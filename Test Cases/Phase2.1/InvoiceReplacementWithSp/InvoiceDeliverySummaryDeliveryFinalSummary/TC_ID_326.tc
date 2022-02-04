@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_326 : To check if invoice is generated for credit store then in delivery final summary screen collection option is not coming</description>
+   <name>TC_ID_326</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bffe66dc-2fa6-4d74-b5df-d51e99cecb67</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_406 - To check the Select Cheque Type dropdown
+TC_ID_407 - To check the Select Cheque Type dropdown options</description>
+   <name>TC_ID_406_407</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>258c174b-0e3e-4af2-9d1f-d5b7797a13a5</testCaseGuid>
+</TestCaseEntity>

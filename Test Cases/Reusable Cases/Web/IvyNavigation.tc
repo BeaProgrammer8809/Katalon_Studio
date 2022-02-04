@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>IvyNavigation</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>efffc8a7-1427-44eb-bae0-937811a6da9e</testCaseGuid>
+   <variable>
+      <defaultValue>'Transactions;Receivables;Collections;Collections'</defaultValue>
+      <description></description>
+      <id>16543fcb-04d1-4a39-acd5-2fb75419ca22</id>
+      <masked>false</masked>
+      <name>Navigation</name>
+   </variable>
+</TestCaseEntity>

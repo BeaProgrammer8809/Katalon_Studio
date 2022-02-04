@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_137--> To check whether able to enter Total paid amount in only Transferencias Electronicas mode 
+
+TC_ID_138-->  To check the Select Bank field
+
+TC_ID_139-->  To check whether able to select Bank from dropdown
+
+TC_ID_140--> To check the Select Branch field 
+
+TC_ID_141-->  To check whether able to select branch from dropdown
+
+TC_ID_142--> To check whether able to enter number in Reference no field
+ 
+TC_ID_143--> To check whether able to enter decimals in Reference no field
+ 
+TC_ID_144--> To check the default date selected in Transferencias Electronicas mode 
+
+
+
+</description>
+   <name>TC_ID_137_138_139_140_141_142_143_144</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>80c32416-aa61-42b1-9007-e08ce48bdce9</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_007 - Check whether the qty entered against SKUs are listing into Summary Screen
+TC_008 - Check Whether salable/non-salable qty entered against SKUs are showing against the same SKU in the sales return field</description>
+   <name>TC_007_008</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>fa945a59-7750-442e-a531-8375a8bb7500</testCaseGuid>
+</TestCaseEntity>

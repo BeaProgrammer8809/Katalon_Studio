@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_496--> To verify the “Reference number” field accepts the Empty space as input.[Collection Before Invoice]</description>
+   <name>TC_ID_496</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0bd24e3-3930-4c25-8e41-03bb033fb5fe</testCaseGuid>
+</TestCaseEntity>

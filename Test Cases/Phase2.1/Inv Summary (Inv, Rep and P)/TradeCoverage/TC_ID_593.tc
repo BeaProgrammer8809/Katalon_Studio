@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_593
+To verify only Product buying can be done for the retailer name having the specail char “Ñ”</description>
+   <name>TC_ID_593</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>46e30133-a3b0-4851-83a4-bae09dfb1604</testCaseGuid>
+</TestCaseEntity>

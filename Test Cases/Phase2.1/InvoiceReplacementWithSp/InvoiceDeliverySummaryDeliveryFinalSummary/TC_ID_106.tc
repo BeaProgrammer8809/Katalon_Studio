@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_106 : &quot;Verify the Element present under Delivery Split Summary Screen
+1. A Grid Having 2 constant  fields- i. Product Name ii. Stock Delivered
+2. Edit Icon on the top right corner
+3. Back button Arrow -> on the top Left corner
+4. Create Final Invoice Button
+5. extra invoice field (based on the user input the value in invoice count field)&quot;</description>
+   <name>TC_ID_106</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2b3a3d17-0d03-42f6-809d-ff3c77c1e380</testCaseGuid>
+</TestCaseEntity>

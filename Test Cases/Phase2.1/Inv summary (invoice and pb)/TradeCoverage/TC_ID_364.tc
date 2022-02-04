@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_364 - To check alert pop is coming like &quot; Do you want to delete payment transaction ?&quot; with yes and cancel button when back button is click on collection screen</description>
+   <name>TC_ID_364</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>05e273a2-b856-4cc4-8b6f-fb23e60dc279</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Balance displayed in the Cheque mode after switching from Efectivo mode</description>
+   <name>TC_ID_108</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ed59c032-01e9-4a1d-8118-8de3a74fa33d</testCaseGuid>
+</TestCaseEntity>

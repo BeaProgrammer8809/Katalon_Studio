@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_108--> To check the Balance displayed in the Cheque mode after switching from Efectivo mode
+
+TC_ID_109--> To check the Total paid displayed in the Cheque mode after switching from Efectivo mode
+
+TC_ID_110--> To check whether able to enter Total paid amount in Cheque mode after switching from Efectivo mode 
+
+ </description>
+   <name>TC_ID_108_109_110</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>38777ad0-1366-4f63-8982-721a05767de7</testCaseGuid>
+</TestCaseEntity>

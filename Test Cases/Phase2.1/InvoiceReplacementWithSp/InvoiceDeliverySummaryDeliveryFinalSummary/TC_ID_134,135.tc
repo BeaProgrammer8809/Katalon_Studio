@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_134 - Check whether full stock delivered qty is allowing to enter into single extra invoice field
+TC_ID_135 - Check whether Partial stock delivered qty is allowing to enter into single extra invoice field- In Case of Ungrouped SKU</description>
+   <name>TC_ID_134,135</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e03c95f-7aab-4ae3-95e5-96c35aa271bd</testCaseGuid>
+</TestCaseEntity>

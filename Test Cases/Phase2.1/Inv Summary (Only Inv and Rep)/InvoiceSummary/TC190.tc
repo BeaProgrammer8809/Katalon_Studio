@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC190 : To check the Comp Disc amount inside the info popup while taking replacement for the sku's that is having only discount (Item discount) but not having any taxes</description>
+   <name>TC190</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6721df4-6ae7-4010-b143-fbcf18c462f9</testCaseGuid>
+</TestCaseEntity>

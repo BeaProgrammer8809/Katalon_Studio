@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_408 - To check the default date selected in Cheque mode</description>
+   <name>TC_ID_408</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff96fde4-d044-4dca-a290-7bc365e95557</testCaseGuid>
+</TestCaseEntity>

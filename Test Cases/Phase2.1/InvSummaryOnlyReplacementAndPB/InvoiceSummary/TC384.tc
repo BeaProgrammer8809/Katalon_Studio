@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC384 :To check whether Collection icon is displaying for Cash retailer while doing only product buying for bimbo sku</description>
+   <name>TC384</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9fd82c2e-e1ba-4fdf-af97-2623aaf8c293</testCaseGuid>
+</TestCaseEntity>

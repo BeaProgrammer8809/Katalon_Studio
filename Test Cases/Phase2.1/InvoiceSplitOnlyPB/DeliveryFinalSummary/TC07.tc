@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC07:Check whether delivery final summary screen is coming for credit retailer ,when prodcut buying  split is defined and mapped to the channel</description>
+   <name>TC07</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>427df969-d742-41ad-b4ca-1a9674491472</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_568: To verify Only Replacement can be done for the retailer with RFC format as “XXXXYYMMDDaa&amp;”</description>
+   <name>TC_ID_568</name>
+   <tag></tag>
+   <comment>xoxoxoxoxxoxo</comment>
+   <testCaseGuid>ae69e8ef-bff7-4556-853d-3a5f8012fd8a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_426 - To check the Select Bank field
+TC_ID_427 - To check whether able to select Bank from dropdown</description>
+   <name>TC_ID_426_427</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>8aedf9af-d9b9-45ec-9175-8adc9dee8246</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_23 - To check the total price caculation while taking product buying for the sku's that is having only IEPS tax with item discount and Detail IEPS is enabled for the store</description>
+   <name>TC23</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>62762168-0338-4cd0-a88a-b612a18c5d9f</testCaseGuid>
+</TestCaseEntity>

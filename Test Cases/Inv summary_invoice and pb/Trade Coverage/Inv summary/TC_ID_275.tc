@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_275 - To check whether Collection icon is present for Credit retailer</description>
+   <name>TC_ID_275</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>223f8d11-5706-4ea8-9308-c27def843f8a</testCaseGuid>
+</TestCaseEntity>

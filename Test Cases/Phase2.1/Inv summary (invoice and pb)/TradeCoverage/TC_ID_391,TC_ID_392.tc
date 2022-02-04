@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_391 : To check whether able to submit full invoice amount in only Efectivo mode
+
+TC_ID_392 : To check whether Pre Ticket icon is displayed after submitting the Invoice amount in Efectivo mode 
+
+</description>
+   <name>TC_ID_391,TC_ID_392</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4eb140c4-49c5-4443-8c4d-574ec97619a0</testCaseGuid>
+</TestCaseEntity>

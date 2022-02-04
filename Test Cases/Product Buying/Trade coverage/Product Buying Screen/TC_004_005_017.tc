@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_004- Verify Product Hierarchy &quot;Marca&quot; in the filter screen
+TC_005- Verify tap action on MARCA level `
+TC_017- Check whether User is allowed to select multiple MARCA/BRAND in the filter</description>
+   <name>TC_004_005_017</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>456b5cf3-3ae5-4c1e-beb1-640a80069b91</testCaseGuid>
+</TestCaseEntity>

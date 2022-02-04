@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_08: To check the SRP price displayed for each sku's after taking invoice, replacement and pb for group sku's</description>
+   <name>TC_08</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f3da1f8e-928e-4d56-8110-93dadd8f0b12</testCaseGuid>
+</TestCaseEntity>

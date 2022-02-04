@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_010 : To check delivery final summary screen is coming when invoice has taken for Reclino company sku</description>
+   <name>TC_ID_010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>57f0d92b-9274-4618-b693-628b80077427</testCaseGuid>
+</TestCaseEntity>

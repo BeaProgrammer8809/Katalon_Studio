@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_060:-To check enter the folio no is coming when product buying has taken for a sku</description>
+   <name>TC_060</name>
+   <tag></tag>
+   <comment>Verifying the Popup</comment>
+   <testCaseGuid>035158fd-e8fb-44ac-9c5b-6f605da14115</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC10:Check whether for particular Cash retailer, delivery final summary screen is coming</description>
+   <name>TC10</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aba0de84-7f0d-4d2a-8175-90a6c051b8a8</testCaseGuid>
+</TestCaseEntity>

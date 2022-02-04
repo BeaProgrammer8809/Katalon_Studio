@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_093--> To check the Inv Amt displayed in the Efectivo mode
+
+TC_ID_094--> To check the Min. Amt displayed in the Efectivo mode</description>
+   <name>TC_ID_093_094</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>74414c2d-34de-4370-bfe2-67c8967f4442</testCaseGuid>
+</TestCaseEntity>

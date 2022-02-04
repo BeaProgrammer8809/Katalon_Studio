@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the stock delivered qty in delivery split summary screen once all the stock delivered qty in extra invoice column</description>
+   <name>TC_350</name>
+   <tag></tag>
+   <comment> verification for stock delivary quantity (Stock delivered qty should be 0)</comment>
+   <testCaseGuid>d177d67d-98a5-41c8-be5a-0063fd0592fd</testCaseGuid>
+</TestCaseEntity>

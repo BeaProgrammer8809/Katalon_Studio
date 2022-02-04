@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_595
+To verify only Replacement can be done for the retailer name having special char “Ñ”</description>
+   <name>TC_ID_595</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51cf3d69-890d-46f7-aae0-58f332b70154</testCaseGuid>
+</TestCaseEntity>

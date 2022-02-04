@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_194 : To check whether able to submit Collection with Total paid field as empty</description>
+   <name>TC_ID_194</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa55f2b4-9328-41b5-b21e-eab25ef210eb</testCaseGuid>
+</TestCaseEntity>

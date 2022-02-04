@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_421:-To verify given “Folio No” &amp; “Folio ProdBuy” accepted in the summary screen</description>
+   <name>TC_ID_421</name>
+   <tag></tag>
+   <comment>Reference number field is accepting only alphabetic characters
+Folio no and folio Prod buy should accept &quot;-&quot; &amp; &quot;_&quot; </comment>
+   <testCaseGuid>6b0efc12-97f3-4553-855d-5cbd37788f62</testCaseGuid>
+</TestCaseEntity>

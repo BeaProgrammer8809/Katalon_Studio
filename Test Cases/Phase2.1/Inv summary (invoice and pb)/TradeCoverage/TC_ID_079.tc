@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_079 : To check the Value field calculation while taking invoice &amp; PB (Salable) against each sku's that is having both IVA and IEPS taxes but not having any discounts
+</description>
+   <name>TC_ID_079</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>612a3293-3182-4ced-bb84-f77d1dbcc2a1</testCaseGuid>
+</TestCaseEntity>

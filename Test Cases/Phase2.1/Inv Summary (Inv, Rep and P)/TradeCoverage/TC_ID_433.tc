@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_433 - To verify given folio number in the &quot;Enter the Folio number pop-up&quot;  accepted and generated invoice while doing Product Buying alone.</description>
+   <name>TC_ID_433</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd192e25-9db1-427b-9133-8056fc954bc5</testCaseGuid>
+</TestCaseEntity>

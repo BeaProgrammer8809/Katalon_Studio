@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_377 - To check user is allowed to put folio number in decimal and in alphanumeric and space</description>
+   <name>TC_ID_377</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8dd6e48-e79e-4fda-821c-59e11616025b</testCaseGuid>
+</TestCaseEntity>

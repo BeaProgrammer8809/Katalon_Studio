@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC386:To check whether collection icon is displaying for cash and credit while doing replacement fand product buying for bimbo sku</description>
+   <name>TC386</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4e0f02a1-29ca-4794-ba3c-5b98362979c8</testCaseGuid>
+</TestCaseEntity>

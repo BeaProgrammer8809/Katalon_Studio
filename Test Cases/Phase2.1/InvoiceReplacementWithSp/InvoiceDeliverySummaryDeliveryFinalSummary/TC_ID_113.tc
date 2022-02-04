@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_113 - Check whether a default keyboard is displaying in the Delivery split summary screen</description>
+   <name>TC_ID_113</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f3fd8c9b-ca87-4f8b-9530-8a0a514fb1d3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_092 - Check the &quot;Value&quot; field calculation if only Non-salable qty is entered against the sku</description>
+   <name>TC_092</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>45990c93-490f-45e5-bf66-38adc6d7460f</testCaseGuid>
+</TestCaseEntity>

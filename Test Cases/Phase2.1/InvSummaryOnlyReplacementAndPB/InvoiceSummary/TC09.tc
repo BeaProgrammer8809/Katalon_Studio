@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC09 - To check SKU name is displayed in Summary screen</description>
+   <name>TC09</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a16bbab0-73c9-4a0d-85ad-c7bd7a97dc56</testCaseGuid>
+</TestCaseEntity>

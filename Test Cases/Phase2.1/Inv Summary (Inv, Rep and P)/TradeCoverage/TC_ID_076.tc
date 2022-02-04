@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_076 : To check the Total amount inside the info popup while taking invoice for the sku's that is not having any discounts and taxes</description>
+   <name>TC_ID_076</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c6b71cb3-d716-4f3b-8466-42a303d4bf5b</testCaseGuid>
+</TestCaseEntity>

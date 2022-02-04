@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC103: To check the Value field calculation while taking invoice and replacement against each sku's that is having IVA tax, Item discount and category discount.</description>
+   <name>TC103</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2b59fb5-9eaa-4581-a107-ce6758ac2abb</testCaseGuid>
+</TestCaseEntity>

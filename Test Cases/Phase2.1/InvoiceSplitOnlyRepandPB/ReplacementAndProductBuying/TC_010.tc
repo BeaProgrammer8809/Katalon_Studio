@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_010: Check whether a keyboard is opening when tap into invoice count field available in the Delivery Summary Screen and it has only number key.</description>
+   <name>TC_010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bcb1dc58-af18-4500-bb99-7acd5744e561</testCaseGuid>
+</TestCaseEntity>

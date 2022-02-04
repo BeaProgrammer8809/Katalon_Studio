@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_033: Check whether for SKU which is under Invoice split, for which delivery final summary screen is coming?- Only Invoice is taken</description>
+   <name>TC_ID_033</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c506de97-4aac-4880-905a-afffe85614f1</testCaseGuid>
+</TestCaseEntity>

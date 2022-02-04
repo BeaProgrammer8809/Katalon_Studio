@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_072--> Check whether the SKU's under the corresponding brand only displayed on applying the filter by sku's brand (Marca) level</description>
+   <name>TC_072</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa1eebe9-9707-4331-a925-8242f4d08b89</testCaseGuid>
+</TestCaseEntity>

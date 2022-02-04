@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_235 - To check Collection option in delivery final summary screen is coming only when split is applied</description>
+   <name>TC_ID_235</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3ee12e3d-e287-48eb-9ae9-772ff338b176</testCaseGuid>
+</TestCaseEntity>

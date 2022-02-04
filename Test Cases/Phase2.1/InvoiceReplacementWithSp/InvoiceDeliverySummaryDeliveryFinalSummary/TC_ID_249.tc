@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_249 - To check the Total paid displayed in Efectivo mode without changing the defaultly filled paid amount</description>
+   <name>TC_ID_249</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cddd05cf-16ef-4185-a3c5-50b7aedaacd9</testCaseGuid>
+</TestCaseEntity>

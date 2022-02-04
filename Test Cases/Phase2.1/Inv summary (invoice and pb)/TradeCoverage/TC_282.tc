@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_282 : To check amount in credit note collection mode when Product Buying value is less than the Invoice value</description>
+   <name>TC_282</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9e56ccb3-c0fc-4c0d-b70a-c6741f745037</testCaseGuid>
+</TestCaseEntity>

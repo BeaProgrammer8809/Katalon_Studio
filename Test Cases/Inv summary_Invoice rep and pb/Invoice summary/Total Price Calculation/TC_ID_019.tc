@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the total price calculation while taking invoice, replacement and Product buying for the sku's that is having IVA tax and category discount.</description>
+   <name>TC_ID_019</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90ea6f4a-4c8f-4570-a5b5-79da827831e4</testCaseGuid>
+</TestCaseEntity>

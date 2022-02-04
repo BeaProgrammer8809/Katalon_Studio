@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_124 - Check whether full stock delivered qty is allowing to enter into single extra invoice field</description>
+   <name>TC_ID_124</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cc24ba67-23d7-40b7-be43-0ddb86f88e50</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_181
+To check while doing invoice ,replacement and product buying for different legal enity split group sku's or different company sku's ,whether product buying amount is not adjusted in invoice</description>
+   <name>TC_181</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da4c9a05-0959-462c-a627-ce3fe176a916</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_004: Check whether key is getting inputted in Invoice count field when tap on any key 0-9</description>
+   <name>TC_004</name>
+   <tag></tag>
+   <comment>Barcle
+###############
+Ricolino</comment>
+   <testCaseGuid>91b9a067-5d6f-4432-99f8-8bca73df19af</testCaseGuid>
+</TestCaseEntity>

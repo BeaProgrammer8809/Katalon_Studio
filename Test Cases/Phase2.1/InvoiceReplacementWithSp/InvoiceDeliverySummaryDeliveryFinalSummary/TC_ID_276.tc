@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_276:-To check whether able to Submit with Total paid amount greater than invoice amount</description>
+   <name>TC_ID_276</name>
+   <tag></tag>
+   <comment>Verify the toast msg
+Collection popup should be open
+Verify paid Amount less than invoice Amount</comment>
+   <testCaseGuid>50ca2070-e793-4e1b-9ff8-322f3155b0f8</testCaseGuid>
+</TestCaseEntity>

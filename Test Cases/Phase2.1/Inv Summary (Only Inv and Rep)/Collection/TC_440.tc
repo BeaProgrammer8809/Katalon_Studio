@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_440</description>
+   <name>TC_440</name>
+   <tag></tag>
+   <comment>Inv Amt should display the Net amount (value) displayed in Summary screen</comment>
+   <testCaseGuid>1f78c0f5-ebf8-40ff-9f84-3751850c5ee0</testCaseGuid>
+</TestCaseEntity>

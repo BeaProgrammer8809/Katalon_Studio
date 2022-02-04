@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_397--> To verify “Folio No” &amp; “Folio ProdBuy” field is accepting the special characters while the application in Spanish language mode.</description>
+   <name>TC_ID_397</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>50a5e72d-edc9-484a-934f-b9ee3fea3733</testCaseGuid>
+</TestCaseEntity>

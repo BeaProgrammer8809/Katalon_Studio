@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_037 : To check  Total Price  Calculation against each sku having only tax  IVA but not having any discounts while taking Invoice &amp; PB - Only Salable
+</description>
+   <name>TC_ID_037</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de992978-4551-42f4-ada8-1e6fb89b348b</testCaseGuid>
+</TestCaseEntity>

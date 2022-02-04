@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_312 : To check when invoice amount is lesser than product buting amount then in collection screen by default amount will show in credit note section</description>
+   <name>TC_ID_312</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d432121b-c5b1-4eda-b061-f1e465fd1933</testCaseGuid>
+</TestCaseEntity>

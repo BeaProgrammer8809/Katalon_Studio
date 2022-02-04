@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_079:To check the total Value calculation while taking replacement for the sku's that is having IVA tax and Item discount.</description>
+   <name>TC_079</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>325c7224-486c-4325-a3ff-2ec0f50885b4</testCaseGuid>
+</TestCaseEntity>

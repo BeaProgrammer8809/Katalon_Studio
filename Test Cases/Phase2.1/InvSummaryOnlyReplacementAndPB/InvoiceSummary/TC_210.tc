@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Deduction(Comp Disc and Dist Discount) amount inside the info popup while taking replacement for the sku's that is having IVA, IEPS taxes and  Category discount.</description>
+   <name>TC_210</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ef486e1d-ce59-41bb-a1b9-f1295fc16c13</testCaseGuid>
+</TestCaseEntity>

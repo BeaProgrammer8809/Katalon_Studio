@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_026: Check whether for particular Credit retailer, delivery final summary screen is coming- Invoice + Replacement both have taken</description>
+   <name>TC_ID_026</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1ff6e7d-cf75-420a-bd48-54eb9853d663</testCaseGuid>
+</TestCaseEntity>

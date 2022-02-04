@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_380:- To verify “Pesito Commission $3 should pay in Efectivo” Toast message is display if user pay ‘$2’ in cash mode and remaining amount in Cheque and Electronic Transfer mode.</description>
+   <name>TC_380</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ea641058-3df7-4885-bbbf-03a5c0203f5f</testCaseGuid>
+</TestCaseEntity>

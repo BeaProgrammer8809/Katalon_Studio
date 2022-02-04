@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_43 - To check the total price calculation while taking replacement for the sku's that is having IEPS tax with category discount and Detail IEPS is enabled for the store</description>
+   <name>TC43</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>80738efe-65ab-4643-9157-5448845cdd8d</testCaseGuid>
+</TestCaseEntity>

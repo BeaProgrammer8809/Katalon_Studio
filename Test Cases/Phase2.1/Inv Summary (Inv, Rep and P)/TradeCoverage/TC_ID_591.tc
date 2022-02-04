@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_591
+To verify only Invoice can be done for the retailer name with special character “Ñ”</description>
+   <name>TC_ID_591</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4fc0a6d-2a43-4b4d-afab-3a70e6008977</testCaseGuid>
+</TestCaseEntity>

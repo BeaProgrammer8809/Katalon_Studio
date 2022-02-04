@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_426 - To verify given folio number for the Cash retailer is accepts and display in the print review screen under sales center legal entity</description>
+   <name>TC_ID_426</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3a8e1058-2563-4c59-b128-a6322b00cbd7</testCaseGuid>
+</TestCaseEntity>

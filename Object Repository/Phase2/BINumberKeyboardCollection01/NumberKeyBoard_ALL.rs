@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>NumberKeyBoard_ALL</name>
+   <tag></tag>
+   <elementGuidId>d7aaaee5-dbd4-43a3-9b4c-92fba4aae0f5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@resource-id='com.ivy.bimbomx.mexico.view.uat:id/footer']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@resource-id='${GlobalVariable.Package}:id/footer']</value>
+   </webElementProperties>
+</WebElementEntity>

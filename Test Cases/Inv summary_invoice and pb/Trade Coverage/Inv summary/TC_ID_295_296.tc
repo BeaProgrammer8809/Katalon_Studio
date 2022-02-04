@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_295 - To check the Inv Amt displayed in the Efectivo mode
+TC_ID_296 - To check the Min. Amt displayed in the Efectivo mode
+</description>
+   <name>TC_ID_295_296</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>bdaa7043-d3aa-478a-88a8-7c39acc06f2c</testCaseGuid>
+</TestCaseEntity>

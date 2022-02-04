@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_365 - To check whether alert message is displayed while trying to proceed the invoice transaction with &quot;Claveentidad&quot; selection and without selecting the &quot;Ambito&quot;</description>
+   <name>TC_ID_365</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b480f8df-e877-418f-9639-2bb261a3a3ed</testCaseGuid>
+</TestCaseEntity>

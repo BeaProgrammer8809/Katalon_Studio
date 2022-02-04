@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_352:-To check the entity name and folio type displayed inside Folio no popup if invoice and PB is taken against Barcel sku's</description>
+   <name>TC_ID_352</name>
+   <tag></tag>
+   <comment>verify the folio no popup
+Filio type verification</comment>
+   <testCaseGuid>4292de49-1cc7-401b-9bf0-87d3ceb2da4f</testCaseGuid>
+</TestCaseEntity>

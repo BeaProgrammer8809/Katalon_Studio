@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_280 : To check once Detail IEPS option is selected(No) but tax group is mapped for the retailer while do only Product buying ,whether invoice is generated correctly 
+
+
+</description>
+   <name>TC_ID_280</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5bc20591-2d0b-46bc-9469-d83625b2f7c5</testCaseGuid>
+</TestCaseEntity>

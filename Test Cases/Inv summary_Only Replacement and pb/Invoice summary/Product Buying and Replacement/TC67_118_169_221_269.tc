@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC67 - To check the total price calculation while taking product buying and replacement for the sku's that is having only tax IVA but not having any discounts
+
+TC118 - To check the Value field and total qty calculation while taking replacement and product buying against each sku's that is having only tax IVA but not having any discounts
+
+TC169 - To check the Order Value amount inside the info popup while taking replacement for the sku's that is having only tax IVA but not having any discounts
+
+TC221 -To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement and product buying for the sku's that is having only tax IVA but not having any discounts
+
+TC269 - To check the Total amount inside the info popup while taking replacement and product buying for the sku's that is having only tax IVA but not having any discounts</description>
+   <name>TC67_118_169_221_269</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>1c52af16-2b86-4fb4-bde2-433b92a92567</testCaseGuid>
+</TestCaseEntity>

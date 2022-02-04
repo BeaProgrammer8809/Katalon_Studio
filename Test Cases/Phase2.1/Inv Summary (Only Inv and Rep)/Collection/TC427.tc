@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC427:To check the default date selected in Cheque mode</description>
+   <name>TC427</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d4d59670-503d-4fe3-877e-cd748b8f9589</testCaseGuid>
+</TestCaseEntity>

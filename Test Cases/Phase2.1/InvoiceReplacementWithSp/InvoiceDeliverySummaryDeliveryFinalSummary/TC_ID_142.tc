@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_142 - Check whether entered qty in the ExtraInv* fields are allowed to remove using backspace key (&lt;) available in the keyboard</description>
+   <name>TC_ID_142</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>47ebdefc-da5c-401d-ab2a-c2388c9a0c59</testCaseGuid>
+</TestCaseEntity>

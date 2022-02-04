@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_413 - To check whether able to Submit the invoice amount without selecting Cheque Type</description>
+   <name>TC_ID_413</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>b3fa1fd8-183f-4d90-82be-4e08d7eb41fd</testCaseGuid>
+</TestCaseEntity>

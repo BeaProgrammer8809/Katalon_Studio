@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_024: Check whether for particular retailer delivery final summary screen is not coming for which different channel is mapped- Invoice + Replacement both have taken</description>
+   <name>TC_ID_024</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5838aa1c-72b4-4bee-85b2-c5f0b1ce8034</testCaseGuid>
+</TestCaseEntity>

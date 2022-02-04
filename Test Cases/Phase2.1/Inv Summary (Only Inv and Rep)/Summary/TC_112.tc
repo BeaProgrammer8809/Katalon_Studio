@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_112 - To check the default display of info (i) popup screen
+
+It should display the Amount split up popup with following details
+
+1) Order value
+2) Deductions
+a) Comp Disc
+b) Dist Disc
+3. Total</description>
+   <name>TC_112</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f62294d7-476a-4aa6-aa50-18c47d83b0ad</testCaseGuid>
+</TestCaseEntity>

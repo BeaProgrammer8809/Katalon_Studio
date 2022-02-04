@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_245 - To check the display of Collection popup in side payment check box</description>
+   <name>TC_ID_245</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c9c47eb1-a1e3-4ad3-b0fa-0f3265e3c081</testCaseGuid>
+</TestCaseEntity>

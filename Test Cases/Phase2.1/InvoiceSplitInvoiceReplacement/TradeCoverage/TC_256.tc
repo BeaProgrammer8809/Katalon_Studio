@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_256 - To verify should “Folio No” field is accepting less than 6 characters.</description>
+   <name>TC_256</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b58fa204-11bc-4e13-9349-0f77634bb322</testCaseGuid>
+</TestCaseEntity>

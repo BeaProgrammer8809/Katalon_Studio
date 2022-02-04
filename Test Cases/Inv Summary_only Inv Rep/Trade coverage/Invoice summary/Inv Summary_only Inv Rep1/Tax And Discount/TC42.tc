@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the total price calculation while taking replacement for the sku's that is having IVA, IEPS taxes and Item discount.</description>
+   <name>TC42</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a0fd1a64-6da9-4e90-92d9-47e9f0258d43</testCaseGuid>
+</TestCaseEntity>

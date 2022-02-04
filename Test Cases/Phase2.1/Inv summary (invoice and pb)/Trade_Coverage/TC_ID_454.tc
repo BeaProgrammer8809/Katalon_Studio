@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_454 : To check user is able to collect pesito commission amount in cash or Cheque</description>
+   <name>TC_ID_454</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b69a6f7f-db94-45c3-92a6-f5957627a3f0</testCaseGuid>
+</TestCaseEntity>

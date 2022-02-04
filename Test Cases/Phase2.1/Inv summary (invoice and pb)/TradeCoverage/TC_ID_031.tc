@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_031:-To Check  Total Price  calculation against each sku having only tax  IEPS and Category level discounts while taking Invoice &amp; PB - Only Salable</description>
+   <name>TC_ID_031</name>
+   <tag></tag>
+   <comment>Verifying the total price
+Product Buying should not be considered for the Gross/Total calculation.</comment>
+   <testCaseGuid>2511fa7e-d0ba-4300-9124-07a2abf51387</testCaseGuid>
+</TestCaseEntity>

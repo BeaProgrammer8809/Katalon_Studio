@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_057 - To Check Total Price Calculation against each sku having Both tax IVA &amp; IEPS and Category and Item level discounts while taking Invoice &amp; PB - Both Salable &amp; Non-Salable
+TC_ID_113- To check the Value field calculation while taking invoice &amp; PB (Both Salable &amp; Non-salable) against each sku's that is having IVA, IEPS taxes and Category discount.
+TC_ID_163 - To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Both Salable &amp; Non-salable) for the sku's that is having IVA, IEPS taxes and Category discount.</description>
+   <name>TC_ID_057_113_163</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>558e183c-85a4-4c38-8fdc-d55295156ede</testCaseGuid>
+</TestCaseEntity>

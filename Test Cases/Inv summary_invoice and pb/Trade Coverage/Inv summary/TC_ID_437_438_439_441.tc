@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_437- To check whether able to Submit the invoice amount without entering Reference no
+TC_ID_438 - To check whether able to Submit the invoice amount with max digit in Reference no
+TC_ID_439 - To check whether able to Submit the invoice amount with Reference no as alpha numeric
+TC_ID_441 - To check whether Collection icon is displayed after submitting the Invoice amount in Transferencia electronicas mode</description>
+   <name>TC_ID_437_438_439_441</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>590fbccb-90f8-41b7-a5f8-043e28618fb9</testCaseGuid>
+</TestCaseEntity>

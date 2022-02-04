@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC75 - To check the total price calculation while taking product buying and replacement for the sku's that is having IVA, IEPS taxes and Category discount.
+
+TC124 - To check the Value and total qty field calculation while taking replacement and product buying against each sku's that is having IVA, IEPS taxes and Category discount.
+
+TC175 - To check the Order Value amount inside the info popup while taking replacement and product buying for the sku's that is having IVA, IEPS taxes and Category discount.
+
+TC227 -To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement and product buying for the sku's that is having IVA, IEPS taxes and Category discount.
+
+TC275 - To check the Total amount inside the info popup while taking replacement and product buying for the sku's that is having IVA, IEPS taxes and Category discount.</description>
+   <name>TC75_124_175_227_275</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>f75eaae5-76dd-4066-805c-b16591d329fc</testCaseGuid>
+</TestCaseEntity>

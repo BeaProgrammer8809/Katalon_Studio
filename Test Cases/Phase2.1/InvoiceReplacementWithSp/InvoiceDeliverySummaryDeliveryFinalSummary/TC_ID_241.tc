@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_241 - To check for extra invoice also Quick cash option is displaying</description>
+   <name>TC_ID_241</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce05d3a5-d9ba-4c99-8afe-dc4d6cfbcc3e</testCaseGuid>
+</TestCaseEntity>

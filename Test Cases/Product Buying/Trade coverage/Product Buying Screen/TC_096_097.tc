@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_096 - To check able to navigate to &quot;Summary&quot; screen without entering any qty in product buying and order and invoice screen
+TC_097 - To check redirecting to Previous screen-Order and invoice</description>
+   <name>TC_096_097</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>afe27900-334e-402b-a559-fae4d195f7e8</testCaseGuid>
+</TestCaseEntity>

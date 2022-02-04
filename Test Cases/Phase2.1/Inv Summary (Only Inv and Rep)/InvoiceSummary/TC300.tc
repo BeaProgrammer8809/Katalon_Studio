@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC300:To check while doing invoice qty for the sku's that is having IEPS tax, Item discount and category discount and detail IEPS flag is enabled,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC300</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>becbe409-13a0-4ad5-a7fd-3f8d6dd04da3</testCaseGuid>
+</TestCaseEntity>

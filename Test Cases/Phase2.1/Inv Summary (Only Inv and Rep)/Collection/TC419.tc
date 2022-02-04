@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Select Bank field</description>
+   <name>TC419</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>db9367c5-314b-45bb-89cf-0e9e3363049d</testCaseGuid>
+</TestCaseEntity>

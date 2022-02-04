@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_014 - Check whether a popup is displaying when tap on (i) Icon
+TC_015 - Check the fields available in the Amount Split up popup. Closing Button icon (X), Order Value and Under Deductions Header: Comp Disc Dist Disc and in the last Total should be there.
+TC_016 - Check whether Amount Split Up popup gets closed when tap on (X) Icon
+TC_017 - Check whether the fields available in the Amount split up popup are non-editable
+
+
+</description>
+   <name>TC_014_015_016_017</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>24d1a16e-5140-4dda-8678-873ade7eccb8</testCaseGuid>
+</TestCaseEntity>

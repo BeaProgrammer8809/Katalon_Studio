@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_109 : To check the Value and total qty field calculation while taking replacement against each sku's that is having IVA, IEPS taxes and Item, category discount.</description>
+   <name>TC_109</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e12e3e9-fb4f-4277-aabb-76c360010165</testCaseGuid>
+</TestCaseEntity>

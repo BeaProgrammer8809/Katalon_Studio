@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_08--> To check the SKU name displayed in Summary screen
+
+TC_09--> Check whether after doing only invoice against each sku then it is displaying in Summary screen</description>
+   <name>TC_08_09</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f408406-8d3e-4b5b-a037-33cf2d882b33</testCaseGuid>
+</TestCaseEntity>

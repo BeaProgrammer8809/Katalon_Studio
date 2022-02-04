@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_036 : To check the Value field calculation while taking invoice, replacement and product buying  against each sku's that is having IVA tax, Item discount and category discount.</description>
+   <name>TC_ID_036</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5c95b96c-aaac-4b1a-8e77-b5a50035429c</testCaseGuid>
+</TestCaseEntity>

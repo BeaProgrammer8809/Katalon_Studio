@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_46 - To check the total price calculation while taking replacement for the sku's that is having only tax IVA but not having any discounts
+
+TC_86 - To check the Value field and total qty calculation while taking replacement against each sku's that is having only tax IVA but not having any discounts
+
+TC_137 - To check the Order Value amount inside the info popup while taking replacement for the sku's that is having only tax IVA but not having any discounts
+
+TC_204 - To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement for the sku's that is having only tax IVA but not having any discounts
+
+TC_253 - To check the Total amount inside the info popup while taking replacement for the sku's that is having only tax IVA but not having any discounts</description>
+   <name>TC46_86_137_204_253</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dbd05dee-918c-438d-bcfd-f075c06a3d84</testCaseGuid>
+</TestCaseEntity>

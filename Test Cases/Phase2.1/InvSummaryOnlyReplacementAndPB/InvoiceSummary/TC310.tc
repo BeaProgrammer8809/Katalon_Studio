@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC310
+To check while doing product buying for the sku's that is having IVA, IEPS taxes with Category discount  and Detail IEPS is enabled for the store,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC310</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f190c03a-81a5-451a-ada0-75cf46a6a4ab</testCaseGuid>
+</TestCaseEntity>

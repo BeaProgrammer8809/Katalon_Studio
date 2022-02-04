@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC02 - To check whether able to navigate to product buying screen without doing replacement in order and invoice screen</description>
+   <name>TC02</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b7ddd422-eafb-4b02-ad0d-8f2beac340b1</testCaseGuid>
+</TestCaseEntity>

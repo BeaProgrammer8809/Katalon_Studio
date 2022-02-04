@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_143 : To check whether able to enter decimals in Reference no field
+
+TC_ID_144 : To check the default date selected in Transferencias Electronicas mode</description>
+   <name>TC_ID_143,TC_ID_144</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4e348dde-63f9-4386-926d-b4e2d0c6f61e</testCaseGuid>
+</TestCaseEntity>

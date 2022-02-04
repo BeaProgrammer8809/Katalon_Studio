@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_111--> To check whether able to enter Total paid amount in only Cheque mode
+
+TC_ID_112--> To check the Select Bank field
+
+TC_ID_113--> To check whether able to select Bank from dropdown
+
+TC_ID_114--> To check the Select Branch field
+
+TC_ID_115--> To check whether able to select branch from dropdown
+
+TC_ID_116--> To check the Select Cheque Type dropdown
+
+TC_ID_117->  To check the Select Cheque Type dropdown options
+
+TC_ID_118--> To check whether able to enter number in Cheque no field
+
+TC_ID_119--> To check whether able to enter decimals in Cheque no field
+
+TC_ID_120--> To check the default date selected in Cheque mode
+
+</description>
+   <name>TC_ID_111_112_113_114_115_116_117_118_119_120</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b1f1ca2a-c062-4f4f-a79a-c6fc45237e74</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_367
+To check Edit  option is not coming after generating the pre ticket</description>
+   <name>TC_ID_367</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c06a8bcd-807c-4ac7-8982-e79ab2152510</testCaseGuid>
+</TestCaseEntity>

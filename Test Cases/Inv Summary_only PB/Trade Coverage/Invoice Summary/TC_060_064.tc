@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_060 - To check enter the folio no is coming when product buying has taken for a sku
+TC_064 - To check without entering folio number user is not able to submit invoice</description>
+   <name>TC_060_064</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>366908bd-24c2-4d1f-95ef-3885f91fd363</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_352-->To check whether the &quot;Ambito&quot; field is present in &quot;Invoice summary&quot; screen for stores with &quot;INE Enabled&quot; as true
+
+TC_ID_354-->To check the &quot;Ambito&quot; field
+
+
+TC_ID_355-->To check the options available in the &quot;Ambito&quot; dropdown list
+
+
+TC_ID_356-->To check whether able to select the desired options from the &quot;Ambito&quot; dropdown
+
+
+TC_ID_357-->To check whether the &quot;Claveentidad&quot; field is present in the &quot;Invoice summary&quot; screen for stores with &quot;INE Enabled&quot; as true
+
+
+TC_ID_359-->To check the &quot;Claveentidad&quot; field
+
+
+TC_ID_361-->To check whether able to select the desired options from the &quot;Claveentidad&quot; dropdown
+</description>
+   <name>TC_ID_352_354_355_356_357_359_361_INE_Ena</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>caea522e-921c-4c2e-bb0f-bc4ddcd700f0</testCaseGuid>
+</TestCaseEntity>

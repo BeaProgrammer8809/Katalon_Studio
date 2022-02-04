@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_067 -To Check Total Price Calculation against each sku having Both Item &amp; Category level discounts but no Tax while taking Invoice &amp; PB - Only Salable
+TC_ID_085- To check the Value field calculation while taking invoice &amp; PB (Salable) against each sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
+   <name>TC_ID_067_085_pending</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>78f0c789-db44-4264-b30b-28e406f688f7</testCaseGuid>
+</TestCaseEntity>

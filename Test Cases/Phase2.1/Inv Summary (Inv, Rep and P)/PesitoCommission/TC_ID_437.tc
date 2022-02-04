@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_437 - To verify can able to do grant pesito collection with ‘3’ dollar commission for the Retailer unplanned for the route .</description>
+   <name>TC_ID_437</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>afed2104-a1e8-4e3e-b932-6004ecbcfa36</testCaseGuid>
+</TestCaseEntity>

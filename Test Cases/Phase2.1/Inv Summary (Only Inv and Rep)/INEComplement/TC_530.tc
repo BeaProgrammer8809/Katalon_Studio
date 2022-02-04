@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_530: To check whether below items are displaying in INE_ClaveEntidad field
+1.AGU
+2.BCN
+3.BCS
+4.CAM
+5.CHP
+6.CHH
+7.COA
+8.COL
+9.CR1
+10.CR2
+11.CR3
+12.CR4
+13.CR5
+14./DIGF
+15.DUR
+16.GUA
+17.GRO</description>
+   <name>TC_530</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b820347-a0ae-47dc-a483-52b3d134bc18</testCaseGuid>
+</TestCaseEntity>

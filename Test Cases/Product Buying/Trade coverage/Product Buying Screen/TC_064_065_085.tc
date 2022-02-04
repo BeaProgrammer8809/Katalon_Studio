@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_064 - Check whether user is allowed to edit Product name in the Product Buying screen
+TC_065 - Check whether user is allowed to edit SRP in the Product Buying screen
+TC_085 - To check Product buying screen is getting closed when user click on done button without entering salable/non-salable value in the screen</description>
+   <name>TC_064_065_085</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>f45217a7-ec94-4eb4-ae6d-c0e23c79b373</testCaseGuid>
+</TestCaseEntity>

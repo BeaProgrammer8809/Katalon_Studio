@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_391 - To verify “Folio No” &amp; “Folio ProdBuy” field is accepting the “_” and “-” Special Characters.</description>
+   <name>TC_ID_391</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3d5b05a5-a183-41b6-90db-72fd782279a2</testCaseGuid>
+</TestCaseEntity>

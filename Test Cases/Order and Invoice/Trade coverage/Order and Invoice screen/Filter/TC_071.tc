@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_071--> Check whether the selected sku's line(linea) is getting unselected by tapping on it again</description>
+   <name>TC_071</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ca70af82-b743-4369-94e9-2a136409b634</testCaseGuid>
+</TestCaseEntity>

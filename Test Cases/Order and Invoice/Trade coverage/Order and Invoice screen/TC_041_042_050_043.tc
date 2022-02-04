@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_041--> To check the special filters available in order and invoice screen(Ordered, Purchased, Scheme, SIH special filters should be available in order and Invoice screen)
+
+TC_042--> To check the functionality of Ordered special filter(1. The screen name should be changed as Ordered(X) followed with number of ordered quantity in that list.
+2. Only those SKU's that contains the invoice/replacement qty should be displayed in the screen after selecting the Ordered special filter)
+
+TC_050--> To check whether able to navigate to Product buying screen after applying the Ordered in special filter
+
+TC_043--> To check whether able to view all the sku's after applying the Ordered special filter</description>
+   <name>TC_041_042_050_043</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f77eff95-c1d1-4fff-9fb7-2ecc61ac32c7</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Inv Amt displayed in the Cheques mode
+
+To check the Min. Amt displayed in the Cheques mode</description>
+   <name>TC413_414</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>22272c76-0e1b-40a4-b8f0-4f3801fe5b44</testCaseGuid>
+</TestCaseEntity>

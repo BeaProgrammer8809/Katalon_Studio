@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_008--> Check whether the sku name is displaying correctly in Order and invoice screen
+
+TC_009--> Check whether the tray conversion quantity (C) is displaying correctly against each sku in Order and invoice screen</description>
+   <name>TC_008_009</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f159694f-93df-4605-b4f5-caf8b2ddc64c</testCaseGuid>
+</TestCaseEntity>

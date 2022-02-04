@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_075:-To check the generated Sku's Qty value when Entity of Invoice Split is Bimbo and Replacement &amp; Product Buying- Saleable/Non-saleable Both Type is taken for Non_group SKU belongs to Barcel company.</description>
+   <name>TC_075</name>
+   <tag></tag>
+   <comment>Verifying Invoice Split-1- This should contain Sum of SKUs qty for which Replacement has been taken
+Verifying Prodbuy split -1- This should contain Sum of SKUs qty for which Product Buying has been taken
+Verifying the Incoice Name</comment>
+   <testCaseGuid>8d6750a2-b64b-4e19-b782-94d0ceabd16a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-245:To check the Total amount inside the info popup while taking product buying for the sku's that is having only discount (Item discount) but not having any taxes</description>
+   <name>TC-245</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cd45e3a4-5290-4e71-a799-b923792d4a85</testCaseGuid>
+</TestCaseEntity>

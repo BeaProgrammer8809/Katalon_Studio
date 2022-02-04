@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_414 - To check whether able to Submit the invoice amount without entering Cheque no
+TC_ID_415 - To check whether able to Submit the invoice amount with max digit in Cheque no
+TC_ID_418 - To check whether Collection icon is displayed after submitting the Invoice amount in Cheque mode</description>
+   <name>TC_ID_414_415_418</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>ca318880-b3f8-4feb-a54c-e34ea87269ba</testCaseGuid>
+</TestCaseEntity>

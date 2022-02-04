@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_008 - Verify Product Hierarchy level SEGMENTO in the filter screen
+TC_009 - Verify tap action on SEGMENTO product hierarchy
+TC_019- Check whether User is allowed to select multiple SEGMENTO/SEGMENT in the filter</description>
+   <name>TC_008_009_019</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>dd7a0d8d-6724-4613-8474-404469a029ab</testCaseGuid>
+</TestCaseEntity>

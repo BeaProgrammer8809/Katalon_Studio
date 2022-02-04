@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_025--> Check whether the Total value against each sku is displaying correctly if only invoice qty is entered(Total value should be calculated as
+Total = (Piece * SRP))
+
+TC_028--> To check the Value field calculation if invoice is done for a single sku
+
+TC_030--> To check the Total qty field calculation if piece qty is entered for an single sku</description>
+   <name>TC_025_028_030</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aec011b3-370f-4c69-b3da-c7c132b456ba</testCaseGuid>
+</TestCaseEntity>

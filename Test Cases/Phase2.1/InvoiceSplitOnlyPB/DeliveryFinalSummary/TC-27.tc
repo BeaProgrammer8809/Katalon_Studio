@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC-27:Check whether again without  modification of Qty/SKU, user is allowed to go to delivery screen</description>
+   <name>TC-27</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6258a24e-ae50-488e-ba83-0bdc453ba16d</testCaseGuid>
+</TestCaseEntity>

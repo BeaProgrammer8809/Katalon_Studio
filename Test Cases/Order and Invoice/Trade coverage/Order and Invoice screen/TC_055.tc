@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_055--> Check whether filter screen is displaying when user tap on filter icon</description>
+   <name>TC_055</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77688f77-bbdb-451b-86a3-50779d921876</testCaseGuid>
+</TestCaseEntity>

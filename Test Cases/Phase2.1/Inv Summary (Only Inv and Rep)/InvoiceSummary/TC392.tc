@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC392 - To check while doing replacement for bimbo/barcel/ricolino sku,whether collection icon is displaying as legal entity wise</description>
+   <name>TC392</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d9f29798-b21c-4888-b864-c15bd97cdf69</testCaseGuid>
+</TestCaseEntity>

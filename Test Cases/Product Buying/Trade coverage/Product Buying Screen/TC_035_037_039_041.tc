@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_035 - Check whether the MARCA section and selected MARCA value is getting Unchecked when user tap on particular MARCA Value
+TC_037 - Check whether the CATEGORIA section and checked CATEGORIA value is getting Unchecked when user tap on particular CATEGORIA Value
+TC_039 - Check whether the SEGMENTO section and checked SEGMENTO value is getting Unchecked when user tap on particular SEGMENTO Value
+TC_041 - Check whether the LINEA section and checked LINEA value is getting Unchecked when user tap on particular LINEA Value</description>
+   <name>TC_035_037_039_041</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>f0cc8da0-0cca-42f1-ab17-8aef5b0460a2</testCaseGuid>
+</TestCaseEntity>

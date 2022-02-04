@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether able to Submit with Total paid amount greater than invoice amount
+
+To check the Balance amount displayed in the Efectivo mode after changing the defaultly filled paid amount</description>
+   <name>TC_ID_099_100</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>c35a17bb-a934-432f-b855-423dce6a5964</testCaseGuid>
+</TestCaseEntity>

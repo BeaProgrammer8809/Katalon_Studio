@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether unit price is displaying for the scheme buy sku</description>
+   <name>TC_121</name>
+   <tag></tag>
+   <comment>Unit price should be displayed for scheme buy sku on invoice summary screen</comment>
+   <testCaseGuid>b19cc576-a9bb-4dfb-a974-6d2dd5e23f88</testCaseGuid>
+</TestCaseEntity>

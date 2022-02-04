@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_003
+
+Check Whether collection Screen is opening when user tap Collection icon</description>
+   <name>TC_003</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42da6a36-9a49-4ce6-9ee7-4e53df8cc3c5</testCaseGuid>
+</TestCaseEntity>

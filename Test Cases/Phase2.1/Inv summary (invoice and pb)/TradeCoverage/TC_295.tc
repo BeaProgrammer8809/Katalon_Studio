@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_295: To check the Inv Amt displayed after switching to the Cheques mode</description>
+   <name>TC_295</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6e43cab-4985-4a02-8972-6361ec75f789</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_013 : To check input keyboard gets minimized when tap on Done button</description>
+   <name>TC_013</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f569ddc1-294f-4213-acb6-353d930084ac</testCaseGuid>
+</TestCaseEntity>

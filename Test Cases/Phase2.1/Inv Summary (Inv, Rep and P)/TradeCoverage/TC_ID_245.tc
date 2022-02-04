@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_245
+To check whether able to Submit the invoice amount with future RTGS date</description>
+   <name>TC_ID_245</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6e9dd34-2609-446a-b5da-94c0f40c2149</testCaseGuid>
+</TestCaseEntity>

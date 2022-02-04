@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC407 - To check the Balance amount displayed in the Efectivo mode after changing the defaultl filled paid amount</description>
+   <name>TC407</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>299bdb99-1072-45ee-9d57-2f743bdde955</testCaseGuid>
+</TestCaseEntity>

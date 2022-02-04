@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_055:-Check whether using done button entered quantities in the popup are getting displayed into Unload screen against the product.</description>
+   <name>TC_055</name>
+   <tag></tag>
+   <comment>Screen should redirect to Unload screen
+values should updated against the product</comment>
+   <testCaseGuid>d850e7c8-a1db-4e30-bd2e-47c1ad5cc172</testCaseGuid>
+</TestCaseEntity>

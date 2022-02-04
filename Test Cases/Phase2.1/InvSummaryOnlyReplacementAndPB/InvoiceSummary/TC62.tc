@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC62 :  To check the total price calculation while taking product buying and replacement for the sku'sthat is having IEPS tax with Item discount and Detail IEPS flag is enabled for the store.</description>
+   <name>TC62</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3deeeaa-1fa7-4359-9fb7-fd36ec75168f</testCaseGuid>
+</TestCaseEntity>

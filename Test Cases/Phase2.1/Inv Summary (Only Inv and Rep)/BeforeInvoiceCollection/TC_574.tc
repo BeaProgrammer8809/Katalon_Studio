@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_574:-Expected toast message should not display
+To verify “Pesito Commission $3 should pay in Efectivo” Toast message is display if user pay full amount in Cheque mode without grantuing pesito .</description>
+   <name>TC_574</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>07d3b050-917e-4f1f-9793-1185d56de435</testCaseGuid>
+</TestCaseEntity>

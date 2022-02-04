@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_391--> To verify “Folio No” field is accepting the “_” and “-” Special Characters..(Test_1234-01)</description>
+   <name>TC_ID_391</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7df5fcf2-ee5b-4fc4-a742-6a0740b0234c</testCaseGuid>
+   <variable>
+      <defaultValue>'1234567'</defaultValue>
+      <description></description>
+      <id>389eeb4f-38ec-43c1-8ee8-23c94bac07e6</id>
+      <masked>false</masked>
+      <name>refNo1</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test_1234-01'</defaultValue>
+      <description></description>
+      <id>4cda38e8-e072-40f1-a906-547cb177c9c3</id>
+      <masked>false</masked>
+      <name>folioNo</name>
+   </variable>
+</TestCaseEntity>

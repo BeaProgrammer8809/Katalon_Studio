@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_353 - To check the entity name and folio type displayed inside Folio no popup if invoice and PB is taken against Ricolino sku's</description>
+   <name>TC_ID_353</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>0a412ffe-624f-40ce-92cd-ca418cea645d</testCaseGuid>
+</TestCaseEntity>

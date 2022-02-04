@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC61 - To check the Lines field calculation logic in Delivery Final Summaryscreen while doing product buying for group sku's and no group sku's</description>
+   <name>TC61</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7221d191-d237-4c1b-88d8-809d32c5d17a</testCaseGuid>
+</TestCaseEntity>

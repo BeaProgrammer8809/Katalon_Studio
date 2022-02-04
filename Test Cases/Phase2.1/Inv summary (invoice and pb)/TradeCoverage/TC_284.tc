@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_284: To check the Total paid displayed in Efectivo mode without changing the defaultly filled paid amount</description>
+   <name>TC_284</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8fb4ae06-8195-4813-9141-bfb80e5f9b99</testCaseGuid>
+</TestCaseEntity>

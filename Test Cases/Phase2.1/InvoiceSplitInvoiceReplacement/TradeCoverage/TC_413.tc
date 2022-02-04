@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_413 : To verify only Replacement can be done for the retailer name having special char “Ñ”</description>
+   <name>TC_413</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8d15c50e-b9ec-4ac0-80fc-8693b279d0ee</testCaseGuid>
+</TestCaseEntity>

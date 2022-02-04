@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_264 - To check the total qty count while taking both invoice and Product Buying (Salable/nonsalable) against each sku's</description>
+   <name>TC_ID_264</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>efdd9b01-dbb2-428a-9ca1-48f1f1b69a46</testCaseGuid>
+</TestCaseEntity>

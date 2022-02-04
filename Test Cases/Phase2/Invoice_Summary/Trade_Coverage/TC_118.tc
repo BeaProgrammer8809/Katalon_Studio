@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether scheme buy displaying with order qty on invoice summary screen</description>
+   <name>TC_118</name>
+   <tag></tag>
+   <comment>verifying skuname
+verifying order quantity</comment>
+   <testCaseGuid>faacdc75-cb14-4d34-b0cc-88f0ed5ae3bb</testCaseGuid>
+</TestCaseEntity>

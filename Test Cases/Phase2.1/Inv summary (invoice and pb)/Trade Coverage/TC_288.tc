@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_288 - To check the Balance amount displayed in the Efectivo mode after changing the defaultly filled paid amount
+
+Balance XX of Inv amount should get updated with respect to the amount entered in total paid fiel</description>
+   <name>TC_288</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1319c2a5-6968-4089-83c5-233da6b4fe14</testCaseGuid>
+</TestCaseEntity>

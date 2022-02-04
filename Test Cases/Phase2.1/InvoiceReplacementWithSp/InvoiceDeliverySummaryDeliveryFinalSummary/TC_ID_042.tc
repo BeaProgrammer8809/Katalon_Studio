@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_042: Check whether after edit icon tap, entered qty against SKUs are reflecting as is how was entered</description>
+   <name>TC_ID_042</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf4755bc-7399-4f02-83fe-e2da6e776c8a</testCaseGuid>
+</TestCaseEntity>

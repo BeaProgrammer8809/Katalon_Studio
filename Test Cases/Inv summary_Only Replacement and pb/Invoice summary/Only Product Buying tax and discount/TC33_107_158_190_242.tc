@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_033 - To check the total price calculation while taking product buying for the sku's that is having IVA, IEPS taxes and Item discount.
+
+TC_ID_107 - To check the Value and total qty field calculation while taking product buying against each sku's that is having IVA, IEPS taxes and Item discount.
+
+TC_ID_158 - To check the Order Value amount inside the info popup while taking product buying for he skus that is having IVA, IEPS taxes and Item discount.
+
+TC_ID_190 - To check the deductions (Comp Disc and Dist disc) amount inside the info popup while taking product buying for the sku's that is having IVA, IEPS taxes and Item discount.
+
+TC_ID_242 - To check the Total amount inside the info popup while taking product buying for the sku's that is having IVA, IEPS taxes and Item discount.</description>
+   <name>TC33_107_158_190_242</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>f1aedc1b-79bb-4795-9cce-1d2869dfbef5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_279:To verify “Folio No” given only for invoice or replacement split is accepting in the delivery summary screen</description>
+   <name>TC_279</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9f623cfe-1f0a-4f45-96c4-7734be01d8b2</testCaseGuid>
+</TestCaseEntity>

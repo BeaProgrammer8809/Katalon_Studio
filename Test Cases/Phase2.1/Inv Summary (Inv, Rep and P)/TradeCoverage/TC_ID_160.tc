@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_160 : To check User is able to use partial or full invoice amount by using pesito credit</description>
+   <name>TC_ID_160</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4cc5cf53-2016-423a-8df1-b57fdccdd086</testCaseGuid>
+</TestCaseEntity>

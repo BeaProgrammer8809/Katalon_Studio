@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_67 : To check while doing product buying for split group or no group sku's that is having item  discount ,whether Item discount is applying in delivery final summary screen</description>
+   <name>TC_67</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cad639f2-9617-4bbf-8efe-996b34144850</testCaseGuid>
+</TestCaseEntity>

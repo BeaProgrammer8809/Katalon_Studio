@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC443 - To check the Total paid displayed in the Transferencias Electronicas mode after switching from Efectivo mode</description>
+   <name>TC443</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aee99fdc-c190-4fb6-a556-07e7e7fb361f</testCaseGuid>
+</TestCaseEntity>

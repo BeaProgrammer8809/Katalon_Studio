@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_404 - To check the Select Cheque Type dropdown</description>
+   <name>TC_ID_404</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d70df28e-abf2-4712-8620-1f482fa4d326</testCaseGuid>
+</TestCaseEntity>

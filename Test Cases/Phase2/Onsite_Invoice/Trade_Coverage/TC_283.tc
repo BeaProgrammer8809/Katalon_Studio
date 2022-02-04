@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check when details IEPS flag is Enabled for the store and scheme is applying for the invoice ,whether onsite invoice is getting success</description>
+   <name>TC_283</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4a8d838-6989-43ee-b75a-c39e7cc06026</testCaseGuid>
+</TestCaseEntity>

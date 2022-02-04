@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_120 - To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Salable) for the sku's that is not having any discounts and taxes</description>
+   <name>TC_ID_120</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>e51b34ce-9854-46d6-8a97-fe442c14a8bb</testCaseGuid>
+</TestCaseEntity>

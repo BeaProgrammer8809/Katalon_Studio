@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_034 - Check whether the MARCA section and selected MARCA value is getting checked when user tap on particular MARCA Value
+TC_036 - Check whether the CATEGORIA section and checked CATEGORIA value is getting Checked when user tap on particular CATEGORIA Value
+TC_038 - Check whether the SEGMENTO section and checked SEGMENTO value is getting Checked when user tap on particular SEGMENTO Value
+TC_040 - Check whether the LINEA section and checked LINEA value is getting Checked when user tap on particular LINEA Value</description>
+   <name>TC_034_036_038_040</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>bb939bee-6b7d-45b0-be51-f6e3f8264578</testCaseGuid>
+</TestCaseEntity>

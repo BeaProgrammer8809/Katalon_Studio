@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_288:
+
+To check while doing replacement for bimbo/barcel/ricolino products ,whether folio number text field is displayed for non-multi org route</description>
+   <name>TC288</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f95ebbe0-3bb8-4034-b785-280099194bd0</testCaseGuid>
+</TestCaseEntity>

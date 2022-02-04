@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Inv Amt displayed in the Cheques mode when scheme is applied</description>
+   <name>TC_224</name>
+   <tag></tag>
+   <comment>Inv Amt should display the Net amount (value) displayed in Summary screen
+Only scheme buy sku should be consider in invoice amount ,scheme get sku should not consider</comment>
+   <testCaseGuid>5023240d-c48a-4395-8f5b-faba31caa074</testCaseGuid>
+</TestCaseEntity>

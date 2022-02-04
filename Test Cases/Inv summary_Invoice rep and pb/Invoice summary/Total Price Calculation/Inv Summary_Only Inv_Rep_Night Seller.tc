@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Reusable Case</description>
+   <name>Inv Summary_Only Inv_Rep_Night Seller</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1b0eb87-1e05-43aa-9f0f-18483a591960</testCaseGuid>
+   <variable>
+      <defaultValue>'A'</defaultValue>
+      <description></description>
+      <id>b00adbc5-9304-4aa2-98ed-a9c56e919c23</id>
+      <masked>false</masked>
+      <name>local_retailerName</name>
+   </variable>
+</TestCaseEntity>

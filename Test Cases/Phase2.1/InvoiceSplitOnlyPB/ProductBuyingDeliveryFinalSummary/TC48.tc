@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC48 - To check the split name, while taking only Product Buying for group sku's(bimbo legal enity) and no group sku's (bimbo,barcel and ricolino company)</description>
+   <name>TC48</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa97060f-8183-4544-ac66-86416b1645b8</testCaseGuid>
+</TestCaseEntity>

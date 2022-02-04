@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_111 - To check the Value and total qty field calculation while taking product buying against each sku's that is having only discount (Category discount) but not having any taxes
+
+TC_ID_162 - To check the Order Value amount inside the info popup while taking product buying for the sku's that is having only discount (Category discount) but not having any taxes
+
+TC_ID_194 - To check the deductions (Comp Disc and Dist disc) amount inside the info popup while taking product buying for the sku's that is having only discount (Category discount) but not having any taxes
+
+TC_ID_246 - To check the Total amount inside the info popup while taking product buying for the sku's that is having only discount (Category discount) but not having any taxes</description>
+   <name>TC111_162_194_246</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>1d4d471d-cc8c-4864-9a8b-da5a9ab7e90c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_006 - Validate Action on Edit Icon</description>
+   <name>TC_006</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>3d8c22c1-6ab5-40c1-aff9-f5bad3a2e063</testCaseGuid>
+</TestCaseEntity>

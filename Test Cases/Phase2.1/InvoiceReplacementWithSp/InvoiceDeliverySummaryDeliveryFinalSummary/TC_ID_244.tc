@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_244 - To check user is able to collect the amount in cash mode which is available inside collection Symbol also</description>
+   <name>TC_ID_244</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4a0d8b4b-62f4-40c4-9993-dc5487355665</testCaseGuid>
+</TestCaseEntity>

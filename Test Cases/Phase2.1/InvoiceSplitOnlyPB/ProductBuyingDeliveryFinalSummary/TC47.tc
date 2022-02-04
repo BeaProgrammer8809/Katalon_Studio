@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC47:To check the split name, when ricolino split group is created and sku's added if doing product buying for group sku's and  no group sku's*ricolino company)</description>
+   <name>TC47</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>67c93e8f-7dc4-4fb2-b9d9-6c0c9049cf51</testCaseGuid>
+</TestCaseEntity>

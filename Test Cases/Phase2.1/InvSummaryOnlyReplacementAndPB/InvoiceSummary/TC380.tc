@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC380 : To check whether collection icon is displaying for bimbo/barcel/ricolino legal entity</description>
+   <name>TC380</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa29e784-2340-4429-9988-bfae8f545b15</testCaseGuid>
+</TestCaseEntity>

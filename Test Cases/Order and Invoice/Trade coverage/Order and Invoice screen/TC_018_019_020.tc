@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_018--> Check whether keypad is displaying while tapping on replacement (returns) field
+
+TC_019--> Check whether able to enter only replacement (returns) qty for an sku
+
+TC_020--> Check whether returns field is updated with entered qty in keypad after clicking cancel button</description>
+   <name>TC_018_019_020</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>930a21e4-4d38-4132-ad63-57af2bb14ef5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_365:-To check collection popup details get reset and navigate to summary screen when user click on &quot;yes&quot; button in alert pop up</description>
+   <name>TC_ID_365</name>
+   <tag></tag>
+   <comment>summary screen should be displayed
+Collection popup details should get rese</comment>
+   <testCaseGuid>57b8e5c7-ea77-42ac-ada2-90f7672b0a42</testCaseGuid>
+</TestCaseEntity>

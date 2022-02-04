@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_348:-To check whether pre-ticket icon is present for Cash retailer</description>
+   <name>TC_ID_348</name>
+   <tag></tag>
+   <comment>Verify Pre ticket icon should be displayed</comment>
+   <testCaseGuid>ee656f72-589d-4cf7-b0cc-fb52152cbe8a</testCaseGuid>
+</TestCaseEntity>

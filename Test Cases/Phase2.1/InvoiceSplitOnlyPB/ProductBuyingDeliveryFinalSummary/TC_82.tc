@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_82:- Check whether Folio No. field accepting Alphanumeric Characters</description>
+   <name>TC_82</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77577a69-2ba3-41c3-a978-7e946312d5d1</testCaseGuid>
+</TestCaseEntity>

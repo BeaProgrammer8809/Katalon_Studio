@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_355 - To check user can able to use pesito credit amount against invoice for same &amp; other  company sku invoice qty</description>
+   <name>TC_ID_355</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e77b493d-ddeb-4749-981b-45f194d7e640</testCaseGuid>
+</TestCaseEntity>

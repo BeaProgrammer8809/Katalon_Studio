@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_350 - To check whether pre-ticket icon is present for Credit retailer</description>
+   <name>TC_ID_350_pending</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>dc116040-b174-45aa-818e-b40f2be426f2</testCaseGuid>
+</TestCaseEntity>

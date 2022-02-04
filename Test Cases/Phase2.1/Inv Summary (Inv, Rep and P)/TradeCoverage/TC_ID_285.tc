@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_285 : To check once Detail IEPS option is selected (Yes) and IVA 16% tax is mapped ,if do only invoice ,whether IVA tax is applied correctly in invoice and tax amount is displayed in IVA tax section
+</description>
+   <name>TC_ID_285</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a6cb1e7-b234-4014-97f0-b986cf987684</testCaseGuid>
+</TestCaseEntity>

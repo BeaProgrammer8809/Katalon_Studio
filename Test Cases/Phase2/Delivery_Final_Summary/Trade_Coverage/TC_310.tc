@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the sku's qty displayed when scheme buy and get sku is added in barcel legal entity invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC_310</name>
+   <tag></tag>
+   <comment>sku's qty against Invoice split-1 should display sum of scheme buy qty and scheme get qty</comment>
+   <testCaseGuid>87bfdbc7-71c9-4593-ad13-25d6fc0ce913</testCaseGuid>
+</TestCaseEntity>

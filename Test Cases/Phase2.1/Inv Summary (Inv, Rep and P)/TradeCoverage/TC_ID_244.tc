@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_244
+To check whether Collection icon is displayed after submitting the Invoice amount in Transferencia electronicas mode</description>
+   <name>TC_ID_244</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fde61770-5a8e-44ba-97db-f6325c01e406</testCaseGuid>
+</TestCaseEntity>

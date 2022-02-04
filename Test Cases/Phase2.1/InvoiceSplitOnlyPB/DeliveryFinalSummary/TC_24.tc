@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_24 : Check whether after going back, entered qty against SKUs are reflecting as is how was entered</description>
+   <name>TC_24</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be2bf38e-7824-4a64-87ae-6f434cdc3365</testCaseGuid>
+</TestCaseEntity>

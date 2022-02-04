@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Reusable Case</description>
+   <name>Inv Summary_Only Inv_Rep_Van Seller</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7977061a-baa9-48ef-b371-2f1d6f8d211f</testCaseGuid>
+   <variable>
+      <defaultValue>'MayStore1 &amp; Cash'</defaultValue>
+      <description></description>
+      <id>778738a1-0342-469b-b2eb-64d3d697d703</id>
+      <masked>false</masked>
+      <name>local_retailerName</name>
+   </variable>
+</TestCaseEntity>

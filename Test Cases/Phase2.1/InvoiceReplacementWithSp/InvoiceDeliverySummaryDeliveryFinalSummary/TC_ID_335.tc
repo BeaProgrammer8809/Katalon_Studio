@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_335
+To check folio number length is up to 15 digits for credit store</description>
+   <name>TC_ID_335</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3199e478-913d-47b9-85f9-9ada76468896</testCaseGuid>
+</TestCaseEntity>

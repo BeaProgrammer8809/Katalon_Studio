@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_217
+To check the generated Amount  value when Entity of Invoice Split is Bimbo and Invoice &amp; Replacement are taken for Ungrouped SKU belongs to Bimbo, Barcel and Ricolino company- Cash Retailer</description>
+   <name>TC_ID_217</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f5d1cea3-b02f-4c60-aefb-f567118ba78f</testCaseGuid>
+</TestCaseEntity>

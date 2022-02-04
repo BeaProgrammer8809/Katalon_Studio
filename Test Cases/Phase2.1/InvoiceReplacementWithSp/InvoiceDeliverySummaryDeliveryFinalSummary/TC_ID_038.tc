@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_038: To check whether screen is going back to Store activity screen when tap on Back arrow- Invoice and Replacement both has taken</description>
+   <name>TC_ID_038</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f70d9133-15c8-41a5-8f57-5ec519f6f754</testCaseGuid>
+</TestCaseEntity>

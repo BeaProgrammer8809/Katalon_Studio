@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_47 - To check the total price calculation while taking replacement for the sku's that is having IVA tax and Item discount.
+
+TC_87 - To check the Value and total qty field calculation while taking replacement against each sku's that is having IVA tax and Item discount.
+
+TC_138 - To check the Order Value amount inside the info popup while taking replacement for the sku's that is having IVA tax and Item discount.
+
+TC_205 - To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement for the sku's that is having IVA tax and Item discount.
+
+TC_254 - To check the Total amount inside the info popup while taking replacement for the sku's that is having IVA tax and Item discount.</description>
+   <name>TC47_87_138_205_254</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2f0e5155-f8e5-42de-875e-dbd80d96e185</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_254 - To verify “Folio No” can be empty.</description>
+   <name>TC_254</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a7db8d1-d4a9-46de-b318-e1d86ff2ec9a</testCaseGuid>
+</TestCaseEntity>

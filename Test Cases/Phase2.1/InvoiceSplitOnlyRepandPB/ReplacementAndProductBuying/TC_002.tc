@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_002 : Check whether a keyboard is opening when tap into invoice count field available in the Delivery Summary Screen</description>
+   <name>TC_002</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>82cc1069-7429-4965-ad4a-7bb81781753e</testCaseGuid>
+</TestCaseEntity>

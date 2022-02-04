@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_010 : To check whether the Pieces and Sales return qty against each SKU is displaying correctly when Invoice and Product Buying taken as Salable</description>
+   <name>TC_ID_010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5356e225-dc66-48d6-a897-5efebb8ea38c</testCaseGuid>
+</TestCaseEntity>

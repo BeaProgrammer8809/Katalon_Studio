@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_027 - To check the total price calculation while taking product buying for the sku's that is having only tax IVA but not having any discounts
+
+TC_ID_102 - To check the Value field and total qty calculation while taking product buying against each sku's that is having only tax IVA but not having any discounts
+
+TC_ID_153 - To check the Order Value amount inside the info popup while taking product buying for the sku's that is having only tax IVA but not having any discounts
+
+TC_ID_185-To check the deductions (Comp Disc and Dist disc) amount inside the info popup while taking product buying for the sku's that is having only tax IVA but not having any discounts
+
+TC_ID_237 - To check the Total amount inside the info popup while taking product buying for the sku's that is having only tax IVA but not having any discounts</description>
+   <name>TC27_102_153_185_237</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>3f71c650-b1cd-450f-a24b-b6dc7472ac2b</testCaseGuid>
+</TestCaseEntity>

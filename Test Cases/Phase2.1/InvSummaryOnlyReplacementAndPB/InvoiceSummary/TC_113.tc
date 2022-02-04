@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_113:To check the Value and Total qtyfield calculation, while taking replacement and product buying against each sku's that is not having any discounts and taxes</description>
+   <name>TC_113</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e7249710-c08b-455d-8bb6-64e2e493846f</testCaseGuid>
+</TestCaseEntity>

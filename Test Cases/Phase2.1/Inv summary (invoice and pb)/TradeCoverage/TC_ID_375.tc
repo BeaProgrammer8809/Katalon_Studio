@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_375
+To check folio number text field is not accepting the less than 6 digits</description>
+   <name>TC_ID_375</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae7e3085-9717-4eb2-8a66-6245ea62dba8</testCaseGuid>
+</TestCaseEntity>

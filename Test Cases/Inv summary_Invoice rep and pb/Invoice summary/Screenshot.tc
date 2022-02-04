@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Screenshot</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a44d8ae7-799a-4a1b-a1ad-4de36545470f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d6b55523-9644-43aa-9717-760e3d84674d</id>
+      <masked>false</masked>
+      <name>testCaseName</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC441 - To check the Min. Amt displayed in the Transferencias Electronicas mode</description>
+   <name>TC441</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cc7b8891-1b99-49a2-a870-176a011a7cfa</testCaseGuid>
+</TestCaseEntity>

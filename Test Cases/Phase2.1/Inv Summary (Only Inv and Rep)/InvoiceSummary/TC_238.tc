@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_238 - To check the Total amount inside the info popup while taking replacement for the sku's that is having only discount (Item discount) but not having any taxes
+As only replacement is taken against each sku's so the Total price, Value and Total amount should be displayed as 0</description>
+   <name>TC_238</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f43c031-47a5-447b-8c86-be54399f9042</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_048--> To check the functionality of SIH special filter
+
+TC_053--> To check whether able to view all the sku's which is having sih after applying the SIH special filter
+
+TC_053--> To check whether able to navigate to Product buying screen after applying the SIH in special filter</description>
+   <name>TC_048_049</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f89b8c8e-41da-4659-881f-6765b20e901c</testCaseGuid>
+</TestCaseEntity>

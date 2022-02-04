@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_028 - Check the default display of the unload  screen</description>
+   <name>TC_028</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c20b1f1d-43ff-4f7a-aa76-fe429ca56bdc</testCaseGuid>
+</TestCaseEntity>

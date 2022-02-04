@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC04:Check whether delivery final summary screen is not coming for cash retailer,when invoice split is not defined and mapped to the channel</description>
+   <name>TC04</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cf4bf1b2-49f8-4f76-ac45-f301431bcf9b</testCaseGuid>
+</TestCaseEntity>

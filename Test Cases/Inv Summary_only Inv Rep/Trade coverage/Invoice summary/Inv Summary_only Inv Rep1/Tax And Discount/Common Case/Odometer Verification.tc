@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Odometer Verification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>200de623-e4e1-48a7-b0eb-bf18937faa9c</testCaseGuid>
+   <variable>
+      <defaultValue>'MI'</defaultValue>
+      <description></description>
+      <id>64e0630e-d8df-413e-ba53-27de3036c32c</id>
+      <masked>false</masked>
+      <name>local_retailerName</name>
+   </variable>
+</TestCaseEntity>

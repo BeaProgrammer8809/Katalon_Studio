@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_443:- To verify “Pesito commission : 0 of 0” label is present in the Electronic Transfer collection type under collection pop-up.</description>
+   <name>TC_443</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>02092e2a-6d23-4a41-ae19-8d6f3ef8f9d2</testCaseGuid>
+</TestCaseEntity>

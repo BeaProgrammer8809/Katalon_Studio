@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_007-->  To check the SKU name displayed in Summary screen
+
+TC_ID_008--> To check whether the Piece qty against each SKU is displaying correctly with respect to the Order and Invoice screen
+
+TC_ID_009-->  To check whether the Actual return qty against each SKU is displaying correctly with respect to the Order and Invoice screen
+
+TC_ID_010-->  To check whether the U.Price against each SKU is displaying correctly with respect to the Order and Invoice screen</description>
+   <name>TC_ID_007_008_009_010</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>28cd0620-c734-417d-92a8-1e41643008e1</testCaseGuid>
+</TestCaseEntity>

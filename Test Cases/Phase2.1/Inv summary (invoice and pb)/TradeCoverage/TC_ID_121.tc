@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_121:-To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Salable) for the sku's that is having only tax  IEPS but not having any discounts</description>
+   <name>TC_ID_121</name>
+   <tag></tag>
+   <comment>Verifying the total price
+Product Buying should not be considered for the Gross/Total calculation.
+Verifying the Value amount</comment>
+   <testCaseGuid>872803c9-d0d1-4b48-8c3b-be6efd005271</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_037--> To check whether able to enter invoice and replacement qty in searched sku and navigate to Product buying screen
+
+TC_040--> To check whether the Total, Value, Total qty, invoice and replacement field values are persisted for the sku while navigating backward from Product buying screen</description>
+   <name>TC_037_040</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>65f26528-4d8f-4345-b999-3374a6b165a7</testCaseGuid>
+   <variable>
+      <defaultValue>'002_SD_MUMB_PRO'</defaultValue>
+      <description></description>
+      <id>210dc127-b469-4c55-8e79-d9717f6bf553</id>
+      <masked>false</masked>
+      <name>searchProductName</name>
+   </variable>
+</TestCaseEntity>

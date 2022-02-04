@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_006 - Verify Product Hierarchy level &quot;CATEGORIA&quot; in the filter screen
+TC_007 - Verify tap action on CATEGORIA product hierarchy
+TC_018- Check whether User is allowed to select multiple CATEGORIA/CATEGORY in the filter</description>
+   <name>TC_006_007_018</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>b179afa1-01e6-4096-ac0b-0f51b5ef2f21</testCaseGuid>
+</TestCaseEntity>

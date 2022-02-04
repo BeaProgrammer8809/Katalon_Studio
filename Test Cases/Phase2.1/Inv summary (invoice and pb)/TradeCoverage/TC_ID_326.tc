@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_326
+To check whether able to enter Total paid amount in only Transferencias Electronicas mode</description>
+   <name>TC_ID_326</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff9e9d72-ab5c-43ad-86ae-17320d913f96</testCaseGuid>
+</TestCaseEntity>

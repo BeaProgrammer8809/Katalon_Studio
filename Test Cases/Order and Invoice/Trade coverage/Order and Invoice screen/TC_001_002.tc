@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_001-->Check whether trade coverage menu is displaying in home screen
+
+TC_002-->To check order and invoice menu is enabled in store activity screen</description>
+   <name>TC_001_002</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>ed732ba9-7dc9-4dc5-a63f-426341ec455f</testCaseGuid>
+</TestCaseEntity>

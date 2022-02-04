@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC465--> To check whether able to Submit the invoice amount in Efectivo and RTGS</description>
+   <name>TC465</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cd63c32c-391e-40d8-9dba-d58a11e35965</testCaseGuid>
+</TestCaseEntity>

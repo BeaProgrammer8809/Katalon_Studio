@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC60 - To check the Amount field calculation logic in Delivery Final Summaryscreen When detail IEPS flag is enabled for the retailer, while doing product buying for group sku's and No group sku's</description>
+   <name>TC60</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51a88f8d-7d52-4c29-b792-9d87cc8adbb9</testCaseGuid>
+</TestCaseEntity>

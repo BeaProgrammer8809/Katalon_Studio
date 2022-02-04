@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_295 : To check while doing product for the sku's that is having only IPES tax but not having discount and Detail IEPS flag is enabled for the store,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC_295</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f47eb3d6-19c1-4900-86ea-9b3fc0201616</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC053:To check values are allowed to delete using Backspace button</description>
+   <name>TC_053</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>23618897-5bcc-423c-9f17-06ef6ed254a5</testCaseGuid>
+</TestCaseEntity>

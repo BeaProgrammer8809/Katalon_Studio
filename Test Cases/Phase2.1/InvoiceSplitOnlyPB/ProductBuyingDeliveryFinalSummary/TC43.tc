@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC43 - To check the split  name, while taking only Product Buying for no group sku's from Barcel Company</description>
+   <name>TC43</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ec4157e-a71a-4417-8187-c5c83c4c8343</testCaseGuid>
+</TestCaseEntity>

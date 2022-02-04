@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_344 - To check once Detail IEPS option is selected (Yes) and IEPS 8% tax is mapped ,While do only invoice whether tax is applied correctly in invoice and tax amount is not displayed in IEPS tax  section</description>
+   <name>TC_ID_344</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2be0c78-458e-4d7b-b9e3-1d065742d29c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_145 - Check whether after entering invoice count when extra invoice is Generated post hitting Create Ticket Invoice, is system allowing to increase Extra invoice count.</description>
+   <name>TC_ID_145</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42878829-a71b-4279-8447-3594c883de32</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_013 :- To check whether the U.Price against each SKU is displaying correctly with respect to the Order and Invoice &amp; PB screen while doing invoice &amp; PB ( Salable) Qty</description>
+   <name>TC_ID_013</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2be4882-39c1-4f85-b13f-1d8dd71a4e9a</testCaseGuid>
+</TestCaseEntity>

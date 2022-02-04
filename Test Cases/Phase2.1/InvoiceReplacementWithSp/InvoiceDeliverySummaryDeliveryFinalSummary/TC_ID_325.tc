@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_325 : To check Edit  option is not hiding  even user generate the preticket</description>
+   <name>TC_ID_325</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>188b4f94-729d-4484-aa2f-abb3f62f18b3</testCaseGuid>
+</TestCaseEntity>

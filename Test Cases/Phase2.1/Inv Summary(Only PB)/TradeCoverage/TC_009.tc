@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_009 - Check whether SRP(suggested retailer price) against the sku is displaying the Price group price for product buying sku</description>
+   <name>TC_009</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af77efb1-9dec-40bb-8521-d342e9e43669</testCaseGuid>
+</TestCaseEntity>

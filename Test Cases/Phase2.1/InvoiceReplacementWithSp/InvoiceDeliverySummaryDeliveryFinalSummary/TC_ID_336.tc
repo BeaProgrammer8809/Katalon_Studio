@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_336
+To check folio number text field is not accepting the less than 6 digits for credit store</description>
+   <name>TC_ID_336</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>774b8dba-9e1e-472b-a12f-c1165a2946c3</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_044 - To Check Total Price Calculation against each sku having only tax IVA and Category level discount while taking Invoice &amp; PB - Only Non-Salable
+TC_ID_093 - To check the Value field calculation while taking invoice &amp; PB (Non-salable) against each sku's that is having IVA tax and category discount.
+TC_ID_143 -To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Non-Salable) for the sku's that is having IVA tax and category discount.</description>
+   <name>TC_ID_044_093_143</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>ff588b57-9d92-4e62-a57a-0fc59be97280</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_269:-To check whether able to select branch from dropdown</description>
+   <name>TC_ID_269</name>
+   <tag></tag>
+   <comment>Select Branch was a mandatory field
+User should be able to select any bank branch from the dropdown</comment>
+   <testCaseGuid>d45c325e-3675-4c3e-a691-0c862984203d</testCaseGuid>
+</TestCaseEntity>

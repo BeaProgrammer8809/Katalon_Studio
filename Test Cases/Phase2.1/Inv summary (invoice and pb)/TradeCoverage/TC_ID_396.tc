@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_389: To check the Total paid field in Efectivo mode after changing the defaultly filled paid amount</description>
+   <name>TC_ID_396</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c6810074-e0d7-41c2-a261-9a82e4f8f3d5</testCaseGuid>
+</TestCaseEntity>

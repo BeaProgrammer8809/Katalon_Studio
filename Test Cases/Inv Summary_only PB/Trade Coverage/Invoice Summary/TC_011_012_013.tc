@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_011 - Check whether value against Pieces, BAG, Actual Return, Value and Total Qty is 0(zero) in summary Screen when only product buying is taken for the sku
+TC_012 - To check fields available in the Summary screen against SKUs are non-editable
+TC_013 - To check the Tap action on the SKUs details in the Summary Screen
+</description>
+   <name>TC_011_012_013</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>04e24442-f2d9-4291-bbbe-456960288998</testCaseGuid>
+</TestCaseEntity>

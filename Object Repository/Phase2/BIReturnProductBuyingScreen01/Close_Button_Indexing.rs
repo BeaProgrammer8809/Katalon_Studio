@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Close_Button_Indexing</name>
+   <tag></tag>
+   <elementGuidId>1676386c-5ac2-4232-8224-e303b778256d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//*[@resource-id='${GlobalVariable.Package}:id/ivClose'])[${GlobalVariable.index}]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//*[@resource-id='${GlobalVariable.Package}:id/ivClose'])[${GlobalVariable.index}]</value>
+   </webElementProperties>
+</WebElementEntity>

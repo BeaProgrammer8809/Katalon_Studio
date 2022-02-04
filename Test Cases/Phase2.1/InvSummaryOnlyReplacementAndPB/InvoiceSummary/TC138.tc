@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the Order Value amount inside the info popup while taking replacement for the sku's that is having IVA tax and Item discount.</description>
+   <name>TC138</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f57cb8b9-1530-497f-9b6d-1783d0d783c3</testCaseGuid>
+</TestCaseEntity>

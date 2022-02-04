@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_008 - Check the default display of the Summary screen for wild card retailer</description>
+   <name>Wild Card Retailer Navigation</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>ab7436d9-c739-445a-a2ee-0434f47a750f</testCaseGuid>
+</TestCaseEntity>

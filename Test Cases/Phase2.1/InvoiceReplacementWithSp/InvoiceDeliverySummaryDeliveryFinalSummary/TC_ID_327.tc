@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_327 : To check Collection pop up option is coming with Payment checkbox and Efectivo checkbox with folio text field  against each legal entity invoice</description>
+   <name>TC_ID_327</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b3e2045-13d0-497f-9ff4-cf606e97aa55</testCaseGuid>
+</TestCaseEntity>

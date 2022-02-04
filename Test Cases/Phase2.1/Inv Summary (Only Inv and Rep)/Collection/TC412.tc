@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC412: To check the display of Cheque mode in Collections</description>
+   <name>TC412</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ef8ccfe1-042e-4e47-9349-4c43b6b7076d</testCaseGuid>
+</TestCaseEntity>

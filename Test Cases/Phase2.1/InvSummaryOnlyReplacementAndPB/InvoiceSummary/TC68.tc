@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC68 : To check the total price calculation while taking product buying and replacement for the sku's that is having IVA tax and Item discount.</description>
+   <name>TC68</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6f1da2ad-6f66-43f1-8b0a-a08d5fb7ad40</testCaseGuid>
+</TestCaseEntity>

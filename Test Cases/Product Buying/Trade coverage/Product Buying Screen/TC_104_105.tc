@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_104--> Check whether the new sku added in &quot;Route type&quot; is displaying in Product Buying screen
+
+TC_105--> Check whether an sku removed from the &quot;Route type&quot; is displaying in Product Buying screen</description>
+   <name>TC_104_105</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2b665f1-b1aa-454a-ac21-9a55401d6ae9</testCaseGuid>
+</TestCaseEntity>

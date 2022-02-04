@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_250:-To check when invoice amount is lesser than product buting amount then in collection screen by default amount will show in credit note section</description>
+   <name>TC_ID_250</name>
+   <tag></tag>
+   <comment>Verifying PB Value greater than Invoice Value
+By default amount should show in credit note section </comment>
+   <testCaseGuid>b65fe758-22a7-4a21-8f76-f711b0ac3ac8</testCaseGuid>
+</TestCaseEntity>

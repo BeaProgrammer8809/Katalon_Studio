@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_074 : To check the Value field calculation while taking invoice &amp; PB (Salable) against each sku's that is having IEPS tax, Item discount and category discount.
+</description>
+   <name>TC_ID_074</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c7d0c98c-84f8-41a2-b670-caa25a66da25</testCaseGuid>
+</TestCaseEntity>

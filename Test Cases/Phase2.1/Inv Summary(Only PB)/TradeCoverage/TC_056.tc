@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_056:-Check whether Total Pieces of an SKU can be taken as Damaged</description>
+   <name>TC_056</name>
+   <tag></tag>
+   <comment>Screen should redirect to Unload screen means it was accepted 
+Verifying the Option as Damaged</comment>
+   <testCaseGuid>99c09b2e-3bc4-4d6c-8320-d7da94e0fdbe</testCaseGuid>
+</TestCaseEntity>

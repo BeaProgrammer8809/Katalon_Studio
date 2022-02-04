@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_035 - Check Whether values are reflecting to collect in collection screen when tap on collection icon available in the Summary Screen-Replacement+Product Buying both have taken- Non-Group SKU</description>
+   <name>TC_035</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a9b7683f-45fb-4dd8-90ae-883bdde28c58</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_274:-To check the default date selected in Cheque mode</description>
+   <name>TC_ID_274</name>
+   <tag></tag>
+   <comment>By default present date should be selected </comment>
+   <testCaseGuid>59a46387-dfcd-4c7f-8a2d-ecf54911aa0c</testCaseGuid>
+</TestCaseEntity>

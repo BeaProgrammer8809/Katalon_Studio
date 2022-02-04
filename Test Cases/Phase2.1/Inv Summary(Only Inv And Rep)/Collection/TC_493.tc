@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_493:- To check  whether the amount is coming correctly in Pesito grant collection screen</description>
+   <name>TC_493</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e631199a-2b20-482a-b841-fc26c0bd3230</testCaseGuid>
+</TestCaseEntity>

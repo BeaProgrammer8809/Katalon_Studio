@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_299: To check whether able to enter Total paid amount in Cheque mode after switching from Efectivo mode</description>
+   <name>TC_299</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f13e7d2e-6e6f-455a-afd6-991d5b712f89</testCaseGuid>
+</TestCaseEntity>

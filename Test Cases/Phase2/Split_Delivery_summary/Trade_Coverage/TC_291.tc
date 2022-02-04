@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the SRP price displayed for scheme buy and get sku when scheme is applied</description>
+   <name>TC_291</name>
+   <tag></tag>
+   <comment>1.SRP price should display same as in Order and invoice screen for scheme buy sku
+Scheme get sku should not displayed in delivered summary scren</comment>
+   <testCaseGuid>dda9b166-453a-4dd1-b18c-e78995e5f80c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_147 : To check whether able to Submit the invoice amount without selecting bank</description>
+   <name>TC_ID_147</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f87ce8f2-c0ef-4ad4-bb3c-857d86fa46e1</testCaseGuid>
+</TestCaseEntity>

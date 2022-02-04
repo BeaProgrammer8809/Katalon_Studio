@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_063--> Check whether able to select multiple category in Categoria level</description>
+   <name>TC_063</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a21d67fd-2700-4053-a1ad-442810581725</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_005 - Check the default display of the Summary screen for wild card retailer
+TC_ID_005 - To check the SKU name displayed in Summary screen</description>
+   <name>TC_ID_005_006</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>62dcdf25-3639-4a67-beb5-272406113f5e</testCaseGuid>
+</TestCaseEntity>

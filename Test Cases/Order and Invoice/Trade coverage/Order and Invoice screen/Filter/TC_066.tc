@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_066--> Check whether able to select single line in Linea level</description>
+   <name>TC_066</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7eb32b0f-964c-4635-84ca-1cc402d3f1fb</testCaseGuid>
+</TestCaseEntity>

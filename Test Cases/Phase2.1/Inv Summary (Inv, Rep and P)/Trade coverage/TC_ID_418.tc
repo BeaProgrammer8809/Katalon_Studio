@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_418 - To verify Given input in “Folio No” and “Folio ProdBuy” fields under two different legal entity.</description>
+   <name>TC_ID_418</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9828fb70-1d69-4fb4-9e97-8a1f584069b0</testCaseGuid>
+</TestCaseEntity>

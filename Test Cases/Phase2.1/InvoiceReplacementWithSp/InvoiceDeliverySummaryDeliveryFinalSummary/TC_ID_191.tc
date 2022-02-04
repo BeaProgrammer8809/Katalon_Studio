@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_191
+To check the generated Lines Value when Entity of Invoice Split is Bimbo and Invoice &amp; Replacement are taken for Both Group &amp; Ungrouped SKU belongs to Bimbo, Barcel and Ricolino company- Credit Retailer</description>
+   <name>TC_ID_191</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6b2030df-5591-4d5b-8e95-599ab012913e</testCaseGuid>
+</TestCaseEntity>

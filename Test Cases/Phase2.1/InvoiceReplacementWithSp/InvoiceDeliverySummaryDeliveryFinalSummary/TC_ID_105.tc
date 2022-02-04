@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_105 : Check whether invoice count field is accepting value which are less than 7</description>
+   <name>TC_ID_105</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf37468a-e867-482e-820d-4d582e792918</testCaseGuid>
+</TestCaseEntity>

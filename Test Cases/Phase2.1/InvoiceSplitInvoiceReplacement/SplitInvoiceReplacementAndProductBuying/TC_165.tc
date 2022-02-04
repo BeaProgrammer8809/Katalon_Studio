@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_165
+To check whether  invoice amount is coming correctly in cash collection screen</description>
+   <name>TC_165</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa07f4ed-6f3e-4718-bec0-97190e68fe82</testCaseGuid>
+</TestCaseEntity>

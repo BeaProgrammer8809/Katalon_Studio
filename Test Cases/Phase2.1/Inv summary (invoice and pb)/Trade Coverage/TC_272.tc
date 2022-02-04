@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_272 - To check whether the entered pieces(Both Salable and Non-Salable) are persisting in Product Buying screen while navigating back from summary screen
+
+Entered Product Buying quantity as salable and non-salable qty should be persisted in Product Buying screen while navigating back from summary screen</description>
+   <name>TC_272</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0999052f-3faf-4827-9191-61723092f1df</testCaseGuid>
+</TestCaseEntity>

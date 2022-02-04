@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_341:-To verify Pesito option enable in collection pop-up in Delivery Final summary screen.</description>
+   <name>TC_341</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b95dcf0-bb6e-4f8d-a90a-468afdfc2108</testCaseGuid>
+</TestCaseEntity>

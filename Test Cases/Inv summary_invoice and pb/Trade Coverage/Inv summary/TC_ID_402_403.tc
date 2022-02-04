@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_402 - To check the Select Branch field
+TC_ID_403 - To check whether able to select branch from dropdown</description>
+   <name>TC_ID_402_403</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>a64164b8-cf9e-43fa-9254-9e40d239eb8b</testCaseGuid>
+</TestCaseEntity>

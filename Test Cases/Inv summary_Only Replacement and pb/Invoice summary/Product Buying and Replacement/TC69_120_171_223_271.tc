@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC69 - To check the total price calculation while taking product buying and replacement for the sku's that is having IVA tax and category discount.
+
+TC120 - To check the Value and total qtyfield calculation while taking replacement and product buying against each sku's that is having IVA tax and category discount.
+
+TC171 - To check the Order Value amount inside the info popup while taking replacement and product buying for the sku's that is having IVA tax and category discount.
+
+TC223 -To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement and product buying for the sku's that is having IVA tax and category discount.
+
+TC271 - To check the Total amount inside the info popup while taking replacement and product buying for the sku's that is having IVA tax and category discount.</description>
+   <name>TC69_120_171_223_271</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>b397f061-291b-4bee-b78f-cc9ce7afda30</testCaseGuid>
+</TestCaseEntity>

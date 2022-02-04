@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_280 - To check whether able to edit the &quot;Credit note&quot; mode amount
+TC_ID_281 - To check amount in credit note collection mode when Product Buying value is more than the Invoice value
+</description>
+   <name>TC_ID_280_281</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>89a5d46d-c63f-451b-9a34-a2feddb571bd</testCaseGuid>
+</TestCaseEntity>

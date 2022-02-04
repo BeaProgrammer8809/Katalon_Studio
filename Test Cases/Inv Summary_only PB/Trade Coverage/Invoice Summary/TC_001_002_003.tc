@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_001 - Check whether when user inputs product buying qty and tap Next button, it's redirecting to Summary screen
+TC_002 - Verify the Element present under Summary Screen
+TC_003 - Check Whether collection Screen is opening when user tap Collection icon</description>
+   <name>TC_001_002_003</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>1447c422-730e-4d56-aca0-dfcbe83e243c</testCaseGuid>
+</TestCaseEntity>

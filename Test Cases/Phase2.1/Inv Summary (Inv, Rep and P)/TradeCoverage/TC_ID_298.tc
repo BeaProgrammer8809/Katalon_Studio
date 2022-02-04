@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_298 : To check once Detail IEPS option is selected (Yes) and IEPS 8% tax is mapped ,if replacement  whether invoice is generated corrcetly
+</description>
+   <name>TC_ID_298</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>597c6265-35ae-4ced-8794-528ff5c7148f</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_017:To check whether the U.Price against each SKU is displaying correctly with respect to the Order and Invoice screen</description>
+   <name>TC_017</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bebf89ac-ca14-4630-a5d2-f6d1b2606fe8</testCaseGuid>
+</TestCaseEntity>

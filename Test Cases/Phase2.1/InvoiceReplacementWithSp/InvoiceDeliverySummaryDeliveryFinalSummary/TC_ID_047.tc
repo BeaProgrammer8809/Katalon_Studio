@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_047: Check whether for SKU which is not under Invoice split, Invoice details are showing in Delivery Summary Screen?- Only Invoice is taken</description>
+   <name>TC_ID_047</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ac5c444c-6997-4f10-ad65-9dfd0b9aecef</testCaseGuid>
+</TestCaseEntity>

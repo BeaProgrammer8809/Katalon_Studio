@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC223 - To check the Total amount inside the info popup while taking invoice for the sku's that is having only discount (Category discount) but not having any taxes</description>
+   <name>TC223</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>335b3bdb-5440-4d2d-9acd-d7e9aff4ee8b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_280:To verify “Folio No” given only for Product buying split  is accepting in the delivery summary screen</description>
+   <name>TC_280</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df21d115-b91a-4ba3-80b0-06620e73af66</testCaseGuid>
+</TestCaseEntity>

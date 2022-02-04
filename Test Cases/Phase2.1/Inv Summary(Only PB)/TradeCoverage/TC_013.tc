@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_013 - To check the Tap action on the SKUs details in the Summary Screen</description>
+   <name>TC_013</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aae36456-cc0e-4446-ad89-7174a6d850a5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_476:-To check Pesito credit can be granted when defaule entity is Bimbo/barcel/Ricolino</description>
+   <name>TC_476</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ee594d3a-9cfb-4ea3-b2d9-b674f437b124</testCaseGuid>
+</TestCaseEntity>

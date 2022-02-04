@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC376:-To check while doing invoice and replacement for different sku's that is having only discount (Category discount) but not having any taxesand detail IEPS flag is enabled,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC376</name>
+   <tag></tag>
+   <comment>Verifyed the status and UUID generated 
+Verifying status as success</comment>
+   <testCaseGuid>3266ee5c-9a01-442f-8060-962aa16d0bac</testCaseGuid>
+</TestCaseEntity>

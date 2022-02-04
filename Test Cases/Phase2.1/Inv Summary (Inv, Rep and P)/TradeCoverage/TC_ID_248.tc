@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_248
+To check whether able to Submit the invoice amount in Efectivo and RTGS</description>
+   <name>TC_ID_248</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2e911317-61c4-4cbd-9200-6b690ea1a5d9</testCaseGuid>
+</TestCaseEntity>

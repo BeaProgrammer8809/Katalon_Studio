@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC40:- To check the total price calculation while taking replacement for the sku's that is having only discount (Category discount) but not having any taxes</description>
+   <name>TC40</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abc13262-43c0-4e57-be9f-27de362cb5b0</testCaseGuid>
+</TestCaseEntity>

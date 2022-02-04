@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC11:Check whether for particular Credit retailer, delivery final summary screen is coming</description>
+   <name>TC11</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51494b8e-64c8-49e0-a642-5718b4ca4f05</testCaseGuid>
+</TestCaseEntity>

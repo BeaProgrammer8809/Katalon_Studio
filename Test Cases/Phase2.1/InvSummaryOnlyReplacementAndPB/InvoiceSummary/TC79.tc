@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC79 : To check the total price calculation while taking product buying and replacement for the sku's that is having only discount (Item discount) but not having any taxes</description>
+   <name>TC79</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ea576a00-5235-4ff6-a431-d955cfae0c0b</testCaseGuid>
+</TestCaseEntity>

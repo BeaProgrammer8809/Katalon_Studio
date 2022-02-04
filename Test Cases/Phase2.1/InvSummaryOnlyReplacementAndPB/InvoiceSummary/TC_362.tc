@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_362:- To check while doing product buying and replacement for different sku's that is having IVA, IEPS taxes withItem, category discount and Detail IEPS flag is enabled for the store,whether the onsite invoice is getting success</description>
+   <name>TC_362</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c06ef3a2-717c-4e99-b833-4eeab86ced59</testCaseGuid>
+</TestCaseEntity>

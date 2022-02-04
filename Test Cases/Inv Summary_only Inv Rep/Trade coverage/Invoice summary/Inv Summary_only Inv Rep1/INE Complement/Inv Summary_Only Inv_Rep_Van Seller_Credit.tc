@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Reusable Case</description>
+   <name>Inv Summary_Only Inv_Rep_Van Seller_Credit</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d45e83f5-ddf1-44c6-8364-8dba0f457567</testCaseGuid>
+   <variable>
+      <defaultValue>'Credit'</defaultValue>
+      <description></description>
+      <id>fbaa55ea-293f-407f-a80d-f3afc3cf1645</id>
+      <masked>false</masked>
+      <name>local_retailerName</name>
+   </variable>
+</TestCaseEntity>

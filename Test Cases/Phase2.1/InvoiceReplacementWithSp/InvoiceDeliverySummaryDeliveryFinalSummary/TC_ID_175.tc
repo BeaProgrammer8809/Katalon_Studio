@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_175 - To check the Sum of amount of SKUs against which qty is entered in ExtraInv-5 field are showing in Delivery Final Summary screen under Amount column against Invoice Name ExtraInvoice-5</description>
+   <name>TC_ID_175</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8f080b20-0344-415d-9cf6-fedb5607868e</testCaseGuid>
+</TestCaseEntity>

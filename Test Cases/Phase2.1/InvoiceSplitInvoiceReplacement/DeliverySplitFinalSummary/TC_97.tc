@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_97 - To check the Lines qty displayed after entering partial stock delivered qty in Extra invoice for barcel's sku that are in invoice split group</description>
+   <name>TC_97</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06d45109-2c41-4968-910b-523fcf4e95a8</testCaseGuid>
+</TestCaseEntity>

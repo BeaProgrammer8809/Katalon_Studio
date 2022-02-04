@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC466--> To check whether able to generate invoice without collecting the cash for cash retailer</description>
+   <name>TC466</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df2e1420-079c-455c-b261-ea4f1813a718</testCaseGuid>
+</TestCaseEntity>

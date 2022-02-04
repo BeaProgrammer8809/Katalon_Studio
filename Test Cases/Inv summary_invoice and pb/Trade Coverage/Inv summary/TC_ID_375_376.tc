@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_375 - To check folio number text field is not accepting the less than 6 digits
+TC_ID_376 - To check Validation msg is coming like 'Folio number should be at least 6 characters</description>
+   <name>TC_ID_375_376</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>273b30ad-bd63-4bce-8370-1252e4649f52</testCaseGuid>
+</TestCaseEntity>

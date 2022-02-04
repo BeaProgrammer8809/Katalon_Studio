@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_70 : To check while doing product buying for split group or no group sku's that is having Bill wise discount ,whether bill wise discount is applying in delivery final summary screen</description>
+   <name>TC_70</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1084568d-688a-41ff-b920-3a2db264b123</testCaseGuid>
+</TestCaseEntity>

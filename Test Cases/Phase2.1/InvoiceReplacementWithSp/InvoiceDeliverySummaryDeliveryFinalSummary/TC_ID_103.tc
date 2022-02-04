@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_103 : Check whether invoice count field is accepting values only 1-6</description>
+   <name>TC_ID_103</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>143402f3-db8a-4abe-9834-1d501bcd4a34</testCaseGuid>
+</TestCaseEntity>

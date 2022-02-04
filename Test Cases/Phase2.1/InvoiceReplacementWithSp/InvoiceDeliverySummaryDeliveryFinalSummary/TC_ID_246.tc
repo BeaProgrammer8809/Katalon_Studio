@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_246 - To check the Inv Amt displayed in the Efectivo mode</description>
+   <name>TC_ID_246</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2ae4c51-6712-41c7-a558-59f9856e76ec</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC05 - Check whether able to navigate to Invoice summary screen while doing  product buying and replacement for sku</description>
+   <name>TC05</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e2279029-68cf-4c5f-a5e7-3cb104827069</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC400 - To check user is able to collect partial amount in cash mode using payment option</description>
+   <name>TC400</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad4c449c-de1d-4d1f-a685-cadee85c7031</testCaseGuid>
+</TestCaseEntity>

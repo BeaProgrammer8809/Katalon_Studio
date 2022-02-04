@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC303:To check while doing invoice for the sku's that is having IVA tax and Item discount,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC303</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1ac9054-92cc-4d9e-8d6e-07b51225612b</testCaseGuid>
+</TestCaseEntity>

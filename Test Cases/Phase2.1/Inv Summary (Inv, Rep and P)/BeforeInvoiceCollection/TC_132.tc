@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_132:- To check the Inv Amt displayed in the Transferencias Electronicas mode</description>
+   <name>TC_132</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e41667fc-af5d-4a5b-94e2-bf1ee94778b8</testCaseGuid>
+</TestCaseEntity>

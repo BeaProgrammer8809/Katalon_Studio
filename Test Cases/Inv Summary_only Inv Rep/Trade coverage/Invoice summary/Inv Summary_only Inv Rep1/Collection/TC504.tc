@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether able to delete the payment transactions in collection screen</description>
+   <name>TC504</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b14c78b9-3074-4998-8e6e-6b1513ef47d1</testCaseGuid>
+</TestCaseEntity>

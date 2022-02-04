@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check without selecting the INE_ClaveEntidad if click create final invoice ,whether error message is appearing
+
+To check without selecting the INE_Ambito, if click create final invoice ,whether error message is appearing
+
+To check while select INE_ClaveEntidad and INE_Ambito ,whether invoice is generated for INE enabled retailer</description>
+   <name>TC535_536_537</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3163c24b-eaf6-42cd-bc93-5ec9f30307a5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check whether delivery summary screen is displaying after invoice split is mapped with the respective channel</description>
+   <name>TC_285</name>
+   <tag></tag>
+   <comment>Delivery Summary screen should be displayed for cash type retailer</comment>
+   <testCaseGuid>90ca0a6c-30fe-44aa-b012-0ef083c71182</testCaseGuid>
+</TestCaseEntity>

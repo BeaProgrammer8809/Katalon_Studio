@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_023 - Check whether Scheme is applying for Product Buying qty in summary screen
+TC_024 - Check whether Tax is applied for product buying qty in summary screen
+TC_025 - Check whether Discount is applied for product buying qty in summary screen
+</description>
+   <name>TC_023_024_025</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>a21d5269-61c2-47b0-ae79-cddf9e7208fe</testCaseGuid>
+</TestCaseEntity>

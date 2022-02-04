@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC09 - To check SKU name is displayed in Summary screen
+TC10 - Check whether after taking only replacement against each sku then it is displaying in Summary screen
+TC11 - Check whether after taking only invoice and replacement against each sku then it is displaying in Summary screen
+TC14 -To check whether the Piece qty against each SKU is displaying correctly with respect to the Order and Invoice screen and product buying screen
+TC15 - To check whether the Actual return qty against each SKU is displaying correctly with respect to the Order and Invoice screen	
+TC16 - To check whether the Sales return qty against each SKU is displaying correctly with respect to the product buying screen
+TC17 -  To check whether the U.Price against each SKU is displaying correctly with respect to the Order and Invoice screen</description>
+   <name>TC09_10_11_14_15_16_17</name>
+   <tag>Funtional</tag>
+   <comment></comment>
+   <testCaseGuid>18a5fb9c-f2ac-4dfa-8e59-e7a83c36fd06</testCaseGuid>
+</TestCaseEntity>

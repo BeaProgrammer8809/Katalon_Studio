@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_140 - To check while doing invoice for split group and no group sku's and replacement ,product buying for same split group sku's that is having IVA, IEPS taxes and  Category discount if create extra invoice,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC_140</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6fa24bcc-9878-469e-b13c-57b23d491d72</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_105
+To check the display of Cheque mode in Collections</description>
+   <name>TC_ID_105</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b942e2ae-b78b-4bc2-84b8-5d69d2d3474e</testCaseGuid>
+</TestCaseEntity>

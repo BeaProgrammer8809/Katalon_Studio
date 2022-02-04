@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_064:-To check without entering folio number user is not able to submit  invoice</description>
+   <name>TC_064</name>
+   <tag></tag>
+   <comment>Verifying the Popup
+Verifying the ToastMsg</comment>
+   <testCaseGuid>25f1c966-23ee-4818-b8dc-2de647ff9109</testCaseGuid>
+</TestCaseEntity>

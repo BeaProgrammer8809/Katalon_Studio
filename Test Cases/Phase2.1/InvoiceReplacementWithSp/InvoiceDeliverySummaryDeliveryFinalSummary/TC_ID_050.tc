@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_050: Check whether for SKU which is under Invoice split, invoice &amp; Replacement details are showing in Delivery Summary Screen- Both Invoice and Replacement are taken</description>
+   <name>TC_ID_050</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb2df75b-c315-4b5f-9142-0f552c911350</testCaseGuid>
+</TestCaseEntity>

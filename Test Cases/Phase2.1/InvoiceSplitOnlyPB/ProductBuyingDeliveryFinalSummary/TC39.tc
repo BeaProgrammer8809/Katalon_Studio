@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC39
+To check the split name, while taking only Product Buying for Group SKUs(only one split group is created) from Bimbo legal entity</description>
+   <name>TC39</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>86097902-cabf-417c-81d0-d4360788b4af</testCaseGuid>
+</TestCaseEntity>

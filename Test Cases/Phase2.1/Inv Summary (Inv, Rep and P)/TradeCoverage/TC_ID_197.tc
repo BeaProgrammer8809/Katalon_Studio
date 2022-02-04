@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_197:-To check the display of Cheque mode in Collections</description>
+   <name>TC_ID_197</name>
+   <tag></tag>
+   <comment>Title should be shown as Collection
+Inv Amt, Min Amt details should be displayed
+Select Bank, Select Branch, Select Cheque drop down should be displayed
+Cheque number, Date, upload image should be present with submit button
+Balance:  amount should display based on amount entered in Total paid field in cheque mode.
+Total paid amount should display the amount entered in Total paid field at cheque mode</comment>
+   <testCaseGuid>804ac208-161d-4ce4-8804-9bce9b1df66d</testCaseGuid>
+</TestCaseEntity>

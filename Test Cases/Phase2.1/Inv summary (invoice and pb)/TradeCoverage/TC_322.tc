@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_322:To check the Min. Amt displayed in the Transferencias Electronicas mode</description>
+   <name>TC_322</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b1112ca6-2e47-4514-b2e1-76ed4ab020b9</testCaseGuid>
+</TestCaseEntity>

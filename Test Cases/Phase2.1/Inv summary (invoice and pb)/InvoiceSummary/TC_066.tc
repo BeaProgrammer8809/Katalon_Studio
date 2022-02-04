@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_066:- To Check  Total Price  Calculation against each sku having only Category level discounts but no Tax while taking Invoice &amp; PB - Both Salable &amp; Non-Salable</description>
+   <name>TC_066</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6618a06a-3bf4-4678-a57f-34066612bb48</testCaseGuid>
+</TestCaseEntity>

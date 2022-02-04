@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_413 - To verify the “Folio No” &amp; “Folio ProdBuy” field accepts the Empty space as input.</description>
+   <name>TC_ID_413</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7127bba9-09ba-4f91-90cd-4d67387600f9</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_174 : To check Collection pop up option coming very next to summary screen for Multi org route</description>
+   <name>TC_ID_174</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>88a9540c-d124-4c6a-9a94-5cc28bbfae49</testCaseGuid>
+</TestCaseEntity>

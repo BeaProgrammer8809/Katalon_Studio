@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC56:To check the split name, while taking only Product Buying for Non-Group SKUs(SKUs not mapped under Invoice Split) from Ricolino Company</description>
+   <name>TC56</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e9f72701-9c7d-4f74-a834-6e73d9f872ee</testCaseGuid>
+</TestCaseEntity>

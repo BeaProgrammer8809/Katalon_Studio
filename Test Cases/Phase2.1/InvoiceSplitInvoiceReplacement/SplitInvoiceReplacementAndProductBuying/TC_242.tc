@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_242 - To check whether able to collect the invoice amount in cheque for non-multi org route when invoice,replacement and product buying for the sku that are not in invoice spit group</description>
+   <name>TC_242</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d69c1f78-716e-4cd7-a095-3981d3f33d05</testCaseGuid>
+</TestCaseEntity>

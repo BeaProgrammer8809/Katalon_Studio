@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_003-->  Check whether able to navigate to Invoice summary screen after taking Invoice, Rep and Product buying for any sku
+
+TC_ID_004-->  Check the default display of the Summary screen for Cash retailer(1. Screen title should be Summary
+2. Collection, Edit, Preticket icon should be displayed on the top of the screen.
+3. Invoice No should be generated and displayed in centre.
+4. Order and invoice or Product buying taken for the SKU should be displayed with its Total value
+5. The Pieces, Bag, Actual Return, U.Price and Sales Return quantity should display with respect to the Order and invoice and Product buying screen
+6. At bottom of the screen the total Value, Total Qty calculated should be displayed and (i) icon should be displayed for Value field
+7. Invoice button should be present at the bottom of the screen.)</description>
+   <name>TC_ID_003_004</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9bb1d1dd-2912-46ae-bd66-e6fa8f712400</testCaseGuid>
+</TestCaseEntity>

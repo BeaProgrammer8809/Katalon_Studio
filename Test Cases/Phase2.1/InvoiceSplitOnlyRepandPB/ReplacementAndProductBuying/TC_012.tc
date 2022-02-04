@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_012 :Check whether inputted values in the invoice count field gets deleted when tap on backspace (x) button available in the keyboard</description>
+   <name>TC_012</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9eae84ca-8714-4e31-84a8-954afb833498</testCaseGuid>
+</TestCaseEntity>

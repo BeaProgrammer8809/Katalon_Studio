@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_313 : To check when SKU1 ,SKU2,SKU3 is mapped in one split group if IEPS 8% tax is mapped for SKU1 and IVA 16% Tax is mapped for SKU1,SKU2  while do the invoice whether IEPS and IVA tax is applying correctly 
+</description>
+   <name>TC_ID_313</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b008ecc0-9e78-4034-bf44-40cbe509f186</testCaseGuid>
+</TestCaseEntity>

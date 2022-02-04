@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC433:To check whether able to Submit the invoice amount without entering Cheque no</description>
+   <name>TC433</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7f798f86-abcb-4df4-909e-4b1a8d540daa</testCaseGuid>
+</TestCaseEntity>

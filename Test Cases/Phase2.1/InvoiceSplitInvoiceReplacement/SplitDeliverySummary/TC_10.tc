@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_10: To check the Total qty displayed after taking invoice, replacement and pb for group sku's</description>
+   <name>TC_10</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e5bfb86-c624-477e-a307-a62ad3d4ead0</testCaseGuid>
+</TestCaseEntity>

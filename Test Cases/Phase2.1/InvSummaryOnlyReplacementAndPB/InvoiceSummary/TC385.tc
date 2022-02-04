@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC385: To check whether Collection icon is displaying for Cash retailer while doing only product buying for ricolino sku</description>
+   <name>TC385</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aeadbb77-c2c9-418b-a5ac-2d5573d1ad7a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_092--> To check the functionality of Ordered special filter when invoice and replacement has done</description>
+   <name>TC_092</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e1de2504-8f38-475a-b148-70c3bc27a882</testCaseGuid>
+</TestCaseEntity>

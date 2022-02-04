@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC188 : To check the Comp Disc amount inside the info popup while taking replacement for the sku's that is having IVA, IEPS taxes and  Category discount.</description>
+   <name>TC188</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2d1a094-df55-404c-b303-b590529e0815</testCaseGuid>
+</TestCaseEntity>

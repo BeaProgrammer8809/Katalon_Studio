@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_120 - Check whether the same Product Name and record count are appearing in the Delivery Split Summary screen Grid  what was available in the Delivery Summary Screen</description>
+   <name>TC_ID_120</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e0cf3683-ef54-4c84-b24d-26e454faf98f</testCaseGuid>
+</TestCaseEntity>

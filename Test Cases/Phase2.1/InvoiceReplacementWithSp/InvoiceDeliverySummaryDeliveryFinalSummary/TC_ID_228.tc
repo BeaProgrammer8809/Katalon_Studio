@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_228 - To check whether replacement qty's are getting added and displayed in the delivery final summary screen when only replacement for Ungrouped SKU is taken and along with other Ungrouped SKUs for them both invoice and replacement both have taken.</description>
+   <name>TC_ID_228</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9b3e97b8-4fce-45cd-8c2b-363708fbb5c9</testCaseGuid>
+</TestCaseEntity>

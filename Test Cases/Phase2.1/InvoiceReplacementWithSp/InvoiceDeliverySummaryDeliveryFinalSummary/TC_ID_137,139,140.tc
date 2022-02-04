@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_137 - Check whether against an extra invoice multiple company's stock are allowed to enter for delivery- In Case of Ungrouped SKU
+TC_ID_139 - Check whether after entering stock against an extra invoice, for other company's SKU, cell is marked as read only- In Case of Ungrouped SKU
+TC_ID_140 - Check whether 1 extrainvoice is applicable for only 1 company's SKU- In Case of Ungrouped SKU</description>
+   <name>TC_ID_137,139,140</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f643f8d7-906f-47a8-ba43-8db115bede66</testCaseGuid>
+</TestCaseEntity>

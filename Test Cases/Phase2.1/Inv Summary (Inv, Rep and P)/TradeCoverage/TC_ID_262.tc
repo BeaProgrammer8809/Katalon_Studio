@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_262:-To check transaction details do not get reset and remain on same collection pop up when user click on cancel button in alert pop up</description>
+   <name>TC_ID_262</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a2ba9931-4804-409c-a11d-98f16c22be56</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_28 - To check the total price calculation while taking product buying for the sku's that is having IVA tax and Item discount.</description>
+   <name>TC28</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e1f2f34-8319-4e60-aeb4-bba07d3f7c3b</testCaseGuid>
+</TestCaseEntity>

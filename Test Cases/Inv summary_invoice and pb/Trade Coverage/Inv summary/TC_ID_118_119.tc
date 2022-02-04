@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_118 - To check whether (i) icon is displaying for Value field
+TC_ID_119 - To check the default display of info (i) popup screen</description>
+   <name>TC_ID_118_119</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>eb5145ae-239f-4003-9541-b10265c3e56a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_267 - To check the legal entity displayed in multi org collection,while doing only invoice for Barcel products
+
+Legal entity should be displayed based on invoiced sku in multi org collection (Bimbo/Barcel/Ricolino) sku
+hence in the collection screen &quot;Barcel S.A. de C.V&quot; should be displayed
+Note:Company level legal entity should be displayed for multi org</description>
+   <name>TC_267</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2f07343c-5e05-419d-9b85-0e5aac613913</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether able to Submit the invoice amount with past Cheque date when scheme is applied</description>
+   <name>TC_246</name>
+   <tag></tag>
+   <comment>User should be able to submit the invoice amount with past Cheque date</comment>
+   <testCaseGuid>fae6c9d3-0e1b-432c-8e25-a806df46e2f7</testCaseGuid>
+</TestCaseEntity>

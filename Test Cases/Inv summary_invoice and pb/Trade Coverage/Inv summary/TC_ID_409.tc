@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_409 - To check whether able to Submit with Total paid amount lesser than invoice amount</description>
+   <name>TC_ID_409</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>ce7e3996-82ee-44ae-8c80-808515c55956</testCaseGuid>
+</TestCaseEntity>

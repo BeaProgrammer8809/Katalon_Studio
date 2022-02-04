@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_308 : To check whether able to Submit the invoice amount in Efectivo and Cheque</description>
+   <name>TC_ID_308</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af10bafb-5a49-4b8d-aa69-2d949ab558cc</testCaseGuid>
+</TestCaseEntity>

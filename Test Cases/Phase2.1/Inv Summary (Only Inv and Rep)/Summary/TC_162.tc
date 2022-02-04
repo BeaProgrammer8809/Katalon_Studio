@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_162:- To check the Comp Disc amount inside the info popup while taking invoice for the sku's that is having only tax  IEPS but not having any discounts</description>
+   <name>TC_162</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4cd07e2a-8818-4aef-8dde-9dde9d89c25d</testCaseGuid>
+</TestCaseEntity>

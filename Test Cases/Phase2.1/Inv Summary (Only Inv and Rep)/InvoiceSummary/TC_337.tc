@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_337:To check while doing replacement for the sku's that is having IVA, IEPS taxes with Category discount and Detail IEPS flag is enabled for the store,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC_337</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d17b8c31-2c2e-43c0-9f70-3ff820a3779f</testCaseGuid>
+</TestCaseEntity>

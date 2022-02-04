@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC92:To check while doing product buying for the no group sku's that is having only IEPS tax with item disocunt and Detail IEPS is enabled for the store ,whether the onsite invoice is getting success ,UUID is generated</description>
+   <name>TC92</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7c399971-78e4-4b74-a727-04f54b500dfb</testCaseGuid>
+</TestCaseEntity>

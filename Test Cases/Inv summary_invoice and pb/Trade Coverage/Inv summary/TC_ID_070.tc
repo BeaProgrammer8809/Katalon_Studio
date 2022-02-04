@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_070 - To check the Value field calculation, while taking invoice &amp; PB (Salable) against each sku's that is not having any discounts and taxes</description>
+   <name>TC_ID_070</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>6b0d99e9-d5d9-46f6-b6ba-320f3aa96717</testCaseGuid>
+</TestCaseEntity>

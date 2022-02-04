@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_234 - To check the generated split  Invoice is coming with collection and effective with checkbox for no Group SKU</description>
+   <name>TC_ID_234</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f182f46e-7175-406e-a0b0-a41e40e3ae49</testCaseGuid>
+</TestCaseEntity>

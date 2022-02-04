@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_274 - To check whether Collection icon is present for Cash retailer
+
+Collection icon should be displayed in Invoice summary screen for Cash type retailers</description>
+   <name>TC_274</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a56bf258-8e62-487f-88a1-8def1cd67441</testCaseGuid>
+</TestCaseEntity>

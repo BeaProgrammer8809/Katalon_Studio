@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_01--> To Check whether Applying scheme is loading if scheme is applicable for the created order &amp; invoice</description>
+   <name>TC_01</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8caeedaa-5f3b-4808-9f77-60c698647e29</testCaseGuid>
+</TestCaseEntity>

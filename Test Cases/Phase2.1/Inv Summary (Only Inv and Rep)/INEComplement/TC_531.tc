@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_531: To check whether below items are displaying in INE_Ambito field 1.Local  2.Federal</description>
+   <name>TC_531</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>96267f05-06ce-42f6-bb99-47d2b1dfeb89</testCaseGuid>
+</TestCaseEntity>

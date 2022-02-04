@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_259:-To check Validation message is not  coming  when commission amount has not collected</description>
+   <name>TC_ID_259</name>
+   <tag></tag>
+   <comment>Error msg Should not come so user should be v=navigate to summary page</comment>
+   <testCaseGuid>98276858-5f1d-4cc7-8c35-3eae4eb69367</testCaseGuid>
+</TestCaseEntity>

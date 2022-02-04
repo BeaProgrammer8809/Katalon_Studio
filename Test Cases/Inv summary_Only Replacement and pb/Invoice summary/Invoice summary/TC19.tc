@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC19 - Check whether Sales return qty against each sku is updating in Summary screen while taking Invoice only</description>
+   <name>TC19</name>
+   <tag>Functional</tag>
+   <comment></comment>
+   <testCaseGuid>fb27ca92-e45e-43d9-a813-bb3245459fd8</testCaseGuid>
+</TestCaseEntity>

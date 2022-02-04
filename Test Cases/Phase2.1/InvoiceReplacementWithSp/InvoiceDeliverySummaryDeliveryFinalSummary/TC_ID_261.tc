@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_261:-To check the Min. Amt displayed in the Cheques mode</description>
+   <name>TC_ID_261</name>
+   <tag></tag>
+   <comment>Min. Amt should also display the Net amount (value) displayed</comment>
+   <testCaseGuid>41e989f5-7fef-4d2b-8f44-4fd57b000e7b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_217:- To check the Total amount inside the info popup while taking invoice and Product Buying (Salable/Non salable) for the sku's that is having only tax  IEPS but not having any discounts</description>
+   <name>TC_217</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4701e1b3-7f80-472a-aa41-7fd8538b5b36</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_358
+To check whether the &quot;Claveentidad&quot; field is present in the &quot;Invoice summary&quot; screen for stores with &quot;INE Enabled&quot; as false</description>
+   <name>TC_ID_358</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9358b33b-c149-4217-ad6a-7b85e69f041a</testCaseGuid>
+</TestCaseEntity>
