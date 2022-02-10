@@ -56,7 +56,7 @@ Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/T
 Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), '12', 0, FailureHandling.OPTIONAL)
 Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), '12', 0, FailureHandling.OPTIONAL)
 
-//Verification to check that Fields are non-editable in in the grid in summary screen
+//Verification to check that Fields attribute value is same as Actual value after doing set text
 Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 'text', Actual_Pieces_Value, 0, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Bag_Value_Indexing'), 'text', Actual_Bag_Value, 0, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 'text', Actual_Return_Value, 0, FailureHandling.STOP_ON_FAILURE)
@@ -64,6 +64,24 @@ Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIIn
 Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Total_Qty_Value'), 'text', Actual_Total_Value, 0, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 'text', Actual_Sales_Return, 0, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 'text', Actual_Price_Value, 0, FailureHandling.STOP_ON_FAILURE)
+
+//Verification to check that fields are not clickable to edit
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Bag_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+
+//Verification to check that fields are available/existing
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Bag_Value_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_012_Element_Values_After_Editing'], FailureHandling.STOP_ON_FAILURE)
 
 println('Fields are non-editable in in the grid in summary screen')

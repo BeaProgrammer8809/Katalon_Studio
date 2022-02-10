@@ -89,19 +89,28 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Invoic
 
 
 //Total Price i.e, pieces*Unit_Price
-def ActualTotalPrice = Integer.parseInt(Expected_Pieces_Value) * Double.parseDouble(UnitPrice)
-println('Total price against sku1 is ' + ActualTotalPrice)
+def totalPrice = Integer.parseInt(Expected_Pieces_Value) * Double.parseDouble(UnitPrice)
+println('Total price against sku1 is ' + totalPrice)
 
 //Discount=Total Order Value - ActualTotalPrice
-double Discount = Double.parseDouble(TotalOrderValue) - ActualTotalPrice
+double Discount = Double.parseDouble(TotalOrderValue) - totalPrice
 println('Discount for sku1 is ' + Discount)
 
 //Tax = Value - Order Value
-double tax = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
-println('Tax amount applied for this product is ' + tax)
+double tax_Value = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
+println('Tax amount applied for this product is ' + tax_Value)
+
+def totalSum = Double.parseDouble(TotalOrderValue)
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+//Verification to check the Tax percentage for the SKU
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println('Tax IEPS and IVA is applied for sku')
 
 //The Value field calculation is considering the Taxes (IVA, IEPS) and Discounts (SKU discount, Category discount) only for invoiced sku qty but not for Replacement or Product buying qty.
-def ExpectedValue = (ActualTotalPrice + Discount) + tax
+def ExpectedValue = (totalPrice + Discount) + tax_Value
 
 //Verification to check Value = Total price against invoiced sku + IVA tax amount against invoiced sku + IEPS tax amount against invoiced sku
 Mobile.verifyEqual(Actual_Value_Amt, ExpectedValue, FailureHandling.STOP_ON_FAILURE)

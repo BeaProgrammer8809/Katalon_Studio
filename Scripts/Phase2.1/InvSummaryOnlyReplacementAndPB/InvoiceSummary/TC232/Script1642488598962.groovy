@@ -66,37 +66,3 @@ Mobile.callTestCase(findTestCase('Phase2.1/InvSummaryOnlyReplacementAndPB/Invoic
 
 Mobile.closeApplication()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

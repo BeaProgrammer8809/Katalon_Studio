@@ -64,6 +64,22 @@ Mobile.verifyMatch(verifytheMessage, findTestData('Phase2.1/TY_11/TestData').get
 /verifying failure message is not coming & generating id/
 Mobile.verifyMatch(verifytheMessage1, findTestData('Phase2.1/TY_11/TestData').getValue(7, 36), false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_333'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_333_uuid'], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
+
+def PrintActualMessage = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(PrintActualMessage + 'actualMessage')
+
+def onsitExpectedMessage = findTestData('Phase2.1/TY_11/TestData').getValue(8, 36)
+
+boolean OnsitMessageResult = PrintActualMessage.contains(onsitExpectedMessage)
+
+def verifytheStatus = OnsitMessageResult.toString()
+
+Mobile.verifyMatch(verifytheStatus, findTestData('Phase2.1/TY_11/TestData').getValue(6,36), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_333_PrintPreview'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

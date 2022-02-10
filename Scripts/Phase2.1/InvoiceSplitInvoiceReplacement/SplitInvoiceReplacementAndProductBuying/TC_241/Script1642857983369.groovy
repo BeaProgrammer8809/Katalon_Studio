@@ -70,6 +70,9 @@ Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Create_Ticket_Invoice_
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0)
 
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'),
+	[('testCaseName') : 'TC_241DeliveryFinalSummary'], FailureHandling.STOP_ON_FAILURE)
+
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
 
 def invoice_split_amt_txt = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 

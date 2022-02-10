@@ -89,7 +89,9 @@ def TP = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScr
 
 println(TP)
 
-TP1 = TP.substring(13, 18)
+TP2 = TP.split(": ")
+
+def TP1= TP2[1]
 
 double TotalPaid = Double.parseDouble(TP1)
 

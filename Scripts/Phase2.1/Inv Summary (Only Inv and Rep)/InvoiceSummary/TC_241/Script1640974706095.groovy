@@ -187,9 +187,23 @@ Mobile.verifyMatch(TotalDiscount.toString(), CompDiscAbsValue.toString(), false)
 
 //***********************************************
 'To Calculate TAX amount Value present on the invoice screen - SKUGrossAmount'
-double TaxValue = ValueDisplayed - SKUGrossAmount
+double tax = ValueDisplayed - SKUGrossAmount
+println(tax + ' ----- Tax amount calculated ')
 
-println(TaxValue + 'Tax value Added')
+//tax percentage validation
+def totalSum = SKUGrossAmount
+
+println(totalSum + '--totalsum passed to calaculate tax')
+
+def actualTaxPercentage = findTestData('Phase2.1/Common_Data/CommonData').getValue(20, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+println(expTaxPercentage + '---TAX Percentage returned from keyword')
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('No tax is applied for sku')
 
 //*************************************************
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)

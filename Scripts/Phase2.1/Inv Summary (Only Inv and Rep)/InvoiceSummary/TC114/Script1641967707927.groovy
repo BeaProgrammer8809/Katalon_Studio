@@ -92,13 +92,20 @@ def ActualTotalPrice = Integer.parseInt(Expected_Pieces_Value) * Double.parseDou
 println('SKU gross amount is ' + ActualTotalPrice)
 
 //Tax = Value - Order Value
-double tax = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
+double tax_Value = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
+println('Tax amount applied for this product is ' + tax_Value)
 
-println('Tax amount applied for this product is ' + tax)
+def totalSum = Double.parseDouble(TotalOrderValue)
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
 
-//verification to check the sum of order price + tax
-def Expected_Order_Value = ActualTotalPrice + tax
+//Verification to check the Tax percentage for the SKU
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println('Tax IEPS is applied for sku')
 
+//verification to check the sum of order price + tax_Value
+def Expected_Order_Value = ActualTotalPrice + tax_Value
 println('Expected order value with tax is ' + Expected_Order_Value)
 
 //Verification to check the order value for SKU which is having IEPS tax but not having any discount
@@ -110,4 +117,3 @@ Mobile.verifyMatch(Actual_Pieces_Value, Expected_Pieces_Value, false, FailureHan
 println('Order Value = Sum of  (Gross amount against each sku + Tax (IEPS+IVA) amount against each sku)')
 
 Mobile.closeApplication()
-

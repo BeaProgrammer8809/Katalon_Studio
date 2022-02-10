@@ -3,6 +3,12 @@
    <description>TC_ID_092  : To check the display of Collection popup</description>
    <name>TC_ID_092</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Title should be shown as Collection
+Inv Amt, Min Amt details should be displayed
+Efectivo, Cheques, Transferencias Electronicas, Credit Note modes should be available
+4. Balance:  amount should display based on amount entered in Total paid field.
+5. Total paid should display the amount entered in Total paid field.
+6. Total paid field should be filled with the Invoice amount as default in &quot;Efectivo&quot; mode
+Keypad should display</comment>
    <testCaseGuid>eea84a11-b764-4572-877b-505884e06739</testCaseGuid>
 </TestCaseEntity>

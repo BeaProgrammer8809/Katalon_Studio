@@ -158,6 +158,16 @@ Mobile.verifyEqual(actualValue, ExpectedValue, FailureHandling.STOP_ON_FAILURE)
 
 println('The Value field amount should be updated based on invoiced Sku amount, Tax for invoiced sku and ' + 'discount applied for invoiced sku without considering the replacement sku amount.')
 
+def totalSum=Double.parseDouble(DiscountedPriceSKU1)+Double.parseDouble(DiscountedPriceSKU2)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(19, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax,totalSum)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println "Tax IVA is applied for sku"
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC100_InvoiceSummary'], 
     FailureHandling.STOP_ON_FAILURE)
 

@@ -115,6 +115,18 @@ DecimalFormat df = new DecimalFormat('0.00')
 Item1catdiscountss121 = df.format(Item1catdiscountss)
 println(Item1catdiscountss121)
 
+def totalSum=Double.parseDouble(Discountedprice)
+
+//def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(20, 1)
+println(actualTaxPercentage)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(Tax, totalSum)
+println(expTaxPercentage)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println "Tax  is not applied for sku"
 
 Mobile.verifyEqual(CategoryItemDiscount.toString(), Item1catdiscountss121.toString(), FailureHandling.STOP_ON_FAILURE)
 

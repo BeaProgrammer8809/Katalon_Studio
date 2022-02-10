@@ -99,9 +99,14 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0
 
 Mobile.verifyElementExist(findTestObject('Phase2/BICollectionScreen01/MinAmt_TextView'), 0)
 
+MinAmtCollectionScreen = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/MinAmt_Text'), 0)
+
+Mobile.verifyMatch(MinAmtCollectionScreen, valueDisplayed, false, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.verifyElementText(findTestObject('Phase2/BICollectionScreen01/MinAmt_TextView'), valueDisplayed)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_278'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_278'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 println('The MinAmt displayed in the collection screen and the NetAmount(value) dispalyed in the Summary Screen are equal')
 

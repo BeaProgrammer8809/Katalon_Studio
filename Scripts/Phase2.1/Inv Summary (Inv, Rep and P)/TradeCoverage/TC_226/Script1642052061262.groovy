@@ -64,97 +64,77 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/Payment_CheckBox'), 
     0)
 
-//clearing amount in effectivo mode
-def invamt1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 
-    0)
-
-println(invamt1.length())
-
-for (int i = 0; i < (invamt1.length() + 1); i++) {
-    Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
-}
-
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 0)
 
-'Capturing INVOICE Amount'
-def InvAmt_txt = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
 
-println(InvAmt_txt)
+def TransferenciasBalance2 = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/Balance_TextView'), 0)
 
-double invoiceAmt = Double.parseDouble(InvAmt_txt)
+TransferenciasBalance1 = TransferenciasBalance2.split(': ')
 
-println(invoiceAmt + 'invoiceAmt ')
+TransferenciasBalance3 = (TransferenciasBalance1[1])
 
-'Capturing Total paid Text view '
-def TotalPaid_txt = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/TotalPaid_TextView'), 
-    0)
+TransferenciasBalance3 = TransferenciasBalance3.split(' of')
 
-println(TotalPaid_txt)
+TransferenciasBalance = (TransferenciasBalance3[0])
 
-def Tot_paid_txt = TotalPaid_txt.substring(13, TotalPaid_txt.length())
+def expectedBalAmt = findTestData('Phase2.1/TY_14/TestData').getValue('Data1', 55)
 
-println(Tot_paid_txt + 'Tot_paid_txt')
+Mobile.verifyMatch(TransferenciasBalance, expectedBalAmt, false, FailureHandling.STOP_ON_FAILURE)
 
-double Tot_paidVal = Double.parseDouble(Tot_paid_txt)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_226TransferenciasElectronic'], FailureHandling.STOP_ON_FAILURE)
 
-println(Tot_paidVal + 'Tot_paid_txt ')
-
-'Calculating the invoiceAmt - TotalPaid_txt'
-diffrence = (invoiceAmt - Tot_paidVal)
-
-int diff = diffrence.toInteger()
-
-println(diff)
-
-'Capturing Balance Text view '
-def Balance_txt1 = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/Balance_TextView'), 
-    0)
-
-println(Balance_txt1 + 'Bal_txt ')
-
-ExpectedBaltxt = ((('Balance : ' + diff) + ' of ') + invoiceAmt)
-
-println(ExpectedBaltxt + 'ExpectedBaltxt')
-
-Mobile.verifyMatch(Balance_txt1, ExpectedBaltxt, false, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_226'], FailureHandling.STOP_ON_FAILURE)
+//as for the expected result i need to validate balance amount in all the mode
 
 'cheques'
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Cheques_RadioButton'), 0)
 
-'Capturing Balance Text view '
-def Balance_txt2 = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/Balance_TextView'), 0)
+def chequesBalance2 = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Balance_TextView'), 0)
 
-println(Balance_txt2 + 'Bal_txt ')
+chequesBalance1 = chequesBalance2.split(': ')
 
-Mobile.verifyMatch(Balance_txt2, ExpectedBaltxt, false, FailureHandling.STOP_ON_FAILURE)
+chequesBalance3 = (chequesBalance1[1])
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_226'], FailureHandling.STOP_ON_FAILURE)
+chequesBalance3 = chequesBalance3.split(' of')
+
+chequesBalance = (chequesBalance3[0])
+
+Mobile.verifyMatch(chequesBalance, expectedBalAmt, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_226cheque'], FailureHandling.STOP_ON_FAILURE)
 
 'effectivo'
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0)
 
-'Capturing Balance Text view '
-def Balance_txt3 = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/Balance_TextView'), 0)
+def EffectivoBalance2 = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Balance_TextView'), 0)
 
-println(Balance_txt3 + 'Bal_txt ')
+EffectivoBalance1 = EffectivoBalance2.split(': ')
 
-Mobile.verifyMatch(Balance_txt3, ExpectedBaltxt, false, FailureHandling.STOP_ON_FAILURE)
+EffectivoBalance3 = (EffectivoBalance1[1])
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_226'], FailureHandling.STOP_ON_FAILURE)
+EffectivoBalance3 = EffectivoBalance3.split(' of')
+
+EffectivoBalance = (EffectivoBalance3[0])
+
+Mobile.verifyMatch(EffectivoBalance, expectedBalAmt, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_226effectivo'], FailureHandling.STOP_ON_FAILURE)
 
 'CreditNote'
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/CreditNote_RadioButton'), 0)
 
-'Capturing Balance Text view '
-def Balance_txt5 = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/Balance_TextView'), 0)
+def CreditNoteBalance = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/Balance_TextView'), 0)
 
-println(Balance_txt5 + 'Bal_txt ')
+CreditNoteBalance1 = CreditNoteBalance.split(': ')
 
-Mobile.verifyMatch(Balance_txt5, ExpectedBaltxt, false, FailureHandling.STOP_ON_FAILURE)
+CreditNoteBalance3 = (CreditNoteBalance1[1])
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_226'], FailureHandling.STOP_ON_FAILURE)
+CreditNoteBalance3 = CreditNoteBalance3.split(' of')
+
+creditNoteBalance = (CreditNoteBalance3[0])
+
+Mobile.verifyMatch(creditNoteBalance, expectedBalAmt, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_226creditNote'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

@@ -73,7 +73,7 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_Po
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 
 Mobile.setText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText_Indexing'), findTestData(
-        'Phase2.1/Common_Data/CommonData').getValue('Folio number', 2), 0)
+		'Phase2.1/Common_Data/CommonData').getValue('Folio number', 2), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 
@@ -82,6 +82,22 @@ def UUID = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/
 println(UUID)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
+
+def actualMessage = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(actualMessage + 'actualMessage')
+
+def expectedMessage = findTestData('Phase2.1/TY_01/TestData3').getValue(4, 17)
+
+boolean MessageResult = actualMessage.contains(expectedMessage)
+
+def verifytheToastMessage = MessageResult.toString()
+
+Mobile.verifyMatch(verifytheToastMessage, findTestData('Phase2.1/TY_01/TestData3').getValue(6, 17), false, FailureHandling.STOP_ON_FAILURE)
+
+println "Onsite Invoice is getting failure and UUID is not generated"
+
+
 
 def PrintPreviewscreen = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/PrintPreview_Title'), 0)
 

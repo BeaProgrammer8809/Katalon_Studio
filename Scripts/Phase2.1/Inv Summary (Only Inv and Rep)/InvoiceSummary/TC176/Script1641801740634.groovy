@@ -72,6 +72,25 @@ def gross_amount = Integer.parseInt(Actual_Buy_pieces) * Float.parseFloat(Actual
 
 println(gross_amount)
 
+"***********Tax percentage verifaction*********************"
+def totalSum = Double.parseDouble(Discount_Price)
+
+
+//Tax = Value - Order Value
+double tax = Double.parseDouble(Amount) - Double.parseDouble(Discount_Price)
+println('Tax amount applied for this product is ' + tax)
+
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(20, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+println expTaxPercentage
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS  is not aapplied for sku')
+
 def CompDiscount= Double.parseDouble(Discount_Price)-(gross_amount)
 println CompDiscount
 

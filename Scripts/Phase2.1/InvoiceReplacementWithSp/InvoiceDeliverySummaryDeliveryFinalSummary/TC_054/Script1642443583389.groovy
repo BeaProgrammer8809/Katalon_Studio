@@ -31,6 +31,8 @@ GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/EnterPiecesQuantity'), [('ProductName') : findTestData(
 			'Phase2.1/Common_Data/CommonData').getValue('ProductName', 35)], FailureHandling.STOP_ON_FAILURE)
 
+def expectedStockDelivered = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 0)
+
 def expectedSRP = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/SRP_Price'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
@@ -48,6 +50,10 @@ GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(
 def actualSRP = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliverySummaryScreen/SRP_Text_Indexing'), 0)
 
 Mobile.verifyMatch(actualSRP, expectedSRP, false, FailureHandling.STOP_ON_FAILURE)
+
+def actualStockDelivered = Mobile.getText(findTestObject('Phase2/BIDeliverySummaryScreen/Stock_Delivered_Text'), 0)
+
+Mobile.verifyMatch(actualStockDelivered, expectedStockDelivered, false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
 	[('testCaseName') : 'TC_054'], FailureHandling.STOP_ON_FAILURE)

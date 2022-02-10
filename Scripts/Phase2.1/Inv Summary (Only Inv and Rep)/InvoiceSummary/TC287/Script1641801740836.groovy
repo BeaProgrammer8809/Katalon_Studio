@@ -37,6 +37,15 @@ Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
+Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Cancel_Button'), 0)
+
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Quantity_2'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
+			'ProductName', 15)], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Quantity_2'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
+			'ProductName', 27)], FailureHandling.STOP_ON_FAILURE)
+
+
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)

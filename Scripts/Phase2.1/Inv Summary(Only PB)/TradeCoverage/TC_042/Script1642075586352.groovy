@@ -27,7 +27,7 @@ GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(
 
 def Actual = Mobile.getText(findTestObject('Object Repository/Phase2/BIUnload/Salable/Product_Name_Indexing'), 0)
 
-def Expected = findTestData('Phase2.1/TY_05/Collection').getValue(3, 46)
+def Expected = findTestData('Phase2.1/Common_Data/CommonData').getValue(3, 62)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIUnload/Salable/Product_Name_Text'), 0)
 
@@ -35,7 +35,7 @@ Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIUnload/Sala
 
 Mobile.verifyEqual(Actual, Expected)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_040'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_042'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

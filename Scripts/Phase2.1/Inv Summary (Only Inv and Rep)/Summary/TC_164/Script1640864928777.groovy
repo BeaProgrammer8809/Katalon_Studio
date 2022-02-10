@@ -113,6 +113,22 @@ println('Since categoryDiscount and  Categordiscountss are same Category discoun
 def CompDisc=categoryDiscount
 println(CompDisc)
 
+def Tax=Double.parseDouble(TotalValue)-Double.parseDouble(Discountedprice)
+println(Tax)
+
+def totalSum=Double.parseDouble(Discountedprice)
+
+//def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+println(actualTaxPercentage)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(Tax, totalSum)
+println(expTaxPercentage)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println "Tax IEPS  is applied for sku"
+
 Mobile.verifyNotEqual(TotalValue, Discountedprice, FailureHandling.STOP_ON_FAILURE)
 println("Since price and TotalValue are not same  tax is applied")
 

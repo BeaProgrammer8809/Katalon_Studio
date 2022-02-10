@@ -86,8 +86,6 @@ println(TotalDiscount + 'Total Discount Calculated')
 //To Get THe Value Amount in SUMMARY Screen
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
-
 def valueDisplayed = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
 println(valueDisplayed + 'Value displayed in summary screen string format')
@@ -111,12 +109,8 @@ def expectedAmountSplitpopup = Mobile.getText(findTestObject('Phase2/BIInvoiceSu
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_245_AmtSplitup'], 
     FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_TextView'), 0)
-
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_TextView'), 
     0)
-
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0)
 
@@ -129,8 +123,6 @@ println(OrderValue + '--OrderValue Double format')
 
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_TextView'), 0)
 
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_Value'), 0)
-
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_Value'), 0)
 
 def actualTotalOrderValue = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_Value'), 
@@ -141,8 +133,6 @@ double TotalOrderValue = Double.parseDouble(actualTotalOrderValue)
 println(TotalOrderValue + 'TOTAL ORDER VALUE')
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_TextView'), 0)
-
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'), 0)
 
 def compDiscValueText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'), 
     0)
@@ -185,15 +175,24 @@ Mobile.verifyMatch(compDiscValueText[0], ExpectedSign, false)
 'To Check if Total Discount Calculated and Comp Disc displayed in Amount Split up is equal'
 Mobile.verifyMatch(TotalDiscount.toString(), CompDisc, false)
 
-//**************************
-//***********************************************
-'To Calculate TAX amount Value present on the invoice screen - SKUGrossAmount'
-double TaxValue = ValueDisplayed - SKUGrossAmount
+//tax calculation and percentage validation
+def totalSum = SKUGrossAmount
 
-println(TaxValue + 'Tax value Added')
+println(totalSum + '--totalsum passed to calaculate tax')
 
-//*************************************************
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
+def tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+println(tax + ' ----- Tax amount calculated using Tax keyword')
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+println(expTaxPercentage + '---TAX Percentage returned from keyword')
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS is applied for sku')
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
 

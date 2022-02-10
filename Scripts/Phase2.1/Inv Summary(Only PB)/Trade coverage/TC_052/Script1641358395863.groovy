@@ -36,7 +36,7 @@ Mobile.tap(findTestObject('Phase2/BIUnload/NonSalable/Total_Piece_Indexing'), 0)
 //0)
 Mobile.tap(findTestObject('Phase2/BIUnload/NonSalable/NoSalable_Stock_Popup/Pieces_Edit_Text_Indexing'), 0)
 
-Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+/*Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberPad/Num- 0'), 0)
 
@@ -94,11 +94,22 @@ Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberPad/Num- 9'), 0)
 
-Mobile.getText(findTestObject('Phase2/BINumberPad/Num- 9'), 0)
+Mobile.getText(findTestObject('Phase2/BINumberPad/Num- 9'), 0)*/
 
-println(' 0-9 values are allowed to enter into Piece Field')
+for(int i=0;i<=9;i++){
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+	GlobalVariable.Number=findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', i+1)
+	Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeypad01/Number'), 0)
+	GlobalVariable.index=findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
+	def Pieces=Mobile.getText(findTestObject('Object Repository/Phase2/BIUnload/NonSalable/NoSalable_Stock_Popup/Pieces_Edit_Text_Indexing'), 0)
+	
+	Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/Screenshot'), ["testCaseName":"TC_052($i+1)"], FailureHandling.STOP_ON_FAILURE)
+	
+}
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/Screenshot'), ["testCaseName":"TC_052_invoiceSummary"], FailureHandling.STOP_ON_FAILURE)
+//println(' 0-9 values are allowed to enter into Piece Field')
+
+//Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/Screenshot'), ["testCaseName":"TC_052_invoiceSummary"], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

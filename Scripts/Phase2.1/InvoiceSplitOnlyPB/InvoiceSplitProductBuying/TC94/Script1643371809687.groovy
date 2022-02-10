@@ -113,7 +113,23 @@ Mobile.verifyMatch(verifytheMessage, findTestData('Phase2.1/TY_14/TestData').get
 /*verifying failure message is not coming & generating id*/
 Mobile.verifyMatch(verifytheMessage1, findTestData('Phase2.1/TY_14/TestData').getValue(7, 38), false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyPB/InvoiceSplitProductBuying/Screenshot'), [('testCaseName') : 'TC_94'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyPB/InvoiceSplitProductBuying/Screenshot'), [('testCaseName') : 'TC94uuid'], FailureHandling.STOP_ON_FAILURE)
+
+
+Mobile.tap(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Splitted_Invoice_Saved_Successfully_OK_Button'), 0)
+
+def actualMessage2 = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+def onsitExpectedMessage = findTestData('Phase2.1/TY_14/TestData').getValue('Data3', 38)
+
+boolean OnsitMessageResult = actualMessage2.contains(onsitExpectedMessage)
+
+def verifytheStatus = OnsitMessageResult.toString()
+
+Mobile.verifyMatch(verifytheStatus, findTestData('Phase2.1/TY_14/TestData').getValue('Data', 38), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyPB/InvoiceSplitProductBuying/Screenshot'), [('testCaseName') : 'TC94Printpreview'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

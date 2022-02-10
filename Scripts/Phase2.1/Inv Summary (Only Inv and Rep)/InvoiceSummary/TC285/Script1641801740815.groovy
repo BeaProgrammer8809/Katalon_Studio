@@ -37,6 +37,14 @@ Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
+Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Cancel_Button'), 0)
+
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Replacement_Quantity'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
+            'ProductName', 15)], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Replacement_Quantity'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
+            'ProductName', 27)], FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
@@ -45,22 +53,27 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
 
-def InvoiceCreatedText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'),
-	0)
+def InvoiceCreatedText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 
+    0)
 
 println(InvoiceCreatedText)
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 0)
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
-println "Folio text field is not  displayed after clicking on invoice button"
+Mobile.verifyElementNotVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
+    0, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.verifyElementNotExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
+    0, FailureHandling.STOP_ON_FAILURE)
+
+println(' Folio Number Flag is not Enabled')
+
+println('Folio text field is not  displayed after clicking on invoice button')
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_285_FolioPopup'], 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-
-
 

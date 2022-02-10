@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>VanloadDate_indexing</name>
+   <tag></tag>
+   <elementGuidId>43ff5767-b603-4d04-93b2-49bbbac37af8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//*[@resource-id='${GlobalVariable.Package}:id/vanLoad_date'])[${GlobalVariable.index}]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//*[@resource-id='${GlobalVariable.Package}:id/vanLoad_date'])[${GlobalVariable.index}]</value>
+   </webElementProperties>
+</WebElementEntity>

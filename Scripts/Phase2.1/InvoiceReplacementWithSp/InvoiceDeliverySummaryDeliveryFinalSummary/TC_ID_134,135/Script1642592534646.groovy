@@ -88,14 +88,21 @@ Mobile.tap(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv3_EditView_In
 
 Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/1_NumButton'), 0)
 
-Mobile.setText(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv4_EditView_Indexing'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-        5, 1), 0)
-
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), 
     [('testCaseName') : 'TC_ID_134'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), 
     [('testCaseName') : 'TC_ID_135'], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Phase2/BISplitDeliverySummary01/Create_Final_Invoice_Button'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0)
+
+Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), findTestData(
+	'Phase2.1/TY_13/Invoice, Replacement with Sp').getValue(4, 7))
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
+	[('testCaseName') : 'TC_ID_134,135AfterTapCreateInvoice'], FailureHandling.STOP_ON_FAILURE)
 
 println('TC_ID_134 - We are able to enter the full qty in a single ExtraInv for Grouped SKU\'s ')
 

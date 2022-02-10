@@ -71,6 +71,9 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Success
 
 Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Create_Ticket_Invoice_Button'), 0)
 
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'),
+	[('testCaseName') : 'TC_243DeliveryFinalSummaryScreen'], FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Payment_CheckBox'), 0)
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
@@ -113,6 +116,8 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'),
 	[('testCaseName') : 'TC_243AfterTapOnSubmit'], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
 
 println('We can Submit the amt in RTGS mode.')
 

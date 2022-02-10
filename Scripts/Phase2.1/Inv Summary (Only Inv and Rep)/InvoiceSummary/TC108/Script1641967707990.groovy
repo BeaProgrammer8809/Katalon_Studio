@@ -77,9 +77,11 @@ def UnitPrice = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoic
 
 def TotalOrderValue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
     0)
+println TotalOrderValue
 
 def Actual_Value_Amt = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Value_Value'), 0, 
     FailureHandling.STOP_ON_FAILURE)
+println Actual_Value_Amt
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC108_Actual_Values'], FailureHandling.STOP_ON_FAILURE)
 
@@ -104,13 +106,20 @@ println('Total price against sku1 is ' + ActualTotalPrice)
 
 //Discount= Order Value - ActualTotalPrice
 double Discount = Double.parseDouble(TotalOrderValue) - ActualTotalPrice
-
 println('Discount for sku1 is ' + Discount)
 
 //Tax = Value - Order Value
 double tax = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
-
 println('Tax amount applied for this product is ' + tax)
+
+def totalSum = Double.parseDouble(TotalOrderValue)
+println totalSum
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+//Verification to check the Tax percentage for the SKU
+Mobile.verifyNotMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println('Tax IEPS & IVA is not applied for sku')
 
 //The Value field calculation is considering the Taxes (IVA, IEPS) and Discounts (SKU discount, Category discount) only for invoiced sku qty but not for Replacement or Product buying qty.
 def ExpectedValue = (ActualTotalPrice + Discount) + tax
@@ -126,4 +135,3 @@ Mobile.verifyMatch(Actual_Return_Qty, Expected_Return_Qty, false, FailureHandlin
 println('Value = Total price against invoiced sku + IVA tax amount against invoiced sku + IEPS tax amount against invoiced sku')
 
 Mobile.closeApplication()
-

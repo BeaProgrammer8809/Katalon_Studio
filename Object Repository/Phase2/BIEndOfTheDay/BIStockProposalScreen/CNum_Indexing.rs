@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CNum_Indexing</name>
+   <tag></tag>
+   <elementGuidId>71ede23e-ba5a-4ea2-9c3a-a8b73c1458d2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//*[@resource-id='${GlobalVariable.Package}:id/stock_and_order_listview_csq'])[${GlobalVariable.index}]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//*[@resource-id='${GlobalVariable.Package}:id/stock_and_order_listview_csq'])[${GlobalVariable.index}]</value>
+   </webElementProperties>
+</WebElementEntity>

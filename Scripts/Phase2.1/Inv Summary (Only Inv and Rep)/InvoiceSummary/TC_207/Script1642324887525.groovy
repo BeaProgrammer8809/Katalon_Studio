@@ -144,6 +144,8 @@ int Tax = Math.round(TaxPercentage)
 
 def TaxText = Tax + ''
 
+Mobile.verifyMatch(TaxText, findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 10) , false, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.comment('verifying  TAX ')
 
 Mobile.verifyEqual(TaxText, findTestData('Phase2.1/TY_12/InvoiceSummary/Summary').getValue(6, 4))

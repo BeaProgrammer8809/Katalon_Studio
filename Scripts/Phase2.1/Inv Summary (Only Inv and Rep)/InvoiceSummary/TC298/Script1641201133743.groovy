@@ -18,65 +18,58 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import org.openqa.selenium.WebElement as WebElemen
 
-Mobile.callTestCase(findTestCase('Login/Van Seller Login - 1002'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 1002'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/VanloadAndOdometer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadeAndOdometer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.RetailerName = findTestData('Phase2.1/Common_Data/CommonData').getValue(2, 12)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_Generic'), [('retailerName') : findTestData(
+            'Phase2.1/CommonData/CommonData').getValue('RetailerCash', 10)], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').getValue(16, 3)
+Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Button'), 0)
 
-Mobile.setText(findTestObject('Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName, 0)
-
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_Retailer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
-
-Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
-
-Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 0)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Num_2'), 0)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Qty'), [('testData1') : findTestData('Phase2.1/CommonData/CommonData').getValue(
+            'Onsite Products', 3)], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
+Mobile.setText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), findTestData(
+        'Phase2.1/TestData/Test_Data').getValue(2, 59), 0)
 
-Mobile.setText(findTestObject('Phase2/BIEnterTheFolioNoPopup01/FolioNo._EditText'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-		15, 1), 0)
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
-
-def uuid=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
-
-def splitUUID=uuid.split(":")
-
-uuid=splitUUID[1]
-
-if(uuid.equals("Failure"))
-{
-	println "UUID generation is getting failed"
-}
-else
-{
-println "Generated UUID is : "+uuid
-}
-
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC298_UUID'],
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_298'],
 	FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
+def Actual_Invoice_And_UUID_PopUp_Text = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC298_printtpreview'], 
-    FailureHandling.STOP_ON_FAILURE)
+def Expected_Invoice_Popup_Text = findTestData('Phase2.1/TestData/Test_Data').getValue(3, 86)
+boolean Invoice_PopUp_Text=Actual_Invoice_And_UUID_PopUp_Text.contains(Expected_Invoice_Popup_Text)
+
+def Expected_UUID_Popup_Text = findTestData('Phase2.1/TestData/Test_Data').getValue(4, 86)
+boolean UUID_PopUp_Text=Actual_Invoice_And_UUID_PopUp_Text.contains(Expected_UUID_Popup_Text)
+
+//Verification to check that Onsite invoice is successfully created PopUp is visible and displayed
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyMatch(Invoice_PopUp_Text.toString(), findTestData('Phase2.1/TestData/Test_Data').getValue(5, 59), false, FailureHandling.STOP_ON_FAILURE)
+//Verification to check that UUID is gerenated
+
+Mobile.verifyMatch(UUID_PopUp_Text.toString(), findTestData('Phase2.1/TestData/Test_Data').getValue(5, 59), false, FailureHandling.STOP_ON_FAILURE)
+
+println UUID_PopUp_Text
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_298'],
+	FailureHandling.STOP_ON_FAILURE)
+
+
+
 Mobile.closeApplication()

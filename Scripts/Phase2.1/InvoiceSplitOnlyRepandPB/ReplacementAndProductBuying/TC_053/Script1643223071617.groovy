@@ -171,10 +171,9 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
 
-def InvoiceIndex1 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def InvoiceIndex1 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 def ExpectedInvoiceText = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 9)
-boolean InvoiceResult = InvoiceIndex1.contains(ExpectedInvoiceText)
-Mobile.verifyMatch(InvoiceResult.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 9), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(InvoiceIndex1, ExpectedInvoiceText, false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), skulinesCount.toString(), 
     FailureHandling.STOP_ON_FAILURE)
@@ -183,10 +182,9 @@ Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKU
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
 
-def ProdBuySplitIndex1 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def ProdBuySplitIndex1 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 def ExpectedProdBuyText = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 10)
-boolean ProdBuySplitResult = ProdBuySplitIndex1.contains(ExpectedProdBuyText)
-Mobile.verifyMatch(ProdBuySplitResult.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 10), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(ProdBuySplitIndex1, ExpectedProdBuyText, false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), salesreturnlinescount.toString(), 
     FailureHandling.STOP_ON_FAILURE)

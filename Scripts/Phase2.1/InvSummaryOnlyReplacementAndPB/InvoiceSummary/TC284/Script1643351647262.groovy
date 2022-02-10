@@ -43,27 +43,57 @@ def returnQty = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
-
-Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Button'), 0)
-
-Mobile.setText(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), productName, 0)
-
-'Provide Product Buying quantity'
-Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Select_Reason_DD_Option'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Non_Salable_DD_Option'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text'), 0)
-
-GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/PB_Qty'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
+			'ProductName', 1)], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
 
 def PbqtyText = Mobile.getText(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
+
+
+
+Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
+
+if (Mobile.verifyElementVisible(findTestObject('Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'), 5, FailureHandling.OPTIONAL)) {
+	Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+}
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0)
+
+def storedTotalQtyValue = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 10)
+
+def totalQty = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Total_Qty_Value'), 0)
+
+println(totalQty)
+
+'Comparing TotalQty on Summary Screen with Zero '
+Mobile.verifyMatch(storedTotalQtyValue, totalQty, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Tag_Icon'), 0)
+
+Mobile.verifyElementExist(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Order_And_Invoice_Screen_Title'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Order_And_Invoice_Screen_Title'), 0)
+
+def actualproductName = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Schem_Buy_SKU_Text_view'), 0)
+
+Mobile.verifyMatch(actualproductName, productName, false, FailureHandling.STOP_ON_FAILURE)
+
+def ActualReturnQty = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Returns_Edit_Text'), 0)
+
+Mobile.verifyMatch(ActualReturnQty, returnQty, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
+
+def ActualpbQty = Mobile.getText(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'),
+	0)
+
+Mobile.verifyMatch(ActualpbQty, PbqtyText, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvSummaryOnlyReplacementAndPB/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC284'],
+	FailureHandling.STOP_ON_FAILURE)
+
+Mobile.closeApplication()
 

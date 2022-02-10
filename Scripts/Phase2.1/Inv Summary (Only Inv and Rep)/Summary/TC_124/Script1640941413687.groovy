@@ -19,8 +19,8 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4003'), [:], F
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_RakeshCashPesitoNormalInterfactura'), [:], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_RakeshCashPesitoNormalInterfactura'), [:],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Button'), 0)
 
@@ -44,7 +44,7 @@ Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 if (Mobile.verifyElementVisible(findTestObject('Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'), 10, FailureHandling.OPTIONAL)) {
-    Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+	Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
 }
 
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0)
@@ -54,18 +54,18 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Summar
 'capturing required data'
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 
-def piecesText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 
-    0)
+def piecesText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'),
+	0)
 
 double pieces = Double.parseDouble(piecesText)
 
-def SkuGrossText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
-    0)
+def SkuGrossText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
+	0)
 
 double SkuGross = Double.parseDouble(SkuGrossText)
 
-def UpriceText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
-    0)
+def UpriceText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'),
+	0)
 
 double Uprice = Double.parseDouble(UpriceText)
 
@@ -77,15 +77,17 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
 Mobile.comment('verifying screen title')
 
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 
-    0)
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'),
+	0)
 
-Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 
-    0)
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'),
+	0)
 
-Mobile.verifyElementText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 
-    findTestData('Phase2.1/TY_06/Summary/Summary').getValue(2, 5))
+Mobile.verifyElementText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'),
+	findTestData('Phase2.1/TY_06/Summary/Summary').getValue(2, 5))
 
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_124(1)'],
+	FailureHandling.STOP_ON_FAILURE)
 //Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_124'], FailureHandling.STOP_ON_FAILURE)
 'Calculation'
 
@@ -107,11 +109,11 @@ double Ordervalueexp = SkuTotalValue + TaxAmount
 'Verification of Order Value'
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0, 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0,
+	FailureHandling.STOP_ON_FAILURE)
 
-def actualOrderValueText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 
-    0)
+def actualOrderValueText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'),
+	0)
 
 double actualOrderValue = Double.parseDouble(actualOrderValueText)
 
@@ -131,8 +133,8 @@ Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicke
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 0, FailureHandling.STOP_ON_FAILURE)
 
 //
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_124'], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_124(2)'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_89:To check if user clicked on refresh button then &quot;Stock downloaded successfully&quot; msg should display</description>
+   <name>VLA_TC_89</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad76abd0-2302-4b07-8e1a-4649c5030935</testCaseGuid>
+</TestCaseEntity>

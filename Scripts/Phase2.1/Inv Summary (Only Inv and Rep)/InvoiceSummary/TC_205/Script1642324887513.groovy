@@ -110,10 +110,7 @@ CompDisc = CompDisc.replace(' ', '')
 
 double CompDiscvalue = Double.parseDouble(CompDisc)
 
-/*def expected = findTestData('Phase2.1/TY_12/InvoiceSummary/Summary').getValue(3, 2)
 
-Mobile.verifyMatch(CompDisc, expected, false)
-*/
 Mobile.comment('verifying  (-) sign indicated before the amount')
 
 def expresult = CompDisc.substring(0, 1)
@@ -132,6 +129,24 @@ Mobile.comment('verifying the Comp Disc')
 Mobile.verifyEqual(CompDiscvalue, Total_Disc)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
+
+"Tax Calculation"
+double totalSum = Double.parseDouble(SkuGrossText)
+
+'Use this for IEPS tax'
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS and IVA is applied for sku')
+
+
+
+
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/PrintPreticket_Icon'), 0)
 

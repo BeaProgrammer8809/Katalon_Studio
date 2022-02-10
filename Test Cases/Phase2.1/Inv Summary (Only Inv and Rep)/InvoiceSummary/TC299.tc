@@ -3,6 +3,7 @@
    <description>TC299:To check while doing invoice qty for the sku's that is having IEPS tax, Item discount and category discount,whether the onsite invoice is getting success and UUID is generated</description>
    <name>TC299</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Verifyed the status and UUID generated 
+Verifying status as success</comment>
    <testCaseGuid>9698c575-0304-4067-89a1-0a6910eaa940</testCaseGuid>
 </TestCaseEntity>

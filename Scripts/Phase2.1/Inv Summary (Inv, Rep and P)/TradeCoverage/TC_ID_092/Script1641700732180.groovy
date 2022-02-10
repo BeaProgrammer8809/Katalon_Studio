@@ -59,30 +59,6 @@ Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Button'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), productName, 0)
 
-/*'Provide Product Buying quantity'
-Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Phase2/BIReturnProductBuyingScreen01/Return_Text-View'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Select_Reason_DD_Option'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Salable_DD_Option'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text'), 0)
-
-GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 2)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
-
-def PBQuantityText = Mobile.getText(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
-
-double PBQuantity = Double.parseDouble(PBQuantityText)*/
-/*'Verify Order PBquantity Less than Order Quantity'
-Mobile.verifyLessThan(PBQuantityText, orderQty, FailureHandling.STOP_ON_FAILURE)*/
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 if (Mobile.verifyElementVisible(findTestObject('Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'), 5, FailureHandling.OPTIONAL)) {
@@ -94,6 +70,9 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Summar
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_092_A'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.comment('Title should be shown as Collection')
 

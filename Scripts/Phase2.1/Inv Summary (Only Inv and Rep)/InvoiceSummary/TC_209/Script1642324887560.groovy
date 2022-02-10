@@ -44,7 +44,15 @@ Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 value_value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
-double value_val_Summary = Double.parseDouble(value_value)
+double value  = Double.parseDouble(value_value)
+
+GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
+
+def SkuGrossText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
+	0)
+
+double SkuGross = Double.parseDouble(SkuGrossText)
+
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
@@ -75,7 +83,27 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmou
 
 Mobile.verifyEqual(Expected_total, Actual_Total, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyEqual(value_val_Summary, Actual_Total, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(value, Actual_Total, FailureHandling.STOP_ON_FAILURE)
+
+
+'Tax Calculation'
+
+'Tax=Value-SKUGross'
+double TaxAmt = value - SkuGross
+
+'Calculation of Tax percentage'
+double TaxPercentage = (TaxAmt / SkuGross) * 100
+
+int Tax = Math.round(TaxPercentage)
+
+def TaxText = Tax + ''
+
+println(TaxText + "  TaxText")
+Mobile.verifyMatch(TaxText, findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 10) , false, FailureHandling.STOP_ON_FAILURE)
+Mobile.comment('verifying  TAX ')
+
+Mobile.verifyEqual(TaxText, findTestData('Phase2.1/TY_12/InvoiceSummary/Summary').getValue(6, 5))
+
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
 

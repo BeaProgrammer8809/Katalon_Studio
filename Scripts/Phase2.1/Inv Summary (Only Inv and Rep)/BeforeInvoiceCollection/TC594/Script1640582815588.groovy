@@ -84,12 +84,15 @@ double PesitoAmount = Double.parseDouble(PesitoAmount1)
 
 println(PesitoAmount)
 
-def PesitoCommision = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCommission_TextView'), 
+def PesitoCommision1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCommission_TextView'), 
     0)
 
-println(PesitoCommision)
+println(PesitoCommision1)
 
-PesitoCommision = PesitoCommision.substring(27, 28)
+PesitoCommision2 = PesitoCommision1.split("of ")
+
+PesitoCommision =PesitoCommision2[1]
+
 
 println(PesitoCommision)
 
@@ -128,8 +131,6 @@ def referenceNum = findTestData('Phase2.1/TY_11/TestData').getValue(7, 7)
 
 Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), 
     referenceNum, 0)
-
-
 
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Submit_Button'), 0)

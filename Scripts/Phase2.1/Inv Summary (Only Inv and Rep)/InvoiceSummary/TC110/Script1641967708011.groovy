@@ -111,8 +111,15 @@ println('Discount for sku1 is ' + Discount)
 
 //Tax = Value - Order Value
 double tax = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
-
 println('Tax amount applied for this product is ' + tax)
+
+def totalSum = Double.parseDouble(TotalOrderValue)
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+//Verification to check the Tax percentage for the SKU
+Mobile.verifyNotMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println('Tax IEPS & IVA is not applied for sku')
 
 //The Value field calculation is considering the Taxes (IVA, IEPS) and Discounts (SKU discount, Category discount) only for invoiced sku qty but not for Replacement or Product buying qty.
 def ExpectedValue = (ActualTotalPrice + Discount) + tax
@@ -128,4 +135,3 @@ Mobile.verifyMatch(Actual_Return_Qty, Expected_Return_Qty, false, FailureHandlin
 println('Value = Total price against invoiced sku + IVA tax amount against invoiced sku + IEPS tax amount against invoiced sku')
 
 Mobile.closeApplication()
-

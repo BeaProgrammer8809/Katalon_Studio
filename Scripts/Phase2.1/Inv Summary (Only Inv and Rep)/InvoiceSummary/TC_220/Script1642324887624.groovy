@@ -47,6 +47,10 @@ value_value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value
 
 double value_val_Summary = Double.parseDouble(value_value)
 
+GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
+
+def SkuGrossText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),0)
+
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_220'], 
@@ -96,6 +100,21 @@ Mobile.verifyEqual(value_val_Summary, Actual_Total, FailureHandling.STOP_ON_FAIL
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
 
+"Tax Calculation"
+double totalSum = Double.parseDouble(SkuGrossText)
+
+'Use this for IEPS tax'
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS and IVA is applied for sku')
+
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/PrintPreticket_Icon'), 0)
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Pre_Ticket_Ok_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicket_Created_Successfully_Ok_Button'), 0)

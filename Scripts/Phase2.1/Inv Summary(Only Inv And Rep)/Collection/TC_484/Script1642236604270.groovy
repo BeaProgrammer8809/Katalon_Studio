@@ -58,16 +58,34 @@ for (int i = 0; i < invAmt.length(); i++) {
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCredit_RadioButton'), 
     0)
 
-def Actual= Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
+//def InvoiceAmount= Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
 
+//Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
+//
+//
+//Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), findTestData('Phase2.1/TY_05/Collection').getValue(4, 14), 0)
+//def Expected=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
+for (int i = 0; i < invAmt.length(); i++) {
+	
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+}
 
-Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), findTestData('Phase2.1/TY_05/Collection').getValue(4, 14), 0)
-def Expected=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BINumberPad/Num- 3'), 0)
 
-Mobile.verifyEqual(Actual, Expected)
+Mobile.tap(findTestObject('Object Repository/Phase2/BINumberPad/Num- 3'), 0)
 
+def PesitoGranted=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
+Double Pesitogrand= PesitoGranted as Double
+def pesitoCommision=Double.parseDouble(findTestData('Phase2.1/TY_05/Collection').getValue(5, 14))
+
+def PesitoComm=Pesitogrand+pesitoCommision
+println "$PesitoComm"
+Mobile.verifyNotMatch(PesitoGranted, PesitoComm.toString(), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCommission_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCommission_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCommission_TextView'), findTestData('Phase2.1/TY_05/Collection').getValue(3, 14))
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only Inv And Rep)/Collection/Screenshot'), [('testCaseName') : 'TC_484_Collection'], FailureHandling.STOP_ON_FAILURE)

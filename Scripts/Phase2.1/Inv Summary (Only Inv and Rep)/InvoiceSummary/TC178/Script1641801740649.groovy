@@ -43,22 +43,22 @@ Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_01').getValue('Number', 1)
 
-def Actual_Buy_pieces = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'),
-	0)
+def Actual_Buy_pieces = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 
+    0)
 
 println("$Actual_Buy_pieces")
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_01').getValue('Number', 1)
 
-def Actual_UnitPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'),
-	0)
+def Actual_UnitPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
+    0)
 
 println(Actual_UnitPrice)
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_01').getValue('Number', 1)
 
-def Discount_Price = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
-	0)
+def Discount_Price = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
+    0)
 
 println("$Discount_Price")
 
@@ -70,30 +70,50 @@ def gross_amount = Integer.parseInt(Actual_Buy_pieces) * Float.parseFloat(Actual
 
 println(gross_amount)
 
-def ActualCompDisc= Double.parseDouble(Discount_Price)-(gross_amount)
-println ActualCompDisc
+"***********Tax percentage verifaction*********************"
+def totalSum = Double.parseDouble(Discount_Price)
+
+'Use this for IEPS tax'
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+'use this for IVA tax'
+//def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyNotMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS  aapplied for sku')
+
+def ActualCompDisc = Double.parseDouble(Discount_Price) - gross_amount
+
+println(ActualCompDisc)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
-def compDiscText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'), 0)
+def compDiscText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'), 
+    0)
 
 println(compDiscText)
 
-def split=compDiscText.split(' ')
+def split = compDiscText.split(' ')
 
-compDiscText1 =split[0]
-compDiscText2 =split[1]
-compDisc=compDiscText1+compDiscText2
+compDiscText1 = (split[0])
+
+compDiscText2 = (split[1])
+
+compDisc = (compDiscText1 + compDiscText2)
 
 println(compDisc)
 
 Mobile.verifyEqual(ActualCompDisc, compDisc, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_178'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_178'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-
 
 
 

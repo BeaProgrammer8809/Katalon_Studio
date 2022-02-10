@@ -80,19 +80,22 @@ for (int i = 0; i < (invamt.length() + 1); i++) {
     Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
 
+
 def InvAmt_txt = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
 
 println(InvAmt_txt)
 
 double invoiceAmt = Double.parseDouble(InvAmt_txt)
 
-def invAmt = invoiceAmt - 20
+def lesserinvAmt1=invoiceAmt-20
 
-String invAmt1 = Double.toString(invAmt)
+String lesserinvAmt=Double.toString(lesserinvAmt1)
+
+Mobile.verifyLessThan(lesserinvAmt1, invoiceAmt, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.longPress(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), invAmt1, 
+Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), lesserinvAmt, 
     0)
 
 Mobile.hideKeyboard()
@@ -113,8 +116,7 @@ GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').
 
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
 
-Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), 0, 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), 0)
 
 for (int i = 1; i <= 5; i++) {
     GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', i)
@@ -158,7 +160,7 @@ expectedCollectionScreenTitle = findTestData('Phase2.1/TY_14/TestData').getValue
 
 Mobile.verifyMatch(actualCollectionScreenTitle, expectedCollectionScreenTitle, false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_237'],
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_237A'],
 	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

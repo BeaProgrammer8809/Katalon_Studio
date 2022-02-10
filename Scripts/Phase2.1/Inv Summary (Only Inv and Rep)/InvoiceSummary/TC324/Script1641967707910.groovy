@@ -51,7 +51,7 @@ Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/B
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 
 //Verification to check that Onsite invoice is successfully created 
-Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 30, FailureHandling.STOP_ON_FAILURE)
 
 //Verification to check the return qty
 Mobile.verifyMatch(Actual_Return_Qty, Expected_Return_Qty, false, FailureHandling.STOP_ON_FAILURE)

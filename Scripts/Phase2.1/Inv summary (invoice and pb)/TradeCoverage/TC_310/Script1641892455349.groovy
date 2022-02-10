@@ -66,6 +66,8 @@ def invAmt = invoiceAmt - 20
 
 String invAmt1 = Double.toString(invAmt)
 
+Mobile.verifyLessThan(invAmt, invoiceAmt, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.longPress(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), 0)
 
 Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), invAmt1,

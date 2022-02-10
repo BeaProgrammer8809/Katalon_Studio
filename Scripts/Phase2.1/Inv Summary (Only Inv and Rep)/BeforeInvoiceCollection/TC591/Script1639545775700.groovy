@@ -48,7 +48,9 @@ Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
-Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+if (Mobile.verifyElementVisible(findTestObject('Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'), 5, FailureHandling.OPTIONAL)) {
+    Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+}
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
@@ -84,7 +86,10 @@ def PesitoCommision = Mobile.getText(findTestObject('Object Repository/Phase2/BI
 
 println(PesitoCommision)
 
-PesitoCommision = PesitoCommision.substring(27, 28)
+PesitoCommision2 = PesitoCommision.split("of ")
+
+PesitoCommision1 =PesitoCommision2[1]
+
 
 def PesitoAmount1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'),
 	0)
@@ -98,18 +103,16 @@ def TP = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScr
 
 println(TP)
 
-TP1 = TP.substring(13, 18)
+TP2 = TP.split(": ")
+
+def TP1= TP2[1]
 
 double TotalPaid = Double.parseDouble(TP1)
 
-//Integer TotalPaid= TP1 as Integer
 double InvAmount = Double.parseDouble(InvAmount1)
 
-//Integer InvAmount= InvAmount1 as Integer
 println(TotalPaid)
 
-//integer TotalPaid= Integer.parseInteger(TotalPaid)
-//InvAmount= Integer.parseInt(InvAmount)
 def BalanceAmount = TotalPaid - InvAmount
 
 println(BalanceAmount)

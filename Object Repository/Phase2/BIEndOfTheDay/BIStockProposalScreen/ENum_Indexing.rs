@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ENum_Indexing</name>
+   <tag></tag>
+   <elementGuidId>0244071c-f720-4959-8535-b63f81e169bf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//*[@resource-id='${GlobalVariable.Package}:id/stock_and_order_listview_sih'])[${GlobalVariable.index}]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//*[@resource-id='${GlobalVariable.Package}:id/stock_and_order_listview_sih'])[${GlobalVariable.index}]</value>
+   </webElementProperties>
+</WebElementEntity>

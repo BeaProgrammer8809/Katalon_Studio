@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>VanLoadNo_Indexing</name>
+   <tag></tag>
+   <elementGuidId>6c04662d-4166-4d46-8008-e2b44f38150f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//*[@resource-id='${GlobalVariable.Package}:id/vanLoad_no_list'])[${GlobalVariable.index}]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//*[@resource-id='${GlobalVariable.Package}:id/vanLoad_no_list'])[${GlobalVariable.index}]</value>
+   </webElementProperties>
+</WebElementEntity>

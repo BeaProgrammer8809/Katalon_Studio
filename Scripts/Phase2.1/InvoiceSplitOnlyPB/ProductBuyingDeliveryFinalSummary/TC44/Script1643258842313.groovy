@@ -43,10 +43,9 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Success
 Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0)
 
 //
-def ProdBuyText = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice_Split_Text'), 0)
+def ProdBuyText = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice_Split_Text'), 0)).split('-')[0]
 def ExpectedProdBuyText = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyPB').getValue(3, 3)
-boolean ProdBuyResult = ProdBuyText.contains(ExpectedProdBuyText)
-Mobile.verifyMatch(ProdBuyResult.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyPB').getValue(4, 3), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(ProdBuyText, ExpectedProdBuyText, false, FailureHandling.STOP_ON_FAILURE)
 //
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyPB/ProductBuyingDeliveryFinalSummary/Screenshot'), [('testCaseName') : 'TC44DeliveryFinalSummary'],

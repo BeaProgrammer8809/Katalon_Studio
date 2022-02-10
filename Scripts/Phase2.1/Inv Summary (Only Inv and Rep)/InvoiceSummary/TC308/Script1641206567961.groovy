@@ -18,7 +18,8 @@ import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as Mobil
 import io.appium.java_client.AppiumDriver as AppiumDriver
 import org.openqa.selenium.WebElement as WebElemen
 
-Mobile.callTestCase(findTestCase('Login/Van Seller Login - 1002'), [:], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 1002'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/VanloadAndOdometer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -50,34 +51,53 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
-Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Pre_Ticket_Ok_Button'), 0)
 
-Mobile.setText(findTestObject('Phase2/BIEnterTheFolioNoPopup01/FolioNo._EditText'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-		15, 1), 0)
+Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
+    findTestData('Phase2.1/Common_Data/CommonData').getValue('Folio number', 1), 0)
 
-Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 
-def uuid=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
+def ActualResult = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
 
-def splitUUID=uuid.split(":")
+def ExpectedResult = findTestData('Phase2.1/TY_07/Invoice Summary/Execute2').getValue('Expected Result', 13)
 
-uuid=splitUUID[1]
+def ExpectedResult1 = findTestData('Phase2.1/TY_07/Invoice Summary/Execute2').getValue('Data1 ', 13)
 
-if(uuid.equals("Failure"))
-{
-	println "UUID generation is getting failed"
-}
-else
-{
-println "Generated UUID is : "+uuid
-}
+boolean actualMessage = ActualResult.contains(ExpectedResult)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC308_UUID'],
-	FailureHandling.STOP_ON_FAILURE)
+boolean actualMessage1 = ActualResult.contains(ExpectedResult1)
+
+def verifytheMessage = actualMessage.toString()
+
+println('verifytheMessage' + verifytheMessage)
+
+def verifytheMessage1 = actualMessage1.toString()
+
+Mobile.verifyMatch(verifytheMessage, findTestData('Phase2.1/TY_07/Invoice Summary/Execute2').getValue('Data3', 13), false, FailureHandling.STOP_ON_FAILURE)
+
+'verifying failure message is not coming & generating id'
+Mobile.verifyMatch(verifytheMessage1, findTestData('Phase2.1/TY_07/Invoice Summary/Execute2').getValue('Data4', 13), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC308_UUID'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
+
+def PrintActualMessage = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(PrintActualMessage + 'ActualMessage')
+
+def onsitExpectedMessage = findTestData('Phase2.1/TY_07/Invoice Summary/Execute2').getValue('Data2', 13)
+
+boolean OnsitMessageResult = PrintActualMessage.contains(onsitExpectedMessage)
+
+def verifytheStatus = OnsitMessageResult.toString()
+
+Mobile.verifyMatch(verifytheStatus, findTestData('Phase2.1/TY_07/Invoice Summary/Execute2').getValue('Data3', 13), false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC308_printtpreview'], 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
+

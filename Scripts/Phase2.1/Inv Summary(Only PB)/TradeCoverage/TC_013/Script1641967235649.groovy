@@ -52,29 +52,24 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
 
-//Verification to check that Fields are non-editable in in the grid in summary screen
-def pp = Mobile.verifyElementHasAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 
-    'clickable', 0, FailureHandling.STOP_ON_FAILURE)
+//Verification to do the Tap action
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Bag_Value_Indexing'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0)
 
-Mobile.verifyElementHasAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Bag_Value_Indexing'), 
-    'clickable', 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.verifyElementHasAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 
-    'clickable', 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.verifyElementHasAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Value_Value'), 'clickable', 
-    0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.verifyElementHasAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Total_Qty_Value'), 'clickable', 
-    0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.verifyElementHasAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 
-    'clickable', 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.verifyElementHasAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 
-    'clickable', 0, FailureHandling.STOP_ON_FAILURE)
-
-println(pp)
+//Verification to check that fields are not clickable to edit
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Bag_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 'clickable', 'false', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_013_Elements_After_Fetching_Attribute'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_013_Elements_After_Fetching_Attribute'], 
     FailureHandling.STOP_ON_FAILURE)

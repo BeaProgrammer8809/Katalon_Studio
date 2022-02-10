@@ -75,6 +75,9 @@ double Value = Double.parseDouble(ValueText)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_165(1)'],
+	FailureHandling.STOP_ON_FAILURE)
+
 Mobile.comment('verifying screen title')
 
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 
@@ -86,7 +89,7 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmou
 Mobile.verifyElementText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 
     findTestData('Phase2.1/TY_06/Summary/Summary').getValue(2, 1))
 
-//Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_165'], FailureHandling.STOP_ON_FAILURE)
+
 Mobile.comment('verifying the Comp Disc')
 
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'), 0, FailureHandling.STOP_ON_FAILURE)
@@ -132,9 +135,10 @@ int Tax = Math.round(TaxPercentage)
 
 def TaxText = Tax + ''
 
-Mobile.comment('verifying  TAX ')
+Mobile.comment('verifying  TAX Percentage')
 
 Mobile.verifyEqual(TaxText, findTestData('Phase2.1/TY_06/Summary/Summary').getValue(6, 1))
+
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
 
@@ -149,7 +153,7 @@ Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicke
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 0, FailureHandling.STOP_ON_FAILURE)
 
 //
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_165'], 
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_165(2)'], 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

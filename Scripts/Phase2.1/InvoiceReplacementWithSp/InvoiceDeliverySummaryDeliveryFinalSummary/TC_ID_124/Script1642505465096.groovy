@@ -91,6 +91,17 @@ Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/3_NumButton'), 0)
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), 
     [('testCaseName') : 'TC_ID_124'], FailureHandling.STOP_ON_FAILURE)
 
+Mobile.tap(findTestObject('Phase2/BISplitDeliverySummary01/Create_Final_Invoice_Button'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0)
+
+Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), findTestData(
+	'Phase2.1/TY_13/Invoice, Replacement with Sp').getValue(4, 7))
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
+	[('testCaseName') : 'TC_ID_124AfterTapCreateInvoice'], FailureHandling.STOP_ON_FAILURE)
+
+
 println('We are able to enter the full qty in a single ExtraInv ')
 
 Mobile.closeApplication()

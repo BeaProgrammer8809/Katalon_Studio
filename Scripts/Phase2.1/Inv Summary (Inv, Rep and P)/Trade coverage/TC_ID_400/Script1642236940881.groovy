@@ -91,6 +91,23 @@ Mobile.delay(1)
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/Trade coverage/Screenshot'), [('testCaseName') : 'TC_ID_400PrintPreviewScreen'],
 	FailureHandling.STOP_ON_FAILURE)
 
+// Print preview Screen verification of FOLIO No and FolioProdBuy
+def printPrev = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
+
+def ActualPrinttext = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(ActualPrinttext + '---*ActualPrinttext*---')
+
+def Expected_Print_Text = findTestData('Phase2.1/TY_13/Inv Summary (Inv, Rep and P').getValue(3, 4)
+
+println(Expected_Print_Text + 'Expected_Print_Text')
+
+boolean FOLIO = ActualPrinttext.contains(Expected_Print_Text)
+
+Mobile.verifyMatch(FOLIO.toString(), findTestData('Phase2.1/TY_13/Inv Summary (Inv, Rep and P').getValue(6, 4), false, FailureHandling.STOP_ON_FAILURE)
+
+//
+
 println('Characters "-" and "_" can be entered in Folio No and Folio ProdBuy field')
 
 println('FolioNo and FolioProdBuy is accepting given Special characters and is displayed in Print Preview screen for Nitseller login')

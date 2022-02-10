@@ -93,6 +93,9 @@ Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Create_Ticket_Invoice_
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0)
 
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'), 
+    [('testCaseName') : 'TC_239DeliveryFinalSummeryScreen'], FailureHandling.STOP_ON_FAILURE)
+
 //
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
 
@@ -174,7 +177,11 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0
 
 Mobile.verifyElementText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), AmtDisplayedInCash.toString())
 
+Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'), 
+    [('testCaseName') : 'TC_239AfterTapOnSubmitButton'], FailureHandling.STOP_ON_FAILURE)
+
 println('ProdBuy amount is Adjusted in highest amount invoice.')
 
 Mobile.closeApplication()
-

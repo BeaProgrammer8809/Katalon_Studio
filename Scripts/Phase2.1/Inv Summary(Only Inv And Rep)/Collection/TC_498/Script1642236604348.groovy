@@ -46,6 +46,7 @@ def CashAmount=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoice
 
 def invamt=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
 
+Double invAmt=invamt  as Double
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
 println(invamt.length())
@@ -58,45 +59,39 @@ for (int i = 0; i < invamt.length(); i++) {
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCredit_RadioButton'), 0)
 
-for (int i = 0; i < invamt.length(); i++) {
-	
-	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
-}
+def Adjusted=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0)
-for (int i = 0; i < invamt.length(); i++) {
-	
-	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
-}
+Double AdjustedAmt= Adjusted as Double
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(AdjustedAmt, invamt, FailureHandling.STOP_ON_FAILURE)
+
+println "Pesito can be adjusted amount should be  based on the invoice amount"
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
-println(invamt.length())
-
 for (int i = 0; i < invamt.length(); i++) {
 	
 	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCredit_RadioButton'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
+Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), findTestData('Phase2.1/TY_05/Collection').getValue(3, 11), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
+def pesitioAmt= Mobile.getAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 'text', 0)
 
-def Actual= Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
-
-
-Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText')  , 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText')  , 0)
+println pesitioAmt
 
 
-def Expected= Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText')  , 0)
+def RemaingPesitoAmt=Double.parseDouble(invamt)-Double.parseDouble(pesitioAmt)
 
-Mobile.verifyEqual(Actual, Expected, FailureHandling.STOP_ON_FAILURE)
+println "$RemaingPesitoAmt"
 
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyLessThanOrEqual(RemaingPesitoAmt.toString(), invamt, FailureHandling.STOP_ON_FAILURE)
+
+println "system can't allow to enter more than invoice amount"
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only Inv And Rep)/Collection/Screenshot'), [('testCaseName') : 'TC_498'], FailureHandling.STOP_ON_FAILURE)
 Mobile.closeApplication()
 

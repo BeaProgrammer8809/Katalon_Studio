@@ -19,8 +19,7 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4004'), [:], F
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/ProductReturnActivity_Reusable'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/ProductReturnActivity_Reusable'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIKPIDashboard01/Hamburger_Button'), 0)
 
@@ -36,13 +35,20 @@ println(Actual_SIH)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 
+Mobile.verifyElementExist(findTestObject('Phase2/BIUnload/NonSalable/Total_Piece_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIUnload/NonSalable/Total_Piece_Indexing'), 0, FailureHandling.STOP_ON_FAILURE)
+
 def Actual_TotalPiece = Mobile.getText(findTestObject('Phase2/BIUnload/NonSalable/Total_Piece_Indexing'), 0)
 
 println(Actual_TotalPiece)
 
+Mobile.comment('SIH and Total Piece value should tally for each SKUs')
+
 Mobile.verifyMatch(Actual_SIH, Actual_TotalPiece, false)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/Screenshot'), ["testCaseName":"TC_048_invoiceSummary"], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/Screenshot'), [('testCaseName') : 'TC_048_invoiceSummary'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

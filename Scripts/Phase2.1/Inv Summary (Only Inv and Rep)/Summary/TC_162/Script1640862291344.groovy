@@ -52,10 +52,10 @@ println(UnitPrice)
 
 GlobalVariable.index = findTestData('Phase2.1/CommonData/CommonData').getValue('Number', 1)
 
-def discountedprice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
+def Discountedprice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
     0)
 
-println(discountedprice)
+println(Discountedprice)
 
 def TotalValue = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
@@ -101,12 +101,28 @@ DecimalFormat df = new DecimalFormat('0.00')
 SKUGross = df.format(SKUGross)
 println(SKUGross)
 
-def TotalDisc= Double.parseDouble (discountedprice) - Double.parseDouble(SKUGross)
+def TotalDisc= Double.parseDouble (Discountedprice) - Double.parseDouble(SKUGross)
 DecimalFormat df1 = new DecimalFormat('0')
 def ItemAndCategoryDisc = df1.format(TotalDisc)
 
 def CompoDiscount=ItemAndCategoryDisc
 println(CompoDiscount)
+
+def Tax=Double.parseDouble(TotalValue)-Double.parseDouble(Discountedprice)
+println(Tax)
+
+def totalSum=Double.parseDouble(Discountedprice)
+
+//def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+println(actualTaxPercentage)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(Tax, totalSum)
+println(expTaxPercentage)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println "Tax IEPS  is applied for sku"
 
 Mobile.verifyEqual(ItemAndCategoryDisc, compDisc, FailureHandling.STOP_ON_FAILURE)
 println('Since ItemAndCategoryDisc and  compDisc are same disccounts are not applied')

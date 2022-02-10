@@ -81,6 +81,23 @@ ActualCompDiscount = ActualCompDiscount.replace(' ', '')
 
 Mobile.verifyEqual(TotalDisc, ActualCompDiscount, FailureHandling.STOP_ON_FAILURE)
 
+def actualOrderValueForSKU = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'),
+	0)
+
+def totalPrice=Double.parseDouble(SKUGrossAmount)
+
+double tax = Double.parseDouble(actualOrderValueForSKU) - totalPrice
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(19, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax,totalPrice)
+
+expTaxPercentage = expTaxPercentage.toString()
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.OPTIONAL)
+
+println "Tax IVA is applied for sku"
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC198_SplitPopUP'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)

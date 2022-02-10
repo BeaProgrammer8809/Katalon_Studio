@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import java.text.DecimalFormat
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -27,8 +30,7 @@ Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
 GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').getValue(6, 30)
 
-Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-        6, 16), 0)
+Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 0)
 
@@ -91,14 +93,34 @@ def ActualTotalPrice = Integer.parseInt(Expected_Pieces_Value) * Double.parseDou
 
 println('SKU gross amount is ' + ActualTotalPrice)
 
+def totalSum = Double.parseDouble(TotalOrderValue)
+
+//Discount=Total Order Value - ActualTotalPrice
+double Discount= Double.parseDouble(TotalOrderValue) - ActualTotalPrice
+println('Discount for sku1 is ' + Discount)
+DecimalFormat  df=new DecimalFormat("0")
+def DiscountPercentage=df.format(Discount)
+def expDiscountPercentage = DiscountPercentage+'%'
+
 //Tax = Value - Order Value
 double tax = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
-
 println('Tax amount applied for this product is ' + tax)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+def actualDiscountPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(20, 1)
+
+//Verification to check the Tax percentage for the SKU
+Mobile.verifyNotMatch(actualTaxPercentage, expTaxPercentage.toString(), false, FailureHandling.STOP_ON_FAILURE)
+println('Tax IEPS & IVA is not applied for sku')
+
+//Verification to check the discount for the SKU
+Mobile.verifyMatch(actualDiscountPercentage, expDiscountPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println('Discount Comp & Item is not applied for sku')
 
 //verification to check the sum of order price + tax
 def Expected_Order_Value = ActualTotalPrice + tax
-
 println('Expected order value with tax is ' + Expected_Order_Value)
 
 //Verification to check the order value for SKU which is having IEPS tax but not having any discount

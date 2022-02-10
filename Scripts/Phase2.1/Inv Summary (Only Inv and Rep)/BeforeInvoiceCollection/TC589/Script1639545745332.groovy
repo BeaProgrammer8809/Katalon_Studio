@@ -82,7 +82,10 @@ def PesitoCommision1 = Mobile.getText(findTestObject('Object Repository/Phase2/B
 
 println(PesitoCommision1)
 
-PesitoCommision1 = PesitoCommision1.substring(27, 28)
+PesitoCommision2 = PesitoCommision1.split("of ")
+
+PesitoCommision1 =PesitoCommision2[1]
+
 
 println(PesitoCommision1)
 

@@ -89,13 +89,15 @@ println(InvAmt_txt)
 
 double invoiceAmt = Double.parseDouble(InvAmt_txt)
 
-def invAmt = invoiceAmt - 20
+def greaterinvAmt = invoiceAmt + 20
 
-String invAmt1 = Double.toString(invAmt)
+String greaterInvAmt = Double.toString(greaterinvAmt)
+
+Mobile.verifyGreaterThan(greaterinvAmt, invoiceAmt, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.longPress(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), invAmt1,
+Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), greaterInvAmt,
 	0)
 def ActualErrormessage = driver.findElementByXPath('//android.widget.Toast[1]').getText()
 
@@ -122,15 +124,7 @@ GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').
 
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
 
-GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue('DropdownName', 3)
-
-Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Name'), 0)
-
-GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').getValue('ChequeType', 1)
-
-Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
-
-Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/ChequeNum_EditText'), 0)
+Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), 0)
 
 for (int i = 1; i <= 5; i++) {
 	GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', i)
@@ -149,6 +143,7 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
 def ExpectedErrormessage = findTestData('Phase2.1/TY_14/TestData').getValue('ToastMessage', 47)
 
 Mobile.verifyMatch(ActualErrormessage, ExpectedErrormessage, false, FailureHandling.STOP_ON_FAILURE)
+
 
 /*verification done to check collection popup is open */
 Mobile.verifyElementExist(findTestObject('Phase2/BICollectionScreen01/Collection_Title'), 0)

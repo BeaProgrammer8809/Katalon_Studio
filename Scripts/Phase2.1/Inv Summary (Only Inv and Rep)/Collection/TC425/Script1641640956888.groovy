@@ -22,11 +22,11 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4004'), [:], F
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData').getValue(2, 3)
+GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData_03').getValue(2, 3)
 
-GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData').getValue(5, 4)
+GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 4)
 
-GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData').getValue(6, 19)
+GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 19)
 
 Mobile.setText(findTestObject('Object Repository/Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName,
 	0)
@@ -99,7 +99,7 @@ Mobile.verifyNotEqual(chequeNumBfr, chequeNumAfter, FailureHandling.STOP_ON_FAIL
 
 println('user is able to enter number in cheque number field')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Collection/ScreenShot'), [('testCaseName') : 'TC417_CollectionScreen'],
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Collection/ScreenShot'), [('testCaseName') : 'TC425_CollectionScreen'],
 	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

@@ -112,6 +112,16 @@ Mobile.verifyEqual(actualOrderValueForSKU, ExpectedOrderValue, FailureHandling.S
 
 println('Order value should be updated as per the formula : Order Value = Sum of (Gross amount against each sku + Tax (IEPS+IVA) amount against each sku)')
 
+def totalSum=Integer.parseInt(actualReturnSKU1) * Double.parseDouble(uPriceSKU1)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(19, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax,totalSum)
+
+Mobile.verifyNotMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println "Tax IVA is not applied for sku when replacement done"
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC134_InvoiceSummary'], 
     FailureHandling.STOP_ON_FAILURE)
 

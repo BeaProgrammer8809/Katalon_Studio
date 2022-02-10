@@ -45,14 +45,22 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
 
-def InvoiceCreatedText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'),
-	0)
+def InvoiceCreatedText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 
+    0)
 
 println(InvoiceCreatedText)
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 0)
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementNotVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
+    0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementNotExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
+    0, FailureHandling.STOP_ON_FAILURE)
+
+println(' Folio Number Flag is not Enabled')
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully_PopUp_OK_Button'), 0)
 
@@ -62,9 +70,10 @@ println(PrintPreviewscreen)
 
 Mobile.verifyEqual(PrintPreviewscreen, findTestData('Phase2.1/TY_01/Test_Data').getValue(5, 22), FailureHandling.STOP_ON_FAILURE)
 
-println "Invoice is  generated when folio number flag is not enabled for the store"
+println('Invoice is  generated when folio number flag is not enabled for the store')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_286_FolioPopup'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_286_FolioPopup'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
+

@@ -67,6 +67,22 @@ def Amount = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_
 
 println(Amount)
 
+"***********Tax percentage verifaction*********************"
+def totalSum = Double.parseDouble(Buy_Price)
+
+
+' this is for IVA tax'
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(19, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IVA  is  aapplied for sku')
+
+
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 

@@ -74,22 +74,18 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/
 //
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
 
-def ReplacementIndex1 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def ReplacementIndex1 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 
 def ExpectedInvoiceText = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 3)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
 
-def ProdBuyIndex1 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def ProdBuyIndex1 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 
 def ExpectedProdBuyText = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 4)
 
-boolean RepResult = ReplacementIndex1.contains(ExpectedInvoiceText)
-
-boolean ProdBuyResult = ProdBuyIndex1.contains(ExpectedProdBuyText)
-
-Mobile.verifyMatch(RepResult.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 3), false, FailureHandling.STOP_ON_FAILURE)
-Mobile.verifyMatch(ProdBuyResult.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 4), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(ReplacementIndex1, ExpectedInvoiceText, false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(ProdBuyIndex1, ExpectedProdBuyText, false, FailureHandling.STOP_ON_FAILURE)
 //
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_050DeliveryFinalSummary'],

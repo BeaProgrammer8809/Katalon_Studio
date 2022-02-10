@@ -88,6 +88,11 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectroni
 Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), 
     findTestData('Phase2.1/TY_13/SplitInvoiceReplacementAndProductBuying').getValue(3, 2), 0)
 
+def ActualReferenceNo = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), 
+    0)
+
+def ExpectedReferenceNo = findTestData('Phase2.1/TY_13/SplitInvoiceReplacementAndProductBuying').getValue(3, 2)
+
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'), 
     [('testCaseName') : 'TC_238AfterEnteringReferecneNo'], FailureHandling.STOP_ON_FAILURE)
 
@@ -96,6 +101,15 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'), 
     [('testCaseName') : 'TC_238AfterTapOnSubmit'], FailureHandling.STOP_ON_FAILURE)
 
+def LenActualReferenceNo = ActualReferenceNo.length()
+
+def LenExpectedReferenceNo = ExpectedReferenceNo.length()
+
+Mobile.verifyMatch(ActualReferenceNo, ExpectedReferenceNo, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyEqual(LenActualReferenceNo, LenExpectedReferenceNo)
+
 println('We can Submit the invoice amount with max digit in Reference no.')
 
 Mobile.closeApplication()
+

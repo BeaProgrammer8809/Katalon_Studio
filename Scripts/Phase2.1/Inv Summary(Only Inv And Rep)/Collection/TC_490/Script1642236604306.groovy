@@ -42,6 +42,21 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
 
+def invamt=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
+Double invAmt=invamt  as Double
+def CashAmount=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
+
+println(invamt.length())
+
+for (int i = 0; i < invamt.length(); i++) {
+	
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+}
+
+Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), invAmt.toString(), 0)
+
 def Adjusted=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
 Double AdjustedAmt= Adjusted as Double
@@ -60,6 +75,7 @@ println Balance
 def Expected = "Balance : "  + Balance + " of " + "$Invoice"
 
 Mobile.verifyEqual(Actual, Expected)
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only Inv And Rep)/Collection/Screenshot'), [('testCaseName') : 'TC_490'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

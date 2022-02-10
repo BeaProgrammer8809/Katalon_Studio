@@ -95,55 +95,49 @@ def linescount = (Defaultinv3 + Defaultinv2 + Defaultinv1 + Defaultprodbuy3 + De
 def LinesCount = (linescount / size_fields)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
-def InvoiceIndex1 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def InvoiceIndex1 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 def ExpectedInvoiceText1 = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 13)
-boolean InvoiceResult1 = InvoiceIndex1.contains(ExpectedInvoiceText1)
-Mobile.verifyMatch(InvoiceResult1.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 13), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(InvoiceIndex1, ExpectedInvoiceText1, false, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), LinesCount.toString(),
 	FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), DefaultInv3, FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
-def InvoiceIndex2 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def InvoiceIndex2 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 def ExpectedInvoiceText2 = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 13)
-boolean InvoiceResult2 = InvoiceIndex2.contains(ExpectedInvoiceText2)
-Mobile.verifyMatch(InvoiceResult2.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 13), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(InvoiceIndex2, ExpectedInvoiceText2, false, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), LinesCount.toString(),
 	FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), DefaultInv2, FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 3)
-def InvoiceIndex3 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def InvoiceIndex3 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 def ExpectedInvoiceText3 = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 13)
-boolean InvoiceResult3 = InvoiceIndex3.contains(ExpectedInvoiceText3)
-Mobile.verifyMatch(InvoiceResult3.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 13), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(InvoiceIndex3, ExpectedInvoiceText3, false, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), LinesCount.toString(),
 	FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), DefaultInv1, FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 4)
-def InvoiceIndex4 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def InvoiceIndex4 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 def ExpectedInvoiceText4 = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 14)
-boolean ProdBuyResult4 = InvoiceIndex4.contains(ExpectedInvoiceText4)
-Mobile.verifyMatch(ProdBuyResult4.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 13), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(InvoiceIndex4, ExpectedInvoiceText4, false, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), LinesCount.toString(),
 	FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), DefaultProdBuy3, FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 5)
-def InvoiceIndex5 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def InvoiceIndex5 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 def ExpectedInvoiceText5 = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 14)
-boolean ProdBuyResult5 = InvoiceIndex5.contains(ExpectedInvoiceText5)
-Mobile.verifyMatch(ProdBuyResult5.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 13), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(InvoiceIndex5, ExpectedInvoiceText5, false, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), LinesCount.toString(),
 	FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), DefaultProdBuy2, FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 6)
-def InvoiceIndex6 = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+def InvoiceIndex6 = (Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)).split('-')[0]
 def ExpectedInvoiceText6 = findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(3, 14)
-boolean ProdBuyResult6 = InvoiceIndex6.contains(ExpectedInvoiceText6)
-Mobile.verifyMatch(ProdBuyResult6.toString(), findTestData('Phase2.1/TY_13/InvoiceSplitOnlyRepandPB').getValue(4, 13), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(InvoiceIndex6, ExpectedInvoiceText6, false, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), LinesCount.toString(),
 	FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), DefaultProdBuy1, FailureHandling.STOP_ON_FAILURE)

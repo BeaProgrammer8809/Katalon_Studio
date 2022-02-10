@@ -1,23 +1,12 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.util.KeywordUtil
+
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
-import io.appium.java_client.AppiumDriver as AppiumDriver
-import org.openqa.selenium.WebElement as WebElement
-import java.time.LocalDate as LocalDate
 
 Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4002'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -45,43 +34,58 @@ Mobile.verifyElementText( findTestObject('Object Repository/Phase2/BIInvoiceSumm
 
 /*Verification (calculation) done to check Value field*/
 
-def PiecesInSummary=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 0)
+def InvoiceQuantityInSummary=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 0)
 
 def UnitPriceInSummary=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing') , 0)
 
 def SkuTotalPrice = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
 	0)
 
-def ValueAmount = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+def ValueAmountInSummary = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
-def doublevalue =Double.parseDouble(ValueAmount)
+def ItemdiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('NOITEMDISC', 1)
+KeywordUtil.logInfo ("${ItemdiscountinWeb}")
 
-def skutotal =Double.parseDouble(SkuTotalPrice)
+def categorydiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('CATEGORYDISC', 1)
+KeywordUtil.logInfo ("${categorydiscountinWeb}")
 
-def Pieces =Double.parseDouble(PiecesInSummary)
+def TAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IEPSANDIVA', 1)
+KeywordUtil.logInfo ("${TAX}")
 
-def UPrice =Double.parseDouble(UnitPriceInSummary)
+def GrossInvoice =  Double.parseDouble(InvoiceQuantityInSummary) * Double.parseDouble(UnitPriceInSummary)
 
-def Tax =Double.parseDouble(findTestData('Phase2.1/TY_05/Testdata').getValue('IEPSANDIVA', 1))
+KeywordUtil.logInfo ("${GrossInvoice}")
+def ItemDiscount =  GrossInvoice * (Double.parseDouble(ItemdiscountinWeb)/100)
 
-def ValueCalculation = skutotal + ((skutotal *Tax)/100 )
+KeywordUtil.logInfo ("${ItemDiscount}")
+def PriceafterItemDiscount = GrossInvoice - ItemDiscount
 
-def CalculatedValue = Math.round(ValueCalculation)
+KeywordUtil.logInfo ("${PriceafterItemDiscount}")
+def CategoryDiscount = PriceafterItemDiscount * (Double.parseDouble(categorydiscountinWeb)/100)
+					  
+KeywordUtil.logInfo ("${CategoryDiscount}")
+def PriceAfterAddingDiscount = PriceafterItemDiscount - CategoryDiscount
+					
+def TotalDiscount = ItemDiscount + CategoryDiscount
+KeywordUtil.logInfo ("${TotalDiscount}")
 
-int FinalCalculatedvalue = (int)CalculatedValue
+def GrossamountAfterAppliedDiscount = PriceAfterAddingDiscount
+KeywordUtil.logInfo ("${GrossamountAfterAppliedDiscount}")
 
-def ActualValue = Math.round(doublevalue)
+/*verification done to check the tax on the gross amount*/
+def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(TAX)/100)
 
-int FinalActualValue  = (int)ActualValue
+KeywordUtil.logInfo ("${TotalTaxAmount}")
+ 
+def CalculatedValue = (GrossamountAfterAppliedDiscount + TotalTaxAmount).round(2)
+KeywordUtil.logInfo ("${CalculatedValue}")
 
-Mobile.verifyEqual(FinalActualValue, FinalCalculatedvalue,FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(ValueAmountInSummary, CalculatedValue,FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_039'],
 	FailureHandling.STOP_ON_FAILURE)
-
+			 
 Mobile.closeApplication()
-
-
 
 
 

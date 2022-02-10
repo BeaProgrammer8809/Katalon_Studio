@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_90:To check when user is already logged in into mobile if click refresh button on end of the day screen whether stock is displaying in vanload acceptance screen</description>
+   <name>VLA_TC_90</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d527965b-74d9-4ab2-8f02-a9384e41060e</testCaseGuid>
+</TestCaseEntity>

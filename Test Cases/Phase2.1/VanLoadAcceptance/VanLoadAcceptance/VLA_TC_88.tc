@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_88:To check refresh button is available in End of the day menu</description>
+   <name>VLA_TC_88</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04e5ce85-95bd-44e1-ba0a-04f7ee63445e</testCaseGuid>
+</TestCaseEntity>

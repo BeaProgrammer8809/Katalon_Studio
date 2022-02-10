@@ -75,6 +75,9 @@ double Value = Double.parseDouble(ValueText)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_169(1)'],
+	FailureHandling.STOP_ON_FAILURE)
+
 Mobile.comment('verifying screen title')
 
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 
@@ -116,10 +119,12 @@ double Total_Disc = SkuGross - (pieces * Uprice)
 
 Total_Disc = Total_Disc.round()
 
-/*Mobile.comment('verifying the Comp Disc')
+Mobile.comment('verifying the Comp Disc')
 
-Mobile.verifyEqual(CompDiscvalue.round(), Total_Disc)*/
-/*'Tax Calculation'
+Mobile.verifyEqual(CompDiscvalue.round(), Total_Disc)
+
+
+'Tax Calculation'
 
 'Tax=Value-SKUGross'
 double TaxAmt = Value - SkuGross
@@ -127,13 +132,14 @@ double TaxAmt = Value - SkuGross
 'Calculation of Tax percentage'
 double TaxPercentage = (TaxAmt / SkuGross) * 100
 
-int Tax = Math.round(TaxPercentage)
+int Tax = TaxPercentage.round()
 
 def TaxText = Tax + ''
 
-Mobile.comment('verifying  TAX ')
+Mobile.comment('verifying  TAX Percentage')
 
-Mobile.verifyEqual(TaxText, findTestData('Phase2.1/TY_06/Summary/Summary').getValue(5, 5))*/
+Mobile.verifyEqual(TaxText, findTestData('Phase2.1/TY_06/Summary/Summary').getValue(5, 5))
+
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/PrintPreticket_Icon'), 0)
@@ -146,7 +152,7 @@ Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicke
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_169'], 
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_169(2)'], 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

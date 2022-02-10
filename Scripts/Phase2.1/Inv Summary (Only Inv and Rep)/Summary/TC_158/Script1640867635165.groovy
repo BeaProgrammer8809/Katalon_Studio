@@ -109,6 +109,19 @@ Itemmdiscountss12 = df.format(Itemmdiscountss)
 println(Itemmdiscountss12)
 
 
+def totalSum=Double.parseDouble(Discountedprice)
+
+//def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(20, 1)
+println(actualTaxPercentage)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(Tax, totalSum)
+println(expTaxPercentage)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println "Tax  is not applied for sku"
+
 Mobile.verifyEqual(ItemDiscount.toString(), Itemmdiscountss12.toString(), FailureHandling.STOP_ON_FAILURE)
 println('Since ItemDiscount and  Itemmdiscountss are same Itemdiscountss are applied')
 

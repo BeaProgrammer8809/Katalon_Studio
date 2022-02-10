@@ -68,52 +68,62 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnt
 def InvoiceAmount = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'),
 	0)
 
-/*Verification done to check Total Paid:Invoice amount is displaying in Transferencias mode*/
-def ActualTotalPaidText1 = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/TotalPaid_TextView'),
+//as for the expected result i need to check in all the modes
+/*Verification done to check Total Paid is displaying in Transferencias mode*/
+Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 0)
+
+def ActualTotalPaid1 = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/TotalPaid_TextView'),
 	0)
 
-def TotalPaid1 = findTestData('Phase2.1/TY_14/TestData').getValue('Data', 56)
+ActualTotalPaid2 = ActualTotalPaid1.split(': ')
+ActualTotalPaid3 = (ActualTotalPaid2[1])
+println(ActualTotalPaid3)
 
-def ExpectedTotalPaidText1 = (TotalPaid1 + ' ') + InvoiceAmount
+Mobile.verifyMatch(InvoiceAmount, ActualTotalPaid3, false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyMatch(ActualTotalPaidText1, ExpectedTotalPaidText1, false, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_227'], FailureHandling.STOP_ON_FAILURE)
-
-/*Verification done to check Total Paid:Invoice amount is displaying in Credit Note mode */
-def ActualTotalPaidText2 = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BICreditNoteScreen01/TotalPaid_TextView'),
-	0)
-
-def TotalPaid2 = findTestData('Phase2.1/TY_14/TestData').getValue('Data', 56)
-
-def ExpectedTotalPaidText2 = (TotalPaid2 + ' ') + InvoiceAmount
-
-Mobile.verifyMatch(ActualTotalPaidText2, ExpectedTotalPaidText2, false, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_227'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_227Transferencias'], FailureHandling.STOP_ON_FAILURE)
 
 /*Verification done to check Total Paid:Invoice amount is displaying in Effectivo mode */
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0)
+
 def ActualTotalPaidText3 = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIEfectivoScreen01/TotalPaid_TextView'),
 	0)
 
-def TotalPaid3 = findTestData('Phase2.1/TY_14/TestData').getValue('Data', 56)
+ActualEfectivoTotalPaid2 = ActualTotalPaidText3.split(': ')
+ActualEfectivoTotalPaid3 = (ActualEfectivoTotalPaid2[1])
+println(ActualEfectivoTotalPaid3)
 
-def ExpectedTotalPaidText3 = (TotalPaid3 + ' ') + InvoiceAmount
+Mobile.verifyMatch(ActualEfectivoTotalPaid3, InvoiceAmount, false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyMatch(ActualTotalPaidText3, ExpectedTotalPaidText3, false, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_227'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_227efectivo'], FailureHandling.STOP_ON_FAILURE)
 
 /*Verification done to check Total Paid:Invoice amount is displaying in Cheques mode */
+
+Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Cheques_RadioButton'), 0)
+
 def ActualTotalPaidText4 = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'),
 	0)
+ActualChequesTotalPaid2 = ActualTotalPaidText4.split(': ')
+ActualChequesTotalPaid3 = (ActualChequesTotalPaid2[1])
+println(ActualChequesTotalPaid3)
 
-def TotalPaid4 = findTestData('Phase2.1/TY_14/TestData').getValue('Data', 56)
+Mobile.verifyMatch(ActualChequesTotalPaid3, InvoiceAmount, false, FailureHandling.STOP_ON_FAILURE)
 
-def ExpectedTotalPaidText4 = (TotalPaid4 + ' ') + InvoiceAmount
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_227cheque'], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyMatch(ActualTotalPaidText4, ExpectedTotalPaidText4, false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_227'], FailureHandling.STOP_ON_FAILURE)
+/*Verification done to check Total Paid:Invoice amount is displaying in CreditNote mode */
+Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/CreditNote_RadioButton'), 0)
+
+def ActualTotalPaidText2 = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BICreditNoteScreen01/TotalPaid_TextView'),
+	0)
+ActualCreditTotalPaid2 = ActualTotalPaidText2.split(': ')
+ActualCreditTotalPaid3 = (ActualCreditTotalPaid2[1])
+println(ActualCreditTotalPaid3)
+
+Mobile.verifyMatch(ActualCreditTotalPaid3, InvoiceAmount, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_227credit'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

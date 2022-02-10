@@ -86,6 +86,8 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmou
 Mobile.verifyElementText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'),
 	findTestData('Phase2.1/TY_06/Summary/Summary').getValue(2, 7))
 
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_125(1)'],
+	FailureHandling.STOP_ON_FAILURE)
 //Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_125'], FailureHandling.STOP_ON_FAILURE)
 'Calculation'
 
@@ -132,7 +134,7 @@ Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicke
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_125'],
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_125(2)'],
 	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

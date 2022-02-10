@@ -52,10 +52,10 @@ println(UnitPrice)
 
 GlobalVariable.index = findTestData('Phase2.1/CommonData/CommonData').getValue('Number', 1)
 
-def discountedprice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
+def Discountedprice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
     0)
 
-println(discountedprice)
+println(Discountedprice)
 
 def TotalValue = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
@@ -92,7 +92,7 @@ DecimalFormat df = new DecimalFormat('0.00')
 SKUGross = df.format(SKUGross)
 println(SKUGross)
 
-def itemdiscountss=Double.parseDouble(SKUGross)-Double.parseDouble(discountedprice)
+def itemdiscountss=Double.parseDouble(SKUGross)-Double.parseDouble(Discountedprice)
 println(itemdiscountss)
 
 def itemdiscounts1="-"+itemdiscountss
@@ -102,18 +102,31 @@ Mobile.verifyEqual(ItemDisc, itemdiscounts1, FailureHandling.STOP_ON_FAILURE)
 println('Since SKUGross and  discountedprice are same Itemdisccounts is applied')
 
 
-def Tax=Double.parseDouble(TotalValue)-Double.parseDouble(discountedprice)
+def Tax=Double.parseDouble(TotalValue)-Double.parseDouble(Discountedprice)
 println(Tax)
 
 
 def OrderValue=Double.parseDouble(SKUGross)+Tax
 println(OrderValue)
 
-Mobile.verifyNotEqual(TotalValue, discountedprice, FailureHandling.STOP_ON_FAILURE)
+def totalSum=Double.parseDouble(Discountedprice)
+
+//def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+println(actualTaxPercentage)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(Tax, totalSum)
+println(expTaxPercentage)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println "Tax IEPS and IVA  is applied for sku"
+
+Mobile.verifyNotEqual(TotalValue, Discountedprice, FailureHandling.STOP_ON_FAILURE)
 println('Since price and TotalValue are not same IEPS tax is  applied')
 
 
-Mobile.verifyNotEqual(SKUGross, discountedprice, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyNotEqual(SKUGross, Discountedprice, FailureHandling.STOP_ON_FAILURE)
 println('Since SKUGross and  discountedprice are not same, Itemdisccount is applied')
 
 Mobile.verifyNotEqual(TotalOrderValue, ordervalue, FailureHandling.STOP_ON_FAILURE)

@@ -45,30 +45,65 @@ Mobile.verifyElementText( findTestObject('Object Repository/Phase2/BIInvoiceSumm
 
 /*Verification done to check Total Amount Value inside info popup Calculation*/
 
+
+def InvoiceQuantityInSummary=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 0)
+
+def UnitPriceInSummary=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing') , 0)
+
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
-def Orderedvalue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_081_TradeCoverage'],
+	FailureHandling.STOP_ON_FAILURE)
 
-def CompDiscValue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),
-	0)
+def OrderedValueInsideInfoPopup = Mobile.getText( findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0)
 
-CompDiscText = CompDiscValue.replace(' ', '')
-
-double CompDiscountValue = Double.parseDouble(CompDiscText)
-
-def TotalcalculatedAmount = (Double.parseDouble(Orderedvalue) +  Double.parseDouble(CompDiscText)).round(2)
-
-def TAmount = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_Value'), 0)
-
-def TotalAmount = Double.parseDouble(TAmount).round(2)
+def TotalAmountInsideInfoPopup = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_Value'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
 
-Mobile.verifyEqual(TotalAmount, TotalcalculatedAmount,FailureHandling.STOP_ON_FAILURE)
+def ItemdiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('NOITEMDISC', 1)
+KeywordUtil.logInfo ("${ItemdiscountinWeb}")
+//10
+def categorydiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('NOCATEGORYDISC', 1)
+KeywordUtil.logInfo ("${categorydiscountinWeb}")
+
+def IEPSTAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IVATAX', 1)
+KeywordUtil.logInfo ("${IEPSTAX}")
+
+def GrossInvoice =  Double.parseDouble(InvoiceQuantityInSummary) * Double.parseDouble(UnitPriceInSummary)
+
+KeywordUtil.logInfo ("${GrossInvoice}")
+def ItemDiscount =  GrossInvoice * (Double.parseDouble(ItemdiscountinWeb)/100)
+
+KeywordUtil.logInfo ("${ItemDiscount}")
+def PriceafterItemDiscount = GrossInvoice - ItemDiscount
+
+KeywordUtil.logInfo ("${PriceafterItemDiscount}")
+def CategoryDiscount = PriceafterItemDiscount * (Double.parseDouble(categorydiscountinWeb)/100)
+
+KeywordUtil.logInfo ("${CategoryDiscount}")
+def PriceAfterAddingDiscount = PriceafterItemDiscount - CategoryDiscount
+					
+def TotalDiscount = ItemDiscount + CategoryDiscount
+KeywordUtil.logInfo ("${TotalDiscount}")
+
+def GrossamountAfterAppliedDiscount = PriceAfterAddingDiscount								
+KeywordUtil.logInfo ("${GrossamountAfterAppliedDiscount}")
+
+/*verification done to check the tax on the gross amount*/
+def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(IEPSTAX)/100)
+KeywordUtil.logInfo ("${TotalTaxAmount}")
+					  
+def OrderValue = GrossInvoice + TotalTaxAmount
+KeywordUtil.logInfo ("${OrderValue}")
+
+def CalculatedTotalAmount = OrderValue - TotalDiscount
+
+Mobile.verifyEqual(TotalAmountInsideInfoPopup, CalculatedTotalAmount,FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_081'],
 	FailureHandling.STOP_ON_FAILURE)
-
+			 
 Mobile.closeApplication()
 
 

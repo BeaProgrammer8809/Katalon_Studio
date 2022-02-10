@@ -42,30 +42,49 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
 
-def invAmt=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
-
+def invamt=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
+Double invAmt=invamt  as Double
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
-println(invAmt.length())
+println(invamt.length())
 
-for (int i = 0; i < invAmt.length(); i++) {
+for (int i = 0; i < invamt.length(); i++) {
 	
 	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCredit_RadioButton'), 0)
 
-//def invamt=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
 
-def Amt=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
-Mobile.verifyEqual(invAmt, Amt)
+for (int i = 0; i < invamt.length(); i++) {
+	
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+}
 
-Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIEfectivoScreen01/Balance_TextView'), 0)
+Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), invAmt.toString(), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIEfectivoScreen01/Balance_TextView'), 0)
- 
-Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIEfectivoScreen01/Balance_TextView'), findTestData('Phase2.1/TY_05/Collection').getValue(3, 25))
+
+def pesitoGranted=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
+
+Double pesitoGrantedAmt= pesitoGranted as Double
+
+
+
+def Balance = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIEfectivoScreen01/Balance_TextView'), 0)
+
+
+int BalanceAmt = invAmt - pesitoGrantedAmt
+
+println BalanceAmt
+
+def BalanceEXpected = "Balance : "  + BalanceAmt + " of " + "$invAmt"
+
+Mobile.verifyEqual(Balance, BalanceEXpected)
+
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only Inv And Rep)/Collection/Screenshot'), [('testCaseName') : 'TC_495'], FailureHandling.STOP_ON_FAILURE)
 Mobile.closeApplication()

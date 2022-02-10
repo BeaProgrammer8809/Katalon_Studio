@@ -30,7 +30,7 @@ Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Bu
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-		6, 1), 0)
+        6, 1), 0)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 0)
 
@@ -55,7 +55,7 @@ Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), 0)
 
 'To set the SKU name in Search Edit Text field of product buying screen'
 Mobile.setText(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-		6, 1), 0)
+        6, 1), 0)
 
 'To tap on Total_Pieces Qty '
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
@@ -87,33 +87,67 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Do_You
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/EnterTheFolioNumber_PopupTitle'),
-	0)
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/EnterTheFolioNumber_PopupTitle'), 
+    0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/Payment_CheckBox'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Submit_Button'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), findTestData(
-		'Phase2.1/TY_13/Inv Summary (Inv, Rep and P').getValue(3, 21), 0)
+        'Phase2.1/TY_13/Inv Summary (Inv, Rep and P').getValue(3, 24), 0)
 
 Mobile.setText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioProdBuy_EditText'), findTestData(
-		'Phase2.1/TY_13/Inv Summary (Inv, Rep and P').getValue(3, 21), 0)
+        'Phase2.1/TY_13/Inv Summary (Inv, Rep and P').getValue(3, 24), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/Trade coverage/Screenshot'), [('testCaseName') : 'TC_ID_411FolioNumber'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/Trade coverage/Screenshot'), [('testCaseName') : 'TC_ID_411FolioNumber'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+def AcceptedFolioNo = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
+    0)
+
+println(AcceptedFolioNo + '-- Folio no Accepted by the field')
+
+def LenOfFolioNoAccepted = AcceptedFolioNo.length()
+
+println(LenOfFolioNoAccepted + '--Length pf Folio No Accepted by the Field')
+
+def AcceptedFolioProdBuy = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/Folio_ProdBuy_EditText'), 
+    0)
+
+println(AcceptedFolioProdBuy + '-- Folio no Accepted by the field')
+
+def LenOfFolioProdBuyAccepted = AcceptedFolioProdBuy.length()
+
+println(LenOfFolioProdBuyAccepted + '--Length pf FolioProdBuy Accepted by the Field')
+
+def ExpectedFolioText = findTestData('Phase2.1/TY_13/Inv Summary (Inv, Rep and P').getValue(3, 24)
+
+println(ExpectedFolioText + '-- Expected folio text to be passed')
+
+def lenExpectedFolioText = ExpectedFolioText.length()
+
+println(lenExpectedFolioText + '--Length of Expected folio text to be passed')
+
+Mobile.verifyNotMatch(AcceptedFolioNo, ExpectedFolioText, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyNotMatch(AcceptedFolioProdBuy, ExpectedFolioText, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyNotEqual(LenOfFolioNoAccepted, lenExpectedFolioText, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyNotEqual(LenOfFolioNoAccepted, lenExpectedFolioText, FailureHandling.STOP_ON_FAILURE)
+
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 
-Mobile.waitForElementPresent(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully_PopUp_OK_Button'),
-	0)
+Mobile.waitForElementPresent(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully_PopUp_OK_Button'), 
+    0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully_PopUp_OK_Button'), 0)
 
 Mobile.waitForElementPresent(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/Trade coverage/Screenshot'), [('testCaseName') : 'TC_ID_411PrintPreviewScreen'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/Trade coverage/Screenshot'), [('testCaseName') : 'TC_ID_411PrintPreviewScreen'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

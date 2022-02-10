@@ -120,6 +120,10 @@ double ProdBuy_Amt = Double.parseDouble(prodbuy__amt_txt)
 
 println(ProdBuy_Amt + '--> PrdoBuy amount displayed.')
 
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'),
+	[('testCaseName') : 'TC_240DeliveryFinalSummeryScreen'], FailureHandling.STOP_ON_FAILURE)
+
+
 //
 AppiumDriver driver = MobileDriverFactory.getDriver()
 
@@ -207,6 +211,12 @@ Mobile.verifyElementText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoS
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'), 
     [('testCaseName') : 'TC_240AmtInEfectivotMode'], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'),
+	[('testCaseName') : 'TC_239AfterTapOnSubmitButton'], FailureHandling.STOP_ON_FAILURE)
+
 
 Mobile.closeApplication()
 

@@ -36,7 +36,32 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeypad01/Num_2'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeypad01/OK_Button'), 0)
 
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Returns_Edit_Text'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeypad01/Num_2'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeypad01/OK_Button'), 0)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
+Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Button'), 0)
+
+GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').getValue('ProductName', 19)
+
+Mobile.setText(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
+
+Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Select_Reason_DropDown'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Salable_DD_Option'), 0)
+
+Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text'), 0)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeypad01/Num_2'), 0)
+
+Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
+
+Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
@@ -45,39 +70,16 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Colle
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
-def Actual =Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
+def AdjustedAmount=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
 
-//def Expected= Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
-
-
-//Mobile.verifyEqual(Actual, Expected, FailureHandling.STOP_ON_FAILURE)
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCredit_RadioButton'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BINumberPad/Num- 5'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BINumberPad/Num- 3'), 0)
-
-def pesitoGranted=Mobile.getAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 'text', 0)
-
-println pesitoGranted
+def InvoiceAmount= Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/InvAmt_Value'), 0)
 
 
-def PesitoCommission=Double.parseDouble(findTestData('Phase2.1/TY_05/Collection').getValue(5, 14))
-
-def adjustedAmt=Double.parseDouble(Actual)-Double.parseDouble(pesitoGranted)+PesitoCommission
+Mobile.verifyEqual(AdjustedAmount, InvoiceAmount, FailureHandling.STOP_ON_FAILURE)
 
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0)
 
-def actualAdjustedAmt= Mobile.getAttribute(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 'text', 0)
-
-println actualAdjustedAmt
-
-Mobile.verifyEqual(actualAdjustedAmt, adjustedAmt, FailureHandling.STOP_ON_FAILURE)
-
-println('Adjusted amount should come based on the collection has done through Credit note or pesito granted before.')
+println('Adjusted amount should come based on the collection has done through Credit note')
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only Inv And Rep)/Collection/Screenshot'), [('testCaseName') : 'TC_489'], FailureHandling.STOP_ON_FAILURE)
 

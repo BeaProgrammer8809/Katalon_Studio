@@ -56,9 +56,16 @@ def ExpectedEntity = findTestData('Phase2.1/TY_01/Test_Data').getValue(4, 20)
 
 Mobile.verifyMatch(legalEntity, ExpectedEntity, false, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.verifyElementNotVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
+    0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementNotExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
+    0, FailureHandling.STOP_ON_FAILURE)
+
+println " Folio Number Flag is not Enabled"
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_284_FolioPopup'], 
     FailureHandling.STOP_ON_FAILURE)
-
 
 GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/Payment_CheckBox_indexing'), 0)
@@ -67,8 +74,8 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Su
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 
-def InvoiceCreatedText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'), 
-    0)
+def InvoiceCreatedText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully._TextView'),
+	0)
 
 println(InvoiceCreatedText)
 
@@ -86,8 +93,9 @@ Mobile.verifyEqual(PrintPreviewscreen, findTestData('Phase2.1/TY_01/Test_Data').
 
 println('Invoice is  generated when folio number flag is enabled')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_284'], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_284'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
+
 

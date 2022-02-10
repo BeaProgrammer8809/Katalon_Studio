@@ -37,6 +37,14 @@ Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
+Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Cancel_Button'), 0)
+
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Replacement_Quantity'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
+	'ProductName', 15)], FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Replacement_Quantity'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
+	'ProductName', 27)], FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
@@ -47,18 +55,55 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_Po
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 
-def LegalEntity = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/LegalEntityName_TextView'), 
-    0)
+def RicolinolegalEntity = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/LegalEntityName_TextView _Indexing'),
+	0)
 
-println(LegalEntity)
+println(RicolinolegalEntity)
 
-Mobile.verifyMatch(LegalEntity, findTestData('Phase2.1/TY_01/Test_Data').getValue(4, 18), false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(RicolinolegalEntity, findTestData('Phase2.1/TY_01/Test_Data').getValue(5, 18), false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 0, 
-    FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText_Indexing'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText_Indexing'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+"**************Barcel Legal Entity*********"
+
+GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 2)
+
+def BarcellegalEntity = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/LegalEntityName_TextView _Indexing'),
+	0)
+
+println(BarcellegalEntity)
+
+Mobile.verifyMatch(BarcellegalEntity, findTestData('Phase2.1/TY_01/Test_Data').getValue(6, 18), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText_Indexing'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText_Indexing'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+"*************************Bimbo******************"
+GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 3)
+
+def BimbolegalEntity = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/LegalEntityName_TextView _Indexing'),
+	0)
+
+println(BimbolegalEntity)
+
+Mobile.verifyMatch(BimbolegalEntity, findTestData('Phase2.1/TY_01/Test_Data').getValue(4, 18), false, FailureHandling.STOP_ON_FAILURE)
+
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText_Indexing'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText_Indexing'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_282'], 
     FailureHandling.STOP_ON_FAILURE)

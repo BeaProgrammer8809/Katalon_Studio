@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import java.text.DecimalFormat
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -52,8 +55,7 @@ GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(
 def Expected_Pieces_Value = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
-def Actual_Net_Amt = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+def Net_Amount = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC401_Expected_Piece_Value_And_Net_Amount'], 
     FailureHandling.STOP_ON_FAILURE)
@@ -65,16 +67,16 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
 Mobile.checkElement(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Payment_CheckBox'), 0, FailureHandling.STOP_ON_FAILURE)
 
 //Verification to check Min. Amt is also display the Net amount (value) displayed in Summary screen
-def Expected_Min_Amt = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/MinAmt_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+def Actual_Amt = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/MinAmt_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+def Amount=Actual_Amt.split(' ')
+def Actual_Amt1 = Amount[0]
+DecimalFormat df = new DecimalFormat('0.00')
+Actual_Min_Amt = df.format(Float.parseFloat(Actual_Amt1))
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC401_Min_Amount_In_Collection_PopUp'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-Actual_Net_Amt.contains(Expected_Min_Amt)
-
-println(Expected_Min_Amt)
+//Verification to check that Invoice amount is displaying the Net amount in summary screen
+Mobile.verifyMatch(Net_Amount, Actual_Min_Amt, false, FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC401_Min_Amount_In_Collection_PopUp'], FailureHandling.STOP_ON_FAILURE)
 
 println('Min. Amt is also display the Net amount (value) displayed in Summary screen')
 
 Mobile.closeApplication()
-

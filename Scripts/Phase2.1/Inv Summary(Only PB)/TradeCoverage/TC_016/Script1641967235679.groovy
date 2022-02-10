@@ -56,15 +56,14 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Sc
     FailureHandling.STOP_ON_FAILURE)
 
 //Verification to check Amount split up POPUP should open  
-Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 0, FailureHandling.STOP_ON_FAILURE)
 
 //Verification to check Amount split up popup is getting closed while clicking on (X) icon
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_016_After_Tapping_(x)-Icon'], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_016_After_Tapping_(x)-Icon'], 
-    FailureHandling.STOP_ON_FAILURE)
-
+//Verification to check that Amount split up popup is not visible and Invoice summary screen is visible
+Mobile.verifyElementNotVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/AmountSplitUp_PopUpTitle'), 0, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
 
 println('Amount split up popup should get closed while clicking on (X) icon')

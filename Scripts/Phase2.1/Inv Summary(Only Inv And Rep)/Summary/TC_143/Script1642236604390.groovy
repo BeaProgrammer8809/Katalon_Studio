@@ -49,42 +49,69 @@ def Pieces = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSu
 
 Double pieces = ((Pieces) as Double)
 
-//GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
+
 
 def UPrice = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
     0)
 
 Double uprice = ((UPrice) as Double)
 
-//GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
+
 
 def BuyPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
     0)
 
 Double Buyprice = ((BuyPrice) as Double)
+def totalPrice = Double.parseDouble(BuyPrice)
+println "$totalPrice"
+
+'Use this for IEPS tax'
+def taxIEPS=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalPrice)
+
+'use this for IVA tax'
+def taxIVA=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalPrice)
+
+
 
 def Value = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
 Double value = ((Value) as Double)
 
+def returnPiecesValue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BuySchemeDetails/Buy_Actual_Return_Value'), 0)
+def totalSum = Double.parseDouble(returnPiecesValue) * uprice
+
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
 def OrderValue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 
     0)
-
+Double ordervalue =OrderValue as Double
 def SkuGross = pieces * uprice
 
 DecimalFormat df1 = new DecimalFormat('0.00')
 
 TotalDisc = df1.format(SkuGross)
 
-//Mobile.verifyEqual(SkuGross, findTestData('Phase2.1/TY_05/Collection').getValue(3, 29), FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(SkuGross, findTestData('Phase2.1/TY_05/Collection').getValue(3, 29), FailureHandling.STOP_ON_FAILURE)
 
-def Tax = value - Buyprice
 
-def orderval = SkuGross + Tax
+//double tax = Double.parseDouble(OrderValue) - totalPrice
+//
+//println"$tax"
 
-Mobile.verifyEqual(OrderValue, orderval)
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.tax'(totalPrice, ordervalue)
+
+def OrderValue1=SkuGross + taxIEPS + taxIVA
+
+println('ordervalue' + OrderValue1)
+
+Mobile.verifyEqual(OrderValue, OrderValue1, FailureHandling.STOP_ON_FAILURE)
+
+def actualTaxPercentage = findTestData('Phase2.1/Common_Data/CommonData').getValue('NoTax', 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only Inv And Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_143_AmountSplitUp'], FailureHandling.STOP_ON_FAILURE)
 
@@ -99,7 +126,6 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/PreTi
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only Inv And Rep)/Summary/Screenshot'), [('testCaseName') : 'TC_143_printScreen'], FailureHandling.STOP_ON_FAILURE)
-
 
 Mobile.closeApplication()
 

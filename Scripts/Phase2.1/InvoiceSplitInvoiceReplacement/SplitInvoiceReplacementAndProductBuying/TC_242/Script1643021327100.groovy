@@ -120,6 +120,8 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitInvoiceReplacement/SplitInvoiceReplacementAndProductBuying/Screenshot'), 
     [('testCaseName') : 'TC_242AfterTapOnSubmit'], FailureHandling.STOP_ON_FAILURE)
 
+Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
+
 println('We can submit the amt in Cheque Mode for SKU\'s of same legal entity when Invoice, replacement and Product buying is taken.')
 
 Mobile.closeApplication()

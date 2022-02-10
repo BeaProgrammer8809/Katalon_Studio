@@ -12,11 +12,11 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4004'), [:], F
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData').getValue(2, 3)
+GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData_03').getValue(2, 3)
 
-GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData').getValue(5, 4)
+GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 4)
 
-GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData').getValue(6, 19)
+GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 19)
 
 Mobile.setText(findTestObject('Object Repository/Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName,
 	0)
@@ -64,9 +64,9 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Cheques
 Mobile.verifyElementHasAttribute(findTestObject('Object Repository/Phase2/BICollectionScreen01/Cheques_RadioButton'), 'selected',
 	0, FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.DropdownName = findTestData('Phase2/Common_Data/CommonData').getValue(10, 1)
+GlobalVariable.DropdownName = findTestData('Phase2/Common_Data/CommonData_03').getValue(10, 1)
 
-GlobalVariable.DropdownOption = findTestData('Phase2/Common_Data/CommonData').getValue(7, 3)
+GlobalVariable.DropdownOption = findTestData('Phase2/Common_Data/CommonData_03').getValue(7, 3)
 
 println(GlobalVariable.DropdownName)
 
@@ -76,9 +76,9 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name'), 
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Option'), 0)
 
-GlobalVariable.DropdownName = findTestData('Phase2/Common_Data/CommonData').getValue(10, 2)
+GlobalVariable.DropdownName = findTestData('Phase2/Common_Data/CommonData_03').getValue(10, 2)
 
-GlobalVariable.DropdownOption = findTestData('Phase2/Common_Data/CommonData').getValue(8, 3)
+GlobalVariable.DropdownOption = findTestData('Phase2/Common_Data/CommonData_03').getValue(8, 3)
 
 println(GlobalVariable.DropdownName)
 
@@ -96,7 +96,7 @@ List<WebElement> dropdown = driver.findElementsById('android:id/text1')
 
 def size = dropdown.size()
 
-def ExpectedChequeType = findTestData('Phase2/Common_Data/CommonData').getValue(9, 2)
+def ExpectedChequeType = findTestData('Phase2/Common_Data/CommonData_03').getValue(9, 2)
 
 println ExpectedChequeType
 

@@ -56,11 +56,59 @@ Mobile.setText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/UUID_Folio 
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/UUID_OK_popup'), 0)
 
+//def ActualTitle = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
+//
+//def ExpectedTitle = findTestData('Phase2.1/TY_05/Collection').getValue(4, 36)
+//
+//ActualTitle.contains(ExpectedTitle)
+
+Mobile.delay(20)
+
 def ActualTitle = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
+
+println "$ActualTitle"
+
+def Actual= ActualTitle.split("\n")
+def ActualRes=Actual[1]
+def ActualResult=ActualRes.substring(0, ActualRes.length())
+println "$ActualResult"
+
+def ActualFinalUUID=ActualRes.substring(21, ActualRes.length())
+println "$ActualFinalUUID"
+
 
 def ExpectedTitle = findTestData('Phase2.1/TY_05/Collection').getValue(4, 36)
 
-ActualTitle.contains(ExpectedTitle)
+Boolean SaveSuccessful=ActualTitle.contains(ExpectedTitle)
+
+Mobile.verifyMatch(SaveSuccessful.toString(), findTestData('Phase2.1/TY_05/Collection').getValue(6, 69), false, FailureHandling.STOP_ON_FAILURE)
+
+Boolean UUIDTEXT=ActualTitle.contains(ActualResult)
+
+Mobile.verifyMatch(UUIDTEXT.toString(), findTestData('Phase2.1/TY_05/Collection').getValue(6, 69), false, FailureHandling.STOP_ON_FAILURE)
+
+def Flag=findTestData('Phase2.1/TY_05/Collection').getValue(7, 69)
+println "$Flag"
+
+Boolean UUIDText=ActualTitle.contains(Flag)
+
+Mobile.verifyMatch(UUIDText.toString(), findTestData('Phase2.1/TY_05/Collection').getValue(6, 69), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
+
+def InvoiceSheet = Mobile.getText(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+Boolean InvoiceStatusReplacement=InvoiceSheet.contains(ActualFinalUUID)
+
+//Mobile.verifyNotMatch(InvoiceStatusReplacement.toString(),findTestData('Phase2.1/TY_05/Collection').getValue(6, 69), false,FailureHandling.STOP_ON_FAILURE)
+
+//Boolean OnsiteInvoiceStatusReplacement=InvoiceSheet.contains(Flag)
+//
+//Mobile.verifyMatch(InvoiceStatusReplacement.toString(),findTestData('Phase2.1/TY_05/Collection').getValue(6, 69), false,FailureHandling.STOP_ON_FAILURE)
+
 
 println("uuid message is matching with expected  ")
 

@@ -52,8 +52,8 @@ Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/B
 Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioProdBuy_EditText'), findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(5, 49), 0)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC325_Actual_Onsite_&_UUID_Status'],FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
+Mobile.delay(50)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 30)
 
 def Print_Preview_text = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
 def Expected_Invoice_Popup_Text = findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(4, 42)

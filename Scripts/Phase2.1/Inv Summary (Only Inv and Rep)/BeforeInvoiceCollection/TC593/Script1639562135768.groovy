@@ -82,9 +82,12 @@ def PesitoCommision = Mobile.getText(findTestObject('Object Repository/Phase2/BI
 
 println(PesitoCommision)
 
-PesitoCommision = PesitoCommision.substring(27, 28)
+PesitoCommision2 = PesitoCommision.split("of ")
 
-println(PesitoCommision)
+PesitoCommision1 =PesitoCommision2[1]
+
+
+println(PesitoCommision1)
 
 def ElectroAmount = InvAmount - PesitoAmount
 
@@ -142,7 +145,7 @@ println("$actualtoastmessage")
 
 Mobile.delay(2)
 
-ExpectedToastMessage = ((findTestData('Phase2.1/TY_11/TestData').getValue(8, 6) + PesitoCommision) + findTestData('Phase2.1/TY_11/TestData').getValue(
+ExpectedToastMessage = ((findTestData('Phase2.1/TY_11/TestData').getValue(8, 6) + PesitoCommision1) + findTestData('Phase2.1/TY_11/TestData').getValue(
     9, 6))
 
 println(ExpectedToastMessage)

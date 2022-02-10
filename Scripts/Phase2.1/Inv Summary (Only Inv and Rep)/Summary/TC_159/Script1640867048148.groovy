@@ -104,6 +104,19 @@ println(SKUGross)
 def catdiscountss=Double.parseDouble(Discountedprice)-Double.parseDouble(SKUGross)
 println(catdiscountss)
 
+def totalSum=Double.parseDouble(Discountedprice)
+
+//def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(20, 1)
+println(actualTaxPercentage)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(Tax, totalSum)
+println(expTaxPercentage)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println "Tax  is not applied for sku"
+
 Mobile.verifyEqual(CategoryDiscount, catdiscountss, FailureHandling.STOP_ON_FAILURE)
 println('Since CategoryDiscount and  catdiscountss are same categorydiscountss is applied')
 

@@ -36,17 +36,28 @@ Mobile.tap(findTestObject('Phase2/BIUnload/NonSalable/Total_Piece_Indexing'), 0)
 //Mobile.tap(findTestObject('Phase2/BIUnload/NonSalable/NoSalable_Stock_Popup/Pieces_Edit_Text_Indexing'), 0)
 Mobile.tap(findTestObject('Phase2/BIUnload/NonSalable/NoSalable_Stock_Popup/Dropdown_Name_Indexing'), 0)
 
-GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
+//GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/Screenshot'), ["testCaseName":"TC_051_DDOption"], FailureHandling.STOP_ON_FAILURE)
 
 def Actual_option1 = Mobile.getText(findTestObject('Phase2/BIUnload/NonSalable/NoSalable_Stock_Popup/Clod_Stock_Option'), 
     0)
 
+Mobile.tap(findTestObject('Phase2/BIUnload/NonSalable/NoSalable_Stock_Popup/Clod_Stock_Option'),
+	0)
+def DDName=Mobile.getText(findTestObject('Phase2/BIUnload/NonSalable/NoSalable_Stock_Popup/Dropdown_Name_Indexing'), 0)
+
 def data =  findTestData('Phase2.1/TY_07/Invoice Summary/Execute2').getValue(5, 8)
 println(Actual_option1)
 
+Mobile.comment('Should allow to select any one value from the drop down')
+
 Mobile.verifyMatch(Actual_option1, findTestData('Phase2.1/TY_07/Invoice Summary/Execute2').getValue(5, 8), false)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/Screenshot'), ["testCaseName":"TC_051_invoiceSummary"], FailureHandling.STOP_ON_FAILURE)
+'After clicking on any option Drop Down Name should be the option Name'
+
+Mobile.verifyMatch(Actual_option1, DDName, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/Trade coverage/Screenshot'), ["testCaseName":"TC_051_AfterSelection"], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

@@ -88,18 +88,20 @@ println(InvAmt_txt)
 
 double invoiceAmt = Double.parseDouble(InvAmt_txt)
 
-def invAmt = invoiceAmt + 20
+def greaterinvAmt = invoiceAmt + 20
 
-String invAmt1 = Double.toString(invAmt)
+String greaterInvAmt = Double.toString(greaterinvAmt)
+
+Mobile.verifyGreaterThan(greaterinvAmt, invoiceAmt, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.longPress(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), invAmt1, 
+Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), greaterInvAmt, 
     0)
 
 def ActualErrormessage = driver.findElementByXPath('//android.widget.Toast[1]').getText()
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_214'], 
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_214collection'], 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.hideKeyboard()

@@ -79,13 +79,13 @@ Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/SelectBank'), [
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/SelectBranch'), [:], FailureHandling.STOP_ON_FAILURE)
 
-/*Verification to check user can able to Submit with Future date*/
+/*Verification to check user can able to Submit with Past date*/
 
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/SelectFutureDate'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/SelectPastDate'), [:], FailureHandling.STOP_ON_FAILURE)
 
 def FutureDate = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/Calendar_Button'), 0)
 
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/FuturedateVerification'), [('CollectionDate') : FutureDate ], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/PastDateVerification'), [('CollectionDate') : FutureDate ], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_151'],
 	FailureHandling.STOP_ON_FAILURE)
@@ -93,3 +93,4 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCov
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
 
 Mobile.closeApplication()
+

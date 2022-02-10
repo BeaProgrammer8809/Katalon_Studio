@@ -74,7 +74,23 @@ Mobile.verifyMatch(verifytheMessage1, findTestData('Phase2.1/TY_14/TestData').ge
 
 println('uuid message is matching with expected')
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyPB/InvoiceSplitProductBuying/Screenshot'), [('testCaseName') : 'TC_90'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyPB/InvoiceSplitProductBuying/Screenshot'), [('testCaseName') : 'TC90uuid'], FailureHandling.STOP_ON_FAILURE)
+
+
+Mobile.tap(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Splitted_Invoice_Saved_Successfully_OK_Button'), 0)
+
+def actualMessage2 = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+def onsitExpectedMessage = findTestData('Phase2.1/TY_14/TestData').getValue('Data3', 37)
+
+boolean OnsitMessageResult = actualMessage2.contains(onsitExpectedMessage)
+
+def verifytheStatus = OnsitMessageResult.toString()
+
+Mobile.verifyMatch(verifytheStatus, findTestData('Phase2.1/TY_14/TestData').getValue('Data', 37), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC90Printpreview'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

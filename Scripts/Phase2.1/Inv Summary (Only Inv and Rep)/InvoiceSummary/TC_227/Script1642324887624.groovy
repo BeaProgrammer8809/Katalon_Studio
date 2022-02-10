@@ -42,10 +42,24 @@ Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
+value_value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+
+double ValueDisplayed = Double.parseDouble(value_value)
+
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 
 price_value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
     0)
+double GrossPrice = Double.parseDouble(price_value)
+
+def UPrice = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'),
+	0)
+Double uprice = ((UPrice) as Double)
+
+def returnPiecesValue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BuySchemeDetails/Buy_Actual_Return_Value'), 0)
+
+
+
 
 Mobile.verifyMatch(price_value, findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 10), false)
 
@@ -64,6 +78,25 @@ Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmount
 Total_Value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_Value'), 0)
 
 Mobile.verifyMatch(Total_Value, findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 10), false)
+
+"Tax Calculation"
+def totalSum = Double.parseDouble(returnPiecesValue) * uprice
+   
+def tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+println(tax + "--tax value calculated usng keyword")
+
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax  IEPS is applied for sku')
+
+
+
 
 Mobile.closeApplication()
 

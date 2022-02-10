@@ -14,70 +14,113 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
-import io.appium.java_client.AppiumDriver as AppiumDriver
-import org.openqa.selenium.WebElement as WebElemen
 
-Mobile.callTestCase(findTestCase('Login/Van Seller Login - 1002'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 1002'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/VanloadAndOdometer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.RetailerName = findTestData('Phase2.1/Common_Data/CommonData').getValue(2, 12)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_Generic'), [('retailerName') : findTestData(
+			'Phase2.1/Common_Data/CommonData').getValue('RetailerCash', 10)], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').getValue(16, 1)
+Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Button'), 0)
 
-Mobile.setText(findTestObject('Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName, 0)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Quantity_2'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
+	'Onsite Products', 1)], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_Retailer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
-
-Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
-
-Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 0)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Num_2'), 0)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
+GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_01').getValue('Number', 1)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
+def Discount_Price = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
+	0)
+
+println("$Discount_Price")
+
+def Actual_Buy_pieces = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'),
+	0)
+
+println("$Actual_Buy_pieces")
+
+def Actual_UnitPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'),
+	0)
+
+println(Actual_UnitPrice)
+
+
+def Amount = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+
+println(Amount)
+
+def gross_amount = Integer.parseInt(Actual_Buy_pieces) * Float.parseFloat(Actual_UnitPrice)
+
+println(gross_amount)
+
+"***********Tax percentage verifaction*********************"
+def totalSum = Double.parseDouble(Discount_Price)
+
+'Use this for IEPS tax'
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+'use this for IVA tax'
+//def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS  aapplied for sku')
+
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
 
-Mobile.setText(findTestObject('Phase2/BIEnterTheFolioNoPopup01/FolioNo._EditText'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-		15, 1), 0)
+Mobile.setText(findTestObject('Phase2/BIEnterTheFolioNoPopup01/FolioNo._EditText'),
+	findTestData('Phase2.1/Common_Data/CommonData').getValue('Folio number', 1), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 
-def uuid=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0, FailureHandling.STOP_ON_FAILURE)
 
-def splitUUID=uuid.split(":")
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0, FailureHandling.STOP_ON_FAILURE)
 
-uuid=splitUUID[1]
-
-if(uuid.equals("Failure"))
-{
-	println "UUID generation is getting failed"
-}
-else
-{
-println "Generated UUID is : "+uuid
-}
-
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC294_UUID'],
+Mobile.callTestCase(findTestCase('Phase2.1/InvSummaryOnlyReplacementAndPB/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC309_UUIDPopup'],
 	FailureHandling.STOP_ON_FAILURE)
+
+def UUIDMsg = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
+
+println(UUIDMsg)
+
+def UUIDNo = UUIDMsg.substring(42)
+
+def UUIDlength = UUIDNo.length()
+
+Mobile.verifyMatch(UUIDlength.toString(), findTestData('Phase2.1/TY_01/TestData3').getValue(3, 22), false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC294_printtpreview'], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+def actualMessage = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(actualMessage + 'actualMessage')
+
+def expectedMessage = findTestData('Phase2.1/TY_01/TestData3').getValue(4, 22)
+
+boolean MessageResult = actualMessage.contains(expectedMessage)
+
+def verifytheToastMessage = MessageResult.toString()
+
+Mobile.verifyMatch(verifytheToastMessage, findTestData('Phase2.1/TY_01/TestData3').getValue(5, 22), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_294'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
+

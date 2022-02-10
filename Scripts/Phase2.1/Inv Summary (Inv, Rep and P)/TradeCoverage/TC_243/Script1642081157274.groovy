@@ -125,6 +125,19 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BICalenderPopup/7_Date'),
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BICalenderPopup/OK_button'), 0)
 
+def ActualPreviousDate = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Calendar_Button'), 0)
+
+def expectedPreviousDate = findTestData('Phase2.1/TY_14/TestData').getValue('Data1', 12)
+
+boolean ActualDate = ActualPreviousDate.contains(expectedPreviousDate)
+
+def PreviousDate=ActualDate.toString()
+
+Mobile.verifyMatch(PreviousDate, findTestData('Phase2.1/TY_14/Testdata').getValue('Data', 12), false,FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_243collection'],
+	FailureHandling.STOP_ON_FAILURE)
+
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_243'],
