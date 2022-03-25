@@ -31,7 +31,7 @@ public class SpicejetTest {
 		Actions act=new Actions(driver);
 		act.moveToElement(dest).click().perform();
 		
-		driver.findElement(By.xpath("(//div[text()='25'])[1]")).click();
+	//	driver.findElement(By.xpath("(//div[text()='25'])[1]")).click();
 		
 		
 		
