@@ -1,58 +1,49 @@
 package practice;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
+import org.testng.annotations.Test;
+
 public class CommonCharInTwoStrings {
+	@Test
+	public  void CommonCharInTwoStrings() {
+		
+				Scanner s = new Scanner(System.in);
+				System.out.println("Please enter the first string");
+		 
+				String string1 = s.nextLine();
+		 
+				System.out.println("Please enter the second string");
+		 
+				String string2 = s.nextLine();
+		 
+				s.close();
+		 
+				System.out.println("Output is :" + commonChars(string1, string2));
+			}
+
 	
-	public static void main(String[] args) {
-		Scanner s=new Scanner(System.in);
-		System.out.println("Please Enter the First String : ");
-		String s1=s.nextLine();
-		System.out.println("Please Enter the Second String : ");
-		String s2=s.nextLine();
-		System.out.println("Please Enter the Third String : ");
-		String s3=s.nextLine();
-		System.out.println("Please Enter the Forth String : ");
-		String s4=s.nextLine();
-		
-		s.close();
-		
-		System.out.println("Output is : "+CommonChar(s1, s2,s3,s4));
-		
-	}
-	public static String CommonChar(String str1,String str2,String str3,String str4) {
-		if(str1.length()>0 & str2.length()>0 & str3.length()>0 & str4.length()>0) {
-		List<Character> l1 = new ArrayList<Character>();
-		List<Character> l2 = new ArrayList<Character>();
-		List<Character> l3 = new ArrayList<Character>();
-		List<Character> l4 = new ArrayList<Character>();
+	public static String commonChars(String str1, String str2) {
+		StringBuilder commonChars = new StringBuilder();
+ 
+		if (str1.length() > 0 & str2.length() > 0) {
 			
-			for(int i=0;i<str1.length();i++) {
-				l1.add(str1.charAt(i));
-			}
-			for(int i=0;i<str2.length();i++) {
-				l2.add(str2.charAt(i));
-			}
-			for(int i=0;i<str3.length();i++) {
-				l3.add(str3.charAt(i));
-			}
-			for(int i=0;i<str4.length();i++) {
-				l4.add(str4.charAt(i));
-			}
-			l1.retainAll(l2);
-			l1.retainAll(l3);
-			l1.retainAll(l4);
+			String toBeIterated = (str1.length() > str2.length() ? str2 : str1);
 			
+			String toBeChecked = toBeIterated.equals(str1) ? str2 : str1;
+			System.out.println("String to be iterated: " + toBeIterated);
+			System.out.println("String to be checked: " + toBeChecked);
+ 
 			
-			StringBuilder sb = new StringBuilder();
-			
-			for(Character c:l1) {
-				sb.append(c);
+			for (int i = 0; i < toBeIterated.length(); i++) {
+				
+				if (toBeChecked.contains(Character.toString(toBeIterated.charAt(i)))) {
+					
+					commonChars.append(Character.toString(toBeIterated.charAt(i)));
+				}
 			}
-			return sb.toString();
-		}else
+			return commonChars.toString();
+		} else
 			return "";
 	}
 

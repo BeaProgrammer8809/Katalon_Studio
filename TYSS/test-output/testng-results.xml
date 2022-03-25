@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-04T09:43:20 IST" name="Default suite" finished-at="2022-03-04T09:43:20 IST" duration-ms="68">
+  <suite started-at="2022-03-25T17:45:29 IST" name="Suite" finished-at="2022-03-25T17:45:51 IST" duration-ms="22216">
     <groups>
     </groups>
-    <test started-at="2022-03-04T09:43:20 IST" name="Default test" finished-at="2022-03-04T09:43:20 IST" duration-ms="68">
-      <class name="practice.LargestElements">
-        <test-method signature="LargestElements()[pri:0, instance:practice.LargestElements@bd4dc25]" started-at="2022-03-04T09:43:20 IST" name="LargestElements" finished-at="2022-03-04T09:43:20 IST" duration-ms="12" status="PASS">
+    <test started-at="2022-03-25T17:45:29 IST" name="Test" finished-at="2022-03-25T17:45:51 IST" duration-ms="22216">
+      <class name="practice_Selenium.SpicejetTest">
+        <test-method signature="spicejetTest()[pri:0, instance:practice_Selenium.SpicejetTest@4d465b11]" started-at="2022-03-25T17:45:29 IST" name="spicejetTest" finished-at="2022-03-25T17:45:51 IST" duration-ms="22148" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LargestElements -->
-      </class> <!-- practice.LargestElements -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- spicejetTest -->
+      </class> <!-- practice_Selenium.SpicejetTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
