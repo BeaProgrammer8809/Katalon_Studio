@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_436: To check whether able to Submit the invoice amount without selecting bank branch</description>
-   <name>TC_436</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f0b9a56e-5aff-4398-88d4-c30d4c88337b</testCaseGuid>
-</TestCaseEntity>

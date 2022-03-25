@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC515:-To check whether collection icon is displaying while doing invoice for non-multi org</description>
+   <name>TC515</name>
+   <tag></tag>
+   <comment>Verifying the title of the screen
+Verifying the Colelction icon should be displayed</comment>
+   <testCaseGuid>930adb95-30c4-4948-9fd4-2770d1668f8f</testCaseGuid>
+</TestCaseEntity>

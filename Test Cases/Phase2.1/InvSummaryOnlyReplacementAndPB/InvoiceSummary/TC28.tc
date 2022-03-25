@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_28 - To check the total price calculation while taking product buying for the sku's that is having IVA tax and Item discount.</description>
+   <description>TC28 - To check the total price calculation while taking product buying for the sku's that is having IVA tax and Item discount.</description>
    <name>TC28</name>
    <tag></tag>
    <comment></comment>

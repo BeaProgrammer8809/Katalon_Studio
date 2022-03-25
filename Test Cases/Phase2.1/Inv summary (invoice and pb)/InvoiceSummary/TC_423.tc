@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_423:- To check the Total paid displayed in the Transferencias Electronicas mode after switching from Efectivo mode</description>
-   <name>TC_423</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1a489fd6-c9ea-4fd2-a84d-7b17654ca7a7</testCaseGuid>
-</TestCaseEntity>

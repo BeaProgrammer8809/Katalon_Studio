@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 214 - To check whether able to Submit the invoice amount without entering Cheque no</description>
+   <name>TC 214</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>31d13a4c-f89b-42f9-b058-54b76af8026a</testCaseGuid>
+</TestCaseEntity>

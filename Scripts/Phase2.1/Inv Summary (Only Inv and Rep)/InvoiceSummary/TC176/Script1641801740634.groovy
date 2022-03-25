@@ -2,19 +2,13 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
+import java.text.DecimalFormat
+
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+
 import internal.GlobalVariable as GlobalVariable
-import java.text.DecimalFormat
 
 Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4002'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -72,6 +66,32 @@ def gross_amount = Integer.parseInt(Actual_Buy_pieces) * Float.parseFloat(Actual
 
 println(gross_amount)
 
+DecimalFormat df1 = new DecimalFormat('0.00')
+
+GrossAmt2 = df1.format(gross_amount)
+
+println(GrossAmt2)
+
+Double GrossAmt=Double.parseDouble(GrossAmt2)
+
+"*****************Discount calculation*************************"
+def ItemDisc = CustomKeywords.'com.ty.keywords.MobileKeywords.item5_Percent'(GrossAmt)
+
+secondGrossAmt = (GrossAmt - ItemDisc)
+
+def Disc = Double.parseDouble(findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 16))
+def catDisc=secondGrossAmt*(Disc/100)
+
+def TotalDisc = ItemDisc + catDisc.round(3)
+
+DecimalFormat df=new DecimalFormat("0.00")
+
+def TotalDisc1 = df.format(TotalDisc)
+
+println TotalDisc1
+
+
+
 "***********Tax percentage verifaction*********************"
 def totalSum = Double.parseDouble(Discount_Price)
 
@@ -91,17 +111,15 @@ Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling
 
 println('Tax IEPS  is not aapplied for sku')
 
-def CompDiscount= Double.parseDouble(Discount_Price)-(gross_amount)
-println CompDiscount
+def ActualCompDisc1= Double.parseDouble(Discount_Price)-(gross_amount)
 
-DecimalFormat df = new DecimalFormat('0.00')
+println ActualCompDisc1
 
-ActualCompDisc = df.format(CompDiscount)
+DecimalFormat df2=new DecimalFormat("0.00")
 
-
+def ActualCompDisc = df2.format(ActualCompDisc1)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
-
 
 def compDiscText = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),
 	0)
@@ -119,11 +137,14 @@ def split=compDiscText.split(' ')
 
 compDiscText1 =split[0]
 compDiscText2 =split[1]
+
+
 compDisc=compDiscText1+compDiscText2
 
 println(compDisc)
 
 Mobile.verifyEqual(ActualCompDisc, compDisc, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(TotalDisc1, compDiscText2, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_176'],
 	FailureHandling.STOP_ON_FAILURE)

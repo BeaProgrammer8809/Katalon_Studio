@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC506:-To check the entity name and folio type displayed inside Folio no popup if invoice and replacement is taken against Bimbo sku's</description>
+   <name>TC506</name>
+   <tag></tag>
+   <comment>Verifying the Legal Entity name
+ Folio no field should be displayed</comment>
+   <testCaseGuid>01757cff-363e-4144-91cb-e5e899f344a1</testCaseGuid>
+</TestCaseEntity>

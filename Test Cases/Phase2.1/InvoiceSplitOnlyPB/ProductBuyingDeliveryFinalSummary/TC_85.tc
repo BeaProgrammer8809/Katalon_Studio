@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_85:- To check whether max. allowed length is 15 chars in the Folio no field</description>
-   <name>TC_85</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5994a08e-0cf5-4a09-809a-702d25dc2076</testCaseGuid>
-</TestCaseEntity>

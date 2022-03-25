@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 120 -  To check while doing invoice and replacement for no group sku's and product buying for split group sku's that is having IEPS tax with Item discount and Detail IEPS flag is enabled for the store,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC 120</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0a1edbe8-c58f-4c90-ae02-83021b1c192f</testCaseGuid>
+</TestCaseEntity>

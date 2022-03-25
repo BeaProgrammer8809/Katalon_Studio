@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_222 - To check the Balance displayed in the Transferencias Electronicas mode after switching from Efectivo mode</description>
-   <name>TC_222</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5a589e7c-5d6a-4d9d-914d-0e32d8011b54</testCaseGuid>
-</TestCaseEntity>

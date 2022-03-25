@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_077:To check the total Value calculation while taking replacement for the sku's that is having IEPS tax, Item discount and category discount.</description>
-   <name>TC_077</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>84b09948-51fe-4dac-a644-769968eea26f</testCaseGuid>
-</TestCaseEntity>

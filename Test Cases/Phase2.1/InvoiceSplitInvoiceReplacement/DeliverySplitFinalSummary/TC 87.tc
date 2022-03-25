@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 87 - To check the sku qty displayed after entering all the stock delivered qty in Extra invoice for barcel's sku that are not in invoice split group</description>
+   <name>TC 87</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7b1f091f-84bb-473c-b169-7f4408e511bc</testCaseGuid>
+</TestCaseEntity>

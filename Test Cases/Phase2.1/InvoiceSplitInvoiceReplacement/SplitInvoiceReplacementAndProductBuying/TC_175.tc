@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_175
-To check the Inv Amt displayed in the Efectivo mode while doing invoice ,replacement and product buying for same split group skus</description>
-   <name>TC_175</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ac61fd70-168d-4e4f-9e54-3c1e11d202e9</testCaseGuid>
-</TestCaseEntity>

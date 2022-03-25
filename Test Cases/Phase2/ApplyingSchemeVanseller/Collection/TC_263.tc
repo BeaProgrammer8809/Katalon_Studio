@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_263:To check whether able to Submit with Total paid amount greater than invoice amount when scheme is applied</description>
+   <name>TC_263</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a25061b1-0e04-4c12-84e2-7ab33e3136ce</testCaseGuid>
+</TestCaseEntity>

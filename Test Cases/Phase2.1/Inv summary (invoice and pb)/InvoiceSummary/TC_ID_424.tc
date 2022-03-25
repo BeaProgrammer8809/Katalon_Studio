@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_424:- To check whether able to enter Total paid amount in Transferencias Electronicas mode after switching from Efectivo mode</description>
+   <name>TC_ID_424</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b345fa86-c6de-4526-9e3d-8264648c595f</testCaseGuid>
+</TestCaseEntity>

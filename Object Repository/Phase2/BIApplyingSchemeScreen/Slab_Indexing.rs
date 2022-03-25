@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[resource-id='${GlobalVariable.Package}:id/tv_scheme'])[${GlobalVariable.index}]</value>
+         <value>(//*[@resource-id='${GlobalVariable.Package}:id/tv_scheme'])[${GlobalVariable.index}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -143,6 +143,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[resource-id='${GlobalVariable.Package}:id/tv_scheme'])[${GlobalVariable.index}]</value>
+      <value>(//*[@resource-id='${GlobalVariable.Package}:id/tv_scheme'])[${GlobalVariable.index}]</value>
    </webElementProperties>
 </WebElementEntity>

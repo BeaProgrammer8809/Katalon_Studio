@@ -42,11 +42,15 @@ Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliv
 
 double Actual_Order_Value = Integer.parseInt(Expected_Pieces_Value) * Double.parseDouble(Unit_Price)
 println Actual_Order_Value
+double Discount = Actual_Order_Value - Double.parseDouble(Order_Value)
+println Discount
 double Tax = Double.parseDouble(Value) - Double.parseDouble(Order_Value)
 println Tax
-def Amount = Actual_Order_Value + Tax
+def Amount = Actual_Order_Value + Tax - Discount
+println Amount
 DecimalFormat df = new DecimalFormat('0.00')
-def Actual_Amount = df.format(Amount) 
+def Actual_Amount = df.format(Amount)
+println Actual_Amount
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
@@ -72,7 +76,7 @@ Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliv
 Mobile.verifyEqual(Actual_Amount, Expected_Amount, FailureHandling.STOP_ON_FAILURE)
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), [('testCaseName') : 'TC_ID_221_Expected_Amount'], FailureHandling.STOP_ON_FAILURE)
 
-//Verification to check the Invoice qty and Return Qty 
+//Verification to check the Invoice qty and Return Qty
 Mobile.verifyEqual(Actual_Pieces_Value, Expected_Pieces_Value, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyEqual(Actual_Return_Qty, Expected_Return_Qty, FailureHandling.STOP_ON_FAILURE)
 

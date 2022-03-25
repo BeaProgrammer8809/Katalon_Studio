@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC174 - To check the Comp Disc amount inside the info popup while taking invoice for the sku's that is having only discount (Item discount) but not having any taxes</description>
+   <name>TC174</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b034c2b-4ece-470d-96ed-11d61d16790b</testCaseGuid>
+</TestCaseEntity>

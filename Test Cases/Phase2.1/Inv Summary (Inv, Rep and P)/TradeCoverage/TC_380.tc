@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_380:To check whether ambito and clave entidad fields are made as mandatory or not for invoice transaction inside the wildcard retailer with INE enabled</description>
-   <name>TC_380</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>13530967-db1f-401c-a911-e08801820f92</testCaseGuid>
-</TestCaseEntity>

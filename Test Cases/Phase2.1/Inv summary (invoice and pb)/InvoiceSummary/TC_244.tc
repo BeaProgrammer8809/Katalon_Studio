@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_244:- To check the Total amount inside the info popup while taking invoice and Product Buying (Non-Salable) for the sku's that is having IVA, IEPS taxes and Item, category discount.</description>
-   <name>TC_244</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e81be76a-b5aa-48ac-bc66-b4ed340aaf85</testCaseGuid>
-</TestCaseEntity>

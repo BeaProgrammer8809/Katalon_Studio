@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_205 - To check the Select Cheque Type dropdown options</description>
-   <name>TC_205</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bdf84569-a101-4dd3-9062-f0cf85034a9a</testCaseGuid>
-</TestCaseEntity>

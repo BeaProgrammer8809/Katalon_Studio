@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 287:To verify “Folio No” field in the Enter the Folio number pop-up is enable for Wild card retailer.</description>
+   <name>TC 287</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>80e43889-37d2-4e59-b718-69830aafcaa1</testCaseGuid>
+</TestCaseEntity>

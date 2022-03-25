@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_323:-To verify should “Reference number” field is accepting more than 30 characters.[Collection Before Invoice]</description>
-   <name>TC_323</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>2b4c27df-6c18-4bff-9567-f4c397866ec9</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_271:
-
-To check the legal entity for multi org while doing only replacement for Bimbo products</description>
+   <description>TC271: To check the legal entity for multi org while doing only replacement for Bimbo products</description>
    <name>TC271</name>
    <tag></tag>
    <comment></comment>

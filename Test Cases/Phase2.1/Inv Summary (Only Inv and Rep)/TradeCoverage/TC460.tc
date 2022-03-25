@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC460 - To check whether able to Submit the invoice amount with max digit in Reference no</description>
-   <name>TC460</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c3e8d3be-4871-4bb6-946d-8aea81bef893</testCaseGuid>
-</TestCaseEntity>

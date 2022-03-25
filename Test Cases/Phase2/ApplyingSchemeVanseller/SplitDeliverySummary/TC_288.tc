@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_288:- Check the default display of Delivery summary screen</description>
+   <name>TC_288</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9952a097-8b13-4993-9261-eaebd19d2c6f</testCaseGuid>
+</TestCaseEntity>

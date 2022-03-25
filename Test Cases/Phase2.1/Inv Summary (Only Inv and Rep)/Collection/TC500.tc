@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC500:-To check pesito granted amount will be less than or equal to invoice amount</description>
+   <name>TC500</name>
+   <tag></tag>
+   <comment>Pesito granted amount should be equal to invoice amount
+Pesito granted amount should be  less than invoice amount</comment>
+   <testCaseGuid>a6689a07-c5f1-49bb-995b-a77f8dc32fc4</testCaseGuid>
+</TestCaseEntity>

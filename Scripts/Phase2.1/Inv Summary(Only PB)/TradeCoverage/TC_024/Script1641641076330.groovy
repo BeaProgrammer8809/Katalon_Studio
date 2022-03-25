@@ -53,21 +53,51 @@ Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
 
-def skuTotalPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
-    0)
+def skuTotalPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
+		0)
 
 println(' Sku total price is ' + skuTotalPrice)
 
-def priceIncludingTax = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+def salesReturn = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'),
+		0)
 
-println(' Price including tax is ' + priceIncludingTax)
+def uPrice = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'),
+		0)
 
-Mobile.verifyEqual(skuTotalPrice, priceIncludingTax, FailureHandling.STOP_ON_FAILURE)
+def value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+
+println(' Price including tax is ' + value)
+
+Mobile.verifyEqual(skuTotalPrice, value, FailureHandling.STOP_ON_FAILURE)
 
 println('Tax for sku is not be applied for Product Buying qty in summary screen')
 
-Mobile.callTestCase(findTestCase('Phase2.1\\Inv Summary(Only PB)\\TradeCoverage/ScreenShot'), [('testCaseName') : 'TC_024_InvoiceSummary'], 
-    FailureHandling.STOP_ON_FAILURE)
+def totalSum = Double.parseDouble(skuTotalPrice)
+
+value = Double.parseDouble(value)
+
+def tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyNotMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS is not applied for sku when product buying is done')
+
+tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(19, 1)
+
+expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+Mobile.verifyNotMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IVA is not applied for sku when product buying is done')
+
+Mobile.callTestCase(findTestCase('Phase2.1\\Inv Summary(Only PB)\\TradeCoverage/ScreenShot'), [('testCaseName') : 'TC_024_InvoiceSummary'],
+FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

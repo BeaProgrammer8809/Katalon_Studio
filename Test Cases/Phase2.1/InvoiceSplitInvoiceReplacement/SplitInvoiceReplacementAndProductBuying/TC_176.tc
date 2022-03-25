@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_176
-To check while doing invoice ,replacement and product buying for same split group sku's if invoice amount is greater than product buying amount  ,whether product buying amount is adjusted in invoice amount</description>
-   <name>TC_176</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9e10445d-c57b-42b2-8fac-2cc2ba35fef4</testCaseGuid>
-</TestCaseEntity>

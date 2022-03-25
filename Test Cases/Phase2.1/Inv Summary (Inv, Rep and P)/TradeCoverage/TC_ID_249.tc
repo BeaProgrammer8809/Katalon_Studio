@@ -3,6 +3,6 @@
    <description>TC_ID_249:-To check When invoice with done for same company sku then it in collection screen Invoice amount is getting balanced with Product buying amount</description>
    <name>TC_ID_249</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Balance get updated</comment>
    <testCaseGuid>5c545c10-b065-4395-a5c6-72f3c2c228d2</testCaseGuid>
 </TestCaseEntity>

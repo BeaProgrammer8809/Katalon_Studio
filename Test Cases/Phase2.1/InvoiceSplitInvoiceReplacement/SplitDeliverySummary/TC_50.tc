@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_50 : To check whether able to generate invoice  displayed after taking invoice, replacement and pb against each barcel sku's that are not in invoice split group</description>
-   <name>TC_50</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9fa0a515-b35e-4eef-9910-1fb891962fcf</testCaseGuid>
-</TestCaseEntity>

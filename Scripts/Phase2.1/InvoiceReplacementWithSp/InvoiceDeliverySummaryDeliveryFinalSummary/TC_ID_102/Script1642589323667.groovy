@@ -39,7 +39,7 @@ Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_
 Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Button'), 0)
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Qty'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
-			'ProductName', 1)], FailureHandling.STOP_ON_FAILURE)
+			'ProductName', 38)], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
@@ -59,6 +59,9 @@ boolean isKeyboardShown = driver.isKeyboardShown();
 
 def keyboardValue = isKeyboardShown.toString()
 
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
+	[('testCaseName') : 'TC_ID_102Keyboard'], FailureHandling.STOP_ON_FAILURE)
+
 Mobile.verifyMatch(keyboardValue, findTestData('Phase2.1/TY_11/TestData').getValue(2, 87), false, FailureHandling.STOP_ON_FAILURE)
 
 'taping enter  on keyboard and verifying thatkeyboard is hidden '
@@ -72,12 +75,6 @@ Mobile.verifyMatch(keyboardValue, findTestData('Phase2.1/TY_11/TestData').getVal
 	
 	Mobile.verifyMatch(keyboardValue1, findTestData('Phase2.1/TY_11/TestData').getValue(3, 87), false, FailureHandling.STOP_ON_FAILURE)
 	
-	
-
-	Mobile.hideKeyboard()
-	
-
-
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
 	[('testCaseName') : 'TC_ID_102'], FailureHandling.STOP_ON_FAILURE)
 

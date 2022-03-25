@@ -96,47 +96,56 @@ if (Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIApply
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
 
-def BimboSkuName=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 0)
-
-println "Bimbo sku name is "+ BimboSkuName
-
-def ReturnQtyBimbo=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 
+def BimboSkuName = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 
     0)
 
-def ProductBuyQtyBimbo=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0)
+println('Bimbo sku name is ' + BimboSkuName)
 
-def SRPBimbo=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0)
+def ReturnQtyBimbo = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 
+    0)
+
+def ProductBuyQtyBimbo = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 
+    0)
+
+def SRPBimbo = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
+    0)
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
-def BarcelSkuName=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 0)
+def BarcelSkuName = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 
+    0)
 
-println "Barcel sku name is "+BarcelSkuName
+println('Barcel sku name is ' + BarcelSkuName)
 
-def ReturnQtyBarcel=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'),
-	0)
+def ReturnQtyBarcel = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 
+    0)
 
-def ProductBuyQtyBarcel=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0)
+def ProductBuyQtyBarcel = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 
+    0)
 
-def SRPBarcel=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0)
+def SRPBarcel = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
+    0)
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 3)
 
-def RicolinoSkuName=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 0)
+def RicolinoSkuName = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 
+    0)
 
-println "Ricolino sku name is "+RicolinoSkuName
+println('Ricolino sku name is ' + RicolinoSkuName)
 
-def ReturnQtyRicolino=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'),
-	0)
+def ReturnQtyRicolino = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 
+    0)
 
-def ProductBuyQtyRicolino=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0)
+def ProductBuyQtyRicolino = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 
+    0)
 
-def SRPRicolino=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0)
+def SRPRicolino = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
+    0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_078_SummaryScreen'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_078_SummaryScreen'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-DecimalFormat df=new DecimalFormat("0.00")
+DecimalFormat df = new DecimalFormat('0.00')
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
@@ -151,62 +160,68 @@ GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue
 def invName1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 
     0)
 
-def line1=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), 0)
+def line1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), 
+    0)
 
-def skuQty1=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+def skuQty1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 
+    0)
 
-def amount1=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 0)
+def amount1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 
+    0)
 
-def expInvName1=findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 25)+'3'
+def expInvName1 = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 25) + '3'
 
 Mobile.verifyMatch(invName1, expInvName1, false, FailureHandling.OPTIONAL)
 
-println "Invoice name as expected"
+println('Invoice name as expected')
 
-def totalPriceBimbo=Double.parseDouble(SRPBimbo)*Double.parseDouble(ReturnQtyBimbo)
+def totalPriceBimbo = Double.parseDouble(SRPBimbo) * Double.parseDouble(ReturnQtyBimbo)
 
-def totalPriceBarcel=Double.parseDouble(SRPBarcel)*Double.parseDouble(ReturnQtyBarcel)
+def totalPriceBarcel = Double.parseDouble(SRPBarcel) * Double.parseDouble(ReturnQtyBarcel)
 
-def totalPriceRicolino=Double.parseDouble(SRPRicolino)*Double.parseDouble(ReturnQtyRicolino)
+def totalPriceRicolino = Double.parseDouble(SRPRicolino) * Double.parseDouble(ReturnQtyRicolino)
 
-def expAmt1=totalPriceBimbo+totalPriceBarcel+totalPriceRicolino
+def expAmt1 = (totalPriceBimbo + totalPriceBarcel) + totalPriceRicolino
 
-expAmt1=df.format(expAmt1)
+expAmt1 = df.format(expAmt1)
 
 Mobile.verifyLessThanOrEqual(amount1, expAmt1, FailureHandling.STOP_ON_FAILURE)
 
-println "Expected amount is less than or equal to actual amount as tax is considered for sku"
+println('Expected amount is less than or equal to actual amount as tax is considered for sku')
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
-def invName2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'),
-	0)
+def invName2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 
+    0)
 
-def line2=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), 0)
+def line2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), 
+    0)
 
-def skuQty2=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+def skuQty2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 
+    0)
 
-def amount2=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 0)
+def amount2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 
+    0)
 
-def expInvName2=findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 35)+'1'
+def expInvName2 = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 35) + '1'
 
 Mobile.verifyMatch(invName2, expInvName2, false, FailureHandling.OPTIONAL)
 
-println "Invoice name as expected"
+println('Invoice name as expected')
 
-def totalPriceProdBimbo=Double.parseDouble(SRPBimbo)*Double.parseDouble(ProductBuyQtyBimbo)
+def totalPriceProdBimbo = Double.parseDouble(SRPBimbo) * Double.parseDouble(ProductBuyQtyBimbo)
 
-def totalPriceProdBarcel=Double.parseDouble(SRPBarcel)*Double.parseDouble(ProductBuyQtyBarcel)
+def totalPriceProdBarcel = Double.parseDouble(SRPBarcel) * Double.parseDouble(ProductBuyQtyBarcel)
 
-def totalPriceProdRicolino=Double.parseDouble(SRPRicolino)*Double.parseDouble(ProductBuyQtyRicolino)
+def totalPriceProdRicolino = Double.parseDouble(SRPRicolino) * Double.parseDouble(ProductBuyQtyRicolino)
 
-def expAmt2=totalPriceProdBimbo+totalPriceProdBarcel+totalPriceProdRicolino
+def expAmt2 = (totalPriceProdBimbo + totalPriceProdBarcel) + totalPriceProdRicolino
 
-expAmt2=df.format(expAmt2)
+expAmt2 = df.format(expAmt2)
 
-Mobile.verifyLessThanOrEqual(amount2, expAmt2, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyGreaterThanOrEqual(amount2, expAmt2, FailureHandling.STOP_ON_FAILURE)
 
-println "Amount is as expected"
+println('Amount is as expected')
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_078_DeliveryFinalSummaryScreen'], 
     FailureHandling.STOP_ON_FAILURE)

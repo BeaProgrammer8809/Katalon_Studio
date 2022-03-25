@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the Value field and  total qty calculation while taking replacement against each sku's that is having IEPS tax, Item discount and category discount.</description>
+   <description>TC85-To check the Value field and  total qty calculation while taking replacement against each sku's that is having IEPS tax, Item discount and category discount.</description>
    <name>TC85</name>
    <tag></tag>
    <comment></comment>

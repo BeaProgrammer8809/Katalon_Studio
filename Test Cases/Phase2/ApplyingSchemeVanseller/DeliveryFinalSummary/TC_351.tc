@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_351 - To check the split name displayed for scheme buy and get sku in delivery final summary screen when extra invoice is created for scheme buy sku(Scheme buy and get sku is added in same split group)</description>
+   <name>TC_351</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6c85066a-879a-4066-8933-852c3c565912</testCaseGuid>
+</TestCaseEntity>

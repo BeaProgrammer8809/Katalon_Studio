@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 255 - To verify should “Folio No” field is accepting more than 15 characters.</description>
+   <name>TC 255</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8590f116-7c51-4360-bccb-3f92e800e3fd</testCaseGuid>
+</TestCaseEntity>

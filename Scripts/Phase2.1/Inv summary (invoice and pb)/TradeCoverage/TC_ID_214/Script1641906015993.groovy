@@ -108,11 +108,11 @@ def U_Price_VAlue = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen
 
 def Actual_Value_Amt = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Invoice Summary/Screenshot'), [('testCaseName') : 'TC_ID_214'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('null'), [('testCaseName') : 'TC_ID_214'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Invoice Summary/Screenshot'), [('testCaseName') : 'TC_ID_214'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('null'), [('testCaseName') : 'TC_ID_214'], FailureHandling.STOP_ON_FAILURE)
 
 def CompDisc_Value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'), 
     0)
@@ -123,7 +123,7 @@ def DistDisc_Value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScree
 def OrderValue_Value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 
     0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Invoice Summary/Screenshot'), [('testCaseName') : 'TC_ID_214'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('null'), [('testCaseName') : 'TC_ID_214'], FailureHandling.STOP_ON_FAILURE)
 
 //Total order value= pieces * U.price
 def Total_Order_Value = Integer.parseInt(Pieces_Value) * Double.parseDouble(U_Price_VAlue)
@@ -141,7 +141,7 @@ Mobile.verifyEqual(Price_Value, Expected_Order_Value, FailureHandling.STOP_ON_FA
 
 println(Expected_Order_Value)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Invoice Summary/Screenshot'), [('testCaseName') : 'TC_ID_214'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('null'), [('testCaseName') : 'TC_ID_214'], FailureHandling.STOP_ON_FAILURE)
 
 println('Comp Disc = Sum of  (Item Discount against each sku\'s + Category discount against each sku\'s)')
 

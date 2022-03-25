@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_196
+
+To check when tax is mapped(IEPS ,IVA) for the scheme get sku(free sku),whether tax is applying in invoice summary screen for the scheme get sku</description>
+   <name>TC_196</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04a145d3-9668-4c70-88cd-8ee83ef701ad</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_297 - To check When scheme buy and get sku is not in split group if scheme is applied for the invoice ,whether the scheme buy sku is displaying in delivery summary screen
+</description>
+   <name>TC_297</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>406c2297-23d5-4a24-bd6a-884bb45930d5</testCaseGuid>
+</TestCaseEntity>

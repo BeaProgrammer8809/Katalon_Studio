@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether only invoiced sku's displaying in delivery split summary screen when scheme buy sku and get sku from different split group</description>
+   <name>TC_341</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4f1bf9a-b413-4d87-9cd9-54df39fe5b9a</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_130 : To check the default display of info (i) popup screen</description>
-   <name>TC_131</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>797ddc94-bfdd-41f5-a930-40a66fc51f20</testCaseGuid>
-</TestCaseEntity>

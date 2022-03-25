@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_ID_159 - To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Both Salable &amp; Non-salable) for the sku's that is having IVA tax and category discount.</description>
-   <name>TC_ID_159</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>89d9efa6-9676-441f-bcfe-b5d5685f3045</testCaseGuid>
-</TestCaseEntity>

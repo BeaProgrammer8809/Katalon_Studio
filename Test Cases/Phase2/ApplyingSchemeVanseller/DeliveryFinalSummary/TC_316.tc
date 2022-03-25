@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_316:-Clarification pending from Mayuri
+
+To check the split name displayed when scheme buy and get sku is from bimbo company and that are not in invoice split group</description>
+   <name>TC_316</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e86bbc3e-56c4-4603-a350-66a103ef023a</testCaseGuid>
+</TestCaseEntity>

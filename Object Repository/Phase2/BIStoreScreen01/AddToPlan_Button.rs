@@ -4,12 +4,6 @@
    <name>AddToPlan_Button</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
-   <selectorCollection>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[@class = 'android.widget.Button' and (text() = 'Add To Plan' or . = 'Add To Plan') and @resource-id = '${GlobalVariable.Package}:id/profile_deviate']</value>
-      </entry>
-   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -31,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>${GlobalVariable.Package}:id/profile_deviate</value>
+      <value>com.ivy.bimbomx.mexico.view.uat:id/profile_deviate</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

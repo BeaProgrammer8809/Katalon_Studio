@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_382: To check whether ambito and clave entidad field is shown  while doing the ekomercio normal invoice with &quot;INE Enabled&quot;</description>
+   <name>TC_ID_382</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b5877983-2e6c-48dd-8e46-fac47806db1f</testCaseGuid>
+</TestCaseEntity>

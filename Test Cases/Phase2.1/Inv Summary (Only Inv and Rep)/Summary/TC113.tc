@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC113 - To check the Order Value amount inside the info popup while taking invoice for the sku's that is not having any discounts and taxes</description>
+   <name>TC113</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e321ee6c-192a-4216-8a4b-9afa384eebc4</testCaseGuid>
+</TestCaseEntity>

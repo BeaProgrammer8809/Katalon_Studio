@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_137:-To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Non-Salable) for the sku's that is having only tax  IEPS but not having any discounts</description>
-   <name>TC_137</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d5a2636a-d763-435f-b1cb-0839620f1ceb</testCaseGuid>
-</TestCaseEntity>

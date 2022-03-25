@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SC_TC_01:To check whether Schemes will be present in main menu</description>
+   <name>SC_TC_01</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e432ffde-79dc-4bf2-b678-9cfdd2a6714a</testCaseGuid>
+</TestCaseEntity>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_20 - To check the total price calculation while taking product buying for the sku's that is having only tax  IEPS but not having any discounts
+   <description>TC20 - To check the total price calculation while taking product buying for the sku's that is having only tax  IEPS but not having any discounts
 
 Total Price should be displayed as 0 against each sku since the product buying quantity will not be considered in invoice calculation</description>
    <name>TC20</name>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_20:- To check when seller doing invoice and replacement if enter invoice qty is less than scheme buy qty,screen is navigating to order summary screen</description>
+   <name>TC_20</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9528e5e2-4181-4210-8e4a-8020431b0919</testCaseGuid>
+</TestCaseEntity>

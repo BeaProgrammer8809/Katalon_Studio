@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_07:- To check while click on view button whether screen is navigating to Promotion slab screen</description>
+   <name>TC_07</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c685b81c-796b-492e-96cc-a4650d1e08c4</testCaseGuid>
+</TestCaseEntity>

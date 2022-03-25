@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_254:-To check whether able to enter Total paid amount in only Transferencias Electronicas mode when scheme is applied</description>
+   <name>TC_254</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8218407e-b887-4a2b-a7d7-5934e8c70c76</testCaseGuid>
+</TestCaseEntity>

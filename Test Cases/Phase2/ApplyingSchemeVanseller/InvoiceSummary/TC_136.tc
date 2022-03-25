@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_136 - To check whether scheme get qty is non editable in promotion slab screen</description>
+   <name>TC_136</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba87ee33-5d98-4235-9d3c-fc2b61dbcabb</testCaseGuid>
+</TestCaseEntity>

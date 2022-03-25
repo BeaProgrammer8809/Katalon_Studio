@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_49 - To check the total price calculation while taking replacement for the sku's that is having IVA tax, Item discount and category discount.</description>
+   <description>TC49 - To check the total price calculation while taking replacement for the sku's that is having IVA tax, Item discount and category discount.</description>
    <name>TC49</name>
    <tag></tag>
    <comment></comment>

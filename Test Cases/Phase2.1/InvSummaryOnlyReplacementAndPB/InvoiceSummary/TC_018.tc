@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_018:To check whether tax is included in U.Price against each SKU when detail IEPS is enabled for the store and IEPS Tax is mapped for the sku</description>
-   <name>TC_018</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ee0e052f-0585-4ff2-99f7-a74b07ae30b7</testCaseGuid>
-</TestCaseEntity>

@@ -85,7 +85,7 @@ KeywordUtil.logInfo ("${TotalTaxAmount}")
 def OrderValue = GrossInvoice + TotalTaxAmount
 KeywordUtil.logInfo ("${OrderValue}")
 
-def CalculatedTotalAmount = OrderValue - TotalDiscount
+def CalculatedTotalAmount = (OrderValue - TotalDiscount).round(2)
 
 Mobile.verifyEqual(TotalAmountInsideInfoPopup, CalculatedTotalAmount,FailureHandling.STOP_ON_FAILURE)
 

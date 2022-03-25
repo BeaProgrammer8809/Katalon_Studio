@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 142 - To check while doing invoice and replacement for different split group sku's and product buying for no group sku's that is having IVA, IEPS taxes with Category discount and Detail IEPS flag is enabled for the store,whether the invoice is getting success and UUID is generated</description>
+   <name>TC 142</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>557466d7-fcda-4a2e-a5e2-ce978f46273c</testCaseGuid>
+</TestCaseEntity>

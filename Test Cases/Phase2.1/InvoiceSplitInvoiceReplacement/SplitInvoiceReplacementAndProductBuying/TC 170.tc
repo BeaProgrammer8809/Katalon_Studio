@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 170 :To Check user is able to collect Extra invoice amount directly by effectivo  mode</description>
+   <name>TC 170</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ea59dc89-37c3-4927-8d11-eba0a1898602</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 363:-To verify Invoice can be done with Scheme for the retailer with RFC format as “&amp;&amp;&amp;&amp;YYMMDD&amp;&amp;&amp;”</description>
+   <name>TC 363</name>
+   <tag></tag>
+   <comment>Verifying the RFC format</comment>
+   <testCaseGuid>2dfc0e91-59a9-4b0e-8087-d60edc64ff3b</testCaseGuid>
+</TestCaseEntity>

@@ -16,15 +16,6 @@ Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Bu
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
-//
-//Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/TY_04/Phase2.1').getValue(
-//        2, 2), 0)
-//
-//Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), findTestData('Phase2.1/TY_04/Phase2.1').getValue(
-//        3, 2), 0)
-//
-//Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Returns_Edit_Text'), findTestData('Phase2.1/TY_04/Phase2.1').getValue(
-//        4, 2), 0)
 GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').getValue(6, 19)
 
 Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
@@ -75,7 +66,7 @@ def Efectivo_TotalAmt = Mobile.getAttribute(findTestObject('Phase2/BICollectionS
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Collection/Screenshot'), [('testCaseName') : 'TC465'], FailureHandling.STOP_ON_FAILURE)
 
-DecimalFormat df = new DecimalFormat('0.00')
+DecimalFormat df = new DecimalFormat('0.0')
 
 Efectivo_TotalAmt = df.format(Float.parseFloat(Efectivo_TotalAmt))
 
@@ -131,4 +122,3 @@ println('User is able to submit the invoice amount in Cheque and RTGS mode')
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Collection/Screenshot'), [('testCaseName') : 'TC465'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-

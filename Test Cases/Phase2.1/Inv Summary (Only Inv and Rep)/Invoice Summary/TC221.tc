@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC221 - To check the Total amount inside the info popup while taking invoice for the sku's that is having IVA, IEPS taxes and Item, category discount.</description>
-   <name>TC221</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f684d465-8603-4749-a52d-c77a94172c38</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_156 : To check the Order Value amount inside the info popup while taking product buying for the sku's that is having IVA tax, Item discount and category discount.</description>
-   <name>TC_156</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bc4ba38a-5e1b-459b-afe5-544937f694b0</testCaseGuid>
-</TestCaseEntity>

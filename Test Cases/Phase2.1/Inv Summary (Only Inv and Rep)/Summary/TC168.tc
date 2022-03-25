@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC168:-To check the Comp Disc amount inside the info popup while taking invoice for the sku's that is having IVA tax and category discount.</description>
+   <name>TC168</name>
+   <tag></tag>
+   <comment>verifying screen title
+verifying the Comp Disc
+verifying  (-) sign indicated before the amount
+Calculation
+verifying the Comp Disc
+Tax Calculation
+verifying  TAX Percentage</comment>
+   <testCaseGuid>5db30df8-b0eb-41b7-ba49-4d627d0595ef</testCaseGuid>
+</TestCaseEntity>

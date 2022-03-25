@@ -39,13 +39,6 @@ Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Replacement Qty
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/ToTravelToDeliverySummaryScreen'), [:], FailureHandling.STOP_ON_FAILURE)
 
-//GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
-//
-//Mobile.verifyMatch(null, null, false, FailureHandling.STOP_ON_FAILURE)
-//
-//Mobile.verifyMatch(null, null, false, FailureHandling.STOP_ON_FAILURE)
-//
-//Mobile.verifyMatch(null, null, false, FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), findTestData('Phase2.1/TY_04/Phase2.1_Sheet3').getValue(
@@ -93,7 +86,9 @@ Mobile.delay(2)
 
 println(count1)
 
-Mobile.verifyNotEqual(count, count1, FailureHandling.STOP_ON_FAILURE)
+//Mobile.verifyNotEqual(count, count1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyLessThan(count, count1, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
 	[('testCaseName') : 'TC_ID_145'], FailureHandling.STOP_ON_FAILURE)

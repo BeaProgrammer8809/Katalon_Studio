@@ -19,8 +19,7 @@ Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Bu
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
-Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/TY_11/TestData').getValue(
-		3, 20), 0)
+Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/Common_Data/CommonData').getValue('ProductName', 42), 0)
 
 Mobile.waitForElementPresent(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Returns_Edit_Text'), 5)
 
@@ -46,21 +45,51 @@ def pieces = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISumm
 def UnitPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'),
 	0)
 
-def SKUGrossAmount = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
+def returnValue = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'),
 	0)
 
+def totalPrice = Double.parseDouble(UnitPrice) * Double.parseDouble(returnValue)
 
-def TotalPrice = Integer.parseInt(pieces) * Float.parseFloat( UnitPrice)
+def taxIEPS=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS_IVA'(totalPrice)
+
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue('IEPS%', 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(taxIEPS, totalPrice)
+
+expTaxPercentage = expTaxPercentage.toString()
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println('println "Tax IEPS and IVA is applied for sku"')
+
+def value1 = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+
+value = Double.parseDouble(value1)
+
+
+
+def GrossAmt1 = Integer.parseInt(pieces) * Float.parseFloat( UnitPrice)
 
 DecimalFormat df = new DecimalFormat('0.00')
 
-TotalPrice = df.format(TotalPrice)
+GrossAmt2 = df.format(GrossAmt1)
 
-println(TotalPrice)
+println(GrossAmt2)
 
-def TotalDisc1 = Double.parseDouble(SKUGrossAmount) - Double.parseDouble (TotalPrice)
+GrossAmt = Double.parseDouble (GrossAmt2)
 
-DecimalFormat df1 = new DecimalFormat('0')
+
+
+'sku having no item discount and 10% category discount '
+def ItemDisc = CustomKeywords.'com.ty.keywords.MobileKeywords.itemNil'(GrossAmt)
+
+secondGrossAmt = (GrossAmt - ItemDisc)
+
+def CatDisc = CustomKeywords.'com.ty.keywords.MobileKeywords.category10_Percent'(secondGrossAmt)
+
+def TotalDisc1 = ItemDisc + CatDisc
+
+DecimalFormat df1 = new DecimalFormat('0.00')
 
 TotalDisc = df1.format(TotalDisc1)
 
@@ -70,26 +99,12 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
 def ActualCompDiscount = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),
 	0)
-ActualCompDiscount=ActualCompDiscount.substring(2,3)
+splitDisc = ActualCompDiscount.split(' ')
+
+ActualCompDiscount = (splitDisc[1])
 
 Mobile.verifyEqual(TotalDisc, ActualCompDiscount, FailureHandling.STOP_ON_FAILURE)
 
-def actualOrderValueForSKU = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'),
-	0)
-
-def totalPrice=Double.parseDouble(SKUGrossAmount)
-
-double tax = Double.parseDouble(actualOrderValueForSKU) - totalPrice
-
-def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
-
-def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax,totalPrice)
-
-expTaxPercentage = expTaxPercentage.toString()
-
-Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.OPTIONAL)
-
-println "Tax IEPS and IVA is applied for sku"
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC188_SplitPopUP'], FailureHandling.STOP_ON_FAILURE)
 

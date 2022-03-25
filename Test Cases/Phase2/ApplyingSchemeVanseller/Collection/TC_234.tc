@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_234
+
+To check the Select Cheque Type dropdown when scheme is applied</description>
+   <name>TC_234</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba04ede4-6c77-48d3-8ce8-9de68fead733</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_049 : To Check whether a popup is opens when tap on Total Piece</description>
+   <name>TC_049</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab407add-ef98-4c9c-8635-36b83e583fd9</testCaseGuid>
+</TestCaseEntity>

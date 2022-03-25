@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC104 :</description>
+   <description>TC104: To check while doing product buying for split group sku's that is having both IVA and IEPS taxes but not having any discounts,whether the onsite invoice is getting success and UUID is generated</description>
    <name>TC104</name>
    <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7ee1f484-ccf9-4f0b-88bd-b746729865ee</testCaseGuid>
+   <comment>Verifyed the status and UUID generated 
+Verifying status as success</comment>
+   <testCaseGuid>e902ddb2-4d0a-4184-b333-898a3cf459aa</testCaseGuid>
 </TestCaseEntity>

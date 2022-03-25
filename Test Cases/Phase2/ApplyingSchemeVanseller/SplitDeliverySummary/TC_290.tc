@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_290 - To check the Stock Delivered qty displayed when scheme is applied</description>
+   <name>TC_290</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c696a161-c387-404d-8287-40a228e9c330</testCaseGuid>
+</TestCaseEntity>

@@ -156,9 +156,8 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup0
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
 
-Mobile.checkElement(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
-
-Mobile.checkElement(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
+Mobile.verifyElementVisible(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0 ,FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0 ,FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_069'], 
     FailureHandling.STOP_ON_FAILURE)

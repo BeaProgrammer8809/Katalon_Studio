@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>This Test case used to captute Screenshot</description>
-   <name>Screenshot</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>53413b64-13f0-4fee-af7d-be4631ce43c6</testCaseGuid>
-</TestCaseEntity>

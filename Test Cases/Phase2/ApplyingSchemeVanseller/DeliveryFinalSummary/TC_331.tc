@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_331 - To check whether able to generate invoice when scheme buy and get sku's that are added in barcel legal entity invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC_331</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2d8ee556-4bb5-4d90-bb22-6de541434f4e</testCaseGuid>
+</TestCaseEntity>

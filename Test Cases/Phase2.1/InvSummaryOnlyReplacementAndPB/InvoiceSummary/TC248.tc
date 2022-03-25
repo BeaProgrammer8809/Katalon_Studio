@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC248 : To check the Total amount inside the info popup while taking replacement for the sku's that is not having any discounts and taxes</description>
+   <name>TC248</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f939d963-3e21-415d-a35e-a47f6fd08fec</testCaseGuid>
+</TestCaseEntity>

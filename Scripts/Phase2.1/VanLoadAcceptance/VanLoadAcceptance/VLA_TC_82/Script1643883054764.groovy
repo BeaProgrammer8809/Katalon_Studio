@@ -54,14 +54,15 @@ Mobile.verifyElementVisible(findTestObject('Phase 1.1/Resource3/Order and Invoic
 Mobile.tap(findTestObject('Phase 1.1/Resource3/Order and Invoice/Trade Coverage/Store Profile Screen/Profile_Start Visit'), 
     0)
 
-def actualText = Mobile.getText(findTestObject('Object Repository/Phase2/BIStoreScreen01/VanLoadAcceptamceIsNotDone_PopupTitle'), 
+def actualText = Mobile.getText(findTestObject('Phase2/BIStoreScreen01/PopupTextview- VanLoadAcceptanceIsNotDoneForPendingRequest'), 
     0)
 
 def ExpectedText = findTestData('Phase2.1/TY_14/Testdata').getValue('Data1', 78)
 
 Mobile.verifyMatch(actualText, ExpectedText, false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/VanLoadAcceptance/VanLoadAcceptance/Screenshot'), [('testCaseName') : 'VLA_TC_82'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/VanLoadAcceptance/VanLoadAcceptance/Screenshot'), [('testCaseName') : 'VLA_TC_82'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

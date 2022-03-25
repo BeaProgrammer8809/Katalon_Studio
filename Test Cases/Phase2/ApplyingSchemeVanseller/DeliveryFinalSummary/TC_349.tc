@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_349 - Check whether able to navigate from Delivery split summary to Delivery final summary screen without entering any qty</description>
+   <name>TC_349</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>edff94c8-d0e0-47c0-b6f8-34eab7920f25</testCaseGuid>
+</TestCaseEntity>

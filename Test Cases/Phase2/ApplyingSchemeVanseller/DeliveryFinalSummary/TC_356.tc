@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_356:To check the split name displayed for scheme buy sku in delivery final summary,after entering all the stock delivered qty in Extra invoice for scheme buy sku(scheme buy sku is added in split group and get sku from bimbo company and not in group)</description>
+   <name>TC_356</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>862a0702-bcb3-4bf8-b431-2253f715a453</testCaseGuid>
+</TestCaseEntity>

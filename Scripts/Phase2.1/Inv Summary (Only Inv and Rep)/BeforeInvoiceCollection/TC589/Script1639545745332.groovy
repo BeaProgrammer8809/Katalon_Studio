@@ -106,7 +106,7 @@ Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/B
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Submit_Button'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_589'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/BeforeInvoiceCollection/Screenshot'), [('testCaseName') : 'TC_589'], FailureHandling.STOP_ON_FAILURE)
 
 AppiumDriver driver = MobileDriverFactory.getDriver()
 

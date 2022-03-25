@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_074:To check the total Value calculation while taking replacement for the sku's that is having only tax  IEPS but not having any discounts.</description>
-   <name>TC_074</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1bfd107b-6f9e-412b-9690-106c7d1137ee</testCaseGuid>
-</TestCaseEntity>

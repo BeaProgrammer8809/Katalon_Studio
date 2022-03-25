@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_327:-o verify whether able to apply amount in all modes in transaction. [Collection Before Invoice]</description>
-   <name>TC_327</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9882c6c0-bbc3-493f-8f8a-c05854622a21</testCaseGuid>
-</TestCaseEntity>

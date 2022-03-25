@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 180 :To check while doing invoice ,replacement and product buying for no group sku's but same company sku's,whether the product buying amount is adjusted in invoice amount</description>
+   <name>TC 180</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c7034e0d-705e-41a9-9e8a-d9a10bdc3c88</testCaseGuid>
+</TestCaseEntity>

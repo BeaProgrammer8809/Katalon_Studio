@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC523:-To check the legal entity name in collection payment screen for multi org while doing invoice for bimbo sku</description>
+   <name>TC523</name>
+   <tag></tag>
+   <comment>Verifying the payment screen
+Legal entity name should be bimbo</comment>
+   <testCaseGuid>d00346a3-fc45-41d3-be49-07df43bdad19</testCaseGuid>
+</TestCaseEntity>

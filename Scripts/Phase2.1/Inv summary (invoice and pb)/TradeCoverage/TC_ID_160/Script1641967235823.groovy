@@ -91,7 +91,7 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCov
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_160_Expected_Values'], FailureHandling.STOP_ON_FAILURE)
 
-def Order_Value = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'),0)
+def Actual_Order_Value = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'),0)
 Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_160_Amount_Split_PopUp'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
@@ -111,18 +111,27 @@ double Discount = ActualTotalPrice - Double.parseDouble(TotalOrderValue)
 println('Discount for sku1 is ' + Discount)
 
 //Tax = Value - Order Value
-double tax = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
-println('Tax amount applied for this product is ' + tax)
+double tax_value = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
+println('Tax amount applied for this product is ' + tax_value)
 
-//Order_Value
-def OrderValue = ActualTotalPrice + tax
-println OrderValue
+def totalSum = Double.parseDouble(TotalOrderValue)
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(19, 1)
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
 
-//Product Buying is not considering the Gross/Total calculation. Total Price is calculated for Invoice alone.
-def Expected_Value = OrderValue - Discount
+//Verification to check the Tax percentage for the SKU
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println('Tax IVA is applied for sku')
+
+def Expected_Value = Actual_Order_Value - Discount
 println Expected_Value
 
-Mobile.verifyEqual(Actual_Value_Amt, Expected_Value, FailureHandling.STOP_ON_FAILURE)
+//Order_Value
+def Expected_OrderValue = ActualTotalPrice + tax_value
+println Expected_OrderValue
+
+//Verification to check that Order Value = Sum of  (Gross amount against each sku + Tax (IVA) amount against each sku)
+Mobile.verifyEqual(Actual_Order_Value, Expected_OrderValue, FailureHandling.STOP_ON_FAILURE)
 
 //Sales addtion
 def Actual_Sales_Return= Integer.parseInt(Actual_Sales_Return1)+ Integer.parseInt(Actual_Sales_Return2)

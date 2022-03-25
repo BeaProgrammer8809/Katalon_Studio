@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_337 - To check whether only invoiced sku's displaying in delivery split summary screen when scheme is applied for the invoice</description>
+   <name>TC_337</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>94d8d7da-7c79-4c02-b36c-d2ae7163d771</testCaseGuid>
+</TestCaseEntity>

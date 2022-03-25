@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC548 - To verify Pesito commission ‘3’ is not showing in Efectivo collection mode while user switch from Pesito credit mode without clearing Efectivo value and come back to Efectivo mode .
+
+Pesito commission ‘3’ should automatically show in Efectivo collection type while user granting full amount in pesito mode</description>
+   <name>TC548</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4e815d1d-20dd-4f81-b1ea-114dfc38c9ca</testCaseGuid>
+</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC510:-To check the entity name and folio type displayed inside Folio no popup if only invoice is taken against Ricolino sku's</description>
-   <name>TC_510</name>
-   <tag></tag>
-   <comment>Verifying the Legal Entity name
- Folio no field should be displayed</comment>
-   <testCaseGuid>ccfb2e1c-33f6-4fbb-8fe2-ec90155940a7</testCaseGuid>
-</TestCaseEntity>

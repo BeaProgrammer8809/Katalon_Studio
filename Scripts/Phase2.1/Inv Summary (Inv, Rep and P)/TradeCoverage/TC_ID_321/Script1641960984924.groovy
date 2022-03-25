@@ -1,20 +1,14 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
 import java.text.DecimalFormat as DecimalFormat
+
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.util.KeywordUtil
+
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4003'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -47,42 +41,6 @@ def Invoice_Qty = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen0
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
-Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
-
-GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').getValue(6, 16)
-
-Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
-
-Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
-
-GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(17, 1)
-
-GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').getValue(17, 3)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Non_Salable_DD_Option'), 0)
-
-GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text'), 0)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeypad01/Correction_Button'), 0)
-
-GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
-
-def Actual_Sales_Return = Mobile.getText(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text'), 
-    0)
-
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_321'], 
-    FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
-
 Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 def Total_Value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
@@ -96,50 +54,53 @@ def Return_Value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/
 
 def Price_Value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BuySchemeDetails/Buy_Price_ValueView'), 0)
 
+def TotalOrderValue = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BuySchemeDetails/Buy_Price_ValueView'), 0)
+def Actual_Value_Amt = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
-def Comp_Discount = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'), 
-    0)
-
+def Comp_Discount = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),0)
 def splitTotal = Comp_Discount.split(' ')
-
 Comp_Discount = (splitTotal[1])
 
-println(Comp_Discount)
-
-DecimalFormat df = new DecimalFormat('0.00')
-
-Comp_Discount = df.format(Double.parseDouble(Comp_Discount))
-
-println(Comp_Discount)
+KeywordUtil.logInfo ("${Comp_Discount}")
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_318'],FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
 
-def Product_Buying_Amount = Double.parseDouble(U_Price_Value) * Double.parseDouble(Pieces_Value)
+//Total price value of an SKU
+def totalPrice =  Double.parseDouble(Pieces_Value) * Double.parseDouble(U_Price_Value)
+KeywordUtil.logInfo ("${totalPrice}")
 
-println(Product_Buying_Amount)
+//Item discount
+//def ItemdiscountinWeb = findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(7, 256)
+def ItemdiscountinWeb = findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(7, 94)
+KeywordUtil.logInfo ("${ItemdiscountinWeb}")
 
-def Tax_Diff_Amount = Double.parseDouble(Total_Value) - Double.parseDouble(Price_Value)
+//Category Discount
+//def categorydiscountinWeb = findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(6, 256)
+def categorydiscountinWeb = findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(6, 94)
+KeywordUtil.logInfo ("${categorydiscountinWeb}")
 
-//def Tax_Diff_Amount = Total_Value - Price_Value
-println(Tax_Diff_Amount)
+def ItemDiscount =  totalPrice * (Double.parseDouble(ItemdiscountinWeb)/100)
+KeywordUtil.logInfo ("${ItemDiscount}")
 
-Mobile.verifyNotMatch(Price_Value, Total_Value, false, FailureHandling.STOP_ON_FAILURE)
+def PriceafterItemDiscount = totalPrice - ItemDiscount
+KeywordUtil.logInfo ("${PriceafterItemDiscount}")
 
-println('IEPS  tax amount is added in line item total price of the sku')
+def CategoryDiscount = PriceafterItemDiscount * (Double.parseDouble(categorydiscountinWeb)/100)
+KeywordUtil.logInfo ("${CategoryDiscount}")
 
-//def Actual_Discount = Double.parseDouble(Total_Value) - Double.parseDouble(Product_Buying_Amount)
-def Actual_Discount = Product_Buying_Amount - Double.parseDouble(Price_Value)
-//
-DecimalFormat df1 = new DecimalFormat('0.00')
-//
-Actual_Discount = df1.format(Actual_Discount)
+//Actual Category and Item Discount calculation
+def PriceAfterAddingDiscount = PriceafterItemDiscount - CategoryDiscount
+def TotalDiscount = ItemDiscount + CategoryDiscount
 
-println(Actual_Discount)
+KeywordUtil.logInfo ("${TotalDiscount}")
 
-Mobile.verifyMatch(Comp_Discount, Actual_Discount, false, FailureHandling.STOP_ON_FAILURE)
+DecimalFormat df = new DecimalFormat('0.00')
+TotalDiscount=df.format(TotalDiscount)
 
-println('Discount displayed correctly')
+//Mobile.verifyMatch(TotalDiscount.toString(), Comp_Discount, false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
@@ -150,9 +111,6 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterPaymentPopup01/P
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Submit_Button'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), findTestData(
-        'Phase2.1/TY_04/Phase2.1_Sheet2').getValue(10, 59), 0)
-
-Mobile.setText(findTestObject('Object Repository/Phase2/BIEnterTheFolioNoPopup01/FolioProdBuy_EditText'), findTestData(
         'Phase2.1/TY_04/Phase2.1_Sheet2').getValue(10, 59), 0)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
@@ -172,8 +130,6 @@ println(Invoice_Sheet_Text)
 
 def IEPS = findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(16, 59)
 
-//def Value = findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(17, 56)
-//def IEPS_Value = IEPS+Value
 println(IEPS)
 
 boolean Actual_Number = Invoice_Sheet_Text.contains(IEPS)
@@ -183,8 +139,15 @@ println(Actual_Number)
 //Verification of Folio number in Print Preview screen
  Mobile.verifyMatch(Actual_Number.toString(), findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(20, 59), false, 
     FailureHandling.STOP_ON_FAILURE)
-  
+
 println('IEPS Tax is not added and not displayed in IEPS Tax section')
+
+boolean Actual_Number1 = Invoice_Sheet_Text.contains(TotalDiscount)
+println Actual_Number1
+
+//Verification to check the Discount in Print Preview screen is displayed same as in Calculated amount
+Mobile.verifyMatch(Actual_Number1.toString(),findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(20, 56), false,FailureHandling.STOP_ON_FAILURE)
+println('Discount is displayed in Discount section')
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_321'], 
     FailureHandling.STOP_ON_FAILURE)

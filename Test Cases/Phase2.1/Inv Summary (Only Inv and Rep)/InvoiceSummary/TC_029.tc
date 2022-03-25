@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_029 - Check the default display of the Salable tap</description>
-   <name>TC_029</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3731dbb5-9d4c-4f90-a478-a14437a33605</testCaseGuid>
-</TestCaseEntity>

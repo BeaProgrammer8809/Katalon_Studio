@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 229 - To check whether able to select branch from dropdown</description>
+   <name>TC 229</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3c1a455-a00a-40d1-b69f-c29002b3f39d</testCaseGuid>
+</TestCaseEntity>

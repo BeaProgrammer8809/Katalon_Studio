@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_108 - To check rejection field is editable in vanload acceptance screen</description>
+   <name>VLA_TC_108</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aadf3dd5-739c-48ae-8714-a61ab98c1472</testCaseGuid>
+</TestCaseEntity>

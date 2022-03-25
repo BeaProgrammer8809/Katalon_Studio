@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC102 : To check the Value field  and total qty calculation while taking product buying against each sku's that is having only tax IVA but not having any discounts</description>
+   <name>TC102</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3886660c-3997-4cdf-8d23-e76e94f0545a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_210:-This TC is not a part of Phase1(Discount related)
+
+To check the total price calculation in invoice summary screen while taking invoice for the scheme sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
+   <name>TC_210</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3906d386-f207-4272-8f26-6e0065ef7cf5</testCaseGuid>
+</TestCaseEntity>

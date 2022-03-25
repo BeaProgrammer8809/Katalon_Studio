@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_309 - To check the lines qty displayed when scheme buy and get sku is added in barcel legal entity invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC_309</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>48d94a21-01ef-4bf4-9ae0-b288a98c2c88</testCaseGuid>
+</TestCaseEntity>

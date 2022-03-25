@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.TextView' and (contains(text(), '0') or contains(., '0')) and @resource-id = '${GlobalVariable.Package}:id/rejectqty']</value>
+         <value>//*[@class = 'android.widget.TextView' and (contains(text(), '') or contains(., '')) and @resource-id = '${GlobalVariable.Package}:id/rejectqty']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

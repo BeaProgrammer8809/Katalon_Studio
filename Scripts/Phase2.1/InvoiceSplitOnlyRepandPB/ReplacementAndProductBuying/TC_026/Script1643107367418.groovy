@@ -34,6 +34,7 @@ Mobile.setText(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen0
 Mobile.verifyElementNotVisible(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Returns_Edit_Text'), 0, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyElementNotExist(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Returns_Edit_Text'), 0, FailureHandling.STOP_ON_FAILURE)
 
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_026'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
@@ -43,7 +44,7 @@ Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIProductBuyi
 
 Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/No_Items_Added_TextFeild'), findTestData('Phase2.1/TY_05/Collection').getValue(3, 57), FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_026'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_026_Summary'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

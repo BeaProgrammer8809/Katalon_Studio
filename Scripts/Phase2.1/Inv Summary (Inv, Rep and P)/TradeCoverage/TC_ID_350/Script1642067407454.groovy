@@ -81,7 +81,7 @@ def Tax_Diff_Amount = Double.parseDouble(Total_Value) - Double.parseDouble(Price
 
 println(Tax_Diff_Amount)
 
-Mobile.verifyNotMatch(Price_Value, Total_Value, false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyGreaterThan(Total_Value, Price_Value,FailureHandling.STOP_ON_FAILURE)
 
 println('IEPS  tax amount is added in line item total price of the sku and IEPS tax amount is not added retailer price (SRP)of the sku')
 

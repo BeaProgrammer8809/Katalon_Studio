@@ -75,28 +75,38 @@ Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Invoice Summary/Screenshot'), [('testCaseName') : 'TC320(1)'], 
+Mobile.callTestCase(findTestCase('null'), [('testCaseName') : 'TC320(1)'], 
     FailureHandling.STOP_ON_FAILURE)
 
 def UUIDMsg = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
 
-def UUIDNo = UUIDMsg.substring(41)
+def UUIDNo = UUIDMsg.substring(42)
 
 def length = UUIDNo.length()
 
-Mobile.verifyMatch(length, findTestData('Phase2.1/TY_06/Invoice_Summary/InvoiceSummary').getValue(3, 1), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(length.toString(), findTestData('Phase2.1/TY_06/Invoice_Summary/InvoiceSummary').getValue(3, 1), false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
 
-Mobile.verifyElementExist(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
+Mobile.verifyElementExist(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
+Mobile.verifyElementVisible(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementText(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), findTestData('Phase2.1/TY_06/Invoice_Summary/InvoiceSummary').getValue(
         2, 1), FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC320(2)'], 
+Mobile.callTestCase(findTestCase('null'), [('testCaseName') : 'TC320(2)'], 
     FailureHandling.STOP_ON_FAILURE)
+
+def invSheet = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+def status = findTestData('Phase2.1/TY_06/Invoice_Summary/InvoiceSummary').getValue(4, 1)
+
+boolean res=invSheet.contains(status)
+
+Mobile.comment('Verifying status as success')
+
+Mobile.verifyMatch(res.toString(), findTestData('Phase2.1/TY_06/Invoice_Summary/InvoiceSummary').getValue(5, 1), false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

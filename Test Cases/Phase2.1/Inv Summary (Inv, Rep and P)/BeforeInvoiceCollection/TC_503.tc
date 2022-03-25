@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_503:- To verify whether able to provide new “RTGS ref no” after deleting the payment.[Collection Before Invoice]</description>
-   <name>TC_503</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b5f738da-0b49-4a6c-8514-edc725af90a2</testCaseGuid>
-</TestCaseEntity>

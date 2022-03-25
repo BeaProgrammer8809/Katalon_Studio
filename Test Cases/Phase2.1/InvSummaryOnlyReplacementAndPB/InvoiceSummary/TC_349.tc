@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_349:- To check while doing  product buying and replacement for same sku's that is having IVA tax, Item discount and category discount,whether the onsite invoice is getting success and UUID is generated</description>
-   <name>TC_349</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4a1afb66-3aee-4da0-b018-28d7d1a5786b</testCaseGuid>
-</TestCaseEntity>

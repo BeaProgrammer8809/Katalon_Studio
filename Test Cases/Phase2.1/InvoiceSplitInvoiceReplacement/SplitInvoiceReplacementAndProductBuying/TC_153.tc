@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_153
-To check whether onsite invoice is getting failure while doing only product buying for interfactura/Ecommerio customer if no internet</description>
-   <name>TC_153</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d571aa3e-15cb-4bfc-8c02-e5e3fe682bfa</testCaseGuid>
-</TestCaseEntity>

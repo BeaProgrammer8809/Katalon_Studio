@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_01 - To check whether able to navigate to order and invoice screen</description>
+   <description>TC01 - To check whether able to navigate to order and invoice screen</description>
    <name>TC01</name>
    <tag></tag>
    <comment></comment>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC444 - To check whether able to enter Total paid amount in Transferencias Electronicas mode after switching from Efectivo mode</description>
-   <name>TC444</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ba6a110a-2464-4694-88d1-e090cf856aeb</testCaseGuid>
-</TestCaseEntity>

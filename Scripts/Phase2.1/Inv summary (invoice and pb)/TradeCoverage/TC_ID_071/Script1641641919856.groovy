@@ -130,12 +130,28 @@ actualTotalDiscountForSKU = (splitDisc[1])
 
 println('Actual composite discount for sku is ' + actualTotalDiscountForSKU)
 
-def actualOrderValueForSKU = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'),
-	0)
+def actualOrderValueForSKU = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 
+    0)
 
 println('Actual order value is ' + actualOrderValueForSKU)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
+
+def GrossAmt = Double.parseDouble(uPriceSKU1) * Double.parseDouble(invQty)
+
+def itemDiscount = CustomKeywords.'com.ty.keywords.MobileKeywords.itemNil'(GrossAmt)
+
+def secondGrossAmt = GrossAmt - itemDiscount
+
+def catDiscount = CustomKeywords.'com.ty.keywords.MobileKeywords.categoryNil'(secondGrossAmt)
+
+def totalPrice = secondGrossAmt - catDiscount
+
+def totalDiscount = itemDiscount + catDiscount
+
+Mobile.verifyEqual(totalDiscount, actualTotalDiscountForSKU, FailureHandling.STOP_ON_FAILURE)
+
+println('Discount is as expected')
 
 'Total price=(U.price*Piece)-composite Discount'
 def expectedTotalPrice = (Double.parseDouble(uPriceSKU1) * Double.parseDouble(invQty)) - Double.parseDouble(actualTotalDiscountForSKU)
@@ -146,17 +162,27 @@ def actualValue = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/V
 
 println('Actual value price is ' + actualValue)
 
-def tax=Double.parseDouble(actualOrderValueForSKU)-(Double.parseDouble(uPriceSKU1) * Double.parseDouble(invQty))
+def totalSum = expectedTotalPrice
+
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
 
 'Value = Total price against invoiced sku + IVA tax amount against invoiced sku + IEPS tax amount against invoiced sku'
-def expectedValue=expectedTotalPrice+tax
+def expectedValue = expectedTotalPrice + tax
 
 Mobile.verifyEqual(actualValue, expectedValue, FailureHandling.STOP_ON_FAILURE)
 
 println('Displaying value price as expected w.r.t formula and product buying qty is not included in total price calculation')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), 
-    [('testCaseName') : 'TC_ID_070_SummaryScreen'], FailureHandling.STOP_ON_FAILURE)
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax,totalSum)
+
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+
+println "Tax IEPS is applied for sku"
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_071_SummaryScreen'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/PrintPreticket_Icon'), 0)
 
@@ -164,10 +190,11 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Pre_T
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/PreTicket_Created_Successfully_Ok_Button'), 0)
 
-Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 
+    0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'),
-	[('testCaseName') : 'TC_ID_070_PrintScreen'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_071_PrintScreen'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

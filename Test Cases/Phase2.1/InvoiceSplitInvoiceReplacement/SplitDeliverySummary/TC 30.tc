@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 30 : To check the sku's qty displayed after taking invoice, replacement and pb against each ricolino sku's that are in invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC 30</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd67ce9a-5df6-46be-bd63-5a4c9c4cc4ef</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_27:To Check whether Pop up msg is coming like &quot; it will sync immediately.Do you want to continue? &quot;</description>
+   <name>SP_TC_27</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f46d8daa-e5ee-4f85-b8e4-4f1f40d4a94d</testCaseGuid>
+</TestCaseEntity>

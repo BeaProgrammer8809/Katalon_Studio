@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC491:- To check for collection option is not coming for credit cutomer invoices</description>
+   <name>TC491</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a72713bf-abbe-4083-8323-a118f3763457</testCaseGuid>
+</TestCaseEntity>

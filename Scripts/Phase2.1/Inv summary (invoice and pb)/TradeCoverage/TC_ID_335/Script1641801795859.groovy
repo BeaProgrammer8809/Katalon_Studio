@@ -54,22 +54,28 @@ println(invamt)
 println(invamt.length())
 
 for (int i = 0; i < invamt.length(); i++) {
-    Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 0)
 
 for (int i = 0; i < invamt.length(); i++) {
-    Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
 
+double TotalAmount = Double.parseDouble(invamt)
 
-Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/5_NumButton'), 0)
+def AmountGreaterThanInvoiceAmount  = TotalAmount + 5
+
+Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/Amount_EditText'), AmountGreaterThanInvoiceAmount .toString(),
+	0)
+
+/*Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/5_NumButton'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/2_NumButton'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/6_NumButton'), 0)
-
+*/
 
 AppiumDriver driver = MobileDriverFactory.getDriver()
 
@@ -79,7 +85,7 @@ println("$actualtoastmessage")
 
 def Expectedtoastmesaage = findTestData('Phase2.1/TY_01/Test_Data').getValue(4, 81)
 
-Mobile.verifyEqual(actualtoastmessage, Expectedtoastmesaage, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(actualtoastmessage, Expectedtoastmesaage, false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BICollectionScreen01/Collection_Title'), 0, FailureHandling.STOP_ON_FAILURE)
 
@@ -87,8 +93,8 @@ Mobile.verifyElementExist(findTestObject('Phase2/BICollectionScreen01/Collection
 
 println "Amount exceeds the balance and please check error message is displayed  while submitting with greater than invoice amount and collection popup is in opened"
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_335'], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_335'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

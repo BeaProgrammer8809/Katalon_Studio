@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC391 - To check whether able to generate the invoice for credit retailer while doing replacement for bimbo/barcel/ricolino sku if folio number is not given</description>
+   <description>TC391: To check whether able to generate the invoice for credit retailer while doing replacement for bimbo/barcel/ricolino sku if folio number is not given</description>
    <name>TC391</name>
    <tag></tag>
    <comment></comment>

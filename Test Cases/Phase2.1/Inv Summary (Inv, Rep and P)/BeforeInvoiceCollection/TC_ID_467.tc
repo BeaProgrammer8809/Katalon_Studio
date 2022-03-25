@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_467
+:-To verify “Pesito Commission $3 should pay in Efectivo” Toast message is display if user try to pay pesito commission amount with remaining invoice amount in Cheque mode with remaining invoice amount.</description>
+   <name>TC_ID_467</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>391f8a95-4062-4bad-a452-2b2fc450fe9d</testCaseGuid>
+</TestCaseEntity>

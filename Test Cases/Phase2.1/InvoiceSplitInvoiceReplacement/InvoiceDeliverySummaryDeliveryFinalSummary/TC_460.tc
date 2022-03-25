@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_460:- To verify “Pesito Commission $3 should pay in Efectivo” Toast message is display if user pay ‘$3’ in Cheque mode and remaining amount in Cash mode with value greater than or equal to 3.</description>
-   <name>TC_460</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ae616157-c8fe-46b0-abf7-01d3089b97c5</testCaseGuid>
-</TestCaseEntity>

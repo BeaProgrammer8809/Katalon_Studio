@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 107 :To check the amount displayed after entering partial stock delivered qty in Extra invoice for bimbo's sku that are not in invoice split group</description>
+   <name>TC 107</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e09cfe87-8821-4622-b06b-fccc0f3394d2</testCaseGuid>
+</TestCaseEntity>

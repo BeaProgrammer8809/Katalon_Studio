@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC220: To check the Total amount inside the info popup while taking invoice for the sku's that is having IVA, IEPS taxes and Category discount.</description>
+   <name>TC220</name>
+   <tag></tag>
+   <comment>verifying CompDisc_Value
+verifying OrderValue_Value</comment>
+   <testCaseGuid>74d0790e-56a9-4329-b1c2-af2113389c28</testCaseGuid>
+</TestCaseEntity>

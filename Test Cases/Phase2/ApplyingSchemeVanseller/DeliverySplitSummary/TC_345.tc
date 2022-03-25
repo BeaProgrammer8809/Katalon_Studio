@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check while enter invoice count>7,whether able to navigate to delivery split summary screen</description>
+   <name>TC_345</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9326875-0444-411b-95c6-7dc413b0731f</testCaseGuid>
+</TestCaseEntity>

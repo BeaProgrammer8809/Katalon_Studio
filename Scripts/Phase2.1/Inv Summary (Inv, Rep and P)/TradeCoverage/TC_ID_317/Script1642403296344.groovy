@@ -17,7 +17,7 @@ GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData_03').g
 
 GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
-GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 19)
+GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 18)
 
 Mobile.setText(findTestObject('Object Repository/Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName, 
     0)
@@ -77,15 +77,11 @@ def expectedTotalPrice = (Double.parseDouble(uPrice) * Double.parseDouble(pieceQ
 
 expectedTotalPrice=df.format(expectedTotalPrice)
 
-def discount=findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 11)
+def itemDisc=findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 5)
 
-discount=Double.parseDouble(discount)
-
-def actualTotalDiscountForSKU=Double.parseDouble(expectedTotalPrice) * (discount/100)
+def actualTotalDiscountForSKU=(Double.parseDouble(expectedTotalPrice)*Double.parseDouble(itemDisc)/100)
 
 actualTotalDiscountForSKU=df.format(actualTotalDiscountForSKU)
-
-println "Discount for sku is "+actualTotalDiscountForSKU
 
 def discountedPrice=Double.parseDouble(expectedTotalPrice) - Double.parseDouble(actualTotalDiscountForSKU)
 
@@ -147,6 +143,40 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
     0)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+def inv = Mobile.getText(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(inv)
+
+def taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 28)
+
+println(taxPercentage)
+
+def result = inv.contains(tax.toString())
+
+def expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 28)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS amount is not displayed in invoice screen as detail IEPS is enabled for retailer')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 28)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is not displayed in invoice screen as detail IEPS is enabled for retailer')
+
+discount=(actualTotalDiscountForSKU)
+
+result = inv.contains(discount)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('discount is displayed in invoice screen')
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_317_printScreen'], 
     FailureHandling.STOP_ON_FAILURE)

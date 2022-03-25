@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 295:To verify given folio number for the Interfractura retailer is accepts and generated the invoice with success status</description>
+   <name>TC 295</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c39f95d5-05ad-4c96-a5dc-af18b5e1c78d</testCaseGuid>
+</TestCaseEntity>

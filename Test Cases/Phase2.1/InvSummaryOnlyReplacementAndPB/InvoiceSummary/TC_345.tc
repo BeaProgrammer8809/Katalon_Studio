@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_345:- To check while doing product buying and replacement for different sku's that is having only tax IVA but not having any discounts,whether the onsite invoice is getting success and UUID is generated</description>
-   <name>TC_345</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9bca1784-35fa-436e-a6b7-8fa55d217cd1</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_080:To check the total Value calculation while taking replacement for the sku's that is having IVA tax and category discount.</description>
-   <name>TC_080</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9f235517-35cd-47a2-b6e3-af819c6099b9</testCaseGuid>
-</TestCaseEntity>

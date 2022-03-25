@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_069:To check the total Value calculation while taking invoice for the sku's that is having IVA, IEPS taxes and Item, category discount.</description>
+   <name>TC_ID_069</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c67132ad-3a7e-4df4-883c-28197e572508</testCaseGuid>
+</TestCaseEntity>

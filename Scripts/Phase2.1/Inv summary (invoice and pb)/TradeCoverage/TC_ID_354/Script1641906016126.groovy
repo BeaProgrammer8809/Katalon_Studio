@@ -93,4 +93,10 @@ def CreditNote_Amt = Mobile.getText(findTestObject('Object Repository/Phase2/BIC
 
 println(CreditNote_Amt)
 
+//Mobile.verifyGreaterThan(PbAmt, IntAmt, FailureHandling.STOP_ON_FAILURE)
+
+println('When invoice amount is lesser than product buying amount then in collection screen by default amount will show in credit note section')
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_354'], FailureHandling.STOP_ON_FAILURE)
+
 Mobile.closeApplication()

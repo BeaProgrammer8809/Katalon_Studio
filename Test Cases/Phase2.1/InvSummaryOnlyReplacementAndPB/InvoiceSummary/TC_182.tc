@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_182 : To check the deductions (Comp Disc and Dist disc) amount inside the info popup while taking product buying for the sku's that is having only IEPS tax and Item discount.</description>
-   <name>TC_182</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4b3b67e5-c847-45ad-9abe-828f5590e9b9</testCaseGuid>
-</TestCaseEntity>

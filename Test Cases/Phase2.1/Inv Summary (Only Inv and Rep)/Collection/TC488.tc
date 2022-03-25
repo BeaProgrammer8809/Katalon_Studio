@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC488:- To check Pesito granted amount will be less than or equal to Pesito credit available</description>
+   <name>TC488</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc50e579-f62d-4bdd-80d8-895e43300f03</testCaseGuid>
+</TestCaseEntity>

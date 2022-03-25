@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 237 - To check whether able to Submit the invoice amount without entering Reference no</description>
+   <name>TC 237</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4691f4ae-ae2a-474c-9c4e-63217cbcabad</testCaseGuid>
+</TestCaseEntity>

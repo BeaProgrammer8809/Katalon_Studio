@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_257
+To check the Select Branch field when scheme is applied</description>
+   <name>TC_257</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>318439db-546c-4507-afe1-2667922dcd22</testCaseGuid>
+</TestCaseEntity>

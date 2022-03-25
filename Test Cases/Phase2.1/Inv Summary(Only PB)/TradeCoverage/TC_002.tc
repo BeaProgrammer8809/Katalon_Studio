@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC_002 - Verify the Element present under Summary Screen</description>
    <name>TC_002</name>
    <tag></tag>
    <comment></comment>

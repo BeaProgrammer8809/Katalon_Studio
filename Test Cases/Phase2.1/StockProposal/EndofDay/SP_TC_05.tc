@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_05 : To check stock proposal menu enabled or not
+</description>
+   <name>SP_TC_05</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b2ac2979-1420-4464-b8e6-27e00e42e824</testCaseGuid>
+</TestCaseEntity>

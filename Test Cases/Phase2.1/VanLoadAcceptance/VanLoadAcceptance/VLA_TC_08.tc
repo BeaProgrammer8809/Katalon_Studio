@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_08 : To verify “Please Select the Pending Previous Date for Acceptance” message pops-up , while user visit Van Load Acceptance Screen if there is record with Delivery date = Past Date and clicking back button</description>
+   <name>VLA_TC_08</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9aec8b28-146e-4ee7-92b4-c089b8cd9fa1</testCaseGuid>
+</TestCaseEntity>

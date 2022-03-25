@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_492:-To check collection screen is not applicable for wild card retailer</description>
-   <name>TC_492</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d6f20715-2936-45b9-a310-44b5a30efc29</testCaseGuid>
-</TestCaseEntity>

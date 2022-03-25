@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_032 - Check whether the field - SIH is editable in salable field</description>
-   <name>TC_032</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>df73aa9c-69ef-4f0d-aab3-6587dd2679cf</testCaseGuid>
-</TestCaseEntity>

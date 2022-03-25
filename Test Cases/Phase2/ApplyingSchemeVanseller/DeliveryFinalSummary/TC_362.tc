@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_362 - To check the sku's qty displayed for scheme buy and get sku in delivery final summay screen, after entering partial stock delivered qty in Extra invoice for scheme buy sku(scheme buy and get sku is added in split group)</description>
+   <name>TC_362</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abc62695-cdd3-4e85-bdf3-e716580cf868</testCaseGuid>
+</TestCaseEntity>

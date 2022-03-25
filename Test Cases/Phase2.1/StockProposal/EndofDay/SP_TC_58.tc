@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_58:To check Sku is coming with code and short description in Print</description>
+   <name>SP_TC_58</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b780f674-7281-48a4-96ec-c8023b948280</testCaseGuid>
+</TestCaseEntity>

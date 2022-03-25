@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 339:-To verify only invoice can be done for the retailer with RFC format as “&amp;&amp;&amp;&amp;YYMMDD&amp;&amp;&amp;”</description>
+   <name>TC 339</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7626fb4c-7f14-478b-a8b3-3fb0286be26d</testCaseGuid>
+</TestCaseEntity>

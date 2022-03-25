@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 81 - To check the split name displayed after entering all the stock delivered qty in Extra invoice for bimbo sku that are not in invoice split group</description>
+   <name>TC 81</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b1e94986-d598-4553-b168-38615af398a3</testCaseGuid>
+</TestCaseEntity>

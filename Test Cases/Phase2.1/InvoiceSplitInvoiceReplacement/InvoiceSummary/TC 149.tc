@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 149 - To check while doing invoice, replacement and product buying for same split group sku's that is having only discount (Category discount) but not having any taxes,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC 149</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e44792f3-9319-4356-89ab-8932f1573085</testCaseGuid>
+</TestCaseEntity>

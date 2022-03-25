@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_214:To check the Balance amount displayed in the Efectivo mode without changing the defaultly filled paid amount when scheme is applied</description>
+   <name>TC_214</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>083315bd-a323-448a-b6bf-9abf2a1cc61d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_33:To check whether when we click on print button in pop up msg then print is getting generated for stock proposal</description>
+   <name>SP_TC_33</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a78a05ea-1fba-4b61-be9d-8ac60e7308d7</testCaseGuid>
+</TestCaseEntity>

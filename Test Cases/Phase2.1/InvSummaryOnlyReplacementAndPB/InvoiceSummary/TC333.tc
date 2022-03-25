@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC333 - To check while doing product buying and replacement for same sku's that is having only tax  IEPS but not having any discounts,whether the onsite invoice is getting success and UUID is generated</description>
+   <description>TC333 : To check while doing product buying and replacement for same sku's that is having only tax  IEPS but not having any discounts,whether the onsite invoice is getting success and UUID is generated</description>
    <name>TC333</name>
    <tag></tag>
    <comment></comment>

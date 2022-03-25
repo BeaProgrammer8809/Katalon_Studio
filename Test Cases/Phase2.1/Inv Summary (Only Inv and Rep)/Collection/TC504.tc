@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC504:-To check whether able to delete the payment transactions in collection screen</description>
+   <name>TC504</name>
+   <tag></tag>
+   <comment>Verifying the popup message
+Verifying the Yes option
+verifying the cancel option
+Payment transaction should be deleted , edit option should be visible</comment>
+   <testCaseGuid>48262b44-fcaf-4e65-91f7-6f1fd994ea1b</testCaseGuid>
+</TestCaseEntity>

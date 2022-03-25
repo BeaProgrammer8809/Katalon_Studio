@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_203 : To check the total price calculation in invoice summary screen while taking invoice for the scheme sku's that is having IVA tax, Item discount and category discount.</description>
+   <name>TC_203</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8d008d0-13ee-496b-8d45-1639b5aa6268</testCaseGuid>
+</TestCaseEntity>

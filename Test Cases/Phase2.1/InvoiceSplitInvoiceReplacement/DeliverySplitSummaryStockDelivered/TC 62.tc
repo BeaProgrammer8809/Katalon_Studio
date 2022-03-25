@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 62 - To check the Stock delivered displayed after taking invoice, replacement and pb against each bimbo sku's that are not in invoice split group</description>
+   <name>TC 62</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2059829-349e-4ed5-b79c-807a20d9fb3b</testCaseGuid>
+</TestCaseEntity>

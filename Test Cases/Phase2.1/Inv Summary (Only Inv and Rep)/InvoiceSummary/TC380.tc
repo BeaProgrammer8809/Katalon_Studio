@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC380
-
-To check whether onsite invoice is getting failure for interfactura/Ekomercio customer if internet is not available while doing invoice and replacement for same sku</description>
+   <description>TC380 - To check whether onsite invoice is getting failure for interfactura/Ekomercio customer if internet is not available while doing invoice and replacement for same sku</description>
    <name>TC380</name>
    <tag></tag>
    <comment></comment>

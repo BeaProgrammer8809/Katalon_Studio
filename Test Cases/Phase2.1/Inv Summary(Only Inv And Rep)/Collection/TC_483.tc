@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_483:- To check whether able to collect the invoice amount in pesito and RTGS mode</description>
-   <name>TC_483</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3bf0c72e-fdbe-4f2a-8c15-feddf16a3db0</testCaseGuid>
-</TestCaseEntity>

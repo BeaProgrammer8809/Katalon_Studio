@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_14:-To check search option is working</description>
+   <name>SP_TC_14</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c337a2de-e413-4b40-81c9-9d62324e8c74</testCaseGuid>
+</TestCaseEntity>

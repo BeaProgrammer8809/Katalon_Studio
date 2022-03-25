@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_047:Check whether Less than or equal to Total piece is allowed to enter in the POPUP</description>
+   <name>TC_047</name>
+   <tag></tag>
+   <comment>Verifying Total piece quanity equal to pieces enter inside popup
+Verifying Total piece quanity less than pieces enter inside popup</comment>
+   <testCaseGuid>d1bef1ec-eaf3-4858-92c8-85b131bb6ed3</testCaseGuid>
+</TestCaseEntity>

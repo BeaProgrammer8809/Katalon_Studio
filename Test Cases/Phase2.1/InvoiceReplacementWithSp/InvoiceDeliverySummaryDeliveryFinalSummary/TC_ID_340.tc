@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_340
-To check when user click on back button in delivery summary screen then user naviagted to store activity screen and again if user click on order and invoice user directly naviagte to delivery summary screen</description>
+   <description>TC_ID_340:To check when user click on back button in delivery summary screen then user naviagted to store activity screen and again if user click on order and invoice user directly naviagte to delivery summary screen</description>
    <name>TC_ID_340</name>
    <tag></tag>
    <comment></comment>

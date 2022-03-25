@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_286 : - To check the legal entity while doing only replacement for bimbo products
-
-</description>
+   <description>TC286 : To check the legal entity while doing only replacement for bimbo products</description>
    <name>TC286</name>
    <tag></tag>
    <comment></comment>

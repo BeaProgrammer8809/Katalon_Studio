@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_02 - To check whether scheme description and promotion slab description is displaying</description>
+   <name>TC_02</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4a80a9f7-de3e-4499-8786-e3bb0ef9048b</testCaseGuid>
+</TestCaseEntity>

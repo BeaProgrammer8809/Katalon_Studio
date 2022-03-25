@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_16:-To check whether SRP is taking default price of sku</description>
+   <name>SP_TC_16</name>
+   <tag></tag>
+   <comment>Verifying the SRP Price as Default Price</comment>
+   <testCaseGuid>641a1bdb-59b5-4d72-900f-d6369d0704cd</testCaseGuid>
+</TestCaseEntity>

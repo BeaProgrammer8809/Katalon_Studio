@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 251 - To verify “Folio No” field is accepting the “_” Special Characters.</description>
+   <name>TC 251</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cf0f2d3b-68f4-482e-a03e-3f7ee55a6592</testCaseGuid>
+</TestCaseEntity>

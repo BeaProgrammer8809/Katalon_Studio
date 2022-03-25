@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>To check the Deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement and product buying for the sku's that is not having any discounts and taxes</description>
-   <name>TC_215</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>0105bac3-338d-4a2a-a55e-1c378805e440</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_322 - To check the sku's qty displayed when scheme buy and get sku is from barcel company and that are not in invoice split group (if one invoice split group is available)</description>
+   <name>TC_322</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aab50e54-1f13-46a8-bfa6-b2a2c5188d49</testCaseGuid>
+</TestCaseEntity>

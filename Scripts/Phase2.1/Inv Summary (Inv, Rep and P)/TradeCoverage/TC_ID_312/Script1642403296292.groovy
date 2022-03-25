@@ -115,7 +115,6 @@ println('unit price for sku is ' + uPrice2)
 
 def expectedTotalPrice2 = Double.parseDouble(uPrice2) * Double.parseDouble(pieceQty2)
 
-//DecimalFormat df = new DecimalFormat('0.00')
 expectedTotalPrice2 = df.format(expectedTotalPrice2)
 
 Mobile.verifyEqual(totalPrice2, expectedTotalPrice2, FailureHandling.STOP_ON_FAILURE)
@@ -229,10 +228,58 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
+def inv = Mobile.getText(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(inv)
+
+def tax = taxIEPS
+
+println(tax)
+
+def taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 28)
+
+println(taxPercentage)
+
+def result = inv.contains(tax.toString())
+
+def expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 28)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IEPS amount is not displayed in invoice screen as detail IEPS is enabled for retailer')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 28)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is not displayed in invoice screen as detail IEPS is enabled for retailer')
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_312_printScreen_01'],
 	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.swipe(0, 700, 0, 50)
+
+taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 27)
+
+println(taxPercentage)
+
+result = inv.contains(taxIVA.toString())
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax IVA amount is displayed in invoice screen')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is displayed in invoice screen')
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_312_printScreen_02'],
 	FailureHandling.STOP_ON_FAILURE)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC52:-To check the split name, when sku's added in bimbo,barcel and ricolino split group sku's if doing only Product Buying for Non-Group SKUs from barcel Company</description>
+   <name>TC52</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>629c6700-40b5-4bab-8d90-1a96ad5afda2</testCaseGuid>
+</TestCaseEntity>

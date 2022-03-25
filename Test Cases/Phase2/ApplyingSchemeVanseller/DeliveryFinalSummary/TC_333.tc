@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_333
+
+To check whether able to generate invoice when scheme buy and get sku is from bimbo company and that are not in invoice split group</description>
+   <name>TC_333</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>96148e2f-af35-455d-911b-39f2ecafe713</testCaseGuid>
+</TestCaseEntity>

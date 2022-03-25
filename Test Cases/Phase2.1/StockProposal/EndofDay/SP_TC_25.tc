@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_25:To check whether numeric keyboard is enabled</description>
+   <name>SP_TC_25</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3efcc78b-a0c4-4ab6-b51d-0dd63f12db9b</testCaseGuid>
+</TestCaseEntity>

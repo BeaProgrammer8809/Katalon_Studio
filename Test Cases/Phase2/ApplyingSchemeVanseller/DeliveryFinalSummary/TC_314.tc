@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_314 - To check the sku's qty displayed when scheme buy and get sku is added in ricolino legal enity invoice split group(Considering: if one invoice split group is available)</description>
+   <name>TC_314</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b8137f63-a4bf-42b8-a4d8-13d9cf1577dd</testCaseGuid>
+</TestCaseEntity>

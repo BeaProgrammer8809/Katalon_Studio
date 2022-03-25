@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 324:-To verify should “Reference number” field should accepts Empty space.[Collection Before Invoice]</description>
+   <name>TC 324</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aab02cbd-c792-4197-8caf-3731c767ab1e</testCaseGuid>
+</TestCaseEntity>

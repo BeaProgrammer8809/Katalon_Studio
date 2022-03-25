@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_11: To check the Total qty displayed after taking invoice, replacement and product buying for same sku</description>
-   <name>TC_11</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ae7964c0-abed-4f51-baf9-c241ce7af6aa</testCaseGuid>
-</TestCaseEntity>

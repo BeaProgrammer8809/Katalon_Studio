@@ -58,8 +58,8 @@ KeywordUtil.logInfo ("${ItemdiscountinWeb}")
 def categorydiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('NOCATEGORYDISC', 1)
 KeywordUtil.logInfo ("${categorydiscountinWeb}")
 
-def IEPSTAX = findTestData('Phase2.1/TY_05/Testdata').getValue('NOTAX', 1)
-KeywordUtil.logInfo ("${IEPSTAX}")
+def TAX = findTestData('Phase2.1/TY_05/Testdata').getValue('NOTAX', 1)
+KeywordUtil.logInfo ("${TAX}")
 
 def GrossInvoice =  Double.parseDouble(InvoiceQuantityInSummary) * Double.parseDouble(UnitPriceInSummary)
 
@@ -82,7 +82,7 @@ def GrossamountAfterAppliedDiscount = PriceAfterAddingDiscount
 KeywordUtil.logInfo ("${GrossamountAfterAppliedDiscount}")
 
 /*verification done to check the tax on the gross amount*/
-def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(IEPSTAX)/100)
+def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(TAX)/100)
 KeywordUtil.logInfo ("${TotalTaxAmount}")
 					  
 def CalculatedOrdervalue = (GrossInvoice + TotalTaxAmount).round(2)

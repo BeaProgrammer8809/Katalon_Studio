@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_242:-To check whether able to Submit the invoice amount without selecting bank branch when scheme is applied</description>
+   <name>TC_242</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af10fc8d-621b-459e-8eb5-390a515cd2d1</testCaseGuid>
+</TestCaseEntity>

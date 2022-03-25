@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_303:To check the split name displayed when scheme buy and get sku is added in bmbo legal entity invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC_303</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9cd0f2a2-a172-4286-832c-ece183d9d486</testCaseGuid>
+</TestCaseEntity>

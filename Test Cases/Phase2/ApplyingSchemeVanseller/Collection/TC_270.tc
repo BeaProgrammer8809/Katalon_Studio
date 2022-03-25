@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_270 - To check whether able to Submit the invoice amount with past RTGS date when scheme is applied
+
+
+
+
+
+
+
+</description>
+   <name>TC_270</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc877ff0-2814-46cc-8525-e5456b0650fd</testCaseGuid>
+</TestCaseEntity>

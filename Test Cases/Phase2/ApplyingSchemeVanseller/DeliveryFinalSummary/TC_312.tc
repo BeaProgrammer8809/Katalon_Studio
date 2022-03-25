@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_312 : To check the split name when scheme buy and get sku is added in ricolino legal enity invoice split group</description>
+   <name>TC_312</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4f2dc29-5d5c-447b-a4f5-dbd6e2fa3b2c</testCaseGuid>
+</TestCaseEntity>

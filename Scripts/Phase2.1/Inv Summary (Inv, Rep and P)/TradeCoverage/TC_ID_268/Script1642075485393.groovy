@@ -104,14 +104,25 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BIColl
 
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Collection_Title'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.comment(' invoice amount should Visible')
+def InvAmtText = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_268'], 
-    FailureHandling.STOP_ON_FAILURE)
+def LegalEntityname = findTestData('Phase2.1/TY_06/Inv Summary (Inv, Rep and P)/TradeCoverage').getValue(4, 38)
+
+def ActualLegalEntityWithInvAmt=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/LegalEntry_TextView'), 0)
+
+
+Mobile.comment(' invoice amount should coming under Bimbo legal entity')
 
 Mobile.verifyElementExist(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_268'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+Mobile.comment(' invoice amount should coming under Bimbo legal entity')
+
+Mobile.verifyMatch(ActualLegalEntityWithInvAmt, LegalEntityname+InvAmtText, false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

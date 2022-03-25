@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 182 :To check the Min. Amt displayed in the Efectivo mode while doing invoice,replacement and product buying for different split group sku</description>
+   <name>TC 182</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>128bd01c-4b66-4a94-8fcc-ef115f51049b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC290 : To check when folio number flag is not enabled for the store if doing invoice ,whether invoice is generated for non-multi org route</description>
+   <name>TC290</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5accf4ac-bc0b-4346-9316-0762f5624cdf</testCaseGuid>
+</TestCaseEntity>

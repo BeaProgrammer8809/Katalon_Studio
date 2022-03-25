@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_239 - To check when multiple invoice is created with for same legal entity ,whether product buying amount is adjusted highest amount invoice</description>
-   <name>TC_239</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>52bab000-9b10-4590-be68-796400eec80d</testCaseGuid>
-</TestCaseEntity>

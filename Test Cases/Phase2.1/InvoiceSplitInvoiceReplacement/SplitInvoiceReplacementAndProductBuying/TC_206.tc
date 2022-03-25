@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_206 - To check whether able to enter number in Cheque no field</description>
-   <name>TC_206</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1527a280-4204-4bb0-aec7-ce7642133414</testCaseGuid>
-</TestCaseEntity>

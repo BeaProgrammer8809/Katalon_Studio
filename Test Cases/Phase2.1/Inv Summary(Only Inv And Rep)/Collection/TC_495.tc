@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_495:- To check balance amount can be zero when invoice amount is fully collected in pesito granted screen</description>
-   <name>TC_495</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9e577bdf-cdd5-4e1e-8551-e9bba017c82b</testCaseGuid>
-</TestCaseEntity>

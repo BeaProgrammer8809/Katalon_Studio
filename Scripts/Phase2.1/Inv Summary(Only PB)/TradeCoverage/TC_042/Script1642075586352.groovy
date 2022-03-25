@@ -27,7 +27,7 @@ GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(
 
 def Actual = Mobile.getText(findTestObject('Object Repository/Phase2/BIUnload/Salable/Product_Name_Indexing'), 0)
 
-def Expected = findTestData('Phase2.1/Common_Data/CommonData').getValue(3, 62)
+def Expected = findTestData('Phase2.1/Common_Data/CommonData').getValue(6, 62)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIUnload/Salable/Product_Name_Text'), 0)
 

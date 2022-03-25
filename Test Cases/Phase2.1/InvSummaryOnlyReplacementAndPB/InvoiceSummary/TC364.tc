@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC364:To check while doing product buying and replacement for different sku's that is having only discount (Item discount) but not having any taxes,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC364</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2dc49ca1-f1a8-4cdb-85ba-e6e139838151</testCaseGuid>
+</TestCaseEntity>

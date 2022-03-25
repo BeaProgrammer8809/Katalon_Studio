@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC-190:To check the deductions (Comp Disc and Dist disc) amount inside the info popup while taking product buying for the sku's that is having IVA, IEPS taxes and  Item discount.</description>
-   <name>TC-190</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>dcc8a32c-b65d-4298-8f59-8f65277255de</testCaseGuid>
-</TestCaseEntity>

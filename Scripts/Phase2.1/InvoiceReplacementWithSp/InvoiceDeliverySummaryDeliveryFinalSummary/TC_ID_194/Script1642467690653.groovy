@@ -70,12 +70,12 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_Po
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully_PopUp_OK_Button'), 0)
 
-Mobile.setText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), findTestData('Phase2.1/TY_01/TestData2').getValue(
-		2, 33), 0)
+//Mobile.setText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), findTestData('Phase2.1/TY_01/TestData2').getValue(
+//		2, 33), 0)
 
 Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Create_Ticket_Invoice_Button'), 0)
 
-GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
+/*GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 
 Mobile.tap(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv1_EditView_Indexing'), 0)
 
@@ -96,7 +96,7 @@ Mobile.tap(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv3_EditView_In
 Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
 Mobile.tap(findTestObject('Phase2/BISplitDeliverySummary01/Create_Final_Invoice_Button'), 0)
-
+*/
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 
 def Invoice_Split_Text = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
@@ -158,6 +158,14 @@ Mobile.verifyMatch(DefaultInv1, findTestData('Phase2.1/TY_01/TestData2').getValu
 Mobile.verifyMatch(DefaultInv2, findTestData('Phase2.1/TY_01/TestData2').getValue(6, 33), false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyMatch(DefaultInv3, findTestData('Phase2.1/TY_01/TestData2').getValue(7, 33), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyMatch(InvoiveSplitLineValue, findTestData('Phase2.1/TY_01/TestData2').getValue(8, 33), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyMatch(DefaultInv1LineValue, findTestData('Phase2.1/TY_01/TestData2').getValue(9, 33), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyMatch(DefaultInv2LineValue, findTestData('Phase2.1/TY_01/TestData2').getValue(10, 33), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyMatch(DefaultInv3LineValue, findTestData('Phase2.1/TY_01/TestData2').getValue(11, 33), false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
 	[('testCaseName') : 'TC_ID_194'], FailureHandling.STOP_ON_FAILURE)

@@ -28,8 +28,6 @@ Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
 
-//Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/AddAnotherReasonQuantity_Button'), 0)
-
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
 
 GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(17, 1)
@@ -95,9 +93,6 @@ Mobile.verifyMatch(Price_Value, Total_Value, false, FailureHandling.STOP_ON_FAIL
 	
 println('IEPS  tax amount is added in line item total price of the sku')
 
-
-//def Actual_Discount = Double.parseDouble(Total_Value) - Double.parseDouble(Product_Buying_Amount)
-
 def Actual_Discount = Product_Buying_Amount - Double.parseDouble(Price_Value)
 
 DecimalFormat df=new DecimalFormat("0.00")
@@ -132,15 +127,12 @@ def Invoice_Sheet_Text = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScr
 println Invoice_Sheet_Text
 def IEPS = findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(16, 63)
 
-//def IEPS_Value = IEPS+Value
-
 println IEPS
 
 boolean Actual_Number = Invoice_Sheet_Text.contains(IEPS)
 
 println Actual_Number
 
-//Verification of Folio number in Print Preview screen
 Mobile.verifyMatch(Actual_Number.toString(),findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(20, 63), false,FailureHandling.STOP_ON_FAILURE)
 
 println('IEPS Tax is added and displayed in IEPS Tax section')

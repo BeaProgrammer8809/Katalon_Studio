@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_315
+
+To check the amount displayed when scheme buy and get sku is added in ricolino legal enity invoice split group(Considering: if one invoice split group is available)</description>
+   <name>TC_315</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dcff89f4-0fe0-4787-8a30-b888f9169b58</testCaseGuid>
+</TestCaseEntity>

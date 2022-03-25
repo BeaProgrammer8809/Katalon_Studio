@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC370: To check whether onsite invoice is getting failure while doing only product buying for interfactura/Ecommerio customer if no internet</description>
+   <name>TC370</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>41100f0e-3bbe-4b75-8e4f-17699125899a</testCaseGuid>
+</TestCaseEntity>

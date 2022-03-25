@@ -77,7 +77,16 @@ GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name'), 0)
 
+Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Non_Salable_DD_Option'), 0)
+
 Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text_Indexing'), 0)
+
+GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 3)
+
+Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
+
+Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
+
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text'), 0)

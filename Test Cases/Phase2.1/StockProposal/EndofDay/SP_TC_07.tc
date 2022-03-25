@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_07 : To check whether Filter option is enabled
+</description>
+   <name>SP_TC_07</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab4320a5-c77c-4d67-ad0d-5ad060c9f942</testCaseGuid>
+</TestCaseEntity>

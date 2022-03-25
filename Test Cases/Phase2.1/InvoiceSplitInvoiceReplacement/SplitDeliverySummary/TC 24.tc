@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 24: To check the split name displayed after taking invoice, replacement and pb against each barcel sku's that are in invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC 24</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb34dc11-08bb-4f85-99d3-31c6bda3bec9</testCaseGuid>
+</TestCaseEntity>

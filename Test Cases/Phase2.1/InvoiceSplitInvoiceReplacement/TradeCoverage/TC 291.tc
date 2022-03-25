@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 291:To verify given folio number for the Cash retailer  is accepted and generated the invoice</description>
+   <name>TC 291</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8b67bdec-5763-4e44-a1ff-87c8e5f84f45</testCaseGuid>
+</TestCaseEntity>

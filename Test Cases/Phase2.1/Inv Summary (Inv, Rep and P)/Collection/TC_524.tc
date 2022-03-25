@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_524:To verify whether able to give different “RTGS No” for 3 “RTGS” payments under same cash store.[Collection Before Invoice]</description>
-   <name>TC_524</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>af041864-b8c7-4e97-bb2f-8f2aee9d0fad</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 17: To check whether item,category,bill discount is not included in total price while doing invoice ,replacement and product buying for group sku's</description>
+   <name>TC 17</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df55e8d8-55e0-45b4-8f68-fc1cbd782b1a</testCaseGuid>
+</TestCaseEntity>

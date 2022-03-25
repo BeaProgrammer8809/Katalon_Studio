@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_317 - To check the Lines qty displayed when scheme buy and get sku is from bimbo company and that are not in invoice split group (if one invoice split group is available)</description>
+   <name>TC_317</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>33be8a23-33db-4b80-9476-a5ebf85a267c</testCaseGuid>
+</TestCaseEntity>

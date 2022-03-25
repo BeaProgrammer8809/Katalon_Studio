@@ -142,7 +142,6 @@ boolean Actual_Number = Invoice_Sheet_Text.contains(IEPS)
 
 println(Actual_Number)
 
-//Verification of Folio number in Print Preview screen
 Mobile.verifyMatch(Actual_Number.toString(), findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(20, 84), false, 
     FailureHandling.STOP_ON_FAILURE)
 

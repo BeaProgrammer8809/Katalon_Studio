@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_349:To check while doing invoice and replacement for same sku's that is having IEPS tax, Item discount and category discount,whether the onsite invoice is getting success and UUID id is generated</description>
-   <name>TC_349</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>baa84de7-a095-404b-b016-dbfd536a97f0</testCaseGuid>
-</TestCaseEntity>

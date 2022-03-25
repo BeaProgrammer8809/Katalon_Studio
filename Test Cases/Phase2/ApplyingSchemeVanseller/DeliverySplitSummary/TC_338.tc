@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_338
+
+To check whether scheme get sku(free sku) and get qty is not displaying in delivery split summary screen</description>
+   <name>TC_338</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c8560578-c0af-4b28-b814-a69fa33b3f0b</testCaseGuid>
+</TestCaseEntity>

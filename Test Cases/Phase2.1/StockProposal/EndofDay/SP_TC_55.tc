@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_55 :
+To check delivery date is coming same as it was coming in proforma screen while creating pro forma in the Print</description>
+   <name>SP_TC_55</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8cc6f1ef-66e9-4395-8a39-614738271772</testCaseGuid>
+</TestCaseEntity>

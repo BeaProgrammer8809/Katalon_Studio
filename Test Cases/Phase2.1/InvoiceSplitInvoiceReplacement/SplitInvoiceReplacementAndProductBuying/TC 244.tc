@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 244 - To check whether product buying amount is adjsuted in highest amount invoice (any split group)when invoice,replacement and product buying for different split group sku's</description>
+   <name>TC 244</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3f21e62-50e8-4b57-8760-999c5aa16844</testCaseGuid>
+</TestCaseEntity>

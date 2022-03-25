@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC96: To check the Value field calculation while taking invoice and replacement against each sku's that is having only tax IEPS but not having any discounts</description>
+   <description>TC126: To check the Order Value amount inside the info popup while taking invoice for the sku's that is having only discount (Item discount) but not having any taxes</description>
    <name>TC126</name>
    <tag></tag>
    <comment></comment>

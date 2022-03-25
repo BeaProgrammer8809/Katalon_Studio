@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_313 : To check the lines qty displayed when scheme buy and get sku is added in ricolino legal enity invoice split group</description>
+   <name>TC_313</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b8013f70-797f-40cf-ab9e-2b3ffccb9e5e</testCaseGuid>
+</TestCaseEntity>

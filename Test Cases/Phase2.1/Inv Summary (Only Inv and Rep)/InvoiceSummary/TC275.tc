@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the legal entity for multi org,while doing only replacement for Ricolino products</description>
+   <description>TC275 - To check the legal entity for multi org,while doing only replacement for Ricolino products</description>
    <name>TC275</name>
    <tag></tag>
    <comment></comment>

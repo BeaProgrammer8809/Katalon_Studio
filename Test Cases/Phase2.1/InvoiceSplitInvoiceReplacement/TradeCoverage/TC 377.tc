@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 377:-To verify only Product Buying can be done for the retailer with RFC format as “XXXYYMMDDaa&amp;”</description>
+   <name>TC 377</name>
+   <tag></tag>
+   <comment>Verifying the RFC format</comment>
+   <testCaseGuid>6b2571d1-f97a-4381-8cef-9cfa4efa6a64</testCaseGuid>
+</TestCaseEntity>

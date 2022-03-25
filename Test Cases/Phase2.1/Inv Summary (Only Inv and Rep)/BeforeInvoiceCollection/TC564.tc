@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC564:- To verify “Pesito commission : 3 of 3” label is present in the Cheque collection type under collection pop-up</description>
+   <name>TC564</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>52030a35-3839-469f-8d00-288a8e4d801b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 125 - To check while doing invoice,replacement for same split group sku's and product buying for no group sku's that is having IEPS tax, Item discount and category discount,whether the onsite invoice is getting success and UUID is generated</description>
+   <name>TC 125</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8d56bf4c-9067-4734-b594-9d34ba6116b5</testCaseGuid>
+</TestCaseEntity>

@@ -97,35 +97,14 @@ println(StockDelevered+ " StockDelevered ")
 int stockDeleveredVal = Integer.parseInt(StockDelevered)
 println(stockDeleveredVal)
 
-println(piece_value+" ############")
-
-println(Return_value+"###########")
-
 Mobile.verifyEqual(stockDeleveredVal, piece_value, FailureHandling.STOP_ON_FAILURE)
 
 
-//"to Verify Both Peice And return Value is Taken"
-//Total_Qty_Text = Mobile.getText( findTestObject('Object Repository/Phase2/BIDeliverySummaryScreen/Total_Qty_Text') , 0)
-//println(Total_Qty_Text+"Total_Qty_Text")
-//
-//int Total_Qty_Val = Integer.parseInt(Total_Qty_Text)
-//
-//println(Total_Qty_Val)
-//
-//Mobile.verifyEqual(Total_Qty_Val ,totalpeiceAndReturn  , FailureHandling.STOP_ON_FAILURE)
-////total Qty == peice +returnQty 
-//
-
-
-
-"Verifu the Product Detail prod name in deleviry summary screen"
+"Verify the Product Detail prod name in deleviry summary screen"
 
 ProdNameDeleveryScreen = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliverySummaryScreen/Product_Name_Text'), 0)
 
 Mobile.verifyMatch(ProdNameBefore, ProdNameDeleveryScreen, false, FailureHandling.STOP_ON_FAILURE)
-
-
-"Delete line of code "
 
 Product_Name_TextView = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliverySummaryScreen/Product_Name_TextView')  , 0)
 

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_240:-To check the Total amount inside the info popup while taking invoice and Product Buying (Non-Salable) for the sku's that is having IVA tax, Item discount and category discount.</description>
-   <name>TC_240</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1da1f585-ee3f-415a-a405-cadf980daf3a</testCaseGuid>
-</TestCaseEntity>

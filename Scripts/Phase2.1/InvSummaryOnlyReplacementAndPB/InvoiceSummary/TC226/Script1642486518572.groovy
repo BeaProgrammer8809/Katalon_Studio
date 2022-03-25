@@ -1,23 +1,12 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.util.KeywordUtil
+
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
-import io.appium.java_client.AppiumDriver as AppiumDriver
-import org.openqa.selenium.WebElement as WebElement
-import java.time.LocalDate as LocalDate
 
 Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4002'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -45,30 +34,79 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next
 
 Mobile.verifyElementText( findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), findTestData('Phase2.1/TY_05/Testdata').getValue('Data1', 28))
 
-/*Verification done to check Total Amount Value inside info popup Calculation*/
+def InvoiceQuantityInSummary=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 0)
+
+def UnitPriceInSummary=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing') , 0)
+
+def SkuTotalPrice = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
+	0)
+
+/*Verification done to check Comp Disc Value and Dist discount inside info popup Calculation*/
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
-def Orderedvalue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0)
-
-def CompDiscValue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),
-	0)
-
-CompDiscText = CompDiscValue.replace(' ', '')
-
-double CompDiscountValue = Double.parseDouble(CompDiscText)
-
-def TotalcalculatedAmount = (Double.parseDouble(Orderedvalue) +  Double.parseDouble(CompDiscText)).round(2)
-
-def TAmount = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_Value'), 0)
-
-def TotalAmount = Double.parseDouble(TAmount).round(2)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
-
-Mobile.verifyEqual(TotalAmount, TotalcalculatedAmount,FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Phase2.1/InvSummaryOnlyReplacementAndPB/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC226'],
+Mobile.callTestCase(findTestCase('Phase2.1/InvSummaryOnlyReplacementAndPB/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_ID_226'],
 	FailureHandling.STOP_ON_FAILURE)
 
-Mobile.closeApplication()
+ def CompDiscValue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),
+	0)
+ 
+ CompDiscText = CompDiscValue.replace(' ', '')
+ 
+ def CompoDiscountInsidePopup = CompDiscText.substring(1)
+
+ def OrderedValueInsideInfoPopup = Mobile.getText( findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'), 0)
+ 
+ def TotalAmountInsideInfoPopup = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Total_Value'), 0)
+
+ def ActualDistDiscount = Mobile.getText( findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/DistDisc_Value'), 0)
+ 
+  Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
+ 
+ def ItemdiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('ITEMDISC', 1)
+ KeywordUtil.logInfo ("${ItemdiscountinWeb}")
+ 
+ def categorydiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('NOCATEGORYDISC', 1)
+ KeywordUtil.logInfo ("${categorydiscountinWeb}")
+ 
+ def TAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IEPSANDIVA', 1)
+ KeywordUtil.logInfo ("${TAX}")
+ 
+ def GrossInvoice =  Double.parseDouble(InvoiceQuantityInSummary) * Double.parseDouble(UnitPriceInSummary)
+ 
+ KeywordUtil.logInfo ("${GrossInvoice}")
+ def SKUDiscount =  GrossInvoice * (Double.parseDouble(ItemdiscountinWeb)/100)
+ 
+ KeywordUtil.logInfo ("${SKUDiscount}")
+ def PriceafterItemDiscount = GrossInvoice - SKUDiscount
+ 
+ KeywordUtil.logInfo ("${PriceafterItemDiscount}")
+ def CategoryDiscount = PriceafterItemDiscount * (Double.parseDouble(categorydiscountinWeb)/100)
+ 
+ KeywordUtil.logInfo ("${CategoryDiscount}")
+ def PriceAfterAddingDiscount = PriceafterItemDiscount - CategoryDiscount
+					 
+ def compdiscount = SKUDiscount + CategoryDiscount
+
+ def Discount = Math.round(compdiscount)
+ 
+ int Calculatedcompdiscount  = (int)Discount
+ 
+ def CalculatedCompDiscount = '-' + ' ' + Calculatedcompdiscount
+ 
+ def GrossamountAfterAppliedDiscount = PriceAfterAddingDiscount
+ KeywordUtil.logInfo ("${GrossamountAfterAppliedDiscount}")
+ 
+ def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(TAX)/100)
+ KeywordUtil.logInfo ("${TotalTaxAmount}")
+					    
+ Mobile.verifyEqual(CompDiscValue, CalculatedCompDiscount,FailureHandling.STOP_ON_FAILURE)
+ 
+ def ExpectedDistDiscount = findTestData('Phase2.1/TY_05/Testdata').getValue('DISTDISCOUNT', 1)
+ 
+ Mobile.verifyMatch(ActualDistDiscount, ExpectedDistDiscount, false,FailureHandling.STOP_ON_FAILURE)
+ 
+ Mobile.callTestCase(findTestCase('Phase2.1/InvSummaryOnlyReplacementAndPB/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_ID_0226_InvoiceSummary'],
+	FailureHandling.STOP_ON_FAILURE)
+
+ Mobile.closeApplication()

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_360 : To check amount displayed for scheme buy and get sku, in delivery final summary screen,after entering all the stock delivered qty in Extra invoice for scheme buy sku</description>
+   <name>TC_360</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dce5270a-674b-439e-a990-b4465fb58e31</testCaseGuid>
+</TestCaseEntity>

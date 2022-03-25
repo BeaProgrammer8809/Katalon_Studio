@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_201:- This TC is not a part of Phase1(Discount related)
+
+To check the total price calculation in invoice summary screen while taking invoice for the scheme sku's that is having IVA tax and Item discount.</description>
+   <name>TC_201</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1fe8ea5-b3ff-4b16-883b-561f8b21d1ac</testCaseGuid>
+</TestCaseEntity>

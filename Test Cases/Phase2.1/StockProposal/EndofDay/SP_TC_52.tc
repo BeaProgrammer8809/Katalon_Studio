@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_52 :To check Print is coming with 
+ 1. Date with time stamp
+ 2. Delivery date 
+ 3. route code
+ 4. Product code with short description 
+ 5. sku price
+ 6. sku qty in piece
+ 7. Order req date
+ 7. total(sum of all sku values)</description>
+   <name>SP_TC_52</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06881e5e-365e-40d0-91e3-46d9fd2fbd6f</testCaseGuid>
+</TestCaseEntity>

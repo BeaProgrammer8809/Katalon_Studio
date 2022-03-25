@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_031 - Check whether product names  are displaying correctly as short description of sku</description>
-   <name>TC_031</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>2957de3f-6b43-47db-b493-783cd0b0de0c</testCaseGuid>
-</TestCaseEntity>

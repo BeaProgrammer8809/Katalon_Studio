@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the legal entity for non-multi org while doing only replacement for Bimbo products</description>
+   <description>TC272 - To check the legal entity for non-multi org while doing only replacement for Bimbo products</description>
    <name>TC272</name>
    <tag></tag>
    <comment></comment>

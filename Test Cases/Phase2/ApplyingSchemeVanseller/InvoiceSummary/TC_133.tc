@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_133
+
+&quot;To check when scheme is created like below,whether scheme details displaying in invoice summary screen
+ 
+ Group buy logic :ONLY Group get logic:ONLY
+ Scheme buy sku:001_lak_qt scheme buy qty=1
+ Scheme get sku:001_lak_qt scheme get qty=2&quot;</description>
+   <name>TC_133</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb416f0b-04ce-4a27-88c1-310e27920138</testCaseGuid>
+</TestCaseEntity>

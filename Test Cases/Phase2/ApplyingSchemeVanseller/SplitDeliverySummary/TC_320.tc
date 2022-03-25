@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_320:To check the split name displayed when scheme buy and get sku is from barcel company and that are not in invoice split group (if one invoice split group is available)</description>
+   <name>TC_320</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a78b86a0-b1ef-4af8-b340-10d6343cfa07</testCaseGuid>
+</TestCaseEntity>

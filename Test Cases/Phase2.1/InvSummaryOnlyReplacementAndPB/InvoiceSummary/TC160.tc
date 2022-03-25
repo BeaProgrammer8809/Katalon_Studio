@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC160 : To check the Order Value amount inside the info popup while taking product buying for the sku's that is having IVA, IEPS taxes and Item, category discount.</description>
+   <name>TC160</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>89c56813-aba1-484d-8eb1-434f6238507f</testCaseGuid>
+</TestCaseEntity>

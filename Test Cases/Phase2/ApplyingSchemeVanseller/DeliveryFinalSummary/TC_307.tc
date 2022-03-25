@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_307:-To check whether scheme get is 100% free and get sku price is not included in Amount</description>
+   <name>TC_307</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4523822e-6705-4af6-838a-811c3ef6ba74</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_266 - To check whether able to Submit the invoice amount without entering Reference no when scheme is applied</description>
+   <name>TC_266</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b0dbc9e5-2e38-4726-9616-e9cfe64f816e</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_485:- To check when enter partial invoice amount in pesito credit payment mode ,whether remaining amount is displaying in cash payment mode</description>
-   <name>TC_485</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>726f43bb-26ba-429c-afd0-3d2815a10345</testCaseGuid>
-</TestCaseEntity>

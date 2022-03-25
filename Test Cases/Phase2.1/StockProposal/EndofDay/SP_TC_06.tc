@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_06 : &quot;To check whether stock proposal screen is coming with following fields:
+ 1. Product Name 
+ 2. OC
+ 3. Bag
+ 4. OP
+ 5. SRP
+ 6. Total
+ 7. Proposal and Delivery date
+ 8. Filter 
+ 9. Value and save button
+ 10.Search option&quot;
+</description>
+   <name>SP_TC_06</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>687e59d4-b710-46f8-9a0f-223ed3972630</testCaseGuid>
+</TestCaseEntity>

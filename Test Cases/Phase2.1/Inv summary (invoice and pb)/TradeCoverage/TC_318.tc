@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_318:To check whether able to Submit the invoice amount with Future Cheque date</description>
-   <name>TC_318</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a9c0dfb3-7100-443f-a86d-ad4fa661619f</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_266 - To verify “Folio No” field present in the Delivery Final Summary Screen for against Product buying split/default group split</description>
-   <name>TC_266</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>162efe39-5862-497c-8fe3-86e0d4ad1ec7</testCaseGuid>
-</TestCaseEntity>

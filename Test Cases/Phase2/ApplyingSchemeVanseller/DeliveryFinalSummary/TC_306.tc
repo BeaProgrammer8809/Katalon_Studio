@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_306
+
+To check amount displayed when scheme buy and get sku is added in bmbo legal entity invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC_306</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f7a73c81-397b-448c-a6da-48ad800228c3</testCaseGuid>
+</TestCaseEntity>

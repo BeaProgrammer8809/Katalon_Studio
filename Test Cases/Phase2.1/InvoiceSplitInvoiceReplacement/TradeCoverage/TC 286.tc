@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 286:To verify given folio number for the Ekomercio retailer is accepted and invoice is getting success for onsite store</description>
+   <name>TC 286</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c89d71d0-771a-4c12-9e09-7289d806af77</testCaseGuid>
+</TestCaseEntity>

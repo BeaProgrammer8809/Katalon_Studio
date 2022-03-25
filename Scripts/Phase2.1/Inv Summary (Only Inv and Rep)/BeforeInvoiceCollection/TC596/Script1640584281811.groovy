@@ -1,27 +1,21 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+import java.text.DecimalFormat
+
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
+
 import internal.GlobalVariable as GlobalVariable
 import io.appium.java_client.AppiumDriver as AppiumDriver
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4004'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/VanloadAndOdometer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.RetailerName = findTestData('Phase2.1/Common_Data/CommonData').getValue('RetailerCash', 7)
+GlobalVariable.RetailerName = findTestData('Phase2.1/Common_Data/CommonData').getValue('RetailerCash', 20)
 
 Mobile.setText(findTestObject('Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName, 0)
 
@@ -30,7 +24,7 @@ Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/TY_11/TestData').getValue(
-        3, 9), 0)
+		3, 9), 0)
 
 
 
@@ -46,7 +40,9 @@ Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
-Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+if (Mobile.verifyElementVisible(findTestObject('Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'), 5, FailureHandling.OPTIONAL)) {
+	Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+}
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
@@ -66,15 +62,20 @@ println(InvAmount1)
 
 double InvAmount = Double.parseDouble(InvAmount1)
 
+Mobile.clearText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'),0)
+
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCredit_RadioButton'), 0)
+
+Mobile.clearText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'),0)
 
 GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 6)
 Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
-def PesitoAmount1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 
-    0)
+
+def PesitoAmount1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'),
+	0)
 
 println(PesitoAmount1)
 
@@ -82,12 +83,23 @@ double PesitoAmount = Double.parseDouble(PesitoAmount1)
 
 println(PesitoAmount)
 
-def PesitoCommision = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCommission_TextView'), 
-    0)
+def PesitoCommision1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/PesitoCommission_TextView'),
+	0)
 
-println(PesitoCommision)
+println(PesitoCommision1)
 
-PesitoCommision = PesitoCommision.substring(27, 28)
+PesitoCommision2 = PesitoCommision1.split("of ")
+
+PesitoCommision1 =PesitoCommision2[1]
+
+
+println(PesitoCommision1)
+
+PesitoCommision = Integer.parseInt(PesitoCommision1)
+
+DecimalFormat df1 = new DecimalFormat('0')
+
+PesitoCommision = df1.format(PesitoCommision)
 
 def EffectiveAmount = InvAmount - PesitoAmount
 
@@ -99,8 +111,8 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/TransferenciasElectronica
 
 //Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/9_NumButton'), 0)
 //Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/0_NumButton'), 0)
-Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), EffectiveAmount, 
-    0)
+Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), EffectiveAmount,
+	0)
 
 GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(10, 1)
 
@@ -118,13 +130,13 @@ GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Option'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), 
-    0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'),
+	0)
 
 def referenceNum = findTestData('Phase2.1/TY_11/TestData').getValue(7, 9)
 
-Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), 
-    referenceNum, 0)
+Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'),
+	referenceNum, 0)
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0)
 
@@ -141,7 +153,7 @@ def actualtoastmessage = driver.findElementByXPath('//android.widget.Toast[1]').
 println("$actualtoastmessage")
 
 ExpectedToastMessage = ((findTestData('Phase2.1/TY_11/TestData').getValue(8, 9) + PesitoCommision) + findTestData('Phase2.1/TY_11/TestData').getValue(
-    9, 9))
+	9, 9))
 
 println(ExpectedToastMessage)
 
@@ -150,4 +162,3 @@ Mobile.verifyMatch(actualtoastmessage, ExpectedToastMessage, false)
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/BeforeInvoiceCollection/Screenshot'), [('testCaseName') : 'TC_596'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-

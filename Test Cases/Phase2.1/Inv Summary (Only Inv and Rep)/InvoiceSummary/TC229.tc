@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC229 - To check the Total amount inside the info popup while taking replacement for the sku's that is having IEPS tax, Item discount and category discount.
+As only replacement is taken against each sku's so the Total price, Value and Total amount should be displayed as 0</description>
+   <name>TC229</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>949da28c-3e3f-466e-bc7d-d253a17a1915</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_39:To check value in stock proposal screen is getting calculated on piece</description>
+   <name>SP_TC_39</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>67a4f73a-45d4-4f62-b3aa-9aefee5be49a</testCaseGuid>
+</TestCaseEntity>

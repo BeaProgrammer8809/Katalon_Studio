@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 26: To check the sku's qty displayed after taking invoice, replacement and pb against each barcel sku's that are in invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC 26</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c20dae25-925e-4910-8a31-5050304e7056</testCaseGuid>
+</TestCaseEntity>

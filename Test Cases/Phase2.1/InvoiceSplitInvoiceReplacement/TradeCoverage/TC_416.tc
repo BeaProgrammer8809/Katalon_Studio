@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_416 : To verify Invoice,PB and Replacement can be done for the retailer name having special char “Ñ”</description>
-   <name>TC_416</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>8fcb44e3-91de-4aff-a985-c4f91cdb417b</testCaseGuid>
-</TestCaseEntity>

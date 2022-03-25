@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether schemes will be displayed with Buy Product as Header</description>
+   <name>SC_TC_02</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>56c32e96-7994-4fc4-a99c-e899423044d6</testCaseGuid>
+</TestCaseEntity>

@@ -18,14 +18,14 @@ GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').get
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Qty'), [('testData1') : GlobalVariable.ProductName], FailureHandling.STOP_ON_FAILURE)
 
 def Actual_SRP_Value = Mobile.getText(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/SRP_Price'), 0, FailureHandling.STOP_ON_FAILURE)
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/Before Invoice Collection/Screenshot'), [('testCaseName') : 'TC_ID_009_Actual_SRP_Value'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_009_Actual_SRP_Value'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/PB_Qty'), [('testData1') : GlobalVariable.ProductName], FailureHandling.STOP_ON_FAILURE)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
 
 def Actual_PB_SRP_Value=Mobile.getText(findTestObject('Phase2/BIProductBuyingScreen01/SRP_Price'), 0)
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_009_Actual_PB_SRP_Value'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_009_Actual_PB_SRP_Value'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 

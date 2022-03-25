@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_342:-To verify Pesito option enable in collection pop-up in invoice summary screen for retailer where pesito credit is not defined</description>
+   <name>TC_ID_342</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7ca7a503-3d1e-4e8f-909b-cba13464e109</testCaseGuid>
+</TestCaseEntity>

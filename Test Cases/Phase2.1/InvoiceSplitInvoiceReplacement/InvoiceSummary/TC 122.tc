@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 122 - To check while doing invoice and replacement for different split group sku's and product buying for no group sku's  that is having IEPS tax and category discount,whether interfactura onsite invoice is getting success and UUID is generated</description>
+   <name>TC 122</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3f333b34-c9f5-445d-b3e7-941ee7e4232a</testCaseGuid>
+</TestCaseEntity>

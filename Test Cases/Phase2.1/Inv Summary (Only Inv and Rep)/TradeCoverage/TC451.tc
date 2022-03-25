@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC451 - To check whether able to enter decimals in Reference no field</description>
-   <name>TC451</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>dca3f104-f888-4ead-bd32-ca2e333defdd</testCaseGuid>
-</TestCaseEntity>

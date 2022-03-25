@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_390:- To verify “Please Pay Total Balance Amount $.” Toast message is display where Route is mulit org and Sku not have split.</description>
-   <name>TC_390</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a89bd59e-d684-45a2-ba55-6f0e8465198d</testCaseGuid>
-</TestCaseEntity>

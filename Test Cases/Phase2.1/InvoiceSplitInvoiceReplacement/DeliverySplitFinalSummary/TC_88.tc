@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_88 - To check the amount displayed after entering all the stock delivered qty in Extra invoice for barcel's sku that are not in invoice split group</description>
-   <name>TC_88</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>fe51e535-caaa-452b-aadc-8c439fa00969</testCaseGuid>
-</TestCaseEntity>

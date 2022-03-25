@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_37
+
+&quot;To check when scheme is created like below,whether scheme free sku is displaying in Applying in scheme screen with get qty
+ 
+ Group buy logic :ONLY Group get logic:ONLY
+ Scheme buy sku:001_lak_qt scheme buy qty=1
+ Scheme get sku:002_lak_qt scheme get qty=2&quot;</description>
+   <name>TC_37</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7fafa77b-a139-4d01-a700-8fcefcb134ff</testCaseGuid>
+</TestCaseEntity>

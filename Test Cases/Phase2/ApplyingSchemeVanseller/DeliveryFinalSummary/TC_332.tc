@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_332 - To check whether able to generate invoice when scheme buy and get sku's that are added in ricolino legal entity invoice split group (Considering: if one invoice split group is available)</description>
+   <name>TC_332</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>15f539d5-54e7-46d0-a81c-33fedd924df7</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_123 - To check while doing invoice and replacement same split group sku's and product buying for different split group sku's that is having IEPS tax with category discount and Detail IEPS flag is enabled for the store,whether the oniste invoice is getting success and UUID is generated</description>
-   <name>TC_123</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c046ab8c-7358-421e-ad5e-e562bcb44220</testCaseGuid>
-</TestCaseEntity>

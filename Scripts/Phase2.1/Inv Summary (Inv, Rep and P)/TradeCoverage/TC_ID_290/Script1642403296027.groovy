@@ -168,8 +168,79 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
+def inv = Mobile.getText(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(inv)
+
+def totalSum = Double.parseDouble(totalPrice)
+
+tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+def tax1=tax
+
+totalSum = Double.parseDouble(returnQty)*Double.parseDouble(uPrice)
+
+tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+def tax2=tax
+
+tax=tax1 + tax2
+
+println(tax)
+
+def taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 27)
+
+println(taxPercentage)
+
+def result = inv.contains(tax.toString())
+
+def expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax amount is displayed in invoice screen')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is displayed in invoice screen')
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_290_printScreen'], 
     FailureHandling.STOP_ON_FAILURE)
+
+Mobile.swipe(0, 800, 0, 50)
+
+ totalSum = Double.parseDouble(uPrice)*Double.parseDouble(salesReturnQty)
+
+tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+println(tax)
+
+ taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 27)
+
+println(taxPercentage)
+
+ result = inv.contains(tax.toString())
+
+ expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax amount is displayed in invoice screen for product buying qty')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is displayed in invoice screen')
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_290_printScreen_02'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

@@ -42,20 +42,24 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Colle
 
 def InvoiceAmount = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
 
-def length = InvoiceAmount.length()
+double InvoiceAmt=Double.parseDouble(InvoiceAmountInSummary)
+
+//def length = InvoiceAmount.length()
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
 
-for (int i = 0; i <= length; i++) {
+/*for (int i = 0; i <= length; i++) {
 	Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/BackSpace_NumButton'), 0, FailureHandling.OPTIONAL)
-}
+}*/
 
-
+/*
 double TotalAmount = Double.parseDouble(InvoiceAmount)
 
-def AmountLessThanInvoiceAmount = TotalAmount - 10
+def AmountLessThanInvoiceAmount = TotalAmount--*/
 
-Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText') , AmountLessThanInvoiceAmount.toString(), 0)
+//Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText') , AmountLessThanInvoiceAmount.toString(), 0)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeyboardCollection01/BackSpace_NumButton'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
 
@@ -75,13 +79,19 @@ def verifytheToastMessage=ToastMessageResult.toString()
 Mobile.verifyMatch(verifytheToastMessage, findTestData('Phase2.1/TY_05/Testdata').getValue('Data2', 25), false,FailureHandling.STOP_ON_FAILURE)
 
 /*Verification done to check Amount text field is allowing to enter the lesser amount than Total invoice amount */
-
-def Amountlesser=Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
-
-Mobile.verifyMatch(Amountlesser, AmountLessThanInvoiceAmount.toString(), false,FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_098'],
 	FailureHandling.STOP_ON_FAILURE)
+
+def Amountlesser=Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
+
+'Verify EnteredAmount lesser than invoice Amount'
+
+Mobile.verifyLessThan(Amountlesser, InvoiceAmt, FailureHandling.STOP_ON_FAILURE)
+
+
+
 
 Mobile.closeApplication()
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC502:-To check user can able to collect the cash against an invoice for deviated cash store also</description>
+   <name>TC502</name>
+   <tag></tag>
+   <comment>User should be able to collect the cash</comment>
+   <testCaseGuid>84a35d50-8c24-4c63-9af7-09fe37eb2deb</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_44 : To check whether alert msg is coming with ok and cancel option</description>
+   <name>SP_TC_44</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4fa649a-01cc-4438-89f8-08c7ae863fb8</testCaseGuid>
+</TestCaseEntity>

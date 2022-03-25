@@ -75,7 +75,7 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_Po
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/Payment_CheckBox'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_403'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_403'], FailureHandling.STOP_ON_FAILURE)
 
 def invAmt = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
 
@@ -87,7 +87,7 @@ for (int i = 0; i < invAmt.length(); i++) {
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Cheques_RadioButton'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_403'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_403'], FailureHandling.STOP_ON_FAILURE)
 
 //Mobile.verifyElementAttributeValue(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/SelectBranch_DropDown'),
 //	'enabled', findTestData('Phase2.1/TY_04/Phase2.1').getValue(12, 41), 0)
@@ -110,7 +110,7 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name'), 
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Option'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_403'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_403'], FailureHandling.STOP_ON_FAILURE)
 
 println('Select Branch field should be enabled after choosing any branch from Select branch field only after selecting the Bank and its is an mandatory filed')
 

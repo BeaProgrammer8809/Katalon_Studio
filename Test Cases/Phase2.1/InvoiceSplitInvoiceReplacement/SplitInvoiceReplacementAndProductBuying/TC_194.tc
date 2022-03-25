@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_194 - To check the Inv Amt displayed in the Cheques mode</description>
-   <name>TC_194</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7664b73b-7655-40df-85b9-b4dde52b1459</testCaseGuid>
-</TestCaseEntity>

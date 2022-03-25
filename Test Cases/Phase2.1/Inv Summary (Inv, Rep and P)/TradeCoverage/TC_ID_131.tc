@@ -3,6 +3,12 @@
    <description>TC_ID_131 : To check the display of Transferencias Electronicas mode in Collections popup</description>
    <name>TC_ID_131</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Title should be shown as Collection
+Inv Amt, Min Amt details should be displayed
+Select Bank, Select Branch should be displayed
+Reference number, Date, upload image should be present with submit button
+Balance:  amount should display based on amount entered in Total paid field in RTGS mode.
+Total paid amount should display the amount entered in Total paid field at RTGS mode
+Keypad should display</comment>
    <testCaseGuid>2a87a2aa-d0da-4ec9-8dcb-07b2b09281ed</testCaseGuid>
 </TestCaseEntity>

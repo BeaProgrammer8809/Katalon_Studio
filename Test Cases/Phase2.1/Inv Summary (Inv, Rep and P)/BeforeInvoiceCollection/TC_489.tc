@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_489:- To verify &quot;Reference Number&quot; field is present under the &quot;Transfrerencias Electronicas&quot; option.[Collection Before Invoice]</description>
-   <name>TC_489</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ea9b9f44-940e-4d5a-a81c-af53e5d000d1</testCaseGuid>
-</TestCaseEntity>

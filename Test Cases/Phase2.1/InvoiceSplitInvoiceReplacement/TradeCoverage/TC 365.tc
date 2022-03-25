@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 365:-To verify Invoice can be done with Scheme for the retailer with RFC format as “&amp;X&amp;YYMMDD&amp;a&amp;”</description>
+   <name>TC 365</name>
+   <tag></tag>
+   <comment>Verifying the RFC format</comment>
+   <testCaseGuid>0fe6883c-836c-4f0f-86fd-08d98cffc9ec</testCaseGuid>
+</TestCaseEntity>

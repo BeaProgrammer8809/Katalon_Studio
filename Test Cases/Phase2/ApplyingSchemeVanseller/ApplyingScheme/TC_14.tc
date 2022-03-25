@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_14 : To check when replacement qty =scheme buy qty,screen is navigating to invoice summary screen(scheme not applicable)</description>
+   <name>TC_14</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f6ccc4df-f27a-4bda-9097-cfb7860bde8e</testCaseGuid>
+</TestCaseEntity>

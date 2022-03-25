@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
-      <value>com.ivy.bimbomx.mexico.view.uat</value>
+      <value>${GlobalVariable.Package}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

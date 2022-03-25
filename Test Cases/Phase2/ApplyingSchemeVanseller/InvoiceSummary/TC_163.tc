@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_163:-To check scheme is created like below while doing inoivce only 002_lak_qt sku,whether scheme is applying in invoice summary screen
+
+Scheme buy logic:AND Scheme get logic:ONLY
+
+ Slab1: 
+ Scheme buy sku:001_lak_qt ,buy qt=1
+ Scheme buy sku:002_lak_qt,buy qty=1
+ Scheme get sku:003_lak_qt ,get qty=2
+
+Slab2: 
+Scheme buy sku:001_lak_qt ,buy qt=2 
+Scheme buy sku:002_lak_qt,buy qty=2 
+Scheme get sku:003_lak_qt ,get qty=3 
+
+Slab3: 
+Scheme buy sku:001_lak_qt ,buy qt=3 
+Scheme buy sku:002_lak_qt,buy qty=3 
+Scheme get sku:003_lak_qt ,get qty=5</description>
+   <name>TC_163</name>
+   <tag></tag>
+   <comment>Scheme buy sku should be displayed with order qty
+Scheme should not be applied in invoice summary screen</comment>
+   <testCaseGuid>4e4c7f45-34e5-46c8-abea-b8effd47f675</testCaseGuid>
+</TestCaseEntity>

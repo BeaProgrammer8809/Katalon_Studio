@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_139 - To check once uncheck the qty check box , whether scheme details displaying on invoice summary screen
+</description>
+   <name>TC_139</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1832398e-00cc-444b-b6e7-34f46ca17c1f</testCaseGuid>
+</TestCaseEntity>

@@ -19,8 +19,8 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4002'), [:], F
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer'), [:], FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_RakeshCashPesitoNormalInterfactura'), [:], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_RakeshCashPesitoNormalInterfactura'), [:],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Button'), 0)
 
@@ -47,8 +47,8 @@ Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Button'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), productName, 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/ProductBuyingBothSalableNonSalable_Reusable'), 
-    [:], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/ProductBuyingBothSalableNonSalable_Reusable'),
+	[:], FailureHandling.STOP_ON_FAILURE)
 
 def PbqtyText = Mobile.getText(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
 
@@ -57,7 +57,7 @@ double Pbqty = Double.parseDouble(PbqtyText)
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 if (Mobile.verifyElementVisible(findTestObject('Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'), 5, FailureHandling.OPTIONAL)) {
-    Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+	Mobile.tap(findTestObject('Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
 }
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
@@ -67,23 +67,23 @@ Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Summary_
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 1)
 
 'Capturing the required data'
-def InvoiceQtyText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'), 
-    0)
+def InvoiceQtyText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Pieces_Value_Indexing'),
+	0)
 
 double InvoiceQty = Double.parseDouble(InvoiceQtyText)
 
-def SalesReturnQtyText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 
-    0)
+def SalesReturnQtyText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'),
+	0)
 
 double SalesReturnQty = Double.parseDouble(SalesReturnQtyText)
 
-def UpriceText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
-    0)
+def UpriceText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'),
+	0)
 
 double Uprice = Double.parseDouble(UpriceText)
 
-def SkuTotalPriceText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'), 
-    0)
+def SkuTotalPriceText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
+	0)
 
 double SkuTotalPrice = Double.parseDouble(SkuTotalPriceText)
 
@@ -96,10 +96,10 @@ Mobile.verifyMatch(OrderQty, InvoiceQtyText, false)
 
 Mobile.verifyEqual(Pbqty, SalesReturnQty, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
+/*Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 
-def CompDiscText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'), 
-    0)
+def CompDiscText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),
+	0)
 
 CompDiscText = CompDiscText.replace(' ', '')
 
@@ -107,32 +107,40 @@ double CompDiscValue = Double.parseDouble(CompDiscText)
 
 println(CompDiscValue)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)*/
+
+'Disc Calculation'
+def itemDiscText=findTestData('Phase2.1/TY_06/Trade_Coverage/Invoice_Summary/Invoice_Summary02').getValue(6, 3)
+
+double itemDiscPercentage=Double.parseDouble(itemDiscText)
+
+double itemDiscAmt=(InvoiceQty * Uprice)*(itemDiscPercentage/100)
+
 
 'calculation of Total price without considering sales Return quantity'
-double TotalPrice1 = (InvoiceQty * Uprice) + CompDiscValue
+double TotalPrice1 = (InvoiceQty * Uprice) - itemDiscAmt
 
 println(TotalPrice1)
 
-TotalPrice1 = TotalPrice1.round()
+TotalPrice1 = TotalPrice1.round(2)
 
 'calculation of Total price with considering sales Return quantity'
-double TotalPrice2 = ((InvoiceQty + SalesReturnQty) * Uprice) + CompDiscValue
+double TotalPrice2 = ((InvoiceQty + SalesReturnQty) * Uprice) - itemDiscAmt
 
 println(TotalPrice2)
 
-TotalPrice2 = TotalPrice2.round()
+TotalPrice2 = TotalPrice2.round(2)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_108(1)'], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_108(1)'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.comment('Verifying the total price')
 
-Mobile.verifyEqual(TotalPrice1, SkuTotalPrice.round())
+Mobile.verifyEqual(TotalPrice1, SkuTotalPrice.round(2))
 
 Mobile.comment('Product Buying should not be considered for the Gross/Total calculation.')
 
-Mobile.verifyNotEqual(TotalPrice2, SkuTotalPrice.round())
+Mobile.verifyNotEqual(TotalPrice2, SkuTotalPrice.round(2))
 
 Mobile.comment('Verifying the Value amount')
 
@@ -149,9 +157,9 @@ double IVATax = Double.parseDouble(IVATaxText)
 
 double value = SkuTotalPrice + (SkuTotalPrice * (IVATax / 100))
 
-value = value.round()
+value = value.round(2)
 
-Mobile.verifyEqual(actualValue.round(), value, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(actualValue.round(2), value, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/PrintPreticket_Icon'), 0)
 
@@ -161,8 +169,7 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicket_Created_Succe
 
 Mobile.waitForElementPresent(findTestObject('Phase2/BIInvoiceSummaryScreen/PreTicket_Print_Preview_Title'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_108(2)'], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_108(2)'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC468 - To check whether pre-ticket icon is present for Cash retailer</description>
-   <name>TC468</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>69f21dde-078e-4a3e-9439-f69831075e23</testCaseGuid>
-</TestCaseEntity>

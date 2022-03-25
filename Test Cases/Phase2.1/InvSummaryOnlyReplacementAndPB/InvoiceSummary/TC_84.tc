@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>To check the Value field and  total qtycalculation while taking replacement against each sku's that is having only IEPS tax and category discount.</description>
-   <name>TC_84</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>2c05a625-0050-417c-a5de-0a3bc491ab7c</testCaseGuid>
-</TestCaseEntity>

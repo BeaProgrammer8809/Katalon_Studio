@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_111
-To check the amount displayed after entering partial stock delivered qty in Extra invoice for barcel's sku that are not in invoice split group</description>
-   <name>TC_111</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>060fbdd9-eaff-4007-80eb-685ab0ef540a</testCaseGuid>
-</TestCaseEntity>

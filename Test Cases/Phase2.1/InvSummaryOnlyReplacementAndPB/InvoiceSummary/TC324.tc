@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC324 - To check while doing replacement for the sku's that is having both IVA and IEPS taxes but not having any discounts,whether the onsite invoice is getting success and UUID ie generated</description>
+   <description>TC324 :To check while doing replacement for the sku's that is having both IVA and IEPS taxes but not having any discounts,whether the onsite invoice is getting success and UUID ie generated</description>
    <name>TC324</name>
    <tag></tag>
    <comment></comment>

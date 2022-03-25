@@ -99,7 +99,7 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name'), 
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Option'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_412'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_412'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/SelectChequeType_DropDown'), 0)
 
@@ -112,7 +112,7 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
 
 AppiumDriver driver = MobileDriverFactory.getDriver()
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_412'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_412'], FailureHandling.STOP_ON_FAILURE)
 
 def Actual_Toast_Message = driver.findElementByXPath('//android.widget.Toast[1]').getText()
 

@@ -64,23 +64,26 @@ Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/B
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/Payment_CheckBox'), 0, FailureHandling.OPTIONAL)
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
+Mobile.delay(30)
 
-def Actual_Invoice = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
-def Expected_Invoice = findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(4, 89)
-boolean Invoice = Actual_Invoice.contains(Expected_Invoice)
+def Actual_Invoice_And_UUID_PopUp_Text =Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
+def Print_Preview_Screen = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_366_Print_Preview_Screen'], FailureHandling.STOP_ON_FAILURE)
 
-def Print_Preview_text = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
-def UUID = findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(5, 89)
-boolean Actual_UUID = Print_Preview_text.contains(UUID)
+def Expected_Onsite_Status = findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(5, 89)
+boolean UUID_PopUp_Text=Actual_Invoice_And_UUID_PopUp_Text.contains(Expected_Onsite_Status)
 
-//Verification to check that Invoice is created successfully
-Mobile.verifyMatch(Invoice.toString(), findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(7, 89), false, FailureHandling.STOP_ON_FAILURE)
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_366_Print_Preview_Expected_Value'], FailureHandling.STOP_ON_FAILURE)
+def UUIDNo = Actual_Invoice_And_UUID_PopUp_Text.substring(42)
+def UUIDlength = UUIDNo.length()
+boolean Status = Print_Preview_Screen.contains(Expected_Onsite_Status)
 
-//Verification to check the UUID status
+//Verification to check that Invoice status
+Mobile.verifyMatch(Status.toString(), findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(7, 89), false, FailureHandling.STOP_ON_FAILURE)
 
+//Verification to check the UUID number length
+Mobile.verifyMatch(UUIDlength.toString(), findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(8, 89), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_366_Expected_Value_Print_Preview_Screen'], FailureHandling.STOP_ON_FAILURE)
 
 //Verification to check the Invoice Qty
 Mobile.verifyEqual(Actual_Pieces_Value, Expected_Pieces_Value, FailureHandling.STOP_ON_FAILURE)

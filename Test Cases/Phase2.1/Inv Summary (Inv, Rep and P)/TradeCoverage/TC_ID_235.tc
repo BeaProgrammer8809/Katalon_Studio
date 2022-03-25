@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_235 - To check whether able to enter decimals in Reference no field</description>
+   <description>TC_ID_235
+:To check whether able to enter decimals in Reference no field</description>
    <name>TC_ID_235</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>fb05e82a-d12d-4acc-a4ad-b6ee8b874ec9</testCaseGuid>
+   <testCaseGuid>1d678f04-f9d5-42a0-893b-7b83bb0b4766</testCaseGuid>
 </TestCaseEntity>

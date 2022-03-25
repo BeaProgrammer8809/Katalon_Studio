@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_04 : To check whether Stock proposal menu is available inside End of the day menu
+</description>
+   <name>SP_TC_04</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>33022bb9-1218-43d2-9194-081d86ccad1c</testCaseGuid>
+</TestCaseEntity>

@@ -26,7 +26,7 @@ Mobile.waitForElementPresent(findTestObject('Phase 1.1/Resource3/Order and Invoi
 
 Mobile.tap(findTestObject('Phase 1.1/Resource3/Order and Invoice/Trade Coverage/Trade Coverage Screen/btn_Search'), 0)
 
-retailerName = findTestData('Phase2/Data').getValue('Retailer Cash', 1)
+retailerName = findTestData('Phase2/TY_05/Data').getValue('Retailer Cash', 1)
 
 println(retailerName)
 

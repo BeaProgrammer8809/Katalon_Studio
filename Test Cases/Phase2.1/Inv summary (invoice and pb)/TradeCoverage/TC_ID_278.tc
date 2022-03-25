@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_278 - To check the Min. Amt displayed in the Efectivo mode</description>
+   <name>TC_ID_278</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b29303fe-b3b7-426c-a346-4285896a8e0c</testCaseGuid>
+</TestCaseEntity>

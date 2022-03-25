@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_17:-To check whether for a tray UOM sku is allowing to put qty in piece(OP) and tray (OC)</description>
+   <name>SP_TC_17</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fff3461d-cb91-48b0-a953-a7b8c52d7e0b</testCaseGuid>
+</TestCaseEntity>

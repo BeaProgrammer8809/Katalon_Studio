@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC15:To check whether the Actual return qty against each SKU is displaying correctly with respect to the Order and Invoice screen</description>
+   <name>TC15</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e97f3665-ddf2-4a14-a991-ae789abe46fb</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_521:To verify all the fields under “RTGS” should be mandatory.[Collection Before Invoice]</description>
-   <name>TC_521</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>62ebcba9-3123-4c53-aaab-556a340ea14f</testCaseGuid>
-</TestCaseEntity>

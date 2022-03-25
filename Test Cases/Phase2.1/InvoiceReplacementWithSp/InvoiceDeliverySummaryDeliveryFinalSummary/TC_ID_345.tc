@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_345:- To verify “Pesito commission : 0 of 0” label is present in the Efectivo mode under collection pop-up for retailer where pesito comission is not defined</description>
+   <name>TC_ID_345</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9bd073d6-eb1c-45f7-85de-31b291ee5e10</testCaseGuid>
+</TestCaseEntity>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the legal entity for non-multi org,while doing only invoice for Ricolino products</description>
+   <description>TC270 - To check the legal entity for non-multi org,while doing only invoice for Ricolino products</description>
    <name>TC270</name>
    <tag></tag>
    <comment></comment>

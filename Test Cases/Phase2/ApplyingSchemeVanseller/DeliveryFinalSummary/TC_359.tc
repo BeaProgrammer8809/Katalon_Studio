@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_359
+
+To check the sku qty displayed for scheme buy and get sku, in delivery final summary screen,after entering all the stock delivered qty in Extra invoice for scheme buy sku(scheme buy sku is added in split group and scheme get sku is not in group)</description>
+   <name>TC_359</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c46139fd-9093-4cc3-9ff9-464f10f49424</testCaseGuid>
+</TestCaseEntity>

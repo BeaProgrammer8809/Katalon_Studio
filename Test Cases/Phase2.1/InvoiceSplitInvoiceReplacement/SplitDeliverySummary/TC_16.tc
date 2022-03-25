@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_16: To check whether IVA tax and IEPS tax is not included in total price while doing invoice ,replacement and product buying for group sku's</description>
-   <name>TC_16</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>2e52fedd-a809-4629-8626-b92acd8ef7a3</testCaseGuid>
-</TestCaseEntity>

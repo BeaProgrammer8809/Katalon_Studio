@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_78 - To Verify the van load acceptance alert functionality for multiple day close.</description>
+   <name>VLA_TC_78</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7c5d32c8-c553-404f-a275-1a0d85434021</testCaseGuid>
+</TestCaseEntity>

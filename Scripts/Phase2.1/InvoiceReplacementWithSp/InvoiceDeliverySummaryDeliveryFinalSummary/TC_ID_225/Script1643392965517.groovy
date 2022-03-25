@@ -26,7 +26,7 @@ Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliv
 
 GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').getValue(6, 2)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Cancel_Button'), 0)
-Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Qty'), [('testData1') : GlobalVariable.ProductName], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Qty01'), [('testData1') : GlobalVariable.ProductName], FailureHandling.STOP_ON_FAILURE)
 
 def Actual_Pieces_Value = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 0, FailureHandling.STOP_ON_FAILURE)
 
@@ -61,7 +61,13 @@ Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliv
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
 
-def Expected_SKU_Qty = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+def Expected_SKU_Qty1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+
+GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
+
+def Expected_SKU_Qty2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+
+def Expected_SKU_Qty = Integer.parseInt(Expected_SKU_Qty1)+Integer.parseInt(Expected_SKU_Qty2) 
 
 //Verification to check that replacement qty is dsiaplyed in Delivery Final Summary screen
 Mobile.verifyEqual(Actual_Sku_Qty, Expected_SKU_Qty, FailureHandling.STOP_ON_FAILURE)

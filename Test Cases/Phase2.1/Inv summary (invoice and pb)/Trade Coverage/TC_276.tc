@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_276 - To check the display of Collection popup</description>
-   <name>TC_276</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d34f1b0b-efe4-40a4-8b4a-e0477628d892</testCaseGuid>
-</TestCaseEntity>

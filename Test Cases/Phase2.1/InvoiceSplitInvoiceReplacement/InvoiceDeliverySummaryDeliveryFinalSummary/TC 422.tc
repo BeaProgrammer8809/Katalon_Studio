@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 422 : To verify user can able to do other type of collections without granting pesito.</description>
+   <name>TC 422</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d41165e3-d445-40e2-8226-2fcab53ed7ce</testCaseGuid>
+</TestCaseEntity>

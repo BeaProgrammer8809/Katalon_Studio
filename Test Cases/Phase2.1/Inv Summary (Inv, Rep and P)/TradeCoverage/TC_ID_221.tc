@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_221 - To check whether able to Submit the invoice amount with futureCheque date</description>
+   <description>TC_ID_221
+:To check whether able to Submit the invoice amount with futureCheque date</description>
    <name>TC_ID_221</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d5ecb11b-c554-4e74-9d30-4a2a3f79861a</testCaseGuid>
+   <testCaseGuid>7df819b7-dc38-47ca-8b9a-c04d082fff7c</testCaseGuid>
 </TestCaseEntity>

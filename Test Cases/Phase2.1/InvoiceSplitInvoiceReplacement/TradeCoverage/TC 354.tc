@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 354:-To verify Only Replacement can be done for the retailer with RFC format as “&amp;&amp;&amp;YYMMDD&amp;&amp;&amp;”</description>
+   <name>TC 354</name>
+   <tag></tag>
+   <comment>Verifying the RFC format</comment>
+   <testCaseGuid>72596dc7-d42d-4f30-aa41-3896b3018689</testCaseGuid>
+</TestCaseEntity>

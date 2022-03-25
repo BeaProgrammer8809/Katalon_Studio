@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_498:- To check Pesito can be adjusted amount coming based on the invoice amount - credit note amount(if applicable) as per mock up</description>
-   <name>TC_498</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f3e1dfea-e9bc-4166-ac80-64753a2b14e0</testCaseGuid>
-</TestCaseEntity>

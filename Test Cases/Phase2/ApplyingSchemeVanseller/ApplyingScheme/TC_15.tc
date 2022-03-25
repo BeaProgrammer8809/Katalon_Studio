@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_15: To check whether scheme is not applying for replacement</description>
+   <name>TC_15</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eab657c1-3dc6-4e3d-b89c-ea41492241a0</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_53 :
+To check in Print skus qty is coming in pieces even if we have taken proposal in Tray Piece or bag while creating proforma.</description>
+   <name>SP_TC_53</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9c39168e-dc06-4d4b-a0f5-5cadb2faa35c</testCaseGuid>
+</TestCaseEntity>

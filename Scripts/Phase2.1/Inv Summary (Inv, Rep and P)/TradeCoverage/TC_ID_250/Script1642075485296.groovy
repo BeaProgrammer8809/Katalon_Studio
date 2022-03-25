@@ -106,30 +106,40 @@ Mobile.verifyElementText(findTestObject('Phase2/BICollectionScreen01/Collection_
 def CreditNoteAmtText = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/Amount_EditText'), 
     0)
 
+
 double CreditNoteAmt = Double.parseDouble(CreditNoteAmtText)
+
+def creditNoteText=Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/CreditNoteValue_Text'), 0)
+
+creditNoteText=creditNoteText.substring(20)
+
+double creditNote = Double.parseDouble(creditNoteText)
+
 
 def InvAmtText = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
 
 double InvAmt = Double.parseDouble(InvAmtText)
 
-Mobile.comment('Verifying PB Value greater than Invoice Value')
+Mobile.comment('Verifying  Invoice amount lesser than PB Value ')
 
-Mobile.verifyGreaterThan(ProductBuyingValue, InvoiceValue, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyLessThan(InvoiceValue, ProductBuyingValue, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_250'], 
     FailureHandling.STOP_ON_FAILURE)
 
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BICollectionScreen01/BICreditNoteScreen01/CreditNoteValue_Text'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/CreditNoteValue_Text'), 0,
+	FailureHandling.STOP_ON_FAILURE)
+
 Mobile.comment('By default amount should show in credit note section ')
-
-
 
 Mobile.verifyEqual(CreditNoteAmt, InvAmt, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BICollectionScreen01/BICreditNoteScreen01/CreditNoteValue_Text'), 
-    0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(creditNote, InvAmt, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementVisible(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/CreditNoteValue_Text'), 0, 
-    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

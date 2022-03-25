@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 270 - To verify “Folio No” field is accepting the “-” Special Characters.</description>
+   <name>TC 270</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a17cb394-3fd0-49be-b2b3-0e062232be71</testCaseGuid>
+</TestCaseEntity>

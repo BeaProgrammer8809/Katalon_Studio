@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_036 - Check whether user is allowed to enter More than SIH qty into OP against an SKU</description>
-   <name>TC_036</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>6b2c2869-6e8a-4b19-8f61-5f994a826fc3</testCaseGuid>
-</TestCaseEntity>

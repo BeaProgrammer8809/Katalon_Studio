@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_197:To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement for the sku's that is having only tax  IEPS but not having any discounts</description>
-   <name>TC_197</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a4f4f008-dd86-477f-b338-fdf8c812f62a</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TTC_289:- To check the legal entity while doing only product buying for Bimbo products</description>
-   <name>TC_289</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c38d47a6-3b8e-4fad-9153-c44ef178d070</testCaseGuid>
-</TestCaseEntity>

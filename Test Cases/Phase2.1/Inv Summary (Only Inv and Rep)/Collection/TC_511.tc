@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_511:To check the entity name and folio type displayed inside Folio no popup if only replacement is taken against Ricolino sku's</description>
-   <name>TC_511</name>
-   <tag></tag>
-   <comment>Verifying the Legal Entity name
- Folio no field should be displayed</comment>
-   <testCaseGuid>0bb8e7c2-c1c4-4b46-aa4d-98ce72f0a6dd</testCaseGuid>
-</TestCaseEntity>

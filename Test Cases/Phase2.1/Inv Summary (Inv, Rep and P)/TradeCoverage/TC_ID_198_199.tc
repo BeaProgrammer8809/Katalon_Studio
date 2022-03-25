@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_ID_198:-To check the Inv Amt displayed in the Cheques mode</description>
-   <name>TC_ID_198_199</name>
-   <tag></tag>
-   <comment>Title should be shown as Collection
-Verifying invoice Amount and Net Amount</comment>
-   <testCaseGuid>1f15e17d-4ef5-405a-bf4e-9bb633b7a6cb</testCaseGuid>
-</TestCaseEntity>

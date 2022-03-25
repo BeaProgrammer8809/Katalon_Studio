@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_241 - To check whether able to collect the invoice amount in cash for non-multi org route when invoice,replacement and product buying for the sku that are in invoice spit group</description>
-   <name>TC_241</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>91980c14-5fd3-4384-beff-b115a07dbede</testCaseGuid>
-</TestCaseEntity>

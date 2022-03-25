@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_28:To check whether Pop up msg is coming with Ok and cancel option</description>
+   <name>SP_TC_28</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b1911cac-1800-4af2-a1df-20d70cb82ba6</testCaseGuid>
+</TestCaseEntity>

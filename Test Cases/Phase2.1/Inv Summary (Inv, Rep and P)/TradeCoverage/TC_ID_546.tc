@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_546
+:-To verify Invoice , PB and Replacement can be done for the retailer with RFC format as “&amp;XXYYMMDDaaa”</description>
+   <name>TC_ID_546</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba3d9875-df8d-48b0-92b4-bc7124991c93</testCaseGuid>
+</TestCaseEntity>

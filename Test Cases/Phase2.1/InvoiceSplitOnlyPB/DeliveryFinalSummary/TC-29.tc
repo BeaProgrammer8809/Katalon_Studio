@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC-29:To check, upon edit icon tap Ok Cancel pop up message should open, asking Do you want to edit invoice?</description>
-   <name>TC-29</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ea46a873-e4ca-400a-b9a2-2ee07d94b064</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_18:-To check whether for a tary UOM sku is not allowing to in bag.</description>
+   <name>SP_TC_18</name>
+   <tag></tag>
+   <comment>User Should not allow to take stock proposal in bag</comment>
+   <testCaseGuid>d676ef09-0375-48ae-8687-e2e0016f6ad9</testCaseGuid>
+</TestCaseEntity>

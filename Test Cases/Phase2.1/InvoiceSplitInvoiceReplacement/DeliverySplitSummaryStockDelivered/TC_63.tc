@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_63 - To check the Stock delivered displayed after taking invoice, replacement and pb against each barcel sku's that are not in invoice split group (if one invoice split group is available)</description>
-   <name>TC_63</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>706a4121-ef71-4a0f-b3e1-27010dee328f</testCaseGuid>
-</TestCaseEntity>

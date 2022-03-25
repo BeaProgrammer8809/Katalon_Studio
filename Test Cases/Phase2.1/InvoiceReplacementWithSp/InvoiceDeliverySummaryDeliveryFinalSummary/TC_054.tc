@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_054:Check whether the entered qty in order and invoice screen into Pieces field against SKUs are tallying in the delivery summary screen and SRP of Delivery summary screen are matching with SRP of Order and Invoice screen.</description>
-   <name>TC_054</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>685f8234-c5c5-4109-859a-32cfcf1fb571</testCaseGuid>
-</TestCaseEntity>

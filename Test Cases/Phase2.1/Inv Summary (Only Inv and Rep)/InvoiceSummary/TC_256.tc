@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_256:To check the Total amount inside the info popup while taking invoice and replacement for the sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
-   <name>TC_256</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>cf173d25-ed6e-4102-922c-59175a15e48f</testCaseGuid>
-</TestCaseEntity>

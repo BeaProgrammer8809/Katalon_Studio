@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_15: To check the Total price displayed for each sku's after taking invoice, replacement and pb for non-group sku's</description>
-   <name>TC_15</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1e10e0ed-e116-4b84-9490-45c2e19a6884</testCaseGuid>
-</TestCaseEntity>

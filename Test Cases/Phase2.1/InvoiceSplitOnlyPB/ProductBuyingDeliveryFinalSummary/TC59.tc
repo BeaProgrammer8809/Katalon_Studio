@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC59: To check the Amount field calculation logic in Delivery Final Summaryscreen while doing product buying for group sku's and No group sku's</description>
+   <name>TC59</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>edba84d3-b927-468f-8ab3-b0a364fd6ab3</testCaseGuid>
+</TestCaseEntity>

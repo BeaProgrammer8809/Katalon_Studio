@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 265 - To verify “Folio No” field present in the Delivery Final Summary Screen against invoice split/Default invoice.</description>
+   <name>TC 265</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2fcd4dd-a844-46d6-8013-4b03ef9f373e</testCaseGuid>
+</TestCaseEntity>

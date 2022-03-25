@@ -1,13 +1,20 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
 import java.text.DecimalFormat as DecimalFormat
-
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4004'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -87,24 +94,24 @@ println('Value price for sku is ' + valuePrice)
 
 def IVA = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(7, 8)
 
-IVA=Double.parseDouble(IVA)
+IVA = Double.parseDouble(IVA)
 
-println IVA
+println(IVA)
 
 def tax = Double.parseDouble(expectedTotalPrice) * (IVA / 100)
 
 println('Tax included for the sku is ' + tax)
 
-def expectedValuePrice = Double.parseDouble(expectedTotalPrice) + (tax)
+def expectedValuePrice = Double.parseDouble(expectedTotalPrice) + tax
 
-println expectedValuePrice
+println(expectedValuePrice)
 
 Mobile.verifyEqual(valuePrice, expectedValuePrice, FailureHandling.STOP_ON_FAILURE)
 
 println('Value price is sum of total price and tax')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_285_SummaryScreen'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_285_SummaryScreen'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
@@ -133,6 +140,36 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
     0)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+def inv = Mobile.getText(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(inv)
+
+def totalSum = Double.parseDouble(totalPrice)
+
+tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+println(tax)
+
+def taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 27)
+
+println(taxPercentage)
+
+def result = inv.contains(tax.toString())
+
+def expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax amount is displayed in invoice screen')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is displayed in invoice screen')
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_285_printScreen'], 
     FailureHandling.STOP_ON_FAILURE)

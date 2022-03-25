@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>To check the sku qty displayed for scheme buy and get sku in delivery final summary screen,after entering all the stock delivered qty in Extra invoice for scheme buy(scheme buy and get sku is added in same split group)</description>
-   <name>TC_353</name>
-   <tag></tag>
-   <comment>Sku's ty against extrainvoice-1 should be no.of invoice qty for scheme get sku in order and invoice screen
-sku's qty against Invoice split-1 should display the no.of free sku applied in scheme</comment>
-   <testCaseGuid>a8060131-c881-4b55-81d5-933c42ebf33a</testCaseGuid>
-</TestCaseEntity>

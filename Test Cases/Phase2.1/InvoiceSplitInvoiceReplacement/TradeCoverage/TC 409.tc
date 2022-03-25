@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 409 : To verify only Invoice can be done for the retailer having special char “Ñ”</description>
+   <name>TC 409</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06ee63e4-2f27-482c-be71-6c6c588306f3</testCaseGuid>
+</TestCaseEntity>

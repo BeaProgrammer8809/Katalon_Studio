@@ -52,7 +52,7 @@ Mobile.tap(findTestObject('Phase2/BINoCartePorteGeneratedPopup01/OK_Button'), 0)
 
 Mobile.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Phase2/BIBlueLabelProcess01/Back_Button'), 0)
+Mobile.tap(findTestObject('Phase2/BIBlueLabelProcess01/Back_Button'), 0,FailureHandling.OPTIONAL)
 
 
 

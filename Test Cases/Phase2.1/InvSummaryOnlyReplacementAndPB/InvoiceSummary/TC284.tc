@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC284 : To check whether the entered return quantity and product buying qty are persisting in Order and Invoice and product buying screen while navigating back from summary screen</description>
+   <description>TC284 :To check whether the entered return quantity and product buying qty are persisting in Order and Invoice and product buying screen while navigating back from summary screen</description>
    <name>TC284</name>
    <tag></tag>
    <comment></comment>

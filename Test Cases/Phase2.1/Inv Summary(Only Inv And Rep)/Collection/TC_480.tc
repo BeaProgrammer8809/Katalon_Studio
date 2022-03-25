@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_480:- To check after doing the collection if create preticket ,whether collection payment is cleared</description>
-   <name>TC_480</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>21e23f03-41d9-44ae-9b5a-60fce9d87022</testCaseGuid>
-</TestCaseEntity>

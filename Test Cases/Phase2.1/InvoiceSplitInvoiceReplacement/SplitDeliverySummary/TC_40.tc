@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_40:To check the split name displayed after taking invoice, replacement and pb against each ricolino sku's that are not in invoice split group (if one invoice split group is available)</description>
-   <name>TC_40</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>cc5bcecb-eb2b-4e29-a46d-063347f9f18f</testCaseGuid>
-</TestCaseEntity>

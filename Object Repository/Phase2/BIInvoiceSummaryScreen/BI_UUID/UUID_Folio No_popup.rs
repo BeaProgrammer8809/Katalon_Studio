@@ -4,6 +4,12 @@
    <name>UUID_Folio No_popup</name>
    <tag></tag>
    <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.EditText' and (text() = 'Folio No.' or . = 'Folio No.')]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -21,11 +27,11 @@
       <value>Folio No.</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.ivy.bimbomx.mexico.view.uat:id/invoiceFolio_Edtxt</value>
+      <value>${GlobalVariable.Package}:id/invoiceFolio_Edtxt</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

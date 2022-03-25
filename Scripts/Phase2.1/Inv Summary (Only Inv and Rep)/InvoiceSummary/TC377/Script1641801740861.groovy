@@ -41,9 +41,6 @@ Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Cancel_Button'), 0)
 
-//Mobile.tap('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text', 0)
-//
-//Mobile.clearText('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text', 0)
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
 GlobalVariable.ProductName = findTestData('Phase2.1/Common_Data/CommonData').getValue('Onsite Products', 2)

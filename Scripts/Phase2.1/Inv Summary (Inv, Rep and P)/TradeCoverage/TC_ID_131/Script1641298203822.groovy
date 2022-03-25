@@ -186,8 +186,8 @@ Mobile.verifyElementExist(findTestObject('Phase2/BICollectionScreen01/BIChequesS
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/Balance_TextView'), 0)
 
-Mobile.verifyElementText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/Balance_TextView'), findTestData(
-		'Phase2.1/TY_06/Inv Summary (Inv, Rep and P)/TradeCoverage').getValue(4, 36) + invAmtText, FailureHandling.STOP_ON_FAILURE)
+//Mobile.verifyElementText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/Balance_TextView'), findTestData(
+//		'Phase2.1/TY_06/Inv Summary (Inv, Rep and P)/TradeCoverage').getValue(4, 36) + invAmtText, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.comment('Total paid amount should display the amount entered in Total paid field at RTGS mode')
 

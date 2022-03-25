@@ -153,5 +153,10 @@ Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIPrintPrev
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_282_printScreen'], 
     FailureHandling.STOP_ON_FAILURE)
 
+Mobile.swipe(0, 800, 0, 50)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_282_printScreen_2'],
+	FailureHandling.STOP_ON_FAILURE)
+
 Mobile.closeApplication()
 

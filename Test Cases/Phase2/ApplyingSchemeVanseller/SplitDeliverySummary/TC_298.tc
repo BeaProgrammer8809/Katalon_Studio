@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_298 - To check the SRP price displayed when scheme buy and get sku is added in split group or no group</description>
+   <name>TC_298</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1500337c-7434-4292-b70c-6056e57f97c5</testCaseGuid>
+</TestCaseEntity>

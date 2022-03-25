@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement and product buying  for the sku's that is having IVA, IEPS taxes and  Item discount.</description>
+   <description>TC226:To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement and product buying  for the sku's that is having IVA, IEPS taxes and  Item discount.</description>
    <name>TC226</name>
    <tag></tag>
    <comment></comment>

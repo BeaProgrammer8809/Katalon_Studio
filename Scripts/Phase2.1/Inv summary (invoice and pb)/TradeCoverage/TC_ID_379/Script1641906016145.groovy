@@ -106,12 +106,16 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeC
 
 def Actual_Toast_Message = driver.findElementByXPath('//android.widget.Toast[1]').getText()
 
-def Expected_Toast_Message = findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(5, 30)
-
 println(Actual_Toast_Message)
 
-Actual_Toast_Message.contains(Expected_Toast_Message)
+def Expected_Toast_Message = findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(5, 30)
+
+def Expecetd_TM_Value = findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(3, 30)
+
+def Actual_TM_Value = Actual_Toast_Message.contains(Expected_Toast_Message)
 //Mobile.verifyMatch(Actual_Toast_Message, Expected_Toast_Message, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyMatch(Actual_TM_Value.toString(), Expecetd_TM_Value, false, FailureHandling.STOP_ON_FAILURE)
 
 println('User should not generate the invoice')
 

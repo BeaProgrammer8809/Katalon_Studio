@@ -47,21 +47,8 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Transfe
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/SelectBank'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue('DropdownName', 2)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name'), 0)
-
+Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/ReferenceNum_EditText'), findTestData('Phase2.1/Common_Data/CommonData').getValue(15, 1), 0)
 AppiumDriver driver = MobileDriverFactory.getDriver()
-
-List  dropdownoptions = driver.findElementsByXPath('//*[@resource-id="android:id/text1"]')
-
-def DropdownOptionsSize=dropdownoptions.size()
-
-Mobile.verifyLessThan(0, DropdownOptionsSize)
-
-GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').getValue('DropdownName', 2)
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Option'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
 
@@ -71,12 +58,37 @@ def Actual_Toast_Message = driver.findElementByXPath('//android.widget.Toast[1]'
 
 println(Actual_Toast_Message)
 
-def Expected_Toast_Message = findTestData('Phase2.1/TY_05/Testdata').getValue('Data1', 23)
+def Expected_Toast_Message = findTestData('Phase2.1/TY_05/Testdata').getValue('Data1', 22)
 
 Mobile.verifyMatch(Actual_Toast_Message, Expected_Toast_Message, false,FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_140'],
+Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_140(1)'],
 	FailureHandling.STOP_ON_FAILURE)
+
+GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue('DropdownName', 2)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name'), 0)
+
+
+
+/*List  dropdownoptions = driver.findElementsByXPath('//*[@resource-id="android:id/text1"]')
+
+def DropdownOptionsSize=dropdownoptions.size()
+
+Mobile.verifyLessThan(0, DropdownOptionsSize)*/
+
+GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').getValue('DropdownName', 2)
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_140(2)'],
+	FailureHandling.STOP_ON_FAILURE)
+
+'Verification of Branch option'
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Option'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Option'), 0, FailureHandling.STOP_ON_FAILURE)
+
 
 Mobile.closeApplication()
 

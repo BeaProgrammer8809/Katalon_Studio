@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_78 - To check the Lines qty displayed after entering all the stock delivered qty in Extra invoice for ricolino's sku that are in invoice split group</description>
-   <name>TC_78</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f9b809bb-0ce8-4574-8c4c-53b0ad4d7ea9</testCaseGuid>
-</TestCaseEntity>

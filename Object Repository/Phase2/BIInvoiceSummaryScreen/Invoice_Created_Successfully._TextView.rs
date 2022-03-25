@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.TextView' and (text() = 'Invoice created successfully.' or . = 'Invoice created successfully.') and @resource-id = '${GlobalVariable.Package}:id/msg_text']</value>
+         <value>//*[@class = 'android.widget.TextView' and @resource-id = '${GlobalVariable.Package}:id/msg_text']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,7 +20,7 @@
       <value>android.widget.TextView</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>

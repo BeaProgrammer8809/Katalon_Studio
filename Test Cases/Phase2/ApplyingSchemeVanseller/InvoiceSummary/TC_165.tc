@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_165:-To check scheme is created like below,while doing invoice for 002_lak_qt=1 whether scheme is applying in invoice summary screen
+
+Scheme buy logic:OR Scheme get logic:ONLY
+
+Scheme buy sku:001_lak_qt  buy qty=1
+Scheme buy sku:002_lak_qt  buy qty=1
+
+Scheme get sku:003_lak_qt  get qty=2</description>
+   <name>TC_165</name>
+   <tag></tag>
+   <comment>Scheme should be applied successfully
+Verifying the scheme buy detail
+Verifying the scheme get detail</comment>
+   <testCaseGuid>144bbd5e-f306-42d8-8bf0-d17a1115e88b</testCaseGuid>
+</TestCaseEntity>

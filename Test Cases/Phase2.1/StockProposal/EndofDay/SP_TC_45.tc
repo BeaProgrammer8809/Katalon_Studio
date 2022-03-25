@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_45 : To check whether when we click on ok button then it is coming out if proposal screen</description>
+   <name>SP_TC_45</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a1cac29d-3fe6-45e1-9e61-c840570c4ac1</testCaseGuid>
+</TestCaseEntity>

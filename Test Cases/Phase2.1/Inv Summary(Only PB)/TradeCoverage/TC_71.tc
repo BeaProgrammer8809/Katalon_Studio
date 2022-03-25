@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_71:- To check IF product buying has done for reclino sku then header is coming as bimbo sa de c.v above folio text field</description>
-   <name>TC_71</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>64711587-3cd7-49dc-9f63-85ef06e9943f</testCaseGuid>
-</TestCaseEntity>

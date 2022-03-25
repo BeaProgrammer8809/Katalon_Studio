@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_225 - To check the Min. Amt displayed in the Transferencias Electronicas mode</description>
+   <description>TC_ID_225
+:To check the Min. Amt displayed in the Transferencias Electronicas mode</description>
    <name>TC_ID_225</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a7cccaa4-501f-43c8-9f52-d3734ffe2994</testCaseGuid>
+   <testCaseGuid>80f56a56-f212-4424-a8d2-ef655e2b1a9f</testCaseGuid>
 </TestCaseEntity>

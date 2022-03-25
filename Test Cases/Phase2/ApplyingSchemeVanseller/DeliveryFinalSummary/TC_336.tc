@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Check the default display of Delivery split summary screen</description>
+   <name>TC_336</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b5d4ebd2-f814-4c87-bee6-c60607319f3c</testCaseGuid>
+</TestCaseEntity>

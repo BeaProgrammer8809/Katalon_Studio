@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_222 - To check whether able to submit full invoice amount in only Efectivo mode when scheme is applied</description>
+   <name>TC_222</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d291bf07-3a73-442f-abee-6f8d6057b7cf</testCaseGuid>
+</TestCaseEntity>

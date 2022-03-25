@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_517
+:To verify whether able to apply amount in RTGS mode only with ref no[Collection Before Invoice]</description>
+   <name>TC_ID_517</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5815233d-d037-4002-bc2b-d8fe4ec6b7ce</testCaseGuid>
+</TestCaseEntity>

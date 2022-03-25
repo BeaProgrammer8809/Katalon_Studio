@@ -65,6 +65,10 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup0
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_185_collection'], 
     FailureHandling.STOP_ON_FAILURE)
 
+Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/MinAmt_Value'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/MinAmt_Value'), 0, FailureHandling.STOP_ON_FAILURE)
+
 def MinAmount1 = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/MinAmt_Value'), 0)
 
 println(MinAmount1)

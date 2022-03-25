@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC336 -  To check while doing product buying and replacement for same sku'sthat is having IEPS tax and Item discount,whether the onsite invoice is getting success and UUID is generated</description>
+   <description>TC336 : To check while doing product buying and replacement for same sku'sthat is having IEPS tax and Item discount,whether the onsite invoice is getting success and UUID is generated</description>
    <name>TC336</name>
    <tag></tag>
    <comment></comment>

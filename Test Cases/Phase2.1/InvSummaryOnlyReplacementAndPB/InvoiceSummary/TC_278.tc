@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_278:To check the Total amount inside the info popup while taking replacement and product buying for the sku's that is having only discount (Category discount) but not having any taxes</description>
-   <name>TC_278</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>99fdf10f-32e6-4bdd-9f8d-098f26575939</testCaseGuid>
-</TestCaseEntity>

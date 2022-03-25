@@ -48,12 +48,20 @@ GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
 
 def Actual_ClaveEntidad =Mobile.getText(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
+
+//Verification to check that "Claveentidad" is Selected
+Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 'text', 'AGU', 0, FailureHandling.STOP_ON_FAILURE)
+
 GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(13, 1)
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
 
 GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').getValue(13, 2)
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
 def Actual_Ambito =Mobile.getText(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
+
+//Verification to check that "Ambito" is Selected
+Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 'text', 'Local', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_367_Claveentidad_And_Ambito_Selected'], FailureHandling.STOP_ON_FAILURE)
 
 GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(14, 1)
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
@@ -62,9 +70,11 @@ GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
 
 Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/INE_Complement_Popup/INE_ID_Contabilidad_EditText'), findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(6, 90), 0)
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_367_Only_Ambito_Selected'], FailureHandling.STOP_ON_FAILURE)
-
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/INE_Complement_Popup/Submit_btn'), 0)
+
+//Verification to check Delivery Final Summary Screen is displayed
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_367_Delivery_Final_Summary_Screen'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Tag_Icon'), 0)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Edit_Invoice_PopUp_OK_Button'), 0)
@@ -79,8 +89,14 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/IneCo
 GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(12, 1)
 def Expected_ClaveEntidad =Mobile.getText(findTestObject('Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
 
+//Verification to check that "Claveentidad" is not Selected
+Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIDropdown/Dropdown_Name_Indexing'), 'text', '--Select--', 0, FailureHandling.STOP_ON_FAILURE)
+
 GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(13, 1)
 def Expected_Ambito =Mobile.getText(findTestObject('Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
+
+//Verification to check that "Ambito" is not Selected
+Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIDropdown/Dropdown_Name_Indexing'), 'text', '--Select--', 0, FailureHandling.STOP_ON_FAILURE)
 
 //Verification to check that selected ClaveEntidad option is not persisted
 Mobile.verifyNotMatch(Actual_ClaveEntidad, Expected_ClaveEntidad, false, FailureHandling.STOP_ON_FAILURE)

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_135:- To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Salable) for the sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
-   <name>TC_135</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>fa111136-29eb-4a9c-98e5-cfeb8df1c890</testCaseGuid>
-</TestCaseEntity>

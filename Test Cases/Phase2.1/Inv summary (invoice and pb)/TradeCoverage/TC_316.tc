@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_316:To check whether able to Submit the invoice amount with max digit in Cheque no</description>
-   <name>TC_316</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>eb9d9892-ea7e-40e3-852e-e66471f10bcc</testCaseGuid>
-</TestCaseEntity>

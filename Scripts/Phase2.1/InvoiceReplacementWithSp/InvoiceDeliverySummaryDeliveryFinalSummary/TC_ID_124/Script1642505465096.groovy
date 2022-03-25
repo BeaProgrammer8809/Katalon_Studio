@@ -77,16 +77,22 @@ GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(
 Mobile.setText(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv1_EditView_Indexing'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
         5, 3), 0)
 
+ExtraInv1EnteredQty = Mobile.getText(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv1_EditView_Indexing'), 0)
+
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
 
 Mobile.setText(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv2_EditView_Indexing'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
         5, 3), 0)
+
+ExtraInv2EnteredQty = Mobile.getText(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv2_EditView_Indexing'), 0)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 3)
 
 Mobile.tap(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv3_EditView_Indexing'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/3_NumButton'), 0)
+
+ExtraInv3EnteredQty = Mobile.getText(findTestObject('Phase2/BISplitDeliverySummary01/ExtraInv3_EditView_Indexing'), 0)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), 
     [('testCaseName') : 'TC_ID_124'], FailureHandling.STOP_ON_FAILURE)
@@ -96,11 +102,41 @@ Mobile.tap(findTestObject('Phase2/BISplitDeliverySummary01/Create_Final_Invoice_
 Mobile.verifyElementVisible(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), 0)
 
 Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), findTestData(
-	'Phase2.1/TY_13/Invoice, Replacement with Sp').getValue(4, 7))
+        'Phase2.1/TY_13/Invoice, Replacement with Sp').getValue(4, 7))
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
-	[('testCaseName') : 'TC_ID_124AfterTapCreateInvoice'], FailureHandling.STOP_ON_FAILURE)
+GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 4)
 
+ActualExtraInv1Name = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+
+Mobile.verifyMatch(ActualExtraInv1Name, findTestData('Phase2.1/TY_13/Invoice, Replacement with Sp').getValue(2, 10), false)
+
+def ExtraInv1QtyDisplayed = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+
+Mobile.verifyMatch(ExtraInv1QtyDisplayed, ExtraInv1EnteredQty, false)
+
+GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 5)
+
+def ActualExtraInv2Name = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+println(ActualExtraInv2Name + "--- ActualExtraInv2Name displayed")
+
+Mobile.verifyMatch(ActualExtraInv2Name , findTestData('Phase2.1/TY_13/Invoice, Replacement with Sp').getValue(3, 10), false)
+
+def ExtraInv2QtyDisplayed = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+
+Mobile.verifyMatch(ExtraInv2QtyDisplayed, ExtraInv2EnteredQty, false)
+
+GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 6)
+
+def ActualExtraInv3Name = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 0)
+
+Mobile.verifyMatch(ActualExtraInv3Name, findTestData('Phase2.1/TY_13/Invoice, Replacement with Sp').getValue(4, 10), false)
+
+def ExtraInv3QtyDisplayed = Mobile.getText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+
+Mobile.verifyMatch(ExtraInv3QtyDisplayed, ExtraInv3EnteredQty, false)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), 
+    [('testCaseName') : 'TC_ID_124AfterTapCreateInvoice'], FailureHandling.STOP_ON_FAILURE)
 
 println('We are able to enter the full qty in a single ExtraInv ')
 

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_02: Check whether delivery summary screen is displaying after invoice split is mapped with the respective channel</description>
-   <name>TC_02</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>0712c50a-4cb0-4b26-a6a5-8cb4bbd9946e</testCaseGuid>
-</TestCaseEntity>

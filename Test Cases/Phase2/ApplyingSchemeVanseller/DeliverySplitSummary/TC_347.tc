@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_347
+
+Check whether able to enter invoice count=6 in delivery summary screen</description>
+   <name>TC_347</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1a22d83a-18cb-4e8f-b7b4-dd244b915a2e</testCaseGuid>
+</TestCaseEntity>

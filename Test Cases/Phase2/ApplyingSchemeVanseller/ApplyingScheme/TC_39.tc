@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_39:-To check when scheme is created like below so when enter invoice qty =3 ,which slab is getting applied in Applying scheme screen
+ Group buy logic :ONLY Group get logic:ONLY</description>
+   <name>TC_39</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d089b370-9abc-43a2-a31e-56ec68f54562</testCaseGuid>
+</TestCaseEntity>

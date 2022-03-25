@@ -133,8 +133,8 @@ def Tax_Diff_Amount = Double.parseDouble(Total_Value) - Double.parseDouble(Price
 
 println(Tax_Diff_Amount)
 
-Mobile.verifyNotMatch(Price_Value, Total_Value, false, FailureHandling.STOP_ON_FAILURE)
-
+//Mobile.verifyNotMatch(Price_Value, Total_Value, false, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyGreaterThan(Price_Value, Total_Value, FailureHandling.STOP_ON_FAILURE)
 println('IEPS  tax amount is added in line item total price of the sku')
 
 Mobile.verifyMatch(Decimal_Price_Value, Product_Buying_Amount.toString(), false, FailureHandling.STOP_ON_FAILURE)
@@ -181,7 +181,7 @@ boolean Actual_Number = Invoice_Sheet_Text.contains(IEPS)
 
 println(Actual_Number)
 
-//Verification of Folio number in Print Preview screen
+//Verification of IEPSTAX in Print Preview screen
 Mobile.verifyMatch(Actual_Number.toString(), findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(20, 87), false, 
     FailureHandling.STOP_ON_FAILURE)
 

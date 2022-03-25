@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC14:To check whether the Piece qty against each SKU is displaying correctly with respect to the Order and Invoice screen and product buying screen</description>
+   <name>TC14</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cda1279e-4ca8-4852-98ce-a4158ce4c757</testCaseGuid>
+</TestCaseEntity>

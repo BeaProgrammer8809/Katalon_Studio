@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_257: To check the total qty count while taking only invoice against each sku's</description>
-   <name>TC_257</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>74e22d03-b441-4d6e-89f6-f7c10a2ba834</testCaseGuid>
-</TestCaseEntity>

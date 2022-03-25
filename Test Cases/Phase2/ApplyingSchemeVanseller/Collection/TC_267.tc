@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_267
+
+To check whether able to Submit the invoice amount with max digit in Reference no when scheme is applied</description>
+   <name>TC_267</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d82fa5ea-0c6e-40b0-a2da-6ba3619f761a</testCaseGuid>
+</TestCaseEntity>

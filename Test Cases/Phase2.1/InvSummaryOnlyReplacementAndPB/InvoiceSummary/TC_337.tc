@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_337: To check while taking product buying and replacement for same sku'sthat is having IEPS tax with Item discount and Detail IEPS flag is enabled for the store,whether the onsite invoice is getting success and UUID is generated</description>
-   <name>TC_337</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7dff7672-c4da-47fb-89d2-57e74153da29</testCaseGuid>
-</TestCaseEntity>

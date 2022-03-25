@@ -73,6 +73,10 @@ Mobile.verifyEqual(totalPrice, expectedInvAmt, FailureHandling.STOP_ON_FAILURE)
 
 println "Invoice amount is zero for replacement qty"
 
+def returnQty=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 0)
+
+def uPrice=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0)
+
 def valuePrice = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
 println('Value price for sku is ' + valuePrice)
@@ -101,6 +105,36 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
     0)
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+def inv = Mobile.getText(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(inv)
+
+def totalSum = Double.parseDouble(uPrice)*Double.parseDouble(returnQty)
+
+def tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
+
+println(tax)
+
+def taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 27)
+
+println(taxPercentage)
+
+def result = inv.contains(tax.toString())
+
+def expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax amount is displayed in invoice screen')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 27)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is displayed in invoice screen')
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_286_printScreen'], 
     FailureHandling.STOP_ON_FAILURE)

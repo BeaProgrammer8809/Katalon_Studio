@@ -17,7 +17,7 @@ GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData_03').g
 
 GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
-GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 17)
+GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 19)
 
 Mobile.setText(findTestObject('Object Repository/Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName, 
     0)
@@ -68,7 +68,20 @@ def uPrice=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSumm
 
 println "unit price for sku is "+uPrice
 
-def expectedTotalPrice=Double.parseDouble(uPrice)*Double.parseDouble(pieceQty)
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
+
+def actualTotalDiscountForSKU = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),
+	0)
+
+def splitDisc = actualTotalDiscountForSKU.split(' ')
+
+actualTotalDiscountForSKU = (splitDisc[1])
+
+println('Actual composite discount for sku is ' + actualTotalDiscountForSKU)
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)
+
+def expectedTotalPrice=Double.parseDouble(uPrice)*Double.parseDouble(pieceQty)-Double.parseDouble(actualTotalDiscountForSKU)
 
 DecimalFormat df=new DecimalFormat("0.00")
 

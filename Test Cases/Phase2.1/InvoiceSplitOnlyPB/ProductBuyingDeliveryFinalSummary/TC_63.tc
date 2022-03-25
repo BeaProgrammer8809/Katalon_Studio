@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_63 : To check while doing product buying for split group or no group sku's that is having IEPS tax ,whether IEPS tax is applying in delivery final summary screen</description>
-   <name>TC_63</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>36c4c794-6cb2-40da-9ec8-09432e85e7ef</testCaseGuid>
-</TestCaseEntity>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_273 - Check whether able to change the Product and entered piece qty in Product Buying screen after navigating back from summary screen
-Should allow to modify Select Product and Qty for new skus</description>
-   <name>TC_273</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4d65abf7-5d42-49b0-aed8-a1c71e15ad3b</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_60 - To check the Stock delivered displayed after taking invoice, replacement and pb against each recolino sku's that are in invoice split group (Considering : only one invoice split group is available)</description>
-   <name>TC_60</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4721b003-d42c-4490-ab85-44e95d42317c</testCaseGuid>
-</TestCaseEntity>

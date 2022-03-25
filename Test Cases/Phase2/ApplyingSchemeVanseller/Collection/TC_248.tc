@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_248 - To check the display of Transferencias Electronicas mode in Collections popup when scheme is applied
+</description>
+   <name>TC_248</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1c42498c-4bf4-48f7-8549-47b86839340f</testCaseGuid>
+</TestCaseEntity>

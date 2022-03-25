@@ -80,7 +80,7 @@ Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Am
 	
 AppiumDriver driver = MobileDriverFactory.getDriver()
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_287'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_287'], FailureHandling.STOP_ON_FAILURE)
 
 def Actual_Toast_Message = driver.findElementByXPath('//android.widget.Toast[1]').getText()
 
@@ -90,6 +90,6 @@ println(Actual_Toast_Message)
 
 Mobile.verifyMatch(Actual_Toast_Message, Expected_Toast_Message, false, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_287'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_287'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_54 :
+To check whether price is also getting calculated on the basis of pieces in Stock proposal print</description>
+   <name>SP_TC_54</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5a3c433e-9c6a-4385-9943-8f34d88aa4dc</testCaseGuid>
+</TestCaseEntity>

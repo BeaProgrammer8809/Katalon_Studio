@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 391 : To verify Invoice can be done with Scheme for the retailer with RFC format as “&amp;XXXYYMMDDaaa”</description>
+   <name>TC 391</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51451df3-ee35-4a1b-8d86-0da5f8b26763</testCaseGuid>
+</TestCaseEntity>

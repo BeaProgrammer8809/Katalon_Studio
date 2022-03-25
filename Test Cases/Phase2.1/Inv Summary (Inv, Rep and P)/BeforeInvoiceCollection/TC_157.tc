@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_157:-To check When invoice with done for same company sku then it in collection screen Invoice amount is getting balanced with Product buying amount</description>
-   <name>TC_157</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>69452c9a-530f-47ef-bef6-f80db1c2ef08</testCaseGuid>
-</TestCaseEntity>

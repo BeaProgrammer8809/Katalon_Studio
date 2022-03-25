@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_479:- To check pestio commission for pesito granted amount can be collected in cash mode</description>
-   <name>TC_479</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d01071e3-8eeb-4b1b-9245-663f39f27cfd</testCaseGuid>
-</TestCaseEntity>

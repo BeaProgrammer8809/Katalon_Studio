@@ -85,7 +85,7 @@ Mobile.verifyEqual(FinalActualValue, FinalCalculatedvalue,FailureHandling.STOP_O
 
 Mobile.verifyEqual(InvoiceQuantity, TotalQuantityinSummary,FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (Only Replacement and pb)/Invoice summary/Screenshot'), [('testCaseName') : 'TC94'],
+Mobile.callTestCase(findTestCase('Phase2.1/InvSummaryOnlyReplacementAndPB/Invoice summary/Screenshot'), [('testCaseName') : 'TC94'],
 	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

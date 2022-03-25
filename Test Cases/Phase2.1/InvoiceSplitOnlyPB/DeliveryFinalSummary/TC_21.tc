@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_21 : Check whether for Salable and Non-Salable both Qty in Product Buying screen, delivery final summary screen is coming</description>
-   <name>TC_21</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>69752d95-cab7-4a32-adcf-ae020ed0d417</testCaseGuid>
-</TestCaseEntity>

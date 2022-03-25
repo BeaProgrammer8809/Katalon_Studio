@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_172
-To check while doing invoice ,replacement and product buying for different split group sku's or no group sku's ,whether replacement and product buying amount is not displaying in collection</description>
-   <name>TC_172</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>780f06a7-bba3-42fc-87ae-b7b48daafef6</testCaseGuid>
-</TestCaseEntity>

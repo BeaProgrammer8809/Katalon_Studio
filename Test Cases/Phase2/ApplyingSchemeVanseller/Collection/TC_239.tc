@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_239 - To check whether able to Submit with Total paid amount lesser than invoice amount when scheme is applied</description>
+   <name>TC_239</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f5ae69ec-f58f-48ae-b6c8-3b932885468a</testCaseGuid>
+</TestCaseEntity>

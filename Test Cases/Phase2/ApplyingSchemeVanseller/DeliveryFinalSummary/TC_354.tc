@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_354 - To check the amount displayed for scheme get sku in delivery final summary,after entering all the stock delivered qty in Extra invoice for scheme buy sku(scheme buy and get sku is added same split group)</description>
+   <name>TC_354</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>92588657-2dc3-4d1e-bf2d-4418f6558468</testCaseGuid>
+</TestCaseEntity>

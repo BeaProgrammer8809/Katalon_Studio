@@ -31,14 +31,24 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCov
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/IneComplement_Icon'), 0)
 
 GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 2)
+
 GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(12, 1)
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
 
 GlobalVariable.DropdownOption = findTestData('Phase2.1/Common_Data/CommonData').getValue(12, 2)
 Mobile.tap(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 0)
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_365_Only_Ambito_Selected'], FailureHandling.STOP_ON_FAILURE)
+
+//Verification to check that "Claveentidad" is Selected
+Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIDropdown/Dropdown_Option'), 'text', 'AGU', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_365_Claveentidad_Selected'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/INE_Complement_Popup/Submit_btn'), 0)
+
+GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue(13, 1)
+
+//Verification to check that "Ambito" is not Selected
+Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIDropdown/Dropdown_Name_Indexing'), 'text', '--Select--', 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_365_Ambito_Not_Selected'], FailureHandling.STOP_ON_FAILURE)
 
 //Verification to check the Alert message is displayed as Expected
 AppiumDriver driver = MobileDriverFactory.getDriver()

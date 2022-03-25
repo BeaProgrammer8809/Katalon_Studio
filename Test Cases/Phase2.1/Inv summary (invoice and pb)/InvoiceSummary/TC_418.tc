@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_418:-  To check whether Collection icon is displayed after submitting the Invoice amount in Cheque mode</description>
-   <name>TC_418</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e15162e4-6fbc-47e4-ae20-1ac2f465d69e</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_47 - &quot;To check when scheme is created like below if stock is insufficient for scheme buy whether scheme is not applying
+ 
+ Scheme buy logic :Only ,scheme get logic:Only
+ Scheme buy sku:001_lak_qt, buy qty=5
+ scheme get sku:001_lak_qt,get qty=4&quot;</description>
+   <name>TC_47</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dde886b7-7b83-47dd-870d-5f2b426111a1</testCaseGuid>
+</TestCaseEntity>

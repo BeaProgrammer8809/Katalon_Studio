@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_277:To verify the “Folio No” field accepts the Empty space as input.</description>
-   <name>TC_277</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c0a8501c-dde8-49e4-8b97-22869dbc0cc0</testCaseGuid>
-</TestCaseEntity>

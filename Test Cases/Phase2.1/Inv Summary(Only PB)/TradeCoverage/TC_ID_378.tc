@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_ID_378 - To check if user is able to pay full amount in cash mode by selecting effectivo checkbox</description>
-   <name>TC_ID_378</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>23bd2e43-b9b3-4598-baa1-a2ab0cffe494</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_526:-To verify only invoice can be done for the retailer with RFC format as “XXXXYYMMDDaa&amp;”</description>
-   <name>TC_526</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1bb0d390-d47f-497e-a2dd-7d86c7914ea7</testCaseGuid>
-</TestCaseEntity>

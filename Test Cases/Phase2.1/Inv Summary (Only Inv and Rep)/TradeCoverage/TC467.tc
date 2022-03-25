@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC467 - To check whether able to generate invoice after collecting the cash for cash retailer</description>
-   <name>TC467</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c7a41cbc-cdd7-4396-814a-5393b01e464e</testCaseGuid>
-</TestCaseEntity>

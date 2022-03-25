@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC-32:To check preticket confirmation pop is displaying with ok and cancel button</description>
-   <name>TC-32</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>438d2faf-bce2-4e36-9250-80fa2d2d100b</testCaseGuid>
-</TestCaseEntity>

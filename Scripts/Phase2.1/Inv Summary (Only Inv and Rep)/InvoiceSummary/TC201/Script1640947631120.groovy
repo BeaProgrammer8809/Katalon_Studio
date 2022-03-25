@@ -52,26 +52,41 @@ def pieces = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISumm
 def UnitPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'),
 	0)
 
-def SKUGrossAmount = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
+def totalsum1 = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Price_Value_Indexing'),
 	0)
 
-def TotalPrice = Integer.parseInt(pieces) * Float.parseFloat(UnitPrice)
+totalSum = Double.parseDouble(totalsum1)
+
+def value1 = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+
+value = Double.parseDouble(value1)
+
+double tax = CustomKeywords.'com.ty.keywords.MobileKeywords.tax'(totalSum, value)
+
+println('IVATax applied for these products is ' + tax)
+
+def GrossAmt1 = Integer.parseInt(pieces) * Float.parseFloat(UnitPrice)
 
 DecimalFormat df = new DecimalFormat('0.00')
 
-TotalPrice = df.format(TotalPrice)
+GrossAmt2 = df.format(GrossAmt1)
 
-println(TotalPrice)
+println(GrossAmt2)
 
-def TotalDisc1 = Double.parseDouble(SKUGrossAmount) - Double.parseDouble(TotalPrice)
+GrossAmt = Double.parseDouble (GrossAmt2)
 
-println(TotalDisc1)
+'sku having only category  discount 20% and  5%  item discount '
+def ItemDisc = CustomKeywords.'com.ty.keywords.MobileKeywords.item5_Percent'(GrossAmt)
+
+secondGrossAmt = (GrossAmt - ItemDisc)
+
+def CatDisc = CustomKeywords.'com.ty.keywords.MobileKeywords.category20_Percent'(secondGrossAmt)
+
+def TotalDisc1 = ItemDisc + CatDisc
 
 DecimalFormat df1 = new DecimalFormat('0.00')
 
 TotalDisc = df1.format(TotalDisc1)
-
-println(TotalDisc)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC201_InvoiceSummary'], FailureHandling.STOP_ON_FAILURE)
 
@@ -80,24 +95,22 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 def ActualCompDiscount = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/CompDisc_Value'),
 	0)
 
-ActualCompDiscount = ActualCompDiscount.replace(' ', '')
+splitDisc = ActualCompDiscount.split(' ')
+
+ActualCompDiscount = (splitDisc[1])
 
 Mobile.verifyEqual(TotalDisc, ActualCompDiscount, FailureHandling.STOP_ON_FAILURE)
 
 def actualOrderValueForSKU = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/OrderValue_Value'),
 	0)
 
-def totalPrice=Double.parseDouble(SKUGrossAmount)
-
-double tax = Double.parseDouble(actualOrderValueForSKU) - totalPrice
-
 def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(19, 1)
 
-def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax,totalPrice)
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax,totalSum)
 
 expTaxPercentage = expTaxPercentage.toString()
 
-Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.OPTIONAL)
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
 
 println "Tax IVA is applied for sku"
 

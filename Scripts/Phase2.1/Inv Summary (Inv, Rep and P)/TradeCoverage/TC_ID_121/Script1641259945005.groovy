@@ -37,7 +37,11 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
 
+
+
 def InvoiceAmount = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
+
+double InvoiceAmt=Double.parseDouble(InvoiceAmount)
 
 Integer length = InvoiceAmount.length()
 
@@ -54,11 +58,11 @@ def ChequeAmount = Mobile.getText(findTestObject('Object Repository/Phase2/BICol
 
 double totalcheckamount = Double.parseDouble(ChequeAmount)
 
-def LesserThanInvoiceAmount = totalcheckamount - 10
+/*def LesserThanInvoiceAmount = totalcheckamount - 10
 
 AmountLesserThanInvoiceAmount = LesserThanInvoiceAmount.toString()
 
-def checklength = ChequeAmount.length()
+def checklength = ChequeAmount.length()*/
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/SelectBank'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -70,12 +74,15 @@ Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIC
 		'Phase2.1/TY_05/Testdata').getValue('Data1', 4), 0)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), 0)
-
-for (int i = 0; i <= checklength; i++) {
+Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/BackSpace_NumButton'), 0, FailureHandling.OPTIONAL)
+/*for (int i = 0; i <= checklength; i++) {
 	Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/BackSpace_NumButton'), 0, FailureHandling.OPTIONAL)
 }
 
-Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), AmountLesserThanInvoiceAmount, 0, FailureHandling.OPTIONAL)
+Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'), AmountLesserThanInvoiceAmount, 0, FailureHandling.OPTIONAL)*/
+def AmountInChequeText = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
+
+Double AmountInCheque=Double.parseDouble(AmountInChequeText)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
 
@@ -97,11 +104,13 @@ Mobile.verifyMatch(verifytheToastMessage, findTestData('Phase2.1/TY_05/Testdata'
 
 /*verification done to check collection popup is not hidden */
 
-Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BICollectionScreen01/Collection_Title'), 'Collection',
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BICollectionScreen01/Collection_Title'),findTestData(
+        'Phase2.1/TY_06/Collection/Collection').getValue(2, 5), FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_122'],
 	FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyLessThan(AmountInCheque, InvoiceAmt, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

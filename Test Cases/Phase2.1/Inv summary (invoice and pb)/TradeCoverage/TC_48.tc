@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_48:-To Check  Total Price  calculation against each sku having only tax IVA and  Category and Item level discounts while taking Invoice &amp; PB - Both Salable &amp; Non-Salable</description>
-   <name>TC_48</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>915ee942-989b-4be0-9bae-9b9abfb241db</testCaseGuid>
-</TestCaseEntity>

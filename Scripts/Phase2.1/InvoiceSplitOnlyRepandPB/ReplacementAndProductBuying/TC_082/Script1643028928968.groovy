@@ -21,34 +21,34 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4004'), [:], F
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_Generic'), [('retailerName') : findTestData(
-	'Phase2/Common_Data/CommonData_03').getValue(2, 21)], FailureHandling.STOP_ON_FAILURE)
+            'Phase2/Common_Data/CommonData_03').getValue(2, 21)], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
 for (def i = 0; i < 3; i++) {
-	if (i == 0) {
-		GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 1)
+    if (i == 0) {
+        GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 1)
 
-		GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 4)
-	} else if (i == 1) {
-		GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 15)
+        GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 4)
+    } else if (i == 1) {
+        GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 15)
 
-		GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 5)
-	} else {
-		GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 26)
+        GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 5)
+    } else {
+        GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 26)
 
-		GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 6)
-	}
+        GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 6)
+    }
+    
+    Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
 
-	Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
+    Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Returns_Edit_Text'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Returns_Edit_Text'), 0)
+    Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
-
-	Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
+    Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 }
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
@@ -56,105 +56,115 @@ Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Button'), 0)
 
 for (def i = 0; i < 3; i++) {
-	if (i == 0) {
-		GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 1)
+    if (i == 0) {
+        GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 1)
 
-		GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
-	} else if (i == 1) {
-		GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 15)
+        GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
+    } else if (i == 1) {
+        GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 15)
 
-		GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
-	} else {
-		GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 26)
+        GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
+    } else {
+        GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').getValue(6, 26)
 
-		GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 3)
-	}
+        GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 3)
+    }
+    
+    Mobile.setText(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
 
-	Mobile.setText(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 0)
+    Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
+    Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/AddAnotherReasonQuantity_Button'), 
+        0)
 
-	Mobile.tap(findTestObject('Object Repository/Phase2/BIReturnProductBuyingScreen01/AddAnotherReasonQuantity_Button'), 0)
+    GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
 
-	GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
+    GlobalVariable.DropdownName = findTestData('Phase2/Common_Data/CommonData_03').getValue(17, 1)
 
-	GlobalVariable.DropdownName = findTestData('Phase2/Common_Data/CommonData_03').getValue(17, 1)
+    Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
 
-	Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
+    Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Salable_DD_Option'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Salable_DD_Option'), 0)
+    Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text_Indexing'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text_Indexing'), 0)
+    Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
+    Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
+    Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
 
-	Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name_Indexing'), 0)
+    Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Non_Salable_DD_Option'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Non_Salable_DD_Option'), 0)
+    GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
-	GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
+    Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text_Indexing'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text_Indexing'), 0)
+    Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
+    Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
-	Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
-
-	Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
+    Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
 }
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
-if (Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'),
-0, FailureHandling.OPTIONAL)) {
-	Mobile.tap(findTestObject('Object Repository/Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+if (Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'), 
+    0, FailureHandling.OPTIONAL)) {
+    Mobile.tap(findTestObject('Object Repository/Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
 }
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
 
-def BimboSkuName=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 0)
+def BimboSkuName = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 
+    0)
 
-println "Bimbo sku name is "+ BimboSkuName
+println('Bimbo sku name is ' + BimboSkuName)
 
-def ReturnQtyBimbo=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'),
-		0)
+def ReturnQtyBimbo = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 
+    0)
 
-def ProductBuyQtyBimbo=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0)
+def ProductBuyQtyBimbo = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 
+    0)
 
-def SRPBimbo=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0)
+def SRPBimbo = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
+    0)
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
-def BarcelSkuName=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 0)
+def BarcelSkuName = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 
+    0)
 
-println "Barcel sku name is "+BarcelSkuName
+println('Barcel sku name is ' + BarcelSkuName)
 
-def ReturnQtyBarcel=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'),
-		0)
+def ReturnQtyBarcel = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 
+    0)
 
-def ProductBuyQtyBarcel=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0)
+def ProductBuyQtyBarcel = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 
+    0)
 
-def SRPBarcel=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0)
+def SRPBarcel = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
+    0)
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 3)
 
-def RicolinoSkuName=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 0)
+def RicolinoSkuName = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Product_TextView_Indexing'), 
+    0)
 
-println "Ricolino sku name is "+RicolinoSkuName
+println('Ricolino sku name is ' + RicolinoSkuName)
 
-def ReturnQtyRicolino=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'),
-		0)
+def ReturnQtyRicolino = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Actual_Return_Value_Indexing'), 
+    0)
 
-def ProductBuyQtyRicolino=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0)
+def ProductBuyQtyRicolino = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 
+    0)
 
-def SRPRicolino=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 0)
+def SRPRicolino = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/U.Price_Value_Indexing'), 
+    0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_082_SummaryScreen'],
-FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_082_SummaryScreen'], 
+    FailureHandling.STOP_ON_FAILURE)
 
-DecimalFormat df=new DecimalFormat("0.00")
+DecimalFormat df = new DecimalFormat('0.00')
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
@@ -166,68 +176,74 @@ Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Create_Ticket_Invoice_
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
 
-def invName1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'),
-		0)
+def invName1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 
+    0)
 
-def line1=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), 0)
+def line1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), 
+    0)
 
-def skuQty1=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+def skuQty1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 
+    0)
 
-def amount1=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 0)
+def amount1 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 
+    0)
 
-def expInvName1=findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 25)+'3'
+def expInvName1 = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 25) + '3'
 
 Mobile.verifyMatch(invName1, expInvName1, false, FailureHandling.OPTIONAL)
 
-println "Invoice name as expected"
+println('Invoice name as expected')
 
-def returnpriceBimbo=Double.parseDouble(SRPBimbo)*Double.parseDouble(ReturnQtyBimbo)
+def returnpriceBimbo = Double.parseDouble(SRPBimbo) * Double.parseDouble(ReturnQtyBimbo)
 
-def returnPriceBarcel=Double.parseDouble(SRPBarcel)*Double.parseDouble(ReturnQtyBarcel)
+def returnPriceBarcel = Double.parseDouble(SRPBarcel) * Double.parseDouble(ReturnQtyBarcel)
 
-def returnPriceRicolino=Double.parseDouble(SRPRicolino)*Double.parseDouble(ReturnQtyRicolino)
+def returnPriceRicolino = Double.parseDouble(SRPRicolino) * Double.parseDouble(ReturnQtyRicolino)
 
-def expAmt1=returnPriceBarcel+returnpriceBimbo+returnPriceRicolino
+def expAmt1 = (returnPriceBarcel + returnpriceBimbo) + returnPriceRicolino
 
-expAmt1=df.format(expAmt1)
+expAmt1 = df.format(expAmt1)
 
 Mobile.verifyLessThanOrEqual(amount1, expAmt1, FailureHandling.STOP_ON_FAILURE)
 
-println "Expected amount is greater than or equal to actual amount as tax is considered for sku"
+println('Expected amount is greater than or equal to actual amount as tax is considered for sku')
 
 GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
-def invName2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'),
-		0)
+def invName2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Invoice Split_Indexing'), 
+    0)
 
-def line2=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), 0)
+def line2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Lines_Value_Indexing'), 
+    0)
 
-def skuQty2=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 0)
+def skuQty2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/SKUs_Qty_Indexing'), 
+    0)
 
-def amount2=Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 0)
+def amount2 = Mobile.getText(findTestObject('Object Repository/Phase2/BIDeliveryFinalSummaryScreen/Amount_Value_Indexing'), 
+    0)
 
-def expInvName2=findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 36)+'1'
+def expInvName2 = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 36) + '1'
 
 Mobile.verifyMatch(invName2, expInvName2, false, FailureHandling.OPTIONAL)
 
-println "Invoice name as expected"
+println('Invoice name as expected')
 
-def prodpriceBimbo=Double.parseDouble(SRPBimbo)*Double.parseDouble(ProductBuyQtyBimbo)
+def prodpriceBimbo = Double.parseDouble(SRPBimbo) * Double.parseDouble(ProductBuyQtyBimbo)
 
-def prodPriceBarcel=Double.parseDouble(SRPBarcel)*Double.parseDouble(ProductBuyQtyBarcel)
+def prodPriceBarcel = Double.parseDouble(SRPBarcel) * Double.parseDouble(ProductBuyQtyBarcel)
 
-def prodPriceRicolino=Double.parseDouble(SRPRicolino)*Double.parseDouble(ProductBuyQtyRicolino)
+def prodPriceRicolino = Double.parseDouble(SRPRicolino) * Double.parseDouble(ProductBuyQtyRicolino)
 
-def expAmt2=prodpriceBimbo+prodPriceBarcel+prodPriceRicolino
+def expAmt2 = (prodpriceBimbo + prodPriceBarcel) + prodPriceRicolino
 
-expAmt2=df.format(expAmt2)
+expAmt2 = df.format(expAmt2)
 
-Mobile.verifyLessThanOrEqual(amount2, expAmt2, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyGreaterThanOrEqual(amount2, expAmt2, FailureHandling.STOP_ON_FAILURE)
 
-println "Amount is as expected"
+println('Amount is as expected')
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_082_DeliveryFinalSummaryScreen'],
-FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyRepandPB/ReplacementAndProductBuying/Screenshot'), [('testCaseName') : 'TC_082_DeliveryFinalSummaryScreen'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

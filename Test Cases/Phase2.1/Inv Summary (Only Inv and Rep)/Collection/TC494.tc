@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC494:- To check Balance amount is calculated as difference between Invoice Amount and Adjusted amount
+for all pay type modes&quot;
+Balance amount = Invoice Amount -Adjusted amount</description>
+   <name>TC494</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e5f3fb2-aae4-49c0-8354-50bc8b4b240e</testCaseGuid>
+</TestCaseEntity>

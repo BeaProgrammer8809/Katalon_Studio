@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_294 : To check while doing product buying for the sku's that is having only tax  IEPS but not having any discounts,whether the invoice is getting success and UUID is generated</description>
-   <name>TC_294</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>47213d2c-8ea0-442b-8b16-feec456ba5bd</testCaseGuid>
-</TestCaseEntity>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_389: To check the Total paid field in Efectivo mode after changing the defaultly filled paid amount</description>
+   <description>TC_ID_390 : To check whether able to submit Collection with Total paid field as empty</description>
    <name>TC_ID_390</name>
    <tag></tag>
    <comment></comment>

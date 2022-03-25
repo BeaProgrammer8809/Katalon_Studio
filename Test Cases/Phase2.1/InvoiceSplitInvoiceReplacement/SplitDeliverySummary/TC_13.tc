@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_13: To check the Stock Delivered qty displayed for each sku's after taking invoice, replacement and pb for non-group sku's</description>
-   <name>TC_13</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5dcf769a-4219-41e4-a168-8a96ec2f01aa</testCaseGuid>
-</TestCaseEntity>

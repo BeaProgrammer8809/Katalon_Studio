@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_12:-To check all Lines is showing when we select Lines in filter</description>
+   <name>SP_TC_12</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>91db7649-d15c-4119-b278-ed31d0bea108</testCaseGuid>
+</TestCaseEntity>

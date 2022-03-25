@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'android.widget.TextView' and (text() = 'BR_Ajay_01' or . = 'BR_Ajay_01') and @resource-id = '${GlobalVariable.Package}:id/grid_item_text']</value>
+         <value>//*[@class = 'android.widget.TextView' and @resource-id = '${GlobalVariable.Package}:id/grid_item_text']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,7 +20,7 @@
       <value>android.widget.TextView</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
@@ -38,7 +38,7 @@
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
-      <value>com.ivy.bimbomx.mexico.view.uat</value>
+      <value>${GlobalVariable.Package}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

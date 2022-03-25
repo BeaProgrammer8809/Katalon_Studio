@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_352:- To verify “Pesito Commision '3' Should Pay in Effectivo” Toast message is enable if user pay full invoice amount in Pesito collection and click on Submit button.</description>
-   <name>TC_352</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>6ffd7550-c404-4090-b480-33881c30289a</testCaseGuid>
-</TestCaseEntity>

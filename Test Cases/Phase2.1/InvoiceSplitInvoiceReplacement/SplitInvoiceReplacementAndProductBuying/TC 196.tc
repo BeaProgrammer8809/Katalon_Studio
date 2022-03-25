@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 196 - To check the Balance displayed in the Cheque mode after switching from Efectivo mode</description>
+   <name>TC 196</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e649794e-038a-4ff1-ba26-6059e702edbc</testCaseGuid>
+</TestCaseEntity>

@@ -86,7 +86,9 @@ Mobile.delay(2)
 
 println(count1)
 
-Mobile.verifyNotEqual(count, count1, FailureHandling.STOP_ON_FAILURE)
+//Mobile.verifyNotEqual(count, count1, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyLessThan(count1, count, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
 	[('testCaseName') : 'TC_ID_144'], FailureHandling.STOP_ON_FAILURE)

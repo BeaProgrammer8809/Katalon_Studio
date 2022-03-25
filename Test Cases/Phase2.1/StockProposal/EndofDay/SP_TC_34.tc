@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_34:To check whether when we click on cancel button in pop up msg then print is not getting generated for stock proposal</description>
+   <name>SP_TC_34</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>935d4457-f6ea-4768-8611-f8d71dd7171f</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_427 : To verify user can able to edit the auto populated ‘3’ commission amount in Efectivo type.</description>
-   <name>TC_427</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>25429714-0007-4980-b01c-bb3176584fad</testCaseGuid>
-</TestCaseEntity>

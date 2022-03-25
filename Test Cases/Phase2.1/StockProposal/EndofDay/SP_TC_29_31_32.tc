@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_29:To Check whether once we save the proposal the automatic sync is happening
+SP_TC_31:To Check whether when we click on ok button then alert msg is coming &quot;saved successfully
+SP_TC_32:To check whether alert msg is coming with print and cancel option</description>
+   <name>SP_TC_29_31_32</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>034cbd72-9719-474e-bd94-000c3bed2e94</testCaseGuid>
+</TestCaseEntity>

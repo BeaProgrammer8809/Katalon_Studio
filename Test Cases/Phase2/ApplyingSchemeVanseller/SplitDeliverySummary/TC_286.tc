@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_286 - Check whether Delivery summary screen is displaying for Credit retailer</description>
+   <name>TC_286</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>615c1ffc-e2a5-4f3d-a50c-fb9fcdb05151</testCaseGuid>
+</TestCaseEntity>

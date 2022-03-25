@@ -5,6 +5,6 @@
 To check the Comp Disc amount inside the info popup while taking replacement for the sku's that is having only tax IVA but not having any discounts</description>
    <name>TC182</name>
    <tag></tag>
-   <comment></comment>
+   <comment>this is for IEPS tax</comment>
    <testCaseGuid>c95b3afc-2e20-4080-a898-779c78311a9e</testCaseGuid>
 </TestCaseEntity>

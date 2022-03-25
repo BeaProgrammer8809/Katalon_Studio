@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC263: Check whether able to change the entered invoice qty in Order and Invoice screen after navigating back from summary screen</description>
+   <name>TC263</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9abd57c7-c10a-4eac-91e5-b0825380da76</testCaseGuid>
+</TestCaseEntity>

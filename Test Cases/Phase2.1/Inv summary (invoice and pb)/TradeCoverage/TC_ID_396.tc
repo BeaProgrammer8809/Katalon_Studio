@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_389: To check the Total paid field in Efectivo mode after changing the defaultly filled paid amount</description>
+   <description>TC_ID_396 : To check the Balance displayed in the Cheque mode after switching from Efectivo mode</description>
    <name>TC_ID_396</name>
    <tag></tag>
    <comment></comment>

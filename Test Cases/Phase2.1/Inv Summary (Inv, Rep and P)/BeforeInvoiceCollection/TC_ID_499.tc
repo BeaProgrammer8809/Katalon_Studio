@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_499
+:- To verify whether able to apply amount in cheque and RTGS mode with Reference no.[Collection Before Invoice]</description>
+   <name>TC_ID_499</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eda76aca-1a33-4a83-9c20-7051c91b7e86</testCaseGuid>
+</TestCaseEntity>

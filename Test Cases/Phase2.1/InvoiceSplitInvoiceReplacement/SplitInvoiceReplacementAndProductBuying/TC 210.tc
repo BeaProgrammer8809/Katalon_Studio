@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 210 - To check whether able to Submit with Total paid amount greater than invoice amount</description>
+   <name>TC 210</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fa25953e-2c92-4ff3-9e79-c068416e236b</testCaseGuid>
+</TestCaseEntity>

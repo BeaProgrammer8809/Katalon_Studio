@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_03 : To check whether End of the menu is available in Home Menu</description>
+   <name>SP_TC_03</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a325b10e-8c7d-4292-b56f-524ee69bbedf</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_304:-To verify “Reference number” field is accepting the Special Characters[Collection Before Invoice]</description>
-   <name>TC_304</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>abc7c797-b2b8-4364-8e2c-abc23bed70a5</testCaseGuid>
-</TestCaseEntity>

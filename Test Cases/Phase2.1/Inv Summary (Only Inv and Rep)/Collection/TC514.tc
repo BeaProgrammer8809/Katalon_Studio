@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC514:-To check the entity name and folio type displayed inside folio no pop up if invoice and replacement is taken for ricolino sku</description>
+   <name>TC514</name>
+   <tag></tag>
+   <comment>Verifying the Legal Entity name
+ Folio no field should be displayed</comment>
+   <testCaseGuid>9d3f426c-c3af-4f82-9f36-631953126f5f</testCaseGuid>
+</TestCaseEntity>

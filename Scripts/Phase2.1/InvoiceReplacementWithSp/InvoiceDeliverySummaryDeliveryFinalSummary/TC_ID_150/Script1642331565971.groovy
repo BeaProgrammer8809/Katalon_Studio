@@ -42,7 +42,7 @@ Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/ToTravelToDeliv
 Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), findTestData('Phase2.1/TY_04/Phase2.1_Sheet3').getValue(
-        24, 9), 0)
+        24, 10), 0)
 
 Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Create_Ticket_Invoice_Button'), 0)
 
@@ -68,6 +68,17 @@ def Inv_Count = 'ExtraInv5'
 Count_Frame.contains(Inv_Count)
 
 println('ExtraInv5 is present')
+
+def Actual_ExtraInv = Mobile.getText(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv5_TextView'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+def Expected_ExtraInv = findTestData('Phase2.1/TY_04/Phase2.1_Sheet3').getValue(16, 10)
+
+Mobile.verifyMatch(Actual_ExtraInv, Expected_ExtraInv, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv5_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv5_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
 	[('testCaseName') : 'TC_ID_150'], FailureHandling.STOP_ON_FAILURE)

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the amount displayed when scheme buy and get sku is from barcel company and that are not in invoice split group (if one invoice split group is available)</description>
+   <name>TC_323</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9dc4a130-9c1b-41d3-9daf-2e62c8192768</testCaseGuid>
+</TestCaseEntity>

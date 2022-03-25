@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_508
+:-To verify “Reference number” field is accepting the Alphanumeric characters.[Collection Before Invoice]</description>
+   <name>TC_ID_508</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1d68f321-9d6d-4a20-8e00-03ff4f2500eb</testCaseGuid>
+</TestCaseEntity>

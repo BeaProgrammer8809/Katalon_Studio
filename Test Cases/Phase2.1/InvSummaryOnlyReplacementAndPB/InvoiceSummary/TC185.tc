@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC185:To check the deductions (Comp Disc and Dist disc) amount inside the info popup while taking product buying for the sku's that is having only tax IVA but not having any discounts</description>
+   <name>TC185</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1820c094-1d81-4834-bf53-ed064f374f03</testCaseGuid>
+</TestCaseEntity>

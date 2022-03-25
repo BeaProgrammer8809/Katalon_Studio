@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_199:To check the deduction(Comp Disc and Dist Disc) amount inside the info popup while taking replacement 
-for the sku's that is having only IEPS tax with Item discount and detail IEPS flag is enabled for the store</description>
-   <name>TC_199</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>63d6c039-eff7-46ad-bdcb-354f4c82d595</testCaseGuid>
-</TestCaseEntity>

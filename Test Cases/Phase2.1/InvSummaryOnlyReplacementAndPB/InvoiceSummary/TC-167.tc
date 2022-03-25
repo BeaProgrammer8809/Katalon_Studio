@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC-167:To check the Order Value amount inside the info popup while taking replacement and product buying for the sku's that is having only IEPS tax and category discount.</description>
-   <name>TC-167</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f692c8dc-27c4-4866-951f-f21278acd714</testCaseGuid>
-</TestCaseEntity>

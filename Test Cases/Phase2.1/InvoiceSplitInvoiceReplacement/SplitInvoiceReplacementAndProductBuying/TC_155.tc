@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_155
-To check whether onsite invoice is getting failure for interfactura/Ecommercio customer while doing invoice, replacement and product buying for different split group sku if no internet</description>
-   <name>TC_155</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3d29cfdd-0d8c-4711-ae22-45daffea7eba</testCaseGuid>
-</TestCaseEntity>

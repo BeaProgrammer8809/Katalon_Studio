@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_536: To check without selecting the INE_Ambito, if click create final invoice ,whether error message is appearing</description>
+   <name>TC536</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc1446f7-3967-47b8-9ef0-07b856f724c2</testCaseGuid>
+</TestCaseEntity>

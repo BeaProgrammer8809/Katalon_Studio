@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_381:-To verify Only Replacement can be done for the retailer with RFC format as “&amp;&amp;&amp;&amp;YYMMDD&amp;&amp;&amp;”</description>
-   <name>TC_381</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7ced20fe-719d-43af-9b9d-f72504c36ff8</testCaseGuid>
-</TestCaseEntity>

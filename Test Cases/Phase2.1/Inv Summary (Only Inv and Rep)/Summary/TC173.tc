@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC173 - To check the Comp Disc amount inside the info popup while taking invoice for the sku's that is having IVA, IEPS taxes and Item, category discount.</description>
+   <name>TC173</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1edbbd73-7aa1-4edf-8080-9251ec6c0b3f</testCaseGuid>
+</TestCaseEntity>

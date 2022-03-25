@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_255:-To check user is not able to submit the collection without collecting Commission amount
+
+TC_ID_256:- To check Commission amount is coming based on the web configuration for the visit
+
+TC_ID_257:- To check user is able to collect pesito commission amount in cash or Cheque
+
+TC_ID_258:-To check Validation message is coming like please enter pesito commission when commission amount has not collected</description>
+   <name>TC_ID_255,TC_ID_256,TC_ID_257,TC_ID_258</name>
+   <tag></tag>
+   <comment>TC_ID_255:-User should  not able to submit the collection without collecting Commission amount
+TC_ID_256:-Verification of Commission Amount
+TC_ID_258:-Validation message should come
+TC_ID_257:-User should be  able to collect pesito commission amount in cash
+Verifying the Commission amount in effectivo mode</comment>
+   <testCaseGuid>707b62a0-e9b1-4c42-875b-76cde73ee59f</testCaseGuid>
+</TestCaseEntity>

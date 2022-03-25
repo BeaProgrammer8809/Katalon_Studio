@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_48 - &quot;To check when scheme is created like below if scheme buy sku SIH=6 ,when enter invoice qty=5 whether scheme is applying
+ 
+ Scheme buy logic :Only ,scheme get logic:Only
+ Scheme buy sku:001_lak_qt, buy qty=5
+ scheme get sku:001_lak_qt,get qty=3&quot;</description>
+   <name>TC_48</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7560d261-80fb-47bc-a671-70bcc9987faf</testCaseGuid>
+</TestCaseEntity>

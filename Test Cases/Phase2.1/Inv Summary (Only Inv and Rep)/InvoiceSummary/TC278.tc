@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_278
-
-To check the legal entity for non-multi org,while doing invoice and replacement for Bimbo produtcts</description>
+   <description>TC278 - To check the legal entity for non-multi org,while doing invoice and replacement for Bimbo produtcts</description>
    <name>TC278</name>
    <tag></tag>
    <comment></comment>

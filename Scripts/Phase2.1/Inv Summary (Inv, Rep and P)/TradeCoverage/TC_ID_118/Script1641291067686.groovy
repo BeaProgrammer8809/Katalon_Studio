@@ -77,7 +77,7 @@ Mobile.setText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIC
 Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/ChequeNum_EditText'), 
     findTestData('Phase2.1/TY_05/Testdata').getValue('Data1', 32), FailureHandling.STOP_ON_FAILURE)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_11'],
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_118'],
 	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

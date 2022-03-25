@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_04 - To check whether qty check box is getting auto selected (green tick)</description>
+   <name>TC_04</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ffd5665d-fdbc-42f9-afa9-b499e90246a9</testCaseGuid>
+</TestCaseEntity>

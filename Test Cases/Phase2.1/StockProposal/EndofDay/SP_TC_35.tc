@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_35:To check whether tray sku is not coming while taking proposal in proposal screen</description>
+   <name>SP_TC_35</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3b4a54ea-dfda-416c-a95f-ac88c2819f1e</testCaseGuid>
+</TestCaseEntity>

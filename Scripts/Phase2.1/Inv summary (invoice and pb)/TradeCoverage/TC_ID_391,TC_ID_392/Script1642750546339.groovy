@@ -12,9 +12,9 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4005'), [:], F
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData').getValue(2, 3)
+GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData_03').getValue(2, 3)
 
-GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData').getValue(5, 4)
+GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 4)
 
 Mobile.setText(findTestObject('Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName, 0)
 
@@ -44,7 +44,7 @@ println('Actual inoviced qty for sku is ' + actualInvoicedQty)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
-GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData').getValue(5, 2)
+GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Button'), 0)
 
@@ -106,7 +106,7 @@ def invAmt1 = Mobile.getAttribute(findTestObject('Phase2/BICollectionScreen01/BI
 
 println('Amount entered in total paid field in effectivo mode' + invAmt1)
 
-GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData').getValue(5, 1)
+GlobalVariable.index = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 1)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Submit_Button'), 0)
 

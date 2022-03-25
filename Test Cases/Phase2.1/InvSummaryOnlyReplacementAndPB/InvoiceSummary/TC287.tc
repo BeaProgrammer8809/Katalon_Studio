@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_287 : -  To check the legal entity while doing only replacement for Barcel products
-</description>
+   <description>TC287 : To check the legal entity while doing only replacement for Barcel products</description>
    <name>TC287</name>
    <tag></tag>
    <comment></comment>

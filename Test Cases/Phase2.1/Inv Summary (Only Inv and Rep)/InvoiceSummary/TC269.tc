@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_269:
+   <description>TC269:
 To check the legal entity displayed in multi org collection,while doing only invoice for Ricolino products</description>
    <name>TC269</name>
    <tag></tag>

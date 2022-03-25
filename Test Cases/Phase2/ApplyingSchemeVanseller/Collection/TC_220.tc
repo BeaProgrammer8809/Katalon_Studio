@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_220
+
+To check the Total paid field in Efectivo mode after changing the defaultly filled paid amount When scheme is applied</description>
+   <name>TC_220</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2c88e611-9e4b-4f55-89f2-e2d7dbc592f4</testCaseGuid>
+</TestCaseEntity>

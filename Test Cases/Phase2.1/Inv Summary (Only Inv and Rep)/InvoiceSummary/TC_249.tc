@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_249 - To check the Total amount inside the info popup while taking invoice and replacement for the sku's that is having IVA tax, Item discount and category discount.</description>
-   <name>TC_249</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7e4c891f-ea7f-4e68-b304-95a48bf14098</testCaseGuid>
-</TestCaseEntity>

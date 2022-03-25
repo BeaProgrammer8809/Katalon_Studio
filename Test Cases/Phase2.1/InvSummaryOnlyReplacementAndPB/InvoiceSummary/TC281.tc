@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_281 : - To check the total qty count while taking only product buying qty against each sku's
-</description>
+   <description>TC281 : - To check the total qty count while taking only product buying qty against each sku's</description>
    <name>TC281</name>
    <tag></tag>
    <comment></comment>

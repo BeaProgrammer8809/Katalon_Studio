@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SC_TC_13: To check whether Scheme will be editable in Scheme screen</description>
+   <name>SC_TC_13</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d9c308ed-277a-4184-8437-b64176e0b453</testCaseGuid>
+</TestCaseEntity>

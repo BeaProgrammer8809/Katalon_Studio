@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC71:-Check whether a new popup is showing when user tap on Create Final Invoice Button
+TC72:-Check whether opened pop up is getting closed when user tap on Cancel button
+TC73:-Check whether opened pop up gets closed when user tap on Ok button and a new popup appears Splitted invoice Saved Successfully.
+TC74:-Check whether print preview gets generated when tap on ok button in the new popup</description>
+   <name>TC71,TC72,TC73,TC74</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>58121a61-f611-4314-bbc9-0920c84abbfe</testCaseGuid>
+</TestCaseEntity>

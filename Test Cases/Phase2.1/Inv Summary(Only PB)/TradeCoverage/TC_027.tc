@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_026: Check whether Unload menu is available in the Menu Screen</description>
+   <description>TC_027: Check Whether Unload Screen is accessible</description>
    <name>TC_027</name>
    <tag></tag>
    <comment></comment>

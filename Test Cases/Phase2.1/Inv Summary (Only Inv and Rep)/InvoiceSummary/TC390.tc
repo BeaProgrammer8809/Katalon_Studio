@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC390 - To check whether collection icon is not displaying for credit retailer while doing replacement</description>
-   <name>TC390</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>de40a887-6629-4ad5-9e56-20aa8d3a6bdb</testCaseGuid>
-</TestCaseEntity>

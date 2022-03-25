@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_343:-To verify “Pesito commission : ” label is present in the Pesito credit mode in the collection pop-up</description>
-   <name>TC_343</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5b572509-fbde-4cbe-ba06-b216557506a8</testCaseGuid>
-</TestCaseEntity>

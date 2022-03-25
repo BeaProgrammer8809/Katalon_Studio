@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 177 :To check while doing invoice,replacement and product buying for same split group sku's if invoice amount is less than product buying amount ,whether balance amount is displaying in credit note mode
+
+
+
+TC 178 :To check while doing invoice,replacement and product buying for same legal entity split group sku's if invoice amount is less than product buying amount ,whether 0 amount is displaying cash mode</description>
+   <name>TC 177,TC 178</name>
+   <tag></tag>
+   <comment>Veification for TC_178</comment>
+   <testCaseGuid>812eeb81-a1c3-46a5-b1c7-7f536f666885</testCaseGuid>
+</TestCaseEntity>

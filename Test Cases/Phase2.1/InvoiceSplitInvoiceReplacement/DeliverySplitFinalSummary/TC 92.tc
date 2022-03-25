@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 92 - To check the amount displayed after entering all the stock delivered qty in Extra invoice for recolino's sku that are not in invoice split group</description>
+   <name>TC 92</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>937d579a-4b97-460b-9695-862e2bfe4282</testCaseGuid>
+</TestCaseEntity>

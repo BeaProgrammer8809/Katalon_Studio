@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_227 - To check the Total paid displayed in the Cheque mode after switching from Efectivo mode when scheme is applied</description>
+   <name>TC_227</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1e9bacc-ab8e-4725-be7d-08a0aaae620e</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC469 - To check while click preticket button,whether preticket is created for the invoice qty</description>
-   <name>TC469</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5e7f1ac1-dc84-4a7c-9c39-f9e56dfeb984</testCaseGuid>
-</TestCaseEntity>

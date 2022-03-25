@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 297:To verify given folio number for the Interfractura retailer is accepted when there is no internet connection for non-multi org route</description>
+   <name>TC 297</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>da9f5707-cebe-40e1-8b0e-0aa72a3940ca</testCaseGuid>
+</TestCaseEntity>

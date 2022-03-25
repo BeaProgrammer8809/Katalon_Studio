@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>To check when folio number flag is not enabled for the store if doing invoice for bimbo/barcel/ricolino products then folio number text filed is displayed or not for non-multi org route</description>
-   <name>TC_291</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b524d248-5d6f-4066-a909-99e24e268b23</testCaseGuid>
-</TestCaseEntity>

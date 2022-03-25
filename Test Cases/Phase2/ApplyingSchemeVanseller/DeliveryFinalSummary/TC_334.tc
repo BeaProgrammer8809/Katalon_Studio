@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_334:-To check whether able to generate invoice when scheme buy and get sku is from barcel company and that are not in invoice split group</description>
+   <name>TC_334</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abaf6f57-38f4-4246-85ec-773f128a5eba</testCaseGuid>
+</TestCaseEntity>

@@ -37,17 +37,20 @@ Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Product_Buying_
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
+Mobile.verifyElementNotVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/IneComplement_Icon'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementNotExist(findTestObject('Phase2/BIInvoiceSummaryScreen/IneComplement_Icon'), 0, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.verifyElementNotVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/INE_Complement_Popup/INE_ClaveEntidad_Text'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementNotExist(findTestObject('Phase2/BIInvoiceSummaryScreen/INE_Complement_Popup/INE_ClaveEntidad_Text'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
-println "Claveentidad field is not  present in the Invoice Summary screen for stores with INE Enabled as False"
+println('Claveentidad field is not  present in the Invoice Summary screen for stores with INE Enabled as False')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_358'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_358'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-
 

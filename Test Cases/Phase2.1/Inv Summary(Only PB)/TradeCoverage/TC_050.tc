@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_050:To check the fields/Button available in the popup</description>
+   <name>TC_050</name>
+   <tag></tag>
+   <comment>Verification of x icon
+Verification of piece text field
+Verification of drop down
+Verification of number keyboard
+Verifying add another reason reason button
+Verifying done button</comment>
+   <testCaseGuid>22e74b8a-548b-47ae-8153-03bab211fa5c</testCaseGuid>
+</TestCaseEntity>

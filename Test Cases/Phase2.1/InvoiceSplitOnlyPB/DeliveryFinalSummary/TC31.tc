@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC31:To check the confirmation pop up is displaying while click preticket button</description>
+   <name>TC31</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6397e5f2-c396-4f2b-a6b9-537d8fc3812c</testCaseGuid>
+</TestCaseEntity>

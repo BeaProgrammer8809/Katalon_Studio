@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_01: Check whether delivery summary screen is displaying when invoice split is created but not mapped to the channel -if  Invoice,replacement and product buying is taken</description>
-   <name>TC_01</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e125e8f2-a0b6-431b-ae51-e7b90d17c713</testCaseGuid>
-</TestCaseEntity>

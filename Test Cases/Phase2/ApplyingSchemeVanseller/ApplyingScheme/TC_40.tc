@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_40:-To check when scheme is created like below so when enter invoice qty =5 ,whether scheme is applying
+ Group buy logic :ONLY Group get logic:ONLY</description>
+   <name>TC_40</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>899b307b-9673-4a52-90b0-4de842d2305e</testCaseGuid>
+</TestCaseEntity>

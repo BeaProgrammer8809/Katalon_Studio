@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC64 : To check while doing product buying for split group or no group sku's that is having IEPS tax and detail IEPS flag is enabled ,whether IEPS tax is not applying in delivery final summary screen</description>
+   <name>TC64</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>31a3294d-2b8c-4108-a6a0-ab23eb25898d</testCaseGuid>
+</TestCaseEntity>

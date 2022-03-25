@@ -55,12 +55,18 @@ def totalPaidAmt = Mobile.getAttribute(findTestObject('Object Repository/Phase2/
 
 println("Amount entered in total paid filed in effectivo mode"+totalPaidAmt)
 
+def invAmt=Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
+
+def expBalText="Balance : 0 of "+invAmt
+
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Cheques_RadioButton'), 0)
 
 Mobile.verifyElementHasAttribute(findTestObject('Phase2/BICollectionScreen01/Cheques_RadioButton'), 'selected', 0)
 
 def balanceInChequemode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/Balance_TextView'), 
     0)
+
+Mobile.verifyMatch(balanceInChequemode, expBalText, false, FailureHandling.STOP_ON_FAILURE)
 
 println('Balance is 0 as amount entered in total paid field of Effectivo mode')+balanceInChequemode
 
@@ -72,6 +78,8 @@ Mobile.verifyElementHasAttribute(findTestObject('Phase2/BICollectionScreen01/Tra
 def balanceInTransferenciasElectronicasMode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/Balance_TextView'), 
     0)
 
+Mobile.verifyMatch(balanceInTransferenciasElectronicasMode, expBalText, false, FailureHandling.STOP_ON_FAILURE)
+
 println('Balance is 0 as amount entered in total paid field of Effectivo mode')+balanceInTransferenciasElectronicasMode
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/CreditNote_RadioButton'), 0)
@@ -80,6 +88,8 @@ Mobile.verifyElementHasAttribute(findTestObject('Phase2/BICollectionScreen01/Cre
 
 def balanceInCreditNoteMode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/Balance_TextView'), 
     0)
+
+Mobile.verifyMatch(balanceInCreditNoteMode, expBalText, false, FailureHandling.STOP_ON_FAILURE)
 
 println('Balance is 0 as amount entered in total paid field of Effectivo mode')+balanceInCreditNoteMode
 

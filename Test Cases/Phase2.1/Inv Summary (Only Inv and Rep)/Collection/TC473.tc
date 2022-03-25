@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC473:- To check if collection screen is coming with following details when pesito grant mode selected
+1.Invoice number with amount
+2. legal entity
+3. adjusted amount
+4. balance amount
+5. Pesito credit available
+6. pesito can be adjusted
+7.pesito granted</description>
+   <name>TC473</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99d934bf-17f0-4bea-a6e9-3214b984c1c2</testCaseGuid>
+</TestCaseEntity>

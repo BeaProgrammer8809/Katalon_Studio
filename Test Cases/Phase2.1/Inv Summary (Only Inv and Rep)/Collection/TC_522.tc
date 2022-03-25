@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_522:-To check the legal entity name in collection payment screen for non multi org while doing replacement for ricolino sku</description>
-   <name>TC_522</name>
-   <tag></tag>
-   <comment>Verifying the Colelction screen should be displayed
-Sales center legal entity should be displayed</comment>
-   <testCaseGuid>a8473f7d-78f2-4b47-b03e-bb115d0b6e77</testCaseGuid>
-</TestCaseEntity>

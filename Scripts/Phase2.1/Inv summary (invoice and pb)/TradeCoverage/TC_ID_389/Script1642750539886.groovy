@@ -10,9 +10,9 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4004'), [:], F
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer_Phase2.1'), [:], FailureHandling.STOP_ON_FAILURE)
 
-GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData').getValue(2, 3)
+GlobalVariable.RetailerName = findTestData('Phase2/Common_Data/CommonData_03').getValue(2, 3)
 
-GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData').getValue(5, 4)
+GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 4)
 
 Mobile.setText(findTestObject('Phase2/BITradeCoverage01/Search_EditText'), GlobalVariable.RetailerName, 0)
 
@@ -22,8 +22,8 @@ GlobalVariable.ProductName = findTestData('Phase2/Common_Data/CommonData_03').ge
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
-Mobile.setText(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), GlobalVariable.ProductName,
-	0)
+Mobile.setText(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), GlobalVariable.ProductName, 
+    0)
 
 def actualInvoicedSKU = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Schem_Buy_SKU_Text_view'), 0)
 
@@ -35,14 +35,14 @@ Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
-def actualInvoicedQty = Mobile.getAttribute(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 'text',
-	0)
+def actualInvoicedQty = Mobile.getAttribute(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 'text', 
+    0)
 
 println('Actual inoviced qty for sku is ' + actualInvoicedQty)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
-GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData').getValue(5, 2)
+GlobalVariable.Number = findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 2)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Button'), 0)
 
@@ -66,8 +66,8 @@ Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
 
-def actualProductBuyingQty = Mobile.getAttribute(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 'text',
-	0)
+def actualProductBuyingQty = Mobile.getAttribute(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 'text', 
+    0)
 
 println('Actual product buying qty is ' + actualProductBuyingQty)
 
@@ -77,9 +77,8 @@ println('Entered invoiced qty is greater than product buying qty')
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
-if (Mobile.verifyElementVisible(findTestObject('Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'),
-	0, FailureHandling.OPTIONAL)) {
-	Mobile.tap(findTestObject('Object Repository/Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
+if (Mobile.verifyElementVisible(findTestObject('Phase2/BIApplyingSchemeScreen/Applying_Scheme_TextView'), 0, FailureHandling.OPTIONAL)) {
+    Mobile.tap(findTestObject('Object Repository/Phase2/BIApplyingSchemeScreen/Next_Button'), 0)
 }
 
 def v1 = Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
@@ -92,26 +91,29 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_Po
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterPaymentPopup01/Payment_CheckBox'), 0)
 
-def invAmt1 = Mobile.getAttribute(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 'text',
-	0)
+def invAmt1 = Mobile.getAttribute(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 'text', 
+    0)
 
 println('Amount entered in total paid field in effectivo mode' + invAmt1)
 
+Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
+
+for (int i = 0; i < invAmt1.length(); i++) {
+    Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeyboardCollection01/BackSpace_NumButton'), 0)
+}
+
+Mobile.tap(findTestObject('Object Repository/Phase2/BINumberKeyboardCollection01/4_NumButton'), 0)
+
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/CreditNote_RadioButton'), 0)
 
-def invAmt2 = Mobile.getAttribute(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 'text',
-	0)
+def invAmt2 = Mobile.getAttribute(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 'text', 
+    0)
 
 println('Amount entered in total paid field in credit note mode' + invAmt2)
 
-def invAmt=Double.parseDouble(invAmt1)+Double.parseDouble(invAmt2)
+def invAmt = Double.parseDouble(invAmt1) + Double.parseDouble(invAmt2)
 
 println('Aggergate Amount entered in total paid field across all mode is ' + invAmt)
-
-def totalPaidLabel = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'),
-	0)
-
-println('Total paid label in cheque mode is ' + totalPaidLabel)
 
 DecimalFormat df = new DecimalFormat('0.00')
 
@@ -119,51 +121,61 @@ invAmt = df.format(invAmt)
 
 invAmt = ('Total Paid : ' + invAmt)
 
-Mobile.verifyMatch(invAmt, totalPaidLabel, false, FailureHandling.STOP_ON_FAILURE)
-
-println('Total paid label has amount equals to amount entered in total paid field')
-
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Cheques_RadioButton'), 0)
 
 Mobile.verifyElementHasAttribute(findTestObject('Phase2/BICollectionScreen01/Cheques_RadioButton'), 'selected', 0)
 
-def totalPaidLabelInChequeMode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'),
-	0)
+def totalPaidLabelInChequeMode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'), 
+    0)
 
 println('Total paid label in cheque mode is ' + totalPaidLabelInChequeMode)
 
 Mobile.verifyMatch(invAmt, totalPaidLabelInChequeMode, false, FailureHandling.STOP_ON_FAILURE)
 
-println('Total paid label has amount equals to amount entered in total paid field')
-
-Mobile.tap(findTestObject('Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 0)
-
-Mobile.verifyElementHasAttribute(findTestObject('Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 'selected',
-	0)
-
-def totalPaidLabelInRTGSMode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'),
-	0)
-
-println('Total paid label in RTGS mode is ' + totalPaidLabelInRTGSMode)
-
-Mobile.verifyMatch(invAmt, totalPaidLabelInRTGSMode, false, FailureHandling.STOP_ON_FAILURE)
-
-println('Total paid label has amount equals to amount entered in total paid field')
+println('Total paid label has amount equals to amount entered in total paid field in cheque mode')
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/CreditNote_RadioButton'), 0)
 
 Mobile.verifyElementHasAttribute(findTestObject('Phase2/BICollectionScreen01/CreditNote_RadioButton'), 'selected', 0)
 
-def totalPaidLabelInCreditMode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'),
-	0)
+def totalPaidLabel = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'), 
+    0)
 
-println('Total paid label in Credit mode is ' + totalPaidLabelInCreditMode)
+println('Total paid label in cheque mode is ' + totalPaidLabel)
+
+Mobile.verifyMatch(invAmt, totalPaidLabel, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Total paid label has amount equals to amount entered in total paid field in Credit mode')
+
+Mobile.tap(findTestObject('Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 0)
+
+Mobile.verifyElementHasAttribute(findTestObject('Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 'selected', 
+    0)
+
+def totalPaidLabelInRTGSMode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'), 
+    0)
+
+println('Total paid label in RTGS mode is ' + totalPaidLabelInRTGSMode)
+
+Mobile.verifyMatch(invAmt, totalPaidLabelInRTGSMode, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Total paid label has amount equals to amount entered in total paid field in RTGS mode')
+
+Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0)
+
+Mobile.verifyElementHasAttribute(findTestObject('Phase2/BICollectionScreen01/Efectivo_RadioButton'), 'selected', 0)
+
+def totalPaidLabelInEffectivoMode = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/TotalPaid_TextView'), 
+    0)
+
+println('Total paid label in Credit mode is ' + totalPaidLabelInEffectivoMode)
 
 Mobile.verifyMatch(invAmt, totalPaidLabel, false, FailureHandling.STOP_ON_FAILURE)
 
 println('Total paid label has amount equals to amount entered in total paid field')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/ScreenShot'),
-	[('testCaseName') : 'TC_ID_0389_CollectionScreen'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/ScreenShot'), [('testCaseName') : 'TC_ID_0389_CollectionScreen'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
+

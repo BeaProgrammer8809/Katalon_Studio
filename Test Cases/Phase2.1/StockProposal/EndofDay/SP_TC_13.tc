@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_13:-To check whether Apply and clear option is enabled</description>
+   <name>SP_TC_13</name>
+   <tag></tag>
+   <comment>Apply and Clear button should be enabled</comment>
+   <testCaseGuid>39c3825b-5173-4c4c-9574-a1c6478a6cf0</testCaseGuid>
+</TestCaseEntity>

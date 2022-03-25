@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_332
-To check user is allowed to put folio number in decimal and in alphanumeric and space</description>
+   <description>TC_ID_332:To check user is allowed to put folio number in decimal and in alphanumeric and space</description>
    <name>TC_ID_332</name>
    <tag></tag>
    <comment></comment>

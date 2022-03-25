@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the Order Value amount inside the info popup while taking replacement for the sku's that is having only discount (Item discount) but not having any taxes</description>
+   <description>TC145:To check the Order Value amount inside the info popup while taking replacement for the sku's that is having only discount (Item discount) but not having any taxes</description>
    <name>TC145</name>
    <tag></tag>
    <comment></comment>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_17: To check whether scheme is not applying while doing product buying</description>
+   <name>TC_17</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>72c3f916-48b2-4652-86cf-90b39f217c87</testCaseGuid>
+</TestCaseEntity>

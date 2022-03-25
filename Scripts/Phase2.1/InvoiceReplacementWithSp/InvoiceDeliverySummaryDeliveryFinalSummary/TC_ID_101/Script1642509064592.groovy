@@ -74,6 +74,9 @@ Mobile.verifyMatch(keyboardValue, findTestData('Phase2.1/TY_11/TestData').getVal
 
 ((driver) as AndroidDriver<MobileElement>).pressKey(new KeyEvent(AndroidKey.DIGIT_2))
 
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
+	[('testCaseName') : 'TC_ID_101_12'], FailureHandling.STOP_ON_FAILURE)
+
 def input =Mobile.getText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), 0)
 
 
@@ -82,6 +85,8 @@ def input =Mobile.getText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice
 ((driver) as AndroidDriver<MobileElement>).pressKey(new KeyEvent(AndroidKey.DEL))
 
 def value =Mobile.getText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), 0)
+
+'verifying after pressing on DEL inputed value deleted'
 
 Mobile.verifyNotMatch(input, value, false, FailureHandling.STOP_ON_FAILURE)
 

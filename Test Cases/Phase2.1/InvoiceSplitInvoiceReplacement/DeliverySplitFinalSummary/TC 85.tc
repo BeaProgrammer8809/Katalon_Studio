@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 85 - To check the split name displayed after entering all the stock delivered qty in Extra invoice for barcel sku that are not in invoice split group</description>
+   <name>TC 85</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af76c98a-8b0d-4b94-a5ed-09df862975c4</testCaseGuid>
+</TestCaseEntity>

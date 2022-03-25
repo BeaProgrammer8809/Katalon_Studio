@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_286
-
-To check when folio number flag is not enabled for the store if doing replacement,whether invoice is generated for multi org route</description>
+   <description>TC286 - To check when folio number flag is not enabled for the store if doing replacement,whether invoice is generated for multi org route</description>
    <name>TC286</name>
    <tag></tag>
    <comment></comment>

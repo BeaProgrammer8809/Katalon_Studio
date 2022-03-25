@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_072:To check the total Value calculation while taking invoice for the sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
-   <name>TC_072</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3b15941b-5f2c-43d6-a36c-9ce303cd4886</testCaseGuid>
-</TestCaseEntity>

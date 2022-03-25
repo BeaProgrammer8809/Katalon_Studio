@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC239:To check the Total amount inside the info popup while taking product buying for the sku's that is having IVA tax and category discount.</description>
+   <name>TC239</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d41b71b7-f916-48e9-b19f-c9199160a31e</testCaseGuid>
+</TestCaseEntity>

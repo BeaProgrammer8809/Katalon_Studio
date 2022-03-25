@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_034 - Check whether the field - OP is editable</description>
-   <name>TC_034</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e78d590b-29f1-4eaa-829f-7be38b2774e1</testCaseGuid>
-</TestCaseEntity>

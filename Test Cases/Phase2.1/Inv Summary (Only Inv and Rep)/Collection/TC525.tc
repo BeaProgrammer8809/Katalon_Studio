@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC525:-To check the legal entity name in collection payment screen for multi org while doing invoice for barcel sku</description>
+   <name>TC525</name>
+   <tag></tag>
+   <comment>Verifying the payment screen
+Company level legal entity should be displayed
+Legal entity name should be barcel</comment>
+   <testCaseGuid>0baf1ae6-6086-4742-a893-aa267f5274db</testCaseGuid>
+</TestCaseEntity>

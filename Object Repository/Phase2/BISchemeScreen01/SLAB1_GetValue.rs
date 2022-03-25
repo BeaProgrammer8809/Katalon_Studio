@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>((//android.widget.TextView[@text='${GlobalVariable.SchemeGetSkuName1}']/ancestor::android.widget.HorizontalScrollView)[3]/descendant::android.widget.TextView)[2]</value>
+         <value>(//android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView)[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -136,6 +136,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>((//android.widget.TextView[@text='${GlobalVariable.SchemeGetSkuName1}']/ancestor::android.widget.HorizontalScrollView)[3]/descendant::android.widget.TextView)[2]</value>
+      <value>(//android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView)[2]</value>
    </webElementProperties>
 </WebElementEntity>

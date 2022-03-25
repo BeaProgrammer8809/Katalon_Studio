@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_218: To check the Total amount inside the info popup while taking invoice for the sku's that is having IVA tax, Item discount and category discount.</description>
-   <name>TC_218</name>
-   <tag></tag>
-   <comment>verifying CompDisc_Value
-verifying OrderValue_Value</comment>
-   <testCaseGuid>71905e2d-7ccc-4ef6-9eb9-3efebaa5236f</testCaseGuid>
-</TestCaseEntity>

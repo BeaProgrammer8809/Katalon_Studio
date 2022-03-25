@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 477:- To verify “Pesito commission :” label is present in all the mode under collection pop-up if user not visit pesito mode and pay invoice amount in Effectivo,Cheque and RTGS.</description>
+   <name>TC 477</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>79c86b15-e13a-4a80-984a-f31b07aadb8f</testCaseGuid>
+</TestCaseEntity>

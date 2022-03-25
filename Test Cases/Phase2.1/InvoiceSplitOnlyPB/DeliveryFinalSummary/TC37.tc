@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC37:To check back button in the preticket print preview</description>
+   <name>TC37</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>98183950-cb5b-4c82-874f-3dde9e8dd257</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC537:To check while select INE_ClaveEntidad and INE_Ambito ,whether invoice is generated for INE enabled retailer</description>
+   <name>TC537</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b244d59e-5b92-493d-9c0f-b04299835f31</testCaseGuid>
+</TestCaseEntity>

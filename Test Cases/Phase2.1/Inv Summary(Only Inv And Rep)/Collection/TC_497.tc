@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_497:- To check User cannot collect amount more than pesito credit avilable in pesito grant mode screen</description>
-   <name>TC_497</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>23a57a56-665d-4ee8-960d-ddcb08dea20a</testCaseGuid>
-</TestCaseEntity>

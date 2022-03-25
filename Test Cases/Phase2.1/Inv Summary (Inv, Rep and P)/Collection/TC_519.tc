@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_519:T To verify whether able to change the given “RTGS ref no” after submitting.[Collection Before Invoice]</description>
-   <name>TC_519</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bad1a653-c42e-4f15-bb01-e971c51eaa29</testCaseGuid>
-</TestCaseEntity>

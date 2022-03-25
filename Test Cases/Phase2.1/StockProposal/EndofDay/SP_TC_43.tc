@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_43 : To check whether alert msg is coming when we press back button in proposal screen</description>
+   <name>SP_TC_43</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e3c6d6ae-b6bd-4a89-be4f-4e3ba9f3d3b2</testCaseGuid>
+</TestCaseEntity>

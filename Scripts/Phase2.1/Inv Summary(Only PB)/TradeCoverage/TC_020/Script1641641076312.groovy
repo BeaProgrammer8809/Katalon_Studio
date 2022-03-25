@@ -53,19 +53,29 @@ Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
-def okButton=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
+def actualText = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Do_You_Want_To_Save_TextView'), 
+    0)
 
-def CancelButton=Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Cancel_Button'), 0)
+def expText = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(2, 40)
 
-Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 
-    'text', okButton, 0)
-
-Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Cancel_Button'), 
-    'text', CancelButton, 0)
+Mobile.verifyMatch(actualText, expText, false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
 
+def okButton = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
+
+def expOkButton= findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 40)
+
+Mobile.verifyMatch(okButton, expOkButton, false, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Cancel_Button'), 0)
+
+def CancelButton = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Cancel_Button'), 
+    0)
+
+def expCancelButton=findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 40)
+
+Mobile.verifyMatch(CancelButton, expCancelButton, false, FailureHandling.STOP_ON_FAILURE)
 
 println(' Alert Popup opened with Ok and cancel option')
 

@@ -79,13 +79,20 @@ println(count)
 
 def Count_Frame = Mobile.getText(findTestObject('Phase2/BISplitDeliverySummary01/Delivery_Split_Summary_Frame'), 0)
 
-def Inv_Count = 'ExtraInv1'
+//GlobalVariable.index = findTestData('Phase2.1/Common_Data/CommonData').getValue(5, 1)
 
-Count_Frame.contains(Inv_Count)
+def Inv_Count = Mobile.getText(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv1_TextView'), 0)
+
+def Actual_Result = Count_Frame.contains(Inv_Count)
 
 println('ExtraInvoice count is 1')
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
-	[('testCaseName') : 'TC_ID_146'], FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv1_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv1_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), 
+    [('testCaseName') : 'TC_ID_146'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
+

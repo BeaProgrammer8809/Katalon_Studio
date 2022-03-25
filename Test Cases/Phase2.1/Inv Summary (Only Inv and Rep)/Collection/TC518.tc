@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC518:-To check the legal entity name in collection payment screen for non multi org while doing invoice and replacement for same sku</description>
+   <name>TC518</name>
+   <tag></tag>
+   <comment>Verifying the Colelction screen should be displayed
+Sales center legal entity should be displayed</comment>
+   <testCaseGuid>32be10c2-94be-4395-a073-646b08b5edd8</testCaseGuid>
+</TestCaseEntity>

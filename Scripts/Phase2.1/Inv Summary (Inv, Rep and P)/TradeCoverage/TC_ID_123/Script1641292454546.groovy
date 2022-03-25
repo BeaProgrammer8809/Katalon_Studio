@@ -52,9 +52,9 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Cheques_RadioButton'), 0)
 def ChequeAmount = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIChequesScreen01/Amount_EditText'),
 	0)
 
-double totalcheckamount = Double.parseDouble(ChequeAmount)
+double totalchequeamount = Double.parseDouble(ChequeAmount)
 
-def GreaterThanInvoiceAmount = totalcheckamount + 10
+def GreaterThanInvoiceAmount = totalchequeamount + totalchequeamount
 
 AmountGreaterThanInvoiceAmount = GreaterThanInvoiceAmount.toString()
 
@@ -93,8 +93,8 @@ Mobile.verifyMatch(Actual_Toast_Message, Expected_Toast_Message, false,FailureHa
 
 /*verification done to check collection popup is not hidden */
 
-Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BICollectionScreen01/Collection_Title'), 'Collection',
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BICollectionScreen01/Collection_Title'), findTestData(
+        'Phase2.1/TY_06/Collection/Collection').getValue(2, 5),FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_122'],
 	FailureHandling.STOP_ON_FAILURE)

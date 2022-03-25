@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_535: To check without selecting the INE_ClaveEntidad if click create final invoice ,whether error message is appearing</description>
-   <name>TC_535</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>87021849-7346-483e-afd5-e090d4f13277</testCaseGuid>
-</TestCaseEntity>

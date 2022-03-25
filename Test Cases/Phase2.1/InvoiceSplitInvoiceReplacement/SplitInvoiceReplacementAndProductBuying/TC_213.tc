@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_213 - To check whether able to Submit the invoice amount without selecting Cheque Type</description>
-   <name>TC_213</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d9ce5a2b-e4d6-480e-95b4-1d29569c708b</testCaseGuid>
-</TestCaseEntity>

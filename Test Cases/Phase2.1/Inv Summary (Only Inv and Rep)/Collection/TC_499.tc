@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_499:-To check pesito granted amount is coming based on amount collected in pesito grant mode</description>
-   <name>TC_499</name>
-   <tag></tag>
-   <comment>Pesito granted amount should come based on amount collected in pesito grant mode</comment>
-   <testCaseGuid>f44ac891-6bca-40e6-a479-cf839dfb8538</testCaseGuid>
-</TestCaseEntity>

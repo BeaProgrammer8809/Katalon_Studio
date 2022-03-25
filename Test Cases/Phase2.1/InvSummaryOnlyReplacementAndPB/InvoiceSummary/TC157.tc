@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC157 : To check the Order Value amount inside the info popup while taking product buying for the sku's that is having both IVA and IEPS taxes but not having any discounts</description>
+   <name>TC157</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>00bef61e-4b99-4fa3-8a92-b9050661708c</testCaseGuid>
+</TestCaseEntity>

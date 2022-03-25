@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC299:-To check while doing product buying for the sku's that is having IEPS tax with category discount. and Detail IEPS should be enabled for the store,whether thhe onsite invoice is getting success,UUID is generated</description>
+   <description>TC299:To check while doing product buying for the sku's that is having IEPS tax with category discount. and Detail IEPS should be enabled for the store,whether thhe onsite invoice is getting success,UUID is generated</description>
    <name>TC299</name>
    <tag></tag>
    <comment>Verifyed the status and UUID generated 

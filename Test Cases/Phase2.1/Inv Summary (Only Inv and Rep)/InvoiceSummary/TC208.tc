@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC208: To check the Comp Disc amount inside the info popup while taking invoice and replacement for the sku's that is having only discount (Item discount and Category discount) but not having any taxes</description>
+   <name>TC208</name>
+   <tag></tag>
+   <comment>verifying screen title
+verifying the Comp Disc
+verifying  (-) sign indicated before the amount
+Calculation
+verifying the Comp Disc
+Tax Calculation
+verifying  TAX </comment>
+   <testCaseGuid>613e88e9-d227-4b7e-a365-55d9c5ff1bb8</testCaseGuid>
+</TestCaseEntity>

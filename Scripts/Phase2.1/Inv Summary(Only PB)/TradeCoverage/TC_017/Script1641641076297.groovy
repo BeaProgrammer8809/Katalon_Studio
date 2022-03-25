@@ -95,7 +95,7 @@ Mobile.verifyElementAttributeValue(findTestObject('Phase2/BIInvoiceSummaryScreen
 
 println('No element in amount split popup is editable as value remains same before')
 
-Mobile.callTestCase(findTestCase('Phase2.1\\Inv Summary(Only PB)\\TradeCoverage/ScreenShot'), [('testCaseName') : 'TC_017_InvoiceSummary'], 
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary(Only PB)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_017_InvoiceSummary'], 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIAmountSplitUpPopup01/Close_Button'), 0)

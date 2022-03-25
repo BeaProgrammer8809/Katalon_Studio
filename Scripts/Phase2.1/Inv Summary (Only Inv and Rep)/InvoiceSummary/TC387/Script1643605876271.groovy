@@ -62,20 +62,34 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
 Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(6, 232), 0)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
+Mobile.delay(30)
 
-def Print_Preview_text = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
-def Expected_Invoice_Failure = findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(5, 232)
-boolean Actual_Failure = Print_Preview_text.contains(Expected_Invoice_Failure)
+def Actual_Invoice_And_UUID_PopUp_Text =Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
 
-//Verification to check that invoice is failure in Print Preview screen
-Mobile.verifyMatch(Actual_Failure.toString(),findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(7, 232), false,FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
 
-//Verification to check that UUID is not generated
+def Print_Preview_Screen = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC387_Print_Preview_Screen'], FailureHandling.STOP_ON_FAILURE)
 
-//Verification to check the Invoice qty and Return Qty 
+def Expected_Onsite_Status = findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(5, 232)
+boolean UUID_PopUp_Text=Actual_Invoice_And_UUID_PopUp_Text.contains(Expected_Onsite_Status)
+
+def UUID_Length = Actual_Invoice_And_UUID_PopUp_Text.substring(42)
+def UUID_Num_Length = UUID_Length.length()
+boolean Status = Print_Preview_Screen.contains(Expected_Onsite_Status)
+
+//Verification to check that Invoice status
+Mobile.verifyMatch(Status.toString(), findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(7, 232), false, FailureHandling.STOP_ON_FAILURE)
+
+//Verification to check the UUID number length
+Mobile.verifyMatch(UUID_Num_Length.toString(), findTestData('Phase2.1/TY_02/Test_Data_Phase2').getValue(8, 232), false, FailureHandling.STOP_ON_FAILURE)
+
+//Verification to check the Invoice qty and Return Qty
 Mobile.verifyEqual(Actual_Pieces_Value, Expected_Pieces_Value, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyEqual(Actual_Pieces_Value1, Expected_Pieces_Value1, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyEqual(Actual_Return_Qty, Expected_Return_Qty, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyEqual(Actual_Return_Qty1, Expected_Return_Qty1, FailureHandling.STOP_ON_FAILURE)
+
+println "Onsite invoice is success and UUID is generated"
 
 Mobile.closeApplication()

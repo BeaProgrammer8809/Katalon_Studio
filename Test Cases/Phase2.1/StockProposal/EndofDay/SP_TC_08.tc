@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_08 : &quot;To check whether Filter is consisting product level as:
+ 1.MArca,
+ 2. category
+ 3.segment 
+ 4.Line&quot;
+
+</description>
+   <name>SP_TC_08</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ee2be76a-2ccf-4c93-a62f-f2a893c3a333</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC252 - To check the Total amount inside the info popup while taking invoice and replacement for the sku's that is having IVA, IEPS taxes and  Category discount.</description>
+   <name>TC252</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8c1ae4d4-8af6-4d0d-9f4b-107769c7cb31</testCaseGuid>
+</TestCaseEntity>

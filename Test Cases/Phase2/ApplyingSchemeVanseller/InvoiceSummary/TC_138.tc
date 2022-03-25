@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_138: To check once uncheck the qty whether able to view the applied scheme</description>
+   <name>TC_138</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4ec8b65-8c97-4b69-9de3-dee538daa615</testCaseGuid>
+</TestCaseEntity>

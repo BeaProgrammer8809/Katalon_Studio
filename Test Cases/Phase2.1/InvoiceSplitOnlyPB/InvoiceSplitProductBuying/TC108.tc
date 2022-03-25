@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC108 :</description>
+   <description>TC108: To check while doing product buying for no group sku's that is having IVA, IEPS taxes and  Category discoun,whether the onsite invoice is getting success and UUID is generated.</description>
    <name>TC108</name>
    <tag></tag>
-   <comment></comment>
-   <testCaseGuid>eded2c4c-c95f-4f67-892f-4978b9b268fc</testCaseGuid>
+   <comment>Verifyed the status and UUID generated 
+Verifying status as success</comment>
+   <testCaseGuid>d4e52702-ae4f-487c-a3c5-3c1102c1f34a</testCaseGuid>
 </TestCaseEntity>

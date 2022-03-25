@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_56 :To check whether only invoiced sku's displaying in delivery split summary screen while taking invoice, replacement and pb against each bimbo sku's that are not in invoice split group (considering only one invoice split group is available)</description>
-   <name>TC_56</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d6be335d-5877-4d48-b050-2fff11419725</testCaseGuid>
-</TestCaseEntity>

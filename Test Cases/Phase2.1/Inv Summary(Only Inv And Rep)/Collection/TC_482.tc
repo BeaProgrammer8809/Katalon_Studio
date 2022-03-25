@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_482:- To check whether able to collect the invoice amount in pesito and cheque mode</description>
-   <name>TC_482</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>9f73972a-cf64-4abf-ade7-bc0cef37e8df</testCaseGuid>
-</TestCaseEntity>

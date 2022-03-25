@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_170:-To check when scheme is created like below so when enter invoice qty =3 for scheme buy sku,whether slab3 is getting applied 
+
+Scheme buy logic:OR   Scheme get logic:ONLY
+
+Slab1:
+Scheme buy sku:001_lak_qt  ,buy qt=1
+Scheme buy sku:002_lak_qt,buy qty=1
+
+Scheme get sku:003_lak_qt ,get qty=2
+
+Slab2:
+Scheme buy sku:001_lak_qt  ,buy qt=2
+Scheme buy sku:002_lak_qt,buy qty=2
+
+Scheme get sku:003_lak_qt ,get qty=3
+
+Slab3:
+Scheme buy sku:001_lak_qt  ,buy qt=3
+Scheme buy sku:002_lak_qt,buy qty=3
+
+Scheme get sku:003_lak_qt ,get qty=5</description>
+   <name>TC_170</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0a53a9ad-3420-4271-a9ac-97c0255b18b4</testCaseGuid>
+</TestCaseEntity>

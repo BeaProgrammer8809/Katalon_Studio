@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_02 : To check whether able to login with entering &quot;username&quot; and &quot;password&quot;</description>
+   <name>SP_TC_02</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a9d933fd-f784-42d4-8976-0499de0719f2</testCaseGuid>
+</TestCaseEntity>

@@ -29,7 +29,7 @@ Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Bu
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-        'ProductName', 1), 0)
+        'ProductName', 8), 0)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 0)
 
@@ -85,7 +85,7 @@ ActualInvoiceName = Mobile.getText(findTestObject('Object Repository/Phase2/BIDe
 
 println(ActualInvoiceName + 'ActualInvoiceName')
 
-Mobile.verifyNotMatch(ActualInvoiceName, findTestData('Phase2.1/TY_12/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Testdata').getValue(
+Mobile.verifyMatch(ActualInvoiceName, findTestData('Phase2.1/TY_12/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Testdata').getValue(
         2, 1), false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), 

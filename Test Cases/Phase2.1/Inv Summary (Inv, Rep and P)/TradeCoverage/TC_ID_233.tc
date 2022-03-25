@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_233 - To check whether able to select branch from dropdown</description>
+   <description>TC_ID_233
+:To check whether able to select branch from dropdown</description>
    <name>TC_ID_233</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d343792b-6b69-406d-aea2-20a3825e9bda</testCaseGuid>
+   <testCaseGuid>5d6c1e26-8b4f-4d17-aa46-eff06705f91b</testCaseGuid>
 </TestCaseEntity>

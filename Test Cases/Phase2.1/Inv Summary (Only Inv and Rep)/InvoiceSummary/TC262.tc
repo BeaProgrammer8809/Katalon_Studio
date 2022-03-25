@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC262: To check whether the entered piece and return quantity are persisting in Order and Invoice screen while navigating back from summary screen</description>
+   <name>TC262</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5acfbe87-55e0-4d6b-91bc-10196efc0349</testCaseGuid>
+</TestCaseEntity>

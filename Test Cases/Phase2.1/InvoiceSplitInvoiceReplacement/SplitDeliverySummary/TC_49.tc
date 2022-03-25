@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_49 : To check whether able to generate invoice  displayed after taking invoice, replacement and pb against each bimbo sku's that are not in invoice split group</description>
-   <name>TC_49</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>8869187a-7dca-42d6-9fd1-be4d0d95a799</testCaseGuid>
-</TestCaseEntity>

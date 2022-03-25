@@ -35,10 +35,30 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
 
-def TotalpaidAmount = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 
+def invAmt=Mobile.getText(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
+println invAmt
+
+def inv_amt =Double.parseDouble(invAmt)
+
+def Inv_Amount = Math.round(inv_amt)
+
+int InvoiceAmount  = (int)Inv_Amount
+
+
+
+def Total_paid_Amt = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 
     0)
 
-println(TotalpaidAmount)
+println(Total_paid_Amt)
+
+def totalAmount =Double.parseDouble(Total_paid_Amt)
+
+def totalpaid_Amount = Math.round(totalAmount)
+
+int TotalPaidAmount  = (int)totalpaid_Amount
+
+
+Mobile.verifyMatch(TotalPaidAmount.toString(), InvoiceAmount.toString(), false, FailureHandling.STOP_ON_FAILURE)
 
 println(' Total paid Amount is present ')
 
@@ -48,11 +68,10 @@ Mobile.verifyElementVisible(findTestObject('Phase2/BIInvoiceSummaryScreen/Summar
 
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0)
 
-println "Full Invoice amount is  able to submit only in Efectivo mode"
+println('Full Invoice amount is  able to submit only in Efectivo mode')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_103'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_103'], 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-
 

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_314:To verify whether able to provide new “RTGS ref no” after deleting the given payment.[Collection Before Invoice]</description>
-   <name>TC_314</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>dec66f93-cb24-441a-8f26-0f85374cd6a9</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_385:- To verify “Folio ProdBuy” field present in the Enter the Folio number pop-up.</description>
-   <name>TC_385</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7685237e-7b5d-4b33-9d1a-ebd7a3263ee0</testCaseGuid>
-</TestCaseEntity>

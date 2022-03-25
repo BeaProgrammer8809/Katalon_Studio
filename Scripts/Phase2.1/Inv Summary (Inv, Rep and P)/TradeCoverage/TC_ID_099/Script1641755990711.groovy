@@ -42,6 +42,8 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Colle
 
 def InvoiceAmount = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
 
+//double InvoiceAmt=Double.parseDouble(InvoiceAmountInSummary)
+
 def length = InvoiceAmount.length()
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
@@ -53,11 +55,11 @@ for (int i = 0; i <= length; i++) {
 
 double TotalAmount = Double.parseDouble(InvoiceAmount)
 
-def AmountGreaterThanInvoiceAmount = TotalAmount + 10
+def AmountGreaterThanInvoiceAmount = TotalAmount + TotalAmount
 
 Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText') , AmountGreaterThanInvoiceAmount.toString(), 0)
 
-Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
+//Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Submit_Button'), 0)
 
 /*Verification done to check Amount exceeds the balance and please check error message is displaying */
 AppiumDriver driver = MobileDriverFactory.getDriver()
@@ -72,12 +74,20 @@ Mobile.verifyMatch(Actual_Toast_Message, Expected_Toast_Message, false,FailureHa
 
 /*Verification done to check Amount text field is allowing to enter the lesser amount than Total invoice amount */
 
-def AmountGreaterAfter=Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
+for (int i = 0; i <= length; i++) {
+	Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/BackSpace_NumButton'), 0, FailureHandling.OPTIONAL)
+}
 
-Mobile.verifyNotMatch(AmountGreaterAfter, AmountGreaterThanInvoiceAmount.toString(), false,FailureHandling.STOP_ON_FAILURE)
+Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText') , AmountGreaterThanInvoiceAmount.toString(), 0)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_099'],
 	FailureHandling.STOP_ON_FAILURE)
+
+//def AmountGreaterAfter=Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 0)
+
+//Mobile.verifyNotMatch(AmountGreaterAfter, AmountGreaterThanInvoiceAmount.toString(), false,FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyGreaterThan(AmountGreaterThanInvoiceAmount, TotalAmount, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

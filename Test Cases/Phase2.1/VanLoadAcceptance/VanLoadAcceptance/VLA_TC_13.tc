@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_13:To verify “Van load acceptance is not done for pending request” message pops-up while clicking the &quot;Start visit&quot; if there is vanload pending with past delivery date and odometer journey is started</description>
+   <name>VLA_TC_13</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>93e2f738-63f9-4fa4-a864-6403f1758d0f</testCaseGuid>
+</TestCaseEntity>

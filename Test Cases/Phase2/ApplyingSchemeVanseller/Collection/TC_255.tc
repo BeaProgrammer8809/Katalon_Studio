@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_255:-To check the Select Bank field when scheme is applied</description>
+   <name>TC_255</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3b9fc3c-d5c1-450e-b1da-27729ba9ef5c</testCaseGuid>
+</TestCaseEntity>

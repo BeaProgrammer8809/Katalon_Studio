@@ -107,7 +107,7 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Name'), 
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIDropdown/Dropdown_Option'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_413'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_413'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/ChequeNum_EditText'), findTestData('Phase2.1/TY_04/Phase2.1_Sheet2').getValue(
 	13, 52), 0)
@@ -116,7 +116,7 @@ Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
 
 AppiumDriver driver = MobileDriverFactory.getDriver()
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_413'], FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_413'], FailureHandling.STOP_ON_FAILURE)
 
 def Actual_Toast_Message = driver.findElementByXPath('//android.widget.Toast[1]').getText()
 
@@ -131,5 +131,3 @@ println('Without selecting Cheque type user can not proceed')
 Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_413'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-
-

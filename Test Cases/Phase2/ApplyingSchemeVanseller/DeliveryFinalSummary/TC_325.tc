@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_325 - To check the lines qty displayed when scheme buy and get sku is from ricolino company and that are not in invoice split group (if one invoice split group is available)
+
+</description>
+   <name>TC_325</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2aad86a6-7a64-4a81-91db-4d94c45d1232</testCaseGuid>
+</TestCaseEntity>

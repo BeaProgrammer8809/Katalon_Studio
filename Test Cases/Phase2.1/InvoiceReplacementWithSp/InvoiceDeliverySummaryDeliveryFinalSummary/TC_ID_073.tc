@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_073:To check the total Value calculation, while taking Replacement for the sku's that is not having any discounts and taxes.</description>
+   <name>TC_ID_073</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d370b1df-8b4f-4700-a19a-167b71918e46</testCaseGuid>
+</TestCaseEntity>

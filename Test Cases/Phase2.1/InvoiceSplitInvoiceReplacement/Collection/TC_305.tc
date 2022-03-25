@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_305:-To verify “Reference number” can be empty[Collection Before Invoice]</description>
-   <name>TC_305</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b5e137f1-7b1b-44d4-9c8c-f676c2e0c434</testCaseGuid>
-</TestCaseEntity>

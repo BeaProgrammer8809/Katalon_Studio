@@ -70,11 +70,19 @@ def pieceValue = Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoi
 
 println('Invoice qty is ' + pieceValue)
 
+def salesReturn=Mobile.getText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BISummaryProductDetails/Sales_Return_Value_Indexing'), 0)
+
+println "Product buying qty is "+salesReturn
+
 def totalprice = Integer.parseInt(pieceValue) * Double.parseDouble(unitPrice)
 
-Mobile.verifyEqual(skuTotalPrice, totalprice, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(totalprice, skuTotalPrice, FailureHandling.STOP_ON_FAILURE)
 
-println('Discount for sku is not be applied for Product Buying qty in summary screen')
+def expectedInvAmt=findTestData('Phase2/Common_Data/CommonData_03').getValue(5, 10)
+
+Mobile.verifyEqual(skuTotalPrice, expectedInvAmt, FailureHandling.STOP_ON_FAILURE)
+
+println "Discount is not considered for product buying sku"
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/I_Icon'), 0)
 

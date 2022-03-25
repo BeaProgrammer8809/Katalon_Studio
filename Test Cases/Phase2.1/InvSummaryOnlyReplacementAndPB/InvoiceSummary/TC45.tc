@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_45 - To check the total price calculation while taking replacement for the sku's that is having IEPS tax, Item discount and category discount. and DetaiL IEPS is enable for the store</description>
+   <description>TC45 - To check the total price calculation while taking replacement for the sku's that is having IEPS tax, Item discount and category discount. and DetaiL IEPS is enable for the store</description>
    <name>TC45</name>
    <tag></tag>
    <comment></comment>

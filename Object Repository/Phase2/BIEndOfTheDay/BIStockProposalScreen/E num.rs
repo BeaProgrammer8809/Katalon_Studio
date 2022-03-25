@@ -25,14 +25,14 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.ivy.bimbomx.mexico.view.uat:id/stock_and_order_listview_sih</value>
+      <value>${GlobalVariable.Package}:id/stock_and_order_listview_sih</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
-      <value>com.ivy.bimbomx.mexico.view.uat</value>
+      <value>${GlobalVariable.Package}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

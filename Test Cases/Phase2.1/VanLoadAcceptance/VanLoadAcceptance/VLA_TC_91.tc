@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>VLA_TC_91:To check after stock is allocated by dispatch manager whether loads are displaying inValid acceptance screen with Load No, Total Lines and Date</description>
-   <name>VLA_TC_91</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>fc635768-3f2e-4d49-96e4-a123c49bbd44</testCaseGuid>
-</TestCaseEntity>

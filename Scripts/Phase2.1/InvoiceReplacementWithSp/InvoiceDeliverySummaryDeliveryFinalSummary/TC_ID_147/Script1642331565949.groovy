@@ -1,14 +1,22 @@
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
-import org.openqa.selenium.WebElement
-
+import org.openqa.selenium.WebElement as WebElement
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory
+import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-
-import io.appium.java_client.AppiumDriver
+import io.appium.java_client.AppiumDriver as AppiumDriver
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import internal.GlobalVariable as GlobalVariable
 
 Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4003'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -69,7 +77,21 @@ Count_Frame.contains(Inv_Count)
 
 println('ExtraInv2 is present')
 
-Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
-	[('testCaseName') : 'TC_ID_147'], FailureHandling.STOP_ON_FAILURE)
+def Actual_ExtraInv = Mobile.getText(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv2_TextView'), 
+    0, FailureHandling.STOP_ON_FAILURE)
+
+println(Actual_ExtraInv)
+
+def Expected_ExtraInv = findTestData('Phase2.1/TY_04/Phase2.1_Sheet3').getValue(16, 7)
+
+Mobile.verifyMatch(Actual_ExtraInv, Expected_ExtraInv, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv2_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv2_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'), 
+    [('testCaseName') : 'TC_ID_147'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
+

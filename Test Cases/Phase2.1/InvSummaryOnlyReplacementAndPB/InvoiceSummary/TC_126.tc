@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>To check the Value and total qty field calculation while taking replacement and product buying against each sku's that is having only discount (Item discount) but not having any taxes</description>
-   <name>TC_126</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>0a9fe975-9506-492c-97f2-01b5ef314a97</testCaseGuid>
-</TestCaseEntity>

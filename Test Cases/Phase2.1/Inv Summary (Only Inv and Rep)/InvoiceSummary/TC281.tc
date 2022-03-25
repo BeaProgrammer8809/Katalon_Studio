@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_281
-
-To check while doing invoice for bimbo/barcel/ricolino products ,whether folio number text field is displayed for multi org route</description>
+   <description>TC281 - To check while doing invoice for bimbo/barcel/ricolino products ,whether folio number text field is displayed for multi org route</description>
    <name>TC281</name>
    <tag></tag>
    <comment></comment>

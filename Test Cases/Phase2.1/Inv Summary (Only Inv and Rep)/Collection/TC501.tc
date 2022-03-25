@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC501:-To check Collection module is coming for Cold seller</description>
+   <name>TC501</name>
+   <tag></tag>
+   <comment>Collection module should be applicable</comment>
+   <testCaseGuid>a40f6f16-a904-46de-9652-cd37c2dc1013</testCaseGuid>
+</TestCaseEntity>

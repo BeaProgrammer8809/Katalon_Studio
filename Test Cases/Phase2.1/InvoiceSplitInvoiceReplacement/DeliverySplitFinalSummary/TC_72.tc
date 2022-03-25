@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_72 - To check the amount displayed after entering all the stock delivered qty in Extra invoice for bimbo's sku that are in invoice split group</description>
-   <name>TC_72</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ea2c2a76-4240-4348-891c-b839e875d800</testCaseGuid>
-</TestCaseEntity>

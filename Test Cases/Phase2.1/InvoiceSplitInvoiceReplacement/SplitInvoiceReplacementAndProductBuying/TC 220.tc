@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 220 - To check the Inv Amt displayed in the Transferencias Electronicas mode</description>
+   <name>TC 220</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d31d8484-144f-4786-aad9-38bb8ab2670d</testCaseGuid>
+</TestCaseEntity>

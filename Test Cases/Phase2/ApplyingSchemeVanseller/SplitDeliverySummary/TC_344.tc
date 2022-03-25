@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_344:To check the Stock delivered displayed when scheme is applied and scheme buy sku is added in split group and get sku is not in split group(Considering : only one invoice split group is available)</description>
+   <name>TC_344</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b07fa1ee-ba59-44cb-be26-6d9638d2f1cf</testCaseGuid>
+</TestCaseEntity>

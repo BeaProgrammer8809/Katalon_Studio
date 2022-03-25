@@ -45,13 +45,13 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
 
 //clearing amount in effectivo mode
 def invamt = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Amount_EditText'), 0)
-    
+	
 println invamt
 
 println(invamt.length())
 
 for (int i = 0; i < invamt.length(); i++) {
-    Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 0)
@@ -72,6 +72,7 @@ def AfterEnteringAmount=Mobile.getAttribute(findTestObject('Object Repository/Ph
 println AfterEnteringAmount
 
 Mobile.verifyNotEqual(BeforeEnteringAmount, AfterEnteringAmount, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyMatch(invamt, AfterEnteringAmount, false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_326'],
 	FailureHandling.STOP_ON_FAILURE)

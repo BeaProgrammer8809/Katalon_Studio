@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_293:- To check the legal entity while doing replacement for barcel products and product buyiing for Ricolino prodcuts</description>
-   <name>TC_293</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c60b5de4-d423-4211-91a3-4e4e76faaf64</testCaseGuid>
-</TestCaseEntity>

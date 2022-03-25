@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SC_TC_12: To check whether Scheme will be displayed for preseller</description>
+   <name>SC_TC_12</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b565a213-9b35-4c1d-8d28-115a7808aaa8</testCaseGuid>
+</TestCaseEntity>

@@ -110,24 +110,33 @@ double Discount = ActualTotalPrice - Double.parseDouble(TotalOrderValue)
 println('Discount for sku1 is ' + Discount)
 
 //Tax = Value - Order Value
-double tax = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
-println('Tax amount applied for this product is ' + tax)
+double tax_value = Double.parseDouble(Actual_Value_Amt) - Double.parseDouble(TotalOrderValue)
+println('Tax amount applied for this product is ' + tax_value)
+
+def totalSum = Double.parseDouble(TotalOrderValue)
+def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
+def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
+
+//Verification to check the Tax percentage for the SKU
+Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling.STOP_ON_FAILURE)
+println('Tax IEPS and IVA is applied for sku')
 
 //Order_Value
-def OrderValue = ActualTotalPrice + tax
+def OrderValue = ActualTotalPrice + tax_value
 println OrderValue
 
-//Product Buying is not considering the Gross/Total calculation. Total Price is calculated for Invoice alone.
+//Verification to check that Second gross amount = (SKU gross amount - calculated item discount) .
 def Expected_Value = OrderValue - Discount
-println Expected_Value
-
 Mobile.verifyEqual(Actual_Value_Amt, Expected_Value, FailureHandling.STOP_ON_FAILURE)
 
 //Sales addtion
 def Actual_Sales_Return= Integer.parseInt(Actual_Sales_Return1)+ Integer.parseInt(Actual_Sales_Return2)
 
+//
+
 //Verification to check the invoice qty and return qty(Product Buying)
-Mobile.verifyEqual(Actual_Pieces_Value, Total_Qty_Value, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(Actual_Pieces_Value, Expected_Pieces_Value, FailureHandling.STOP_ON_FAILURE)
 Mobile.verifyEqual(Actual_Sales_Return, Expected_Sales_Return, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

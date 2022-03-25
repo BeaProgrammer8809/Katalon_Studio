@@ -118,7 +118,7 @@ double CreditNoteAmt=Double.parseDouble(CreditNoteAmtText)
 
 double RestAmt=InvAmt-CreditNoteAmt
 
-RestAmt=RestAmt.round()
+RestAmt=RestAmt.round(2)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0)
 
@@ -126,7 +126,7 @@ def AmtText=Mobile.getText(findTestObject('Object Repository/Phase2/BICollection
 
 double Amt=Double.parseDouble(AmtText)
 
-Amt=Amt.round()
+Amt=Amt.round(2)
 
 Mobile.comment('Balance get updated')
 

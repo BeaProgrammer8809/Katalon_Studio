@@ -42,21 +42,37 @@ for (int i = 0; i < invamt1.length(); i++) {
 	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
 
-def Total_Paid_field = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'),
+
+double TotalAmount = Double.parseDouble(invamt1)
+
+def AmountLessThanInvoiceAmount = TotalAmount - 5
+
+Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText') , AmountLessThanInvoiceAmount.toString(), 0)
+
+def TotalPaidFieldAmount = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'),
 	0)
 
-println("$Total_Paid_field")
+println("$TotalPaidFieldAmount")
 
-def actual_paid = 'Total Paid : ' + Total_Paid_field
-
-println(actual_paid)
+//def actual_paid = 'Total Paid : ' + Total_Paid_field
+//
+//println(actual_paid)
 
 def Total_Paid_Label = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIEfectivoScreen01/TotalPaid_TextView'),
 	0)
 
 println("$Total_Paid_Label")
 
-Mobile.verifyEqual(actual_paid, Total_Paid_Label, FailureHandling.STOP_ON_FAILURE)
+def split1 = Total_Paid_Label.split(':')
+
+TotalPaidLabel_Amount = (split1[1])
+
+def TotalPaidLabelAmount = TotalPaidLabel_Amount.substring(1, 6)
+
+println(TotalPaidLabelAmount)
+
+
+Mobile.verifyEqual(TotalPaidFieldAmount, TotalPaidLabelAmount, FailureHandling.STOP_ON_FAILURE)
 
 println "The Modified amount in Total paid field is  displayed across Total paid label "
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_220
+:To check whether able to Submit the invoice amount with past Cheque date</description>
+   <name>TC_ID_220</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0b123f5c-2413-435f-9716-2f52681f3451</testCaseGuid>
+</TestCaseEntity>

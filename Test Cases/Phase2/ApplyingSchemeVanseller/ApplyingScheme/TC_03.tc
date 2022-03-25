@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check whether scheme description text is displaying as bold and promotion slab description is displaying as normal text
+
+
+Note: UI testing is out of scope for autiomation.</description>
+   <name>TC_03</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b125591c-5f4f-47c8-99a3-5adc8252fbe5</testCaseGuid>
+</TestCaseEntity>

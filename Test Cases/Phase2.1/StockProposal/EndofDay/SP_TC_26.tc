@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_26:To Check whether once we click on save button while taking proposal then pop up msg is coming</description>
+   <name>SP_TC_26</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b017f647-3a1b-465e-a3f6-6496e9c84824</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_473
+:- To verify “Pesito Commission $3 should pay in Efectivo” Toast message is display if user try to pay ‘$3’ pesito amount in cash mode and remaining amount in Electronic Transfer mode.</description>
+   <name>TC_ID_473</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a8acc7cf-dc1e-47e0-875d-60d4a508fc11</testCaseGuid>
+</TestCaseEntity>

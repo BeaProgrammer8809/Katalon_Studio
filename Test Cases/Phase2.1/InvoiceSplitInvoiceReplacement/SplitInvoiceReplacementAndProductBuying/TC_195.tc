@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_195 - To check the Min. Amt displayed in the Cheques mode</description>
-   <name>TC_195</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>484de03f-d5b8-4a60-b754-028d4a3f68a9</testCaseGuid>
-</TestCaseEntity>

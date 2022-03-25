@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC25:To check whether screen is going back to product buying screen when tap on Edit Icon</description>
+   <name>TC25</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b19da458-e3be-4f5b-89d8-9b680a171a96</testCaseGuid>
+</TestCaseEntity>

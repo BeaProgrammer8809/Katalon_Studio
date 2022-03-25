@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_308 - To check the split name displayed when scheme buy and get sku is added in barcel legal entity invoice split grou (Considering: if one invoice split group is available)</description>
+   <name>TC_308</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7fa7b2d0-fc2f-4d63-baa5-4b812e3484de</testCaseGuid>
+</TestCaseEntity>

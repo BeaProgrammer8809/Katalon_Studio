@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 65 - Check whether able to enter invoice count>7</description>
+   <name>TC 65</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4339fc8-4825-4e53-b284-f56977957cf6</testCaseGuid>
+</TestCaseEntity>

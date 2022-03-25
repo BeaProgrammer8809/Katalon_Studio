@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_212: To check the Inv Amt displayed in the Efectivo mode when scheme is applied</description>
+   <name>TC_212</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce0d49dd-643a-487f-91cf-4ce66078293e</testCaseGuid>
+</TestCaseEntity>

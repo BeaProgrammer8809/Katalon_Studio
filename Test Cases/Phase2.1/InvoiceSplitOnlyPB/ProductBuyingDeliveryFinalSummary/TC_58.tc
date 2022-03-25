@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_58: To check the split name when multiple SKUs are selected from the different companies each and all are Non-group SKUs(Not Mapped Under Invoice split)</description>
-   <name>TC_58</name>
-   <tag></tag>
-   <comment>################</comment>
-   <testCaseGuid>eb31be59-5a13-4ba7-bf1a-08ca25d235d8</testCaseGuid>
-</TestCaseEntity>

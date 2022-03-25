@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the Value and  total qtyfield calculation while taking replacement against each sku's that is having IVA tax and category discount.</description>
+   <description>TC88-To check the Value and  total qtyfield calculation while taking replacement against each sku's that is having IVA tax and category discount.</description>
    <name>TC88</name>
    <tag></tag>
    <comment></comment>

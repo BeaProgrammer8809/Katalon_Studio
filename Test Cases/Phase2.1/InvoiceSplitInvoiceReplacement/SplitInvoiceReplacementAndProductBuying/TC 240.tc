@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 240 - To check when product buying amount is greater than invoice amount if product buying amount is adjusted in 1st invoice ,whether remaining amount is adjusted in 2nd invoice</description>
+   <name>TC 240</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b08a0889-db09-4dc9-b0e7-2028371b3a6f</testCaseGuid>
+</TestCaseEntity>

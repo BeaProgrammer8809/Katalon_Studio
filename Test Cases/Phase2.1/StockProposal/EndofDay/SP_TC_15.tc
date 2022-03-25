@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_15:-To check all sku is loading with 
+ 1. S-- Suggested order
+ 2. C-- Case /bag
+ 3. E-- Van SIH</description>
+   <name>SP_TC_15</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f04f1359-9415-4ae5-b8fb-57f180ae5320</testCaseGuid>
+</TestCaseEntity>

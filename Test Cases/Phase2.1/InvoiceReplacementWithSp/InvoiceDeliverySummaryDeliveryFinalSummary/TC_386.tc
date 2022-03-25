@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_386:- To verify “Please Pay Total Balance Amount $.” Toast message is display if user pay ‘$2’ in cash mode and remaining amount Electronic Transfer mode and Cheque mode.</description>
-   <name>TC_386</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a556a81c-b7bd-4a9e-a55e-6c3e36f124b0</testCaseGuid>
-</TestCaseEntity>

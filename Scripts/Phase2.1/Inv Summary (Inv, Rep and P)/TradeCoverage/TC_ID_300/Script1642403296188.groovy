@@ -156,8 +156,69 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Invoi
 
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
 
+def inv = Mobile.getText(findTestObject('Object Repository/Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(inv)
+
+def totalSum = Double.parseDouble(totalPrice)
+
+tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+println(tax)
+
+def taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 28)
+
+println(taxPercentage)
+
+def result = inv.contains(tax.toString())
+
+def expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 28)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax amount is not included for as detail IEPS is enabled for retailer')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 28)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is not displayed in invoice screen as detail IEPS flag is enabled for retailer')
+
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_300_printScreen'], 
     FailureHandling.STOP_ON_FAILURE)
+
+Mobile.swipe(0, 800, 0, 50)
+
+totalSum = Double.parseDouble(uPrice)*Double.parseDouble(salesReturnQty)
+
+tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+
+println(tax)
+
+ taxPercentage = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(4, 28)
+
+println(taxPercentage)
+
+ result = inv.contains(tax.toString())
+
+ expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 28)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax amount is not included for as detail IEPS is enabled for retailer')
+
+result = inv.contains(taxPercentage)
+
+expResult = findTestData('Phase2/TY_03/TestData_Phase2.1').getValue(3, 28)
+
+Mobile.verifyMatch(result.toString(), expResult, false, FailureHandling.STOP_ON_FAILURE)
+
+println('Tax percentage is not displayed in invoice screen as detail IEPS flag is enabled for retailer')
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_300_printScreen_02'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

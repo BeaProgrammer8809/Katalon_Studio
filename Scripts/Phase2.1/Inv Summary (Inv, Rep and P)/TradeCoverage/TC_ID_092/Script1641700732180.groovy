@@ -146,14 +146,14 @@ def TotalPaidAmtText = TotalPaidWithAmtText.substring(12)
 
 double TotalPaidAmt = Double.parseDouble(TotalPaidAmtText)
 
-TotalPaidAmt = TotalPaidAmt.round()
+TotalPaidAmt = TotalPaidAmt.round(2)
 
-Mobile.verifyEqual(TotalPaidAmt, Amt.round(), FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(TotalPaidAmt, Amt.round(2), FailureHandling.STOP_ON_FAILURE)
 
 
 Mobile.comment('6. Total paid field should be filled with the Invoice amount as default in "Efectivo" mode')
 
-Mobile.verifyEqual(invAmt.round(), Amt.round(), FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(invAmt.round(2), Amt.round(2), FailureHandling.STOP_ON_FAILURE)
 
 Mobile.comment('Keypad should display')
 

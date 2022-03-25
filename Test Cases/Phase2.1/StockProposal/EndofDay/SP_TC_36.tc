@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_36:To check whether without putting any proposal when we press save button validation is coming as 'No items found'</description>
+   <name>SP_TC_36</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2780a481-c860-41ed-83e1-b3c1be4db8f7</testCaseGuid>
+</TestCaseEntity>

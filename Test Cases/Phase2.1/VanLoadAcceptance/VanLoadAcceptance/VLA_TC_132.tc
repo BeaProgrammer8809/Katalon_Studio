@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_132 - To check the alert message while select the already accepted vanload</description>
+   <name>VLA_TC_132</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>684c5891-2c7a-4ec7-aa87-399562ac3695</testCaseGuid>
+</TestCaseEntity>

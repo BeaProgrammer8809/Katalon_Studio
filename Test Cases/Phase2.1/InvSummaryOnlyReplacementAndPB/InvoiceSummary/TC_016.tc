@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_016:To check whether the Sales return qty against each SKU is displaying correctly with respect to the product buying  screen</description>
-   <name>TC_016</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>25fc669a-bd13-4a4e-a083-c17e67eddda6</testCaseGuid>
-</TestCaseEntity>

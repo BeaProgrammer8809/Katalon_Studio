@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_242 - To check whether able to Submit the invoice amount with max digit in Reference no</description>
+   <description>TC_ID_242
+:To check whether able to Submit the invoice amount with max digit in Reference no</description>
    <name>TC_ID_242</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5a907aa1-6b2e-46dd-b02a-19906a34e2fd</testCaseGuid>
+   <testCaseGuid>2ce93746-5267-46b7-af5f-74795019220a</testCaseGuid>
 </TestCaseEntity>

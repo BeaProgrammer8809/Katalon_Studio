@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check whether able to select Bank from dropdown</description>
+   <description>TC424 : To check the Select Cheque Type dropdown options
+</description>
    <name>TC424</name>
    <tag></tag>
    <comment></comment>

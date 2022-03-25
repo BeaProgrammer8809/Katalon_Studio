@@ -25,7 +25,7 @@ Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_
 Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Button'), 0)
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Invoice_Quantity_2'), [('testData1') : findTestData('Phase2.1/Common_Data/CommonData').getValue(
-	'Onsite Products', 1)], FailureHandling.STOP_ON_FAILURE)
+			'Onsite Products', 1)], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
@@ -48,7 +48,6 @@ def Actual_UnitPrice = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScr
 
 println(Actual_UnitPrice)
 
-
 def Amount = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
 
 println(Amount)
@@ -57,15 +56,14 @@ def gross_amount = Integer.parseInt(Actual_Buy_pieces) * Float.parseFloat(Actual
 
 println(gross_amount)
 
-"***********Tax percentage verifaction*********************"
+'***********Tax percentage verifaction*********************'
 def totalSum = Double.parseDouble(Discount_Price)
 
 'Use this for IEPS tax'
-def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
+def tax = CustomKeywords.'com.ty.keywords.MobileKeywords.taxIEPS'(totalSum)
 
-'use this for IVA tax'
 //def tax=CustomKeywords.'com.ty.keywords.MobileKeywords.taxIVA'(totalSum)
-
+'use this for IVA tax'
 def actualTaxPercentage = findTestData('Phase2.1/CommonData/CommonData').getValue(18, 1)
 
 def expTaxPercentage = CustomKeywords.'com.ty.keywords.MobileKeywords.taxPercentage'(tax, totalSum)
@@ -74,13 +72,16 @@ Mobile.verifyMatch(actualTaxPercentage, expTaxPercentage, false, FailureHandling
 
 println('Tax IEPS  aapplied for sku')
 
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Collection_Icon'), 0)
+
+Mobile.tap(findTestObject('Phase2/BICollectionScreen01/Submit_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
 
-Mobile.setText(findTestObject('Phase2/BIEnterTheFolioNoPopup01/FolioNo._EditText'),
-	findTestData('Phase2.1/Common_Data/CommonData').getValue('Folio number', 1), 0)
+Mobile.setText(findTestObject('Phase2/BIEnterTheFolioNoPopup01/FolioNo._EditText'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
+		'Folio number', 1), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 

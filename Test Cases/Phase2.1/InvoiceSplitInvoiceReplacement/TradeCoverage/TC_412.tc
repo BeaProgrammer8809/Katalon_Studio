@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_412 : To verify only Product buying can be done for the retailer name having special char “Ñ”</description>
-   <name>TC_412</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>db305d11-6600-45b5-9521-f268b4ae972a</testCaseGuid>
-</TestCaseEntity>

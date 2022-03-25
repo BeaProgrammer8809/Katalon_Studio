@@ -4,6 +4,12 @@
    <name>UUID_OK_popup</name>
    <tag></tag>
    <elementGuidId>ae11447f-9976-430c-b87b-4adfb8807ea8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class = 'android.widget.Button' and (text() = 'OK' or . = 'OK') and @resource-id = '${GlobalVariable.Package}:id/btn_ok']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -25,7 +31,7 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.ivy.bimbomx.mexico.view.uat:id/btn_ok</value>
+      <value>${GlobalVariable.Package}:id/btn_ok</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_05 - To check whether View button is displaying</description>
+   <name>TC_05</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6475daab-21f7-4383-9988-270403376ea3</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_351:- To check while doing product buying and replacement for different sku's that is having both IVA and IEPS taxes but not having any discounts,whether the onsite invoce is getting success and UUID is generated</description>
-   <name>TC_351</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bd5c3c01-fcd3-4e3c-8ff6-b4e93916d980</testCaseGuid>
-</TestCaseEntity>

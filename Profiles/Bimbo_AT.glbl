@@ -80,27 +80,27 @@
       <name>totalPrice</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>&quot;Don't pass the value&quot;</description>
+      <description>Sku name</description>
       <initValue>''</initValue>
       <name>Buysku</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>&quot;Don't pass the value&quot;</description>
+      <description>Get sku name </description>
       <initValue>''</initValue>
       <name>Getsku</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>&quot;Don't pass any value&quot;</description>
+      <description>Bank name </description>
       <initValue>''</initValue>
       <name>BankName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>&quot;Don't pass any value&quot;</description>
+      <description>Branch Name </description>
       <initValue>''</initValue>
       <name>BranchName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Don't pass any value</description>
+      <description>Getsku1</description>
       <initValue>''</initValue>
       <name>Getsku1</name>
    </GlobalVariableEntity>
@@ -110,7 +110,7 @@
       <name>Number</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Don't pass any value</description>
+      <description>Schemename</description>
       <initValue>''</initValue>
       <name>Date</name>
    </GlobalVariableEntity>
@@ -163,5 +163,15 @@
       <description></description>
       <initValue>''</initValue>
       <name>Folio</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ChequeType</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Dont pass the values</description>
+      <initValue>''</initValue>
+      <name>SchemeGetSkuName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

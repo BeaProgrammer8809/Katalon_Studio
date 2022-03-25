@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_292: To check whether able to submit full invoice amount in only Efectivo mode</description>
-   <name>TC_292</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7a49f33e-20f2-45c8-88a2-14b583e2e29c</testCaseGuid>
-</TestCaseEntity>

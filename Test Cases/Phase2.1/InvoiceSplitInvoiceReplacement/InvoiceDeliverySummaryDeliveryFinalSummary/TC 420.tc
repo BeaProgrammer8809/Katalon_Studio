@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 420 : To verify “Pesito commission : ” label is present in the Efectivo collection mode under collection pop-up for retailer where pesito credit is defined</description>
+   <name>TC 420</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a7cc9e0a-9c1a-496c-a201-a832c3091268</testCaseGuid>
+</TestCaseEntity>

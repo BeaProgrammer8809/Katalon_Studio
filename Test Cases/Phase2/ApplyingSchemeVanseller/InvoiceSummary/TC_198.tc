@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_198 - To check when catagory wise discount is mapped for the scheme get sku(free sku),whether discount is applying in invoice summary screen for the scheme get sku</description>
+   <name>TC_198</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>acbd9237-7184-4ed5-a32f-fb2a345977ec</testCaseGuid>
+</TestCaseEntity>

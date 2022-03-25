@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the Total amount inside the info popup while taking  replacement and product buying  for the sku's that is having only IEPS tax and category discount</description>
+   <description>TC267:To check the Total amount inside the info popup while taking  replacement and product buying  for the sku's that is having only IEPS tax and category discount</description>
    <name>TC267</name>
    <tag></tag>
    <comment></comment>

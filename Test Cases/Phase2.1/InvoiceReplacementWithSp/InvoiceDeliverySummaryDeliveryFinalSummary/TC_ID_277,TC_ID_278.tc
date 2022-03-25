@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_277:-To check whether able to Submit the invoice amount without selecting bank
+TC_ID_278:-To check whether able to Submit the invoice amount without selecting bank branch</description>
+   <name>TC_ID_277,TC_ID_278</name>
+   <tag></tag>
+   <comment>TC_ID_277:-Verification of Toast Msg
+TC_ID_277:-collection popup should be in open
+TC_ID_278:-Verification of Toast Msg
+TC_ID_278:-collection popup should be in open</comment>
+   <testCaseGuid>0f4510ac-2dd8-431c-8cae-d40b46ee135c</testCaseGuid>
+</TestCaseEntity>

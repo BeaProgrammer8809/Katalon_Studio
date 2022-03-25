@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_56:To check when seller backward from applying scheme screen to order and invoice screen ,again if navigate to applying scheme screen whether scheme is applying</description>
+   <name>TC_56</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bbc2effb-b63b-41cc-9104-852f17efa033</testCaseGuid>
+</TestCaseEntity>

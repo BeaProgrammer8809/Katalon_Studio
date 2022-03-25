@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_320:-To verify “Reference number” field is accepting the Alphanumeric characters.[Collection Before Invoice]</description>
-   <name>TC_320</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>8e5ffeea-8207-4e60-850d-9c4a28766733</testCaseGuid>
-</TestCaseEntity>

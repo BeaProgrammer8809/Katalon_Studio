@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_116
+To check when seller click next button on applying scheme screen,whether it is navigating to invoice summary screen</description>
+   <name>TC_116</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4802608a-5e11-4cbb-a86e-257ad153dee1</testCaseGuid>
+</TestCaseEntity>

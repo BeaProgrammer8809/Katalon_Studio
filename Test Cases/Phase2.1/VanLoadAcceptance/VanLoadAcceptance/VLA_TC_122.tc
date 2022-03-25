@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>VLA_TC_122:- To check if rejection is done then user is able to accept the stock</description>
+   <name>VLA_TC_122</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5a5442cc-71cb-42a7-bbfb-77c77a92f15d</testCaseGuid>
+</TestCaseEntity>

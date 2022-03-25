@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC36:To check printer selection popup when tap on print icon in the preticket print preview</description>
+   <name>TC36</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>29d14743-bf9a-4926-be62-1cb15b2f7a7e</testCaseGuid>
+</TestCaseEntity>

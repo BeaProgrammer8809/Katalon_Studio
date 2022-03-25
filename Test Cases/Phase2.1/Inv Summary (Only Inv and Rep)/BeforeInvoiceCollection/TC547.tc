@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC547 - To verify only Pesito commission ‘3’ is automatically showing in Efectivo collection type while user granting full amount in the Pesito
+
+Pesito commission ‘3’ should automatically show in Efectivo collection type while user granting full amount in pesito mode</description>
+   <name>TC547</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>07c73da1-e44e-4aa5-b9e1-ace575063dec</testCaseGuid>
+</TestCaseEntity>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_288 : -  To check the legal entity while doing only replcement for Ricolino products
-</description>
+   <description>TC288 : To check the legal entity while doing only replcement for Ricolino products</description>
    <name>TC288</name>
    <tag></tag>
    <comment></comment>

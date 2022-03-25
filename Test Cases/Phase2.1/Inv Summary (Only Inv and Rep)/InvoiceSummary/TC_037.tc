@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_037 - Check whether user is allowed to enter decimal value in OP field</description>
-   <name>TC_037</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>daee5767-6f2d-496f-8146-04c7d484cfc6</testCaseGuid>
-</TestCaseEntity>

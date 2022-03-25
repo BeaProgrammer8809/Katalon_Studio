@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_33:To check When user tap on cancel button, pop up should disappear</description>
-   <name>TC_33</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c285b403-5786-4c16-aae1-d5ffd50b4843</testCaseGuid>
-</TestCaseEntity>

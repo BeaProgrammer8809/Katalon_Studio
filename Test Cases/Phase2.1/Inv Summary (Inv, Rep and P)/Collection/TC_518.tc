@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_518:To verify whether able to upload RTGS image.[Collection Before Invoice]</description>
-   <name>TC_518</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ca406bf1-e294-4bad-a153-0ff9a7ab73c0</testCaseGuid>
-</TestCaseEntity>

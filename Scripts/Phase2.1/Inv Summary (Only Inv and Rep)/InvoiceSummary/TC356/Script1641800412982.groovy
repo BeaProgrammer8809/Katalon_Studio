@@ -83,12 +83,12 @@ else
 println "Generated UUID is : "+uuid
 }
 
-Mobile.callTestCase(findTestCase('Phase2.1/Invoice Summary (only invoice and Replacement)/Summary/Trade_Coverage/ScreenShot'),
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'),
 	[('testCaseName') : 'TC358_UUID'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0)
 
-Mobile.callTestCase(findTestCase('Phase2.1/Invoice Summary (only invoice and Replacement)/Summary/Trade_Coverage/ScreenShot'),
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'),
 	[('testCaseName') : 'TC358_PrintPreviewScreen'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()

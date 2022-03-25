@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_83 - To check the sku qty displayed after entering all the stock delivered qty in Extra invoice for bimbo's sku that are not in invoice split group</description>
-   <name>TC_83</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1e1e1c93-88f9-460b-b358-418409bbf3e8</testCaseGuid>
-</TestCaseEntity>

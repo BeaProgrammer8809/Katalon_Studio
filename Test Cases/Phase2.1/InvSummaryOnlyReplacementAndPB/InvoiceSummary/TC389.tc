@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC389 - To check whether collection icon is enabled while taking product buying for the sku for credit retailer
-
-</description>
+   <description>TC389: To check whether collection icon is enabled while taking product buying for the sku for credit retailer</description>
    <name>TC389</name>
    <tag></tag>
    <comment></comment>

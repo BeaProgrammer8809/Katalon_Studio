@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC23 : To check whether screen is going back to product buying screen when tap on Back arrow</description>
+   <name>TC23</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e4b66633-dc1e-4791-b143-b14fcb9b0ee6</testCaseGuid>
+</TestCaseEntity>

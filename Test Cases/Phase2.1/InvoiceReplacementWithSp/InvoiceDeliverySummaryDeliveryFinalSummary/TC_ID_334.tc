@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_334
-To check without entering folio number user is not able to submit  invoice for credit store</description>
+   <description>TC_ID_334:To check without entering folio number user is not able to submit  invoice for credit store</description>
    <name>TC_ID_334</name>
    <tag></tag>
    <comment></comment>

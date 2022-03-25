@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC390 - To check whether collection icon is enabled while taking replacement and product buying for the sku for cash retailer retailer</description>
+   <description>TC390: To check whether collection icon is enabled while taking replacement and product buying for the sku for cash retailer retailer</description>
    <name>TC390</name>
    <tag></tag>
    <comment></comment>

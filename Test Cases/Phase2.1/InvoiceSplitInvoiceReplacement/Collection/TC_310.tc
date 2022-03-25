@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_310:-To verify whether able to apply amount in cheque and RTGS mode with Reference no.[Collection Before Invoice]</description>
-   <name>TC_310</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5c6e6740-8de1-4394-aea8-451cc271b1c4</testCaseGuid>
-</TestCaseEntity>

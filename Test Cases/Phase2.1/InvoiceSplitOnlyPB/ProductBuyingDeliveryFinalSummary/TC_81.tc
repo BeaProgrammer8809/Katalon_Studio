@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_81:- Check whether Folio No. field accepting special Characters</description>
-   <name>TC_81</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>8f4e5396-74fe-4ed6-96c0-91a129b08c7a</testCaseGuid>
-</TestCaseEntity>

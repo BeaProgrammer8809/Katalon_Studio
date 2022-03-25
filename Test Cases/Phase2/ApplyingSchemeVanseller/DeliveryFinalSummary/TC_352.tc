@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_352
+
+To check the Lines qty displayed for scheme buy and get sku in delivery final summary screen,after entering all the stock delivered qty in Extra invoice for scheme buy sku</description>
+   <name>TC_352</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7a46ea01-eefa-4e0e-aefc-acc552e6827b</testCaseGuid>
+</TestCaseEntity>

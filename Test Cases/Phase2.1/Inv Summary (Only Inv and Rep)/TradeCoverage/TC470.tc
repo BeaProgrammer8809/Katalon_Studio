@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC470 - To check while click preticket button,whether preticket is created for the replacement qty</description>
-   <name>TC470</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a5878536-70c4-45a6-a56d-36bc2d727699</testCaseGuid>
-</TestCaseEntity>

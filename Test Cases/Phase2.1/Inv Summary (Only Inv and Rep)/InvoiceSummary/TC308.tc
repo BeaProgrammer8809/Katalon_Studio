@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC308 - To check while doing invoice for the sku's that is having IVA tax, Item discount and category discount and detail IEPS flag is enabled,whether the onsite invoice is getting success and UUID is generated</description>
    <name>TC308</name>
    <tag></tag>
    <comment></comment>

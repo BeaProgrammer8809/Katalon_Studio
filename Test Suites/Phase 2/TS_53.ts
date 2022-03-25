@@ -14,6 +14,6 @@
       <guid>ac57ae10-a770-4752-8aa8-4994fc2e252a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Phase2/Applying_Scheme/Trade_Coverage/TC_53</testCaseId>
+      <testCaseId>Test Cases/Phase2/ApplyingSchemeVanseller/ApplyingScheme/TC_53</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -70,8 +70,8 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCov
  def categorydiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('CATEGORYDISC', 1)
  KeywordUtil.logInfo ("${categorydiscountinWeb}")
  
- def IEPSTAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IEPSANDIVA', 1)
- KeywordUtil.logInfo ("${IEPSTAX}")
+ def TAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IEPSANDIVA', 1)
+ KeywordUtil.logInfo ("${TAX}")
  
  def GrossInvoice =  Double.parseDouble(InvoiceQuantityInSummary) * Double.parseDouble(UnitPriceInSummary)
  
@@ -94,7 +94,7 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCov
  KeywordUtil.logInfo ("${GrossamountAfterAppliedDiscount}")
  
  /*verification done to check the tax on the gross amount*/
- def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(IEPSTAX)/100)
+ def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(TAX)/100)
  KeywordUtil.logInfo ("${TotalTaxAmount}")
 						
  Mobile.verifyEqual(CompoDiscountInsidePopup, CalculatedCompDiscount,FailureHandling.STOP_ON_FAILURE)

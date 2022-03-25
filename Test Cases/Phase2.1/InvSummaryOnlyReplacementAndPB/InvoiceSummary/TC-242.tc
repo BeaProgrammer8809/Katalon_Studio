@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC-242:To check the Total amount inside the info popup while taking product buying for the sku's that is having IVA, IEPS taxes and  Item discount.</description>
-   <name>TC-242</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c1ad1ab4-2e26-4e83-8f31-9504bb410a64</testCaseGuid>
-</TestCaseEntity>

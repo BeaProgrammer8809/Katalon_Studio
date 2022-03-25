@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_36 : To check the split name displayed after taking invoice, replacement and pb against each barcel sku's that are not in invoice split group (if one invoice split group is available)</description>
-   <name>TC_36</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>0f164764-7d1e-4538-a571-275fef77dff7</testCaseGuid>
-</TestCaseEntity>

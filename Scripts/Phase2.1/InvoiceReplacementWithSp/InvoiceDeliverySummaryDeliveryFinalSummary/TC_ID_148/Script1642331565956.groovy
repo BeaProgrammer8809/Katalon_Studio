@@ -69,6 +69,17 @@ Count_Frame.contains(Inv_Count)
 
 println('ExtraInv3 is present')
 
+def Actual_ExtraInv = Mobile.getText(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv3_TextView'),
+	0, FailureHandling.STOP_ON_FAILURE)
+
+def Expected_ExtraInv = findTestData('Phase2.1/TY_04/Phase2.1_Sheet3').getValue(16, 8)
+
+Mobile.verifyMatch(Actual_ExtraInv, Expected_ExtraInv, false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv3_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BISplitDeliverySummary01/ExtraInv3_TextView'), 0, FailureHandling.STOP_ON_FAILURE)
+
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
 	[('testCaseName') : 'TC_ID_148'], FailureHandling.STOP_ON_FAILURE)
 

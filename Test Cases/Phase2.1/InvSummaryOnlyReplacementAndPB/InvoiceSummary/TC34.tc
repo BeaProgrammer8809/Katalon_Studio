@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_34 - To check the total price calculation while taking product buying for the sku's that is having IVA, IEPS taxes with Item discount and Detail IEPS is enabled for the store</description>
+   <description>TC34 - To check the total price calculation while taking product buying for the sku's that is having IVA, IEPS taxes with Item discount and Detail IEPS is enabled for the store</description>
    <name>TC34</name>
    <tag></tag>
    <comment></comment>

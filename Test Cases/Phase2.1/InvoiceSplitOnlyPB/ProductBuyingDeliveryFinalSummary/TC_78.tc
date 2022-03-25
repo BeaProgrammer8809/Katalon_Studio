@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_78:- Check whether Folio No. is mandatory field when it's checked in retailer master screen</description>
-   <name>TC_78</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c2e400be-a6bc-4822-91ac-da1d870753f0</testCaseGuid>
-</TestCaseEntity>

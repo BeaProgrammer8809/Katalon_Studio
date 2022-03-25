@@ -28,7 +28,7 @@ Mobile.tap(findTestObject('Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Bu
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Button'), 0)
 
 Mobile.setText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Search_Edit_Text'), findTestData('Phase2.1/Common_Data/CommonData').getValue(
-        6, 28), 0)
+        6, 27), 0)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Pieces_EditText'), 0)
 
@@ -62,10 +62,9 @@ println(Actual_LegalEntityName)
 Mobile.verifyElementExist(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/LegalEntityName_TextView'), 
     0)
 
-Mobile.verifyMatch(Actual_LegalEntityName, '', false)
+Mobile.verifyMatch(Actual_LegalEntityName, findTestData('Phase2.1/TY_06/Collection/Collection').getValue(3, 14), false)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Collection/Screenshot'), [('testCaseName') : 'TC528_CollectionScreen'], 
     FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-

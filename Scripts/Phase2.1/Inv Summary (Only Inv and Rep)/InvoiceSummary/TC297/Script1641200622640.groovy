@@ -51,21 +51,38 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Invoic
 
 def Actual_Invoice_And_UUID_PopUp_Text = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0)
 
-def Expected_Invoice_Popup_Text = findTestData('Phase2.1/TestData/Test_Data').getValue(3, 86)
-boolean Invoice_PopUp_Text=Actual_Invoice_And_UUID_PopUp_Text.contains(Expected_Invoice_Popup_Text)
 
-def Expected_UUID_Popup_Text = findTestData('Phase2.1/TestData/Test_Data').getValue(4, 86)
-boolean UUID_PopUp_Text=Actual_Invoice_And_UUID_PopUp_Text.contains(Expected_UUID_Popup_Text)
+def UUIDNo = Actual_Invoice_And_UUID_PopUp_Text.substring(42)
+def UUIDlength = UUIDNo.length()
+
+
+//def Expected_Invoice_Popup_Text = findTestData('Phase2.1/TestData/Test_Data').getValue(3, 86)
+//boolean Invoice_PopUp_Text=Actual_Invoice_And_UUID_PopUp_Text.contains(Expected_Invoice_Popup_Text)
+//def Expected_UUID_Popup_Text = findTestData('Phase2.1/TestData/Test_Data').getValue(4, 86)
+//boolean UUID_PopUp_Text=Actual_Invoice_And_UUID_PopUp_Text.contains(Expected_UUID_Popup_Text)
+//println UUID_PopUp_Text
 
 //Verification to check that Onsite invoice is successfully created PopUp is visible and displayed
 Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BI_UUID/Save _Succesfully_Text'), 0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyMatch(Invoice_PopUp_Text.toString(), findTestData('Phase2.1/TestData/Test_Data').getValue(5, 59), false, FailureHandling.STOP_ON_FAILURE)
-//Verification to check that UUID is gerenated
 
-Mobile.verifyMatch(UUID_PopUp_Text.toString(), findTestData('Phase2.1/TestData/Test_Data').getValue(5, 59), false, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BI_UUID/OK_Button_Uuid'), 0, FailureHandling.STOP_ON_FAILURE)
 
-println UUID_PopUp_Text
+def Act_InStatus = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+def Expected_InvStatus = findTestData('Phase2.1/TestData/Test_Data').getValue(5, 86)
+
+boolean Success = Act_InStatus.contains(Expected_InvStatus)
+
+Mobile.verifyMatch(Success.toString(), findTestData('Phase2.1/TestData/Test_Data').getValue(5, 59), false, FailureHandling.OPTIONAL)
+
+Mobile.verifyMatch(UUIDlength.toString(), findTestData('Phase2.1/TestData/Test_Data').getValue(4, 2), false, FailureHandling.STOP_ON_FAILURE)
+
+//Mobile.verifyMatch(Invoice_PopUp_Text.toString(), findTestData('Phase2.1/TestData/Test_Data').getValue(5, 59), false, FailureHandling.STOP_ON_FAILURE)
+////Verification to check that UUID is gerenated
+//Mobile.verifyMatch(UUID_PopUp_Text.toString(), findTestData('Phase2.1/TestData/Test_Data').getValue(5, 59), false, FailureHandling.OPTIONAL)
+
+
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/InvoiceSummary/Screenshot'), [('testCaseName') : 'TC_297'],
 	FailureHandling.STOP_ON_FAILURE)

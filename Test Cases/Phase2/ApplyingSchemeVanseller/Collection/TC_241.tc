@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_241
+
+To check whether able to Submit the invoice amount without selecting bank when scheme is applied</description>
+   <name>TC_241</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7c512ec2-7dc6-461f-8ab9-3552e28ceeb7</testCaseGuid>
+</TestCaseEntity>

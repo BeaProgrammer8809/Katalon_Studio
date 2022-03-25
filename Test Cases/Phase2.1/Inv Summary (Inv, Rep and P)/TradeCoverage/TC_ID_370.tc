@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_370:To check whether ambito and claveentidad field is displayed for &quot;wild card retailer&quot; with &quot;INE Enabled&quot; as true</description>
+   <name>TC_ID_370</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>af7ce47b-104a-4370-bf53-21f2976e568a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_52:To check whether able to skip the scheme</description>
+   <name>TC_52</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e7ec1405-3fb9-4658-9717-1890af80ca87</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_283:To verify given “Folio No” &amp; “Folio ProdBuy” accepts in the delivery summary screen</description>
-   <name>TC_283</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>437cb33a-0351-4e14-92f9-818298172a26</testCaseGuid>
-</TestCaseEntity>

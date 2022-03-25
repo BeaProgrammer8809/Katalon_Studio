@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 179 :To check whether credit note amount is not editable in collection screen</description>
+   <name>TC 179</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aae5027b-cc70-4118-94e1-85d172ad9200</testCaseGuid>
+</TestCaseEntity>

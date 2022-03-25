@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>TC280 - To check the legal entity for non-multi org,while doing invoice for barcel products and replacement for Ricolino prodcuts</description>
    <name>TC280</name>
    <tag></tag>
    <comment></comment>

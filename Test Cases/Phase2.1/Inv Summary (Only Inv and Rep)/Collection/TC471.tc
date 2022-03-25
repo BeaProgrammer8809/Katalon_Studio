@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC471:- To check whether pre-ticket icon is present for Credit retailer</description>
+   <name>TC471</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e0199156-7caa-4ec1-958d-2f12edf0cfeb</testCaseGuid>
+</TestCaseEntity>

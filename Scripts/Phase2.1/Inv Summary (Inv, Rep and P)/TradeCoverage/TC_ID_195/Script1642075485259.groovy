@@ -55,35 +55,6 @@ Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
-Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Search_Button'), 0)
-
-Mobile.setText(findTestObject('Phase2/BIProductBuyingScreen01/Search_Edit_Text'), productName, 0)
-
-'Provide Product Buying quantity'
-Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
-
-Mobile.verifyElementVisible(findTestObject('Phase2/BIReturnProductBuyingScreen01/Return_Text-View'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Select_Reason_DD_Option'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Salable_DD_Option'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Pieces_Edit_Text'), 0)
-
-GlobalVariable.Number = findTestData('Phase2.1/Common_Data/CommonData').getValue('Number', 2)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/Number'), 0)
-
-Mobile.tap(findTestObject('Phase2/BINumberKeypad01/OK_Button'), 0)
-
-Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0)
-
-def PBQuantityText = Mobile.getText(findTestObject('Phase2/BIProductBuyingScreen01/Total_Pieces_Qty'), 0)
-
-double PBQuantity = Double.parseDouble(PBQuantityText)
-
-'Verify Order PBquantity Less than Order Quantity'
-Mobile.verifyLessThan(PBQuantityText, orderQty, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
@@ -107,22 +78,13 @@ Mobile.verifyElementVisible(findTestObject('Object Repository/Phase2/BIInvoiceSu
 Mobile.verifyElementExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BICollectionScreen01/Collection_Title'), 
     0, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('Phase2/BICollectionScreen01/CreditNote_RadioButton'), 0)
 
-def CreditNoteAmtText = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BICreditNoteScreen01/Amount_EditText'), 
-    0)
-
-double CreditNoteAmt = Double.parseDouble(CreditNoteAmtText)
-
-CreditNoteAmt = CreditNoteAmt.round()
 
 def InvAmtText = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/InvAmt_TextView'), 0)
 
 double InvAmt = Double.parseDouble(InvAmtText)
 
 InvAmt = InvAmt.round()
-
-Mobile.tap(findTestObject('Object Repository/Phase2/BICollectionScreen01/Efectivo_RadioButton'), 0)
 
 def AmountInEffectivoText = Mobile.getText(findTestObject('Object Repository/Phase2/BICollectionScreen01/BIEfectivoScreen01/Amount_EditText'), 
     0)
@@ -131,11 +93,11 @@ double AmountInEffectivo = Double.parseDouble(AmountInEffectivoText)
 
 AmountInEffectivo = AmountInEffectivo.round()
 
-double RestAmt = InvAmt - CreditNoteAmt
+//double RestAmt = InvAmt - CreditNoteAmt
 
 Mobile.comment('Verifying Invoice Amount provided in effectivo')
 
-Mobile.verifyEqual(RestAmt, AmountInEffectivo, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyEqual(InvAmt, AmountInEffectivo, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_195'], 
     FailureHandling.STOP_ON_FAILURE)

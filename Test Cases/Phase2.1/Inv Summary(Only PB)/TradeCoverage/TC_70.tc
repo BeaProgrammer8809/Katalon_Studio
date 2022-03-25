@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_70:- To check IF product buying has done for barcel sku then header is coming as bimbo sa de c.v above folio text field</description>
-   <name>TC_70</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>3d84f12f-3458-4d1d-a4d9-e5f02ad518f2</testCaseGuid>
-</TestCaseEntity>

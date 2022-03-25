@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_339:- To check whether only invoiced sku's displaying in delivery split summary screen,when scheme buy and get sku's added in invoice split group(Considering : only one invoice split group is available)</description>
+   <name>TC_339</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f63aa71b-db3f-400b-b145-4709ef83581b</testCaseGuid>
+</TestCaseEntity>

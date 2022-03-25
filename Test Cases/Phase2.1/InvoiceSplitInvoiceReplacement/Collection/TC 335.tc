@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 335:To verify whether able to give same “RTGS No” for 3 split invoice payment under same cash store.[Collection Before Invoice]</description>
+   <name>TC 335</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9a2b9aa-8c1c-4e28-a2d7-a8c15d6b6deb</testCaseGuid>
+</TestCaseEntity>

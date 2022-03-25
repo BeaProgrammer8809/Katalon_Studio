@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_168
-To check for extra invoice also Quick cash option(Efectivo) is displaying</description>
-   <name>TC_168</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bda39824-5c91-4e92-b353-cac3b65bb37b</testCaseGuid>
-</TestCaseEntity>

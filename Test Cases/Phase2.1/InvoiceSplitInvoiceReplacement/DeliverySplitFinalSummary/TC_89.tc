@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_89 - To check the split name displayed after entering all the stock delivered qty in Extra invoice for recolino sku that are not in invoice split group</description>
-   <name>TC_89</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>10457c0d-56c8-4f14-a106-998a363965c8</testCaseGuid>
-</TestCaseEntity>

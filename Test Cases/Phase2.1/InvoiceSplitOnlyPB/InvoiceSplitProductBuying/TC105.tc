@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC105 :</description>
+   <description>TC105:To check while doing product buying for split group and no spit group sku's that is having both IVA and IEPS Taxes but not having any discount and Detail IEPS is enabled for the store,whether the onsite invoice is getting success and UUID is generated</description>
    <name>TC105</name>
    <tag></tag>
-   <comment></comment>
-   <testCaseGuid>07331741-a3cb-493a-bcf8-c9917ef5af96</testCaseGuid>
+   <comment>No split Grp
+Verifyed the status and UUID generated 
+Verifying status as success</comment>
+   <testCaseGuid>f93c254c-f7bc-45a6-a5f3-095ac2efc5cb</testCaseGuid>
 </TestCaseEntity>

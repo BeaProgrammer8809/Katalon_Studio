@@ -124,7 +124,13 @@ ExpectedToastMessage = findTestData('Phase2.1/TY_11/TestData').getValue(4, 70)
 
 println(ExpectedToastMessage)
 
-actualtoastmessage.contains(ExpectedToastMessage)
+
+
+boolean ExpectedValue1 = actualtoastmessage.contains(ExpectedToastMessage)
+ExpectedValue = ExpectedValue1.toString()
+
+Mobile.verifyMatch(ExpectedValue, findTestData('Phase2.1/TY_11/TestData').getValue(3, 70), false, FailureHandling.STOP_ON_FAILURE)
+
 
 Mobile.closeApplication()
 

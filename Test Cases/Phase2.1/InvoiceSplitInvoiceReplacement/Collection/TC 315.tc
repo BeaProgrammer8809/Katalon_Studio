@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 315:To verify whether able to edit and collect the amount in RTGS.[Collection Before Invoice]</description>
+   <name>TC 315</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>43eef597-5986-4074-bc1a-43e9f16677bb</testCaseGuid>
+</TestCaseEntity>

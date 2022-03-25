@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_36
+
+&quot;To check when scheme is created like below so when enter invoice qty =8 ,whether scheme is applying 
+ 
+ Group buy logic :ONLY Group get logic:ONLY
+ 
+ Slab1:
+ Scheme buy sku:001_lak_qt scheme buy qty=1
+ Scheme get sku:001_lak_qt scheme get qty=2
+ 
+ Slab2::
+ Scheme buy sku:001_lak_qt scheme buy qty=2
+ Scheme get sku:001_lak_qt scheme get qty=3
+ 
+ slab3::
+ Scheme buy sku:001_lak_qt scheme buy qty=3 
+ Scheme get sku:001_lak_qt scheme get qty=5&quot;</description>
+   <name>TC_36</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3637937-eef5-43ce-b89c-bce8de6488b3</testCaseGuid>
+</TestCaseEntity>

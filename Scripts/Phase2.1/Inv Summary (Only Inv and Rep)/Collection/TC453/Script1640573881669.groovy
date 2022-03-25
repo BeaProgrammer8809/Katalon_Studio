@@ -88,7 +88,8 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Only Inv and Rep)/Collec
 
 def Actual = Mobile.getText(findTestObject('Phase2/BICollectionScreen01/BIChequesScreen01/Calendar_Button'), 0)
 
-SimpleDateFormat formatter = new SimpleDateFormat('yyyy-MM-dd')
+//SimpleDateFormat formatter = new SimpleDateFormat('yyyy-MM-dd')
+SimpleDateFormat formatter = new SimpleDateFormat('dd-MM-yyyy')
 
 Date date = new Date()
 

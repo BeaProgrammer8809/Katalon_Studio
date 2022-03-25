@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_300 :To check when IVA or IEPS tax is mapped for scheme buy and get sku,whether the tax is not included in total price</description>
+   <name>TC_301</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba1e59d3-0373-496d-a5dc-7284bb7e1aa3</testCaseGuid>
+</TestCaseEntity>

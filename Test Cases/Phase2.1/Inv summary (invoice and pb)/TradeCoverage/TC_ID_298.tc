@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_298: To check the Total paid displayed in the Cheque mode after switching from Efectivo mode</description>
+   <name>TC_ID_298</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d897d4c2-f25f-4f8e-8847-b9a0828e3245</testCaseGuid>
+</TestCaseEntity>

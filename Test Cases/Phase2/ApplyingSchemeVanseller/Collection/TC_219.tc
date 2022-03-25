@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_219 - To check the Balance amount displayed in the Efectivo mode after changing the defaultly filled paid amount when scheme is applied</description>
+   <name>TC_219</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff7acd06-924d-4a8a-879e-b07f7475532e</testCaseGuid>
+</TestCaseEntity>

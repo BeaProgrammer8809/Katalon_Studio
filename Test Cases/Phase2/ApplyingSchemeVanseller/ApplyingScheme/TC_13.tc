@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_13:-To check when invoice qty>=scheme qty ,then screen is navigating to applying scheme screen</description>
+   <name>TC_13</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df93479d-7b12-46aa-abf7-59cf8d7ae067</testCaseGuid>
+</TestCaseEntity>

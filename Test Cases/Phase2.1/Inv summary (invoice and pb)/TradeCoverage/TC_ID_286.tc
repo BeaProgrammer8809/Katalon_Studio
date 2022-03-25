@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_286 - To check whether able to Submit with Total paid amount lesser than invoice amount</description>
+   <name>TC_ID_286</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a858e632-6c92-48d1-a1a7-440856662a25</testCaseGuid>
+</TestCaseEntity>

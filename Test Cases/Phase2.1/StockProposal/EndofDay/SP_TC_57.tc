@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_57:To check Order req date is coming based on the current date in Print</description>
+   <name>SP_TC_57</name>
+   <tag>SP_TC_57</tag>
+   <comment></comment>
+   <testCaseGuid>bb5ea962-65b8-465e-8066-0ddfbdc6b9af</testCaseGuid>
+</TestCaseEntity>

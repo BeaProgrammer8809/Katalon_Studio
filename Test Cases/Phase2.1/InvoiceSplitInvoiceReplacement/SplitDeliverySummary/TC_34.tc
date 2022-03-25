@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_34 : To check the sku's qty displayed after taking invoice, replacement and pb against each bimbo sku's that are not in invoice split group (if one invoice split group is available)</description>
-   <name>TC_34</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a0c7e92c-0db5-4d52-9d5f-86b070af8b76</testCaseGuid>
-</TestCaseEntity>

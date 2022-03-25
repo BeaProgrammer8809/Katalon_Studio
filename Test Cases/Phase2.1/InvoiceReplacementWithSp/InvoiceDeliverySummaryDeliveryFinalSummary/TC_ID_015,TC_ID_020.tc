@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_015  - Check whether for particular Cash retailer, delivery final summary screen is coming- Only Replacement is taken
+
+TC_ID_020 - Check whether for particular SKU which is belongs to Ricolino Company, delivery final summary screen is coming- Only Replacement is taken
+</description>
+   <name>TC_ID_015,TC_ID_020</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>75881985-9d89-4def-b2ff-7b03d85be692</testCaseGuid>
+</TestCaseEntity>

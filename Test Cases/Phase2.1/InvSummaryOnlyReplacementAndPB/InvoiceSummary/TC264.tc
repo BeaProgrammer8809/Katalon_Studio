@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the Total amount inside the info popup while taking replacement and product buying for the sku's that is not having any discounts and taxes</description>
+   <description>TC264:To check the Total amount inside the info popup while taking replacement and product buying for the sku's that is not having any discounts and taxes</description>
    <name>TC264</name>
    <tag></tag>
    <comment></comment>

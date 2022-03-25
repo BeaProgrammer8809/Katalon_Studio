@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>To check the Order Value amount inside the info popup while taking replacement for the sku's that is having IVA, IEPS taxes and  Item discount.</description>
+   <description>TC142:To check the Order Value amount inside the info popup while taking replacement for the sku's that is having IVA, IEPS taxes and  Item discount.</description>
    <name>TC142</name>
    <tag></tag>
    <comment></comment>

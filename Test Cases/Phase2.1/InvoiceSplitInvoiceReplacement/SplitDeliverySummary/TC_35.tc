@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_35 : To check the Amount displayed for each sku's after taking invoice, replacement and pb for bimbo sku's that are not in invoice split group (if one invoice split group is available)</description>
-   <name>TC_35</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f26d0181-1135-4cff-b06a-d39aa994d54d</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_357:-To check the split name displayed for scheme buy sku in delivery final summary,after entering all the stock delivered qty in Extra invoice for scheme buy sku(scheme buy sku is added in split group and get sku from barcel company and not in group)</description>
+   <name>TC_357</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1825fdea-ce54-4002-b89f-cda33bf10aa4</testCaseGuid>
+</TestCaseEntity>

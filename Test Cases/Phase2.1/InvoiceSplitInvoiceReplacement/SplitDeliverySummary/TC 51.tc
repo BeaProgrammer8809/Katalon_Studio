@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 51 : To check whether able to generate invoice after taking invoice, replacement and pb against each recolino sku's that are not in invoice split group</description>
+   <name>TC 51</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>024cd2a4-56de-4c1c-b699-6a40643e928d</testCaseGuid>
+</TestCaseEntity>

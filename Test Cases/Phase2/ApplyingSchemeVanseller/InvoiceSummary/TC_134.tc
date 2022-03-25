@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_134:- Clarification pending from Mayuri
+
+To check when scheme is created like below if 002_LAK_QT SIH=2 when i enter order qty =2,whether scheme is applying 
+ 
+ Group buy logic :ONLY Group get logic:ONLY
+ 
+ Slab1:
+TC_134:-Clarification pending from Mayuri
+
+ Scheme buy sku:001_lak_qt scheme buy qty=1
+ Scheme get sku:002_lak_qt scheme get qty=2
+ 
+ Slab2::
+ Scheme buy sku:001_lak_qt schem</description>
+   <name>TC_134</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4604f0ef-f80d-4aa2-b0a7-ff667d344c79</testCaseGuid>
+</TestCaseEntity>

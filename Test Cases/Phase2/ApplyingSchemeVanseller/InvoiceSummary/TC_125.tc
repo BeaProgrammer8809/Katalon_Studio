@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_125:To check if seller is doing order+product buying for scheme buy sku whether it is displaying in invoice summary screen</description>
+   <name>TC_125</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7f957af3-b202-4597-9f68-a258e1ebd327</testCaseGuid>
+</TestCaseEntity>

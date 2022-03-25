@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_256 - To check whether able to select Bank from dropdown when scheme is applied</description>
+   <name>TC_256</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd321aa0-cb06-4352-bbe0-3689cc473355</testCaseGuid>
+</TestCaseEntity>

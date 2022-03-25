@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 18: To check the Total qty displayed after taking invoice, replacement and pb for non-group sku's</description>
+   <name>TC 18</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>290a2227-8252-463b-8548-ebb856293aa9</testCaseGuid>
+</TestCaseEntity>

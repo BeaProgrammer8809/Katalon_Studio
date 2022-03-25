@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 58 - To check whether only invoiced sku's displaying in delivery split summary screen while taking invoice, replacement and pb against each ricolino sku's that are not in invoice split group (Considering only one invoice split group is available)</description>
+   <name>TC 58</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b675f72c-9851-4aac-95c7-953871432105</testCaseGuid>
+</TestCaseEntity>

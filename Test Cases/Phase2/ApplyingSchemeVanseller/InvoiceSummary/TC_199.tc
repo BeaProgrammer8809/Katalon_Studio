@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_199 - To check when iEPS tax and item discount is mapped for the scheme get sku whether tax and discount is applying</description>
+   <name>TC_199</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>625bda34-3ae2-4eb4-81eb-f63dee1e13e4</testCaseGuid>
+</TestCaseEntity>

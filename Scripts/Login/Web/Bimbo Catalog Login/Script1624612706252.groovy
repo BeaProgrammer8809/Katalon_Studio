@@ -29,7 +29,7 @@ DriverFactory.changeWebDriver(driver)
 
 driver.manage().window().maximize()
 
-driver.get(siteUrl)
+driver.get('http://www.google.com')
 
 WebUI.verifyElementVisible(findTestObject('Login/Web/input_Username'))
 

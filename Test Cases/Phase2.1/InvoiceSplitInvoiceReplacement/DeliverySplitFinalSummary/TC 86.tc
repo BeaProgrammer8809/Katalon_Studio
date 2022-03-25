@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 86 - To check the Lines qty displayed after entering all the stock delivered qty in Extra invoice for barcel's sku that are not in invoice split group</description>
+   <name>TC 86</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ba605666-cdf9-4be8-8e7a-be9492889263</testCaseGuid>
+</TestCaseEntity>

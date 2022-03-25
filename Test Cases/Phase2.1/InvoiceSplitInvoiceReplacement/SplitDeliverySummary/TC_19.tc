@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_19: Check the default display of Delivery Final summary screen</description>
-   <name>TC_19</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>32149380-c8df-47a4-b438-762ea5d84ba4</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_048 : Check the default values in the Total Piece field</description>
+   <name>TC_048</name>
+   <tag></tag>
+   <comment>SIH and Total Piece value should tally for each SKUs</comment>
+   <testCaseGuid>9e03e9fb-cee8-4d1c-9b8a-7dbb7b964f4c</testCaseGuid>
+</TestCaseEntity>

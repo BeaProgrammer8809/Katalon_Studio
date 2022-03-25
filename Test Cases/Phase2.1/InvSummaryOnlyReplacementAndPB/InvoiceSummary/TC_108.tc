@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_108 : To check the Value  and total qty field calculation while taking product buying against each sku's that is having IVA, IEPS taxes and  Category discount.</description>
-   <name>TC_108</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1096c755-d2a9-4890-bcbb-d9dffb0b4ad3</testCaseGuid>
-</TestCaseEntity>

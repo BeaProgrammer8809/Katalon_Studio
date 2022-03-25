@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 37 : To check the Lines qty displayed after taking invoice, replacement and pb against each barcel sku's that are not in invoice split group (if one invoice split group is available)</description>
+   <name>TC 37</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>162836ae-c569-417b-b178-fce958d9d04a</testCaseGuid>
+</TestCaseEntity>

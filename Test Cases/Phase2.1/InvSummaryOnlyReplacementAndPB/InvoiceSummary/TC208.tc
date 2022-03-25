@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC208:To check the Deduction(Comp Disc and Dist Disc amount inside the info popup while taking replacement for the sku's that is having both IVA and IEPS taxes but not having any discounts</description>
+   <name>TC208</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2ab19a9c-e86d-47c3-9ebb-4c2575260049</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC452 - To check while enter duplicate reference no,whether validation message is appearing</description>
-   <name>TC452</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>1929a383-dbd7-4494-84b0-d9e94c54440f</testCaseGuid>
-</TestCaseEntity>

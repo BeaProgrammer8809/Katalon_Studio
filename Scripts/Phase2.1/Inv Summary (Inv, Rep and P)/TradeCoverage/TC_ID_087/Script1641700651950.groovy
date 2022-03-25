@@ -2,6 +2,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
+import java.text.DecimalFormat
+
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.util.KeywordUtil
@@ -56,8 +58,8 @@ KeywordUtil.logInfo ("${ItemdiscountinWeb}")
 def categorydiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('CATEGORYDISC', 1)
 KeywordUtil.logInfo ("${categorydiscountinWeb}")
 
-def IEPSTAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IEPSANDIVA', 1)
-KeywordUtil.logInfo ("${IEPSTAX}")
+def TAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IEPSANDIVA', 1)
+KeywordUtil.logInfo ("${TAX}")
 
 def GrossInvoice =  Double.parseDouble(InvoiceQuantityInSummary) * Double.parseDouble(UnitPriceInSummary)
 
@@ -80,7 +82,7 @@ def GrossamountAfterAppliedDiscount = PriceAfterAddingDiscount
 KeywordUtil.logInfo ("${GrossamountAfterAppliedDiscount}")
 
 /*verification done to check the tax on the gross amount*/
-def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(IEPSTAX)/100)
+def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(TAX)/100)
 KeywordUtil.logInfo ("${TotalTaxAmount}")
 					  
 def OrderValue = GrossInvoice + TotalTaxAmount
@@ -88,7 +90,11 @@ KeywordUtil.logInfo ("${OrderValue}")
 
 def CalculatedTotalAmount = OrderValue - TotalDiscount
 
-Mobile.verifyEqual(TotalAmountInsideInfoPopup, CalculatedTotalAmount,FailureHandling.STOP_ON_FAILURE)
+DecimalFormat df = new DecimalFormat('0.00')
+
+CalculatedTotalAmount = df.format(CalculatedTotalAmount)
+
+Mobile.verifyEqual(TotalAmountInsideInfoPopup.toString(), CalculatedTotalAmount.toString(),FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_087'],
 	FailureHandling.STOP_ON_FAILURE)

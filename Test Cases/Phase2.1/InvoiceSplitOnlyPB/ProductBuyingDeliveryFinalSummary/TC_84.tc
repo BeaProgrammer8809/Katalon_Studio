@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_84:- Check whether without folio number, preticket is generating</description>
-   <name>TC_84</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>58011b49-7631-4078-a7e7-9f4056058b13</testCaseGuid>
-</TestCaseEntity>

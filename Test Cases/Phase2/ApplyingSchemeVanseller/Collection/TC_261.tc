@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To check the default date selected in Transferencias Electronicas mode when scheme is applied</description>
+   <name>TC_261</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>788ad7f8-cfe3-48f2-b46b-c644fa549015</testCaseGuid>
+</TestCaseEntity>

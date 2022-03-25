@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_423 : To verify only Pesito commission ‘3’ is automatically showing in Efectivo collection type while user granting full amount in the Pesito</description>
-   <name>TC_423</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>7253e152-e0d2-4aa3-a7d5-82777cf9cc2f</testCaseGuid>
-</TestCaseEntity>

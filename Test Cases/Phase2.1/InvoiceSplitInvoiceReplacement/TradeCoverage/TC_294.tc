@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_294:To verify given folio number for the Ekomercio retailer is accepts when there is no internet connection for multi org route</description>
-   <name>TC_294</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5379b871-68f0-44bd-b773-77b0ae38a9bb</testCaseGuid>
-</TestCaseEntity>

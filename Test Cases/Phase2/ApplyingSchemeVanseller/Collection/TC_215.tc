@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_215:-To check the Total paid displayed in Efectivo mode without changing the defaultly filled paid amount when scheme is applied</description>
+   <name>TC_215</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>49091337-5ce1-4a2e-a175-b34db88b4a54</testCaseGuid>
+</TestCaseEntity>

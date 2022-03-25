@@ -80,16 +80,23 @@ Mobile.tap(findTestObject('Phase2/BIReturnProductBuyingScreen01/Done_Button'), 0
 
 Mobile.tap(findTestObject('Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
+
+
+
+def value = Mobile.getText(findTestObject('Phase2/BIInvoiceSummaryScreen/Value_Value'), 0)
+
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_PopUp_Ok_Button'), 0)
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/OK_Button'), 0)
 
+
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/Efectivo_CheckBox'), 0)
 
 Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_182_effectivo'], 
     FailureHandling.STOP_ON_FAILURE)
+
 
 Mobile.setText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/BIEnterTheFolioNoPopup01/FolioNo._EditText'), 
     findTestData('Phase2.1/TY_11/TestData').getValue(6, 75), 0)
@@ -107,6 +114,18 @@ Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCov
 Mobile.verifyElementExist(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
 
 Mobile.verifyElementVisible(findTestObject('Phase2/BIPrintPreviewScreen/Print_Preview_TextView'), 0)
+
+def PrintActualMessage = Mobile.getText(findTestObject('Phase2/BIPrintPreviewScreen/Invoice_Sheet'), 0)
+
+println(PrintActualMessage + 'actualMessage')
+
+def Expected_Invoice_Amount = findTestData('Phase2.1/TY_11/TestData').getValue(2,75)+value
+
+boolean Result = PrintActualMessage.contains(Expected_Invoice_Amount)
+
+def verifythePrice = Result.toString()
+
+Mobile.verifyMatch(verifythePrice, findTestData('Phase2.1/TY_11/TestData').getValue(3,75), false, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_ID_054 - To Check  Total Price  Calculation against each sku having Both tax  IVA &amp; IEPS and Item level discounts while taking Invoice &amp; PB - Both Salable &amp; Non-Salable</description>
-   <name>TC_ID_054</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>adb1229f-326c-458d-86bc-2b6c676456e3</testCaseGuid>
-</TestCaseEntity>

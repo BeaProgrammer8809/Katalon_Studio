@@ -27,13 +27,26 @@ Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Ne
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
+Mobile.comment('Application should not allow to navigate to summary screen')
+
+Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_002'], 
+    FailureHandling.STOP_ON_FAILURE)
+
+'Popup should be visible'
+Mobile.verifyElementExist(findTestObject('Phase2/BIProductBuyingScreen01/No_Items_Added_TextFeild'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIProductBuyingScreen01/No_Items_Added_TextFeild'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Phase2/BIProductBuyingScreen01/No_Items_Added_OK_Button'), 0, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementVisible(findTestObject('Phase2/BIProductBuyingScreen01/No_Items_Added_OK_Button'), 0, FailureHandling.STOP_ON_FAILURE)
+
 /*verification done to check the Summary screen title is not visible after clicking the next button(With out entering any order and invoice quantity)*/
-Mobile.verifyElementNotExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementNotExist(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 10, 
+    FailureHandling.STOP_ON_FAILURE)
 
-Mobile.verifyElementNotVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 0, FailureHandling.STOP_ON_FAILURE)
-
-Mobile.callTestCase(findTestCase('Phase2.1/Inv Summary (Inv, Rep and P)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_002'],
-	FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), 10, 
+    FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
 

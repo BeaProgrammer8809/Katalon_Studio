@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_478:- To check user is able to use partial invoice amount in Pesito credit</description>
-   <name>TC_478</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>95bdf1cc-c272-4db0-b5ef-cb4c72751033</testCaseGuid>
-</TestCaseEntity>

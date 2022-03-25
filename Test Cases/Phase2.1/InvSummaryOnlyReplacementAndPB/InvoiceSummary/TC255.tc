@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC255 : To check the Total amount inside the info popup while taking replacement for the sku's that is having IVA tax and category discount.</description>
+   <name>TC255</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d6651a1d-dfde-46a1-beb3-833501f45128</testCaseGuid>
+</TestCaseEntity>

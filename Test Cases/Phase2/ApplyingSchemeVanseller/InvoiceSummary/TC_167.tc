@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_167:-To check scheme is created like below,when stock is insufficient for 003_lak_qt whether scheme is applying in invoice summary screen
+
+Scheme buy logic:OR Scheme get logic:ONLY
+
+Scheme buy sku:001_lak_qt  buy qty=1
+Scheme buy sku:002_lak_qt  buy qty=1
+
+Scheme get sku:003_lak_qt  get qty=2</description>
+   <name>TC_167</name>
+   <tag></tag>
+   <comment>Verifying Sku Name &amp; quantity for first product
+Verifying Sku Name &amp; quantity for second product
+Scheme should not be applied in invoice summary screen</comment>
+   <testCaseGuid>53c6870b-cc31-4fe8-a465-e43117631e80</testCaseGuid>
+</TestCaseEntity>

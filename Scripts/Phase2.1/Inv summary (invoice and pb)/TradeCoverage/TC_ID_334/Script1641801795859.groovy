@@ -54,20 +54,27 @@ println(invamt)
 println(invamt.length())
 
 for (int i = 0; i < invamt.length(); i++) {
-    Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
 
 Mobile.tap(findTestObject('Phase2/BICollectionScreen01/TransferenciasElectronicas_RadioButton'), 0)
 
 for (int i = 0; i < invamt.length(); i++) {
-    Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
+	Mobile.tap(findTestObject('Phase2/BINumberPad/Back_Space'), 0)
 }
 
-Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/2_NumButton'), 0)
+double TotalAmount = Double.parseDouble(invamt)
+
+def AmountLessThanInvoiceAmount = TotalAmount - 5
+
+Mobile.setText(findTestObject('Phase2/BICollectionScreen01/BITransferenciasElectronicasScreen01/Amount_EditText'), AmountLessThanInvoiceAmount.toString(),
+	0)
+
+/*Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/2_NumButton'), 0)
 
 Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/4_NumButton'), 0)
 
-Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/6_NumButton'), 0)
+Mobile.tap(findTestObject('Phase2/BINumberKeyboardCollection01/6_NumButton'), 0)*/
 
 GlobalVariable.DropdownName = findTestData('Phase2.1/Common_Data/CommonData').getValue('DropdownName', 1)
 
@@ -115,9 +122,7 @@ Mobile.verifyElementExist(findTestObject('Phase2/BICollectionScreen01/Collection
 
 println('Pay Minimum amount to proceed the invoice error message is displayed while submitting with lesser invoice amount and collection popup is in opened')
 
-Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_334'], 
-    FailureHandling.STOP_ON_FAILURE)
+Mobile.callTestCase(findTestCase('Phase2.1/Inv summary (invoice and pb)/TradeCoverage/Screenshot'), [('testCaseName') : 'TC_ID_334'],
+	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-
-

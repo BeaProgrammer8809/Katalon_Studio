@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_292:To check the Total price displayed for scheme buy and get sku when scheme is applied</description>
+   <name>TC_292</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4ae26a2-649a-45ba-9886-4932cf21a69c</testCaseGuid>
+</TestCaseEntity>

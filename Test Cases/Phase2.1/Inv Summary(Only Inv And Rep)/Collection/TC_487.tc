@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_487:-To check user is not allowed to use the pesito granted amount more than actual Invoice amount which needs to collect</description>
-   <name>TC_487</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>00ca52f4-e913-4ffe-b41f-a5d301c81d7e</testCaseGuid>
-</TestCaseEntity>

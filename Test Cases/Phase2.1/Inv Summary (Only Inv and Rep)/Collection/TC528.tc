@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC528:-To check the legal entity name in collection payment screen for multi org while doing invoice and replacement for ricolino sku</description>
+   <name>TC528</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>47fc6aae-8c9e-4e74-8914-f11bb6d053c8</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_21:- To check when seller doing invoice and replacement if enter invoice qty>=scheme buy qty ,screen should be navigated to applying scheme screen</description>
+   <name>TC_21</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>025f4b3b-7a6a-4b03-a41e-aac234ab06cb</testCaseGuid>
+</TestCaseEntity>

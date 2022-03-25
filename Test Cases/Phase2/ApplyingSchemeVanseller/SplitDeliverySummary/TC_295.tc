@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_295
+
+To check When scheme buy and get sku is added in same split group if scheme is applied ,whether the scheme buy sku is displaying in delivery summary screen</description>
+   <name>TC_295</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2888d86-3ff0-4ad6-ae3a-09edc19b14d3</testCaseGuid>
+</TestCaseEntity>

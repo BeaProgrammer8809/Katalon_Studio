@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_129:-To check when seller click the edit button whether screen is redirected to Order screen</description>
+   <name>TC_129</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b13d676b-2604-4af6-b73a-0cacc7bbbd9e</testCaseGuid>
+</TestCaseEntity>

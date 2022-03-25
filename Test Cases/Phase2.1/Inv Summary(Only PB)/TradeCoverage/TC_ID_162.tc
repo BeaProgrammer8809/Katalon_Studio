@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_ID_162 - To check the Order Value amount inside the info popup while taking invoice &amp; Product Buying (Both Salable &amp; Non-salable) for the sku's that is having IVA, IEPS taxes and  Item discount.</description>
-   <name>TC_ID_162</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c084b92d-761f-41ac-86c9-ecee2f96a878</testCaseGuid>
-</TestCaseEntity>

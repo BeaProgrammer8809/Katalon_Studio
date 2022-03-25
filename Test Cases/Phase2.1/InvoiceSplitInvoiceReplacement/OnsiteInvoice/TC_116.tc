@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_116 - To check while doing invoice, replacement and product buying for same split group sku's that is having only tax IEPS but not having any discounts,whether the onsite invoice is getting success and UUID is generated</description>
-   <name>TC_116</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4bc1b75b-ad1d-4ee8-b37d-7c6b3beb415d</testCaseGuid>
-</TestCaseEntity>

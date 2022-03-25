@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_ID_270:-To check the Select Cheque Type dropdown
+TC_ID_271:-To check the Select Cheque Type dropdown options</description>
+   <name>TC_ID_270,TC_ID_271</name>
+   <tag></tag>
+   <comment>Select bank was a mandatory field
+Verify that select cheque type was a drop down
+Select Cheque type dropdown should have Foreign and Local options</comment>
+   <testCaseGuid>85a06da6-32bb-422f-a8fb-80357618f08d</testCaseGuid>
+</TestCaseEntity>

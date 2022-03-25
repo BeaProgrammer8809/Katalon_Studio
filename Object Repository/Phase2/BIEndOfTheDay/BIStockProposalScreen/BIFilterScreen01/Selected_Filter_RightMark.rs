@@ -18,14 +18,14 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.ivy.bimbomx.mexico.view.uat:id/selectedfilters</value>
+      <value>${GlobalVariable.Package}:id/selectedfilters</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>package</name>
       <type>Main</type>
-      <value>com.ivy.bimbomx.mexico.view.uat</value>
+      <value>${GlobalVariable.Package}</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>

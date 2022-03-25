@@ -1,23 +1,11 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
-import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
-import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.core.util.KeywordUtil
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.mobile.keyword.internal.MobileDriverFactory as MobileDriverFactory
-import io.appium.java_client.AppiumDriver as AppiumDriver
-import org.openqa.selenium.WebElement as WebElement
-import java.time.LocalDate as LocalDate
 
 Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4002'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -67,8 +55,8 @@ KeywordUtil.logInfo ("${ItemdiscountinWeb}")
 def categorydiscountinWeb = findTestData('Phase2.1/TY_05/Testdata').getValue('NOCATEGORYDISC', 1)
 KeywordUtil.logInfo ("${categorydiscountinWeb}")
 
-def IEPSTAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IVATAX', 1)
-KeywordUtil.logInfo ("${IEPSTAX}")
+def TAX = findTestData('Phase2.1/TY_05/Testdata').getValue('IVATAX', 1)
+KeywordUtil.logInfo ("${TAX}")
 
 def GrossInvoice =  Double.parseDouble(InvoiceQuantityInSummary) * Double.parseDouble(UnitPriceInSummary)
 
@@ -91,7 +79,7 @@ def GrossamountAfterAppliedDiscount = PriceAfterAddingDiscount
 KeywordUtil.logInfo ("${GrossamountAfterAppliedDiscount}")
 
 /*verification done to check the tax on the gross amount*/
-def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(IEPSTAX)/100)
+def TotalTaxAmount = GrossamountAfterAppliedDiscount * (Double.parseDouble(TAX)/100)
 KeywordUtil.logInfo ("${TotalTaxAmount}")
 					  
 def OrderValue = GrossInvoice + TotalTaxAmount

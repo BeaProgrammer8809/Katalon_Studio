@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_08:- To check promotion slab description is displaying on promotion slab screen</description>
+   <name>TC_08</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9546feea-aa3b-4bfe-ab9c-fb7f4299f6a2</testCaseGuid>
+</TestCaseEntity>

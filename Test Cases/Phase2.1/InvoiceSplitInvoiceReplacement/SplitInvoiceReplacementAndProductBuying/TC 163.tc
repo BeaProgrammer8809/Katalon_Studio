@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 163 :To check Collection option is not coming in Delivery Final summary screen when invoice generated with pure replacement and pure product buying</description>
+   <name>TC 163</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>03b090a7-8018-436e-bd0c-bf4076ef88d0</testCaseGuid>
+</TestCaseEntity>

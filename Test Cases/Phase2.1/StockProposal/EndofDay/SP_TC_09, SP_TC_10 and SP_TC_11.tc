@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>SP_TC_09 : To check all brand is showing when we select Marca in filter
+
+SP_TC_10 :To check all category is showing when we select Category in filter
+
+SP_TC_11 :To check Segmento is showing when we select Segmento in filter</description>
+   <name>SP_TC_09, SP_TC_10 and SP_TC_11</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cb60c271-6705-443d-ab64-7c0ca2efa471</testCaseGuid>
+</TestCaseEntity>

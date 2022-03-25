@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC107 - To check the Value field calculation while taking invoice and replacement against each sku's that is having IVA, IEPS taxes and Item, category discount.</description>
-   <name>TC107</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ea9aa307-1909-4eca-8aaf-afdd632fb0a9</testCaseGuid>
-</TestCaseEntity>

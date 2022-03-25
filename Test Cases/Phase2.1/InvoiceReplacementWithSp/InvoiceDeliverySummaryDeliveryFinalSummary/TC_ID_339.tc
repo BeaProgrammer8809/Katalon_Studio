@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_ID_339
-To check User is able to generate the invoice without generating pre ticket also in delivery final summary screen</description>
+   <description>TC_ID_339:To check User is able to generate the invoice without generating pre ticket also in delivery final summary screen</description>
    <name>TC_ID_339</name>
    <tag></tag>
    <comment></comment>

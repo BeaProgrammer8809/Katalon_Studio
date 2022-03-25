@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_82 - To check the Lines qty displayed after entering all the stock delivered qty in Extra invoice for bimbo's sku that are not in invoice split group</description>
-   <name>TC_82</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e03bc9b1-949c-42a5-b512-10f084630abe</testCaseGuid>
-</TestCaseEntity>

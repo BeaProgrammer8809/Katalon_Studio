@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_248 - To verify “Folio No” field is accepting only numeric characters.</description>
-   <name>TC_248</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>db342fb1-a694-4574-a3c2-c0d6bede6791</testCaseGuid>
-</TestCaseEntity>

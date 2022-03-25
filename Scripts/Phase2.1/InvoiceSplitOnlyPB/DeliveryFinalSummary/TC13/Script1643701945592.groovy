@@ -21,19 +21,39 @@ Mobile.callTestCase(findTestCase('Login/Mobile/Van Seller Login - 4001'), [:], F
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2/VanloadAndOdometer'), [:], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/Trade_Coverage_Generic'), [('retailerName') : findTestData(
-            'Phase2.1/Common_Data/CommonData').getValue('RetailerCash', 21)], FailureHandling.STOP_ON_FAILURE)
+			'Phase2.1/Common_Data/CommonData').getValue('RetailerCash', 21)], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIStoreActivitiesScreen01/Order_and_Invoice_Button'), 0)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIOrderAndInvoiceScreen01/Next_Button'), 0)
 
+Mobile.verifyElementExist(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Funnel_Button'), 0)
+
+Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/Funnel_Button'), 0)
+
+Mobile.verifyElementExist(findTestObject('Phase2/BIOrderAndInvoiceScreen01/BIFunnelFilter/Filter_BimboOption'), 0)
+
+Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/BIFunnelFilter/Filter_BimboOption'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+def companyName = Mobile.getText(findTestObject('Phase2/BIOrderAndInvoiceScreen01/BIFunnelFilter/Filter_BimboOption'), 0)
+
+println(companyName)
+
+Mobile.verifyMatch(companyName, findTestData('Phase2.1/TY_01/TestData_01B').getValue('data1', 5), false, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.verifyElementExist(findTestObject('Phase2/BIOrderAndInvoiceScreen01/BIFunnelFilter/Funnel_Apply_Button'), 0)
+
+Mobile.tap(findTestObject('Phase2/BIOrderAndInvoiceScreen01/BIFunnelFilter/Funnel_Apply_Button'), 0)
+
 Mobile.callTestCase(findTestCase('Reusable Cases/Mobile/Phase2.1/OnlyProduct_Buying_Quantity'), [('testData1') : findTestData(
-            'Phase2.1/Common_Data/CommonData').getValue('ProductName', 1)], FailureHandling.STOP_ON_FAILURE)
+			'Phase2.1/Common_Data/CommonData').getValue('ProductName', 1)], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Object Repository/Phase2/BIProductBuyingScreen01/Next_Button'), 0)
 
 Mobile.verifyElementText(findTestObject('Object Repository/Phase2/BIInvoiceSummaryScreen/Summary_ScreenTitle'), findTestData(
-        'Phase2.1/TY_05/Testdata').getValue('Data1', 28))
+		'Phase2.1/TY_05/Testdata').getValue('Data1', 28))
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Button'), 0)
 
@@ -41,11 +61,10 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_Po
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully_PopUp_OK_Button'), 0)
 
-Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'),  findTestData('Phase2.1/TY_02/TestData_01B').getValue(
-        'Data1', 2))
+Mobile.verifyElementText(findTestObject('Phase2/BIDeliveryFinalSummaryScreen/Delivery_Final_Summary_ScreenTitle'), findTestData(
+		'Phase2.1/TY_02/TestData_01B').getValue('Data1', 2))
 
 Mobile.callTestCase(findTestCase('Phase2.1/InvoiceSplitOnlyPB/DeliveryFinalSummary/Screenshot'), [('testCaseName') : 'TC_13'],
 	FailureHandling.STOP_ON_FAILURE)
 
 Mobile.closeApplication()
-

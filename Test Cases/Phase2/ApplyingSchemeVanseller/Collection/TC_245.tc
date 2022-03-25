@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_245:To check whether able to Submit the invoice amount with max digit in Cheque no when scheme is applied</description>
+   <name>TC_245</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1fd3a90-929a-4bbf-8edd-0bfe104915f1</testCaseGuid>
+</TestCaseEntity>

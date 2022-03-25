@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_115:
+
+To check when seller click next button on applying scheme screen,whether it is navigating to promotion slab screen</description>
+   <name>TC_115</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a9c5c17-3193-4c31-bbec-83cd3838ff11</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC-26:Check whether after edit icon tap, entered qty against SKUs are reflecting as is how was entered</description>
-   <name>TC-26</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>75fa95ba-f536-4ad7-b3ec-18969ff28e4d</testCaseGuid>
-</TestCaseEntity>

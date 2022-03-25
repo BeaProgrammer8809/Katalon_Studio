@@ -66,11 +66,16 @@ Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Summary_Save_Po
 
 Mobile.tap(findTestObject('Phase2/BIInvoiceSummaryScreen/Invoice_Created_Successfully_PopUp_OK_Button'), 0)
 
+'entering number 1 in invoice count and checking whether navigating to delivery split final summary screen or not'
+
 Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), 0)
 
 def number1 = findTestData('Phase2.1/TY_11/TestData').getValue(2, 77)
 
 Mobile.setText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), number1, 0)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
+	[('testCaseName') : 'TC_ID_100_input1'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Create_Ticket_Invoice_Button'), 0)
 
@@ -84,7 +89,12 @@ Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText
 
 def number2 = findTestData('Phase2.1/TY_11/TestData').getValue(3, 77)
 
+'entering number 2 in invoice count and checking whether navigating to delivery split final summary screen or not'
+
 Mobile.setText(findTestObject('Phase2/BIDeliverySummaryScreen/Invoice_Count_EditText'), number2, 0)
+
+Mobile.callTestCase(findTestCase('Phase2.1/InvoiceReplacementWithSp/InvoiceDeliverySummaryDeliveryFinalSummary/Screenshot'),
+	[('testCaseName') : 'TC_ID_100_input2'], FailureHandling.STOP_ON_FAILURE)
 
 Mobile.tap(findTestObject('Phase2/BIDeliverySummaryScreen/Create_Ticket_Invoice_Button'), 0)
 

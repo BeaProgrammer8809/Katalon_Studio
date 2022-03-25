@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC 260 - To verify “Folio No” given only for generated invoice, replacement and Product buying split is accepting
+
+TC 262 - To verify given “Folio No” &amp; “Folio ProdBuy” accepts in the Delivery Final summary screen</description>
+   <name>TC 260,TC 262</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ade629d9-803d-4527-99ae-9906f1481075</testCaseGuid>
+</TestCaseEntity>

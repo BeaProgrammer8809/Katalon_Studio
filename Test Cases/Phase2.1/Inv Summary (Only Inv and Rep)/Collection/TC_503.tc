@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>TC_503:- To check user can able to use pesit against an invoice for deviated cash store also</description>
-   <name>TC_503</name>
-   <tag></tag>
-   <comment>User should be able to use pesit against an invoice</comment>
-   <testCaseGuid>5a598458-c1f2-4836-84b8-187de462349b</testCaseGuid>
-</TestCaseEntity>

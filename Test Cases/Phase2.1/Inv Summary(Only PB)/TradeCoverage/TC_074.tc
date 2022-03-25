@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>TC_074:-To verify “Folio ProdBuy” field is accepting the “_” Special Characters.</description>
+   <name>TC_074</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ef858ca0-e2a7-48f3-8e87-201f0082882d</testCaseGuid>
+</TestCaseEntity>
